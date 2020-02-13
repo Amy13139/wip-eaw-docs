@@ -1,9 +1,9 @@
-.. EaW Godot Port documentation master file, created by
-   sphinx-quickstart on Thu Feb 13 12:43:29 2020.
+.. eaw-godot-docs documentation master file, created by
+   sphinx-quickstart on Thu Feb 13 13:50:17 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to EaW Godot Port's documentation!
+Welcome to eaw-godot-docs's documentation!
 ==========================================
 
 .. toctree::

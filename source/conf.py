@@ -17,12 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'EaW Godot Port'
+project = 'eaw-godot-docs'
 copyright = '2020, luke13139'
 author = 'luke13139'
-
-# The full version, including alpha/beta/rc tags
-release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
