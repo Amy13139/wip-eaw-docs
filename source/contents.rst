@@ -4,5 +4,8 @@
 .. toctree::
 	:glob:
 
-	index
+	readme
+
 	basegame/*_contents.rst
+
+	index

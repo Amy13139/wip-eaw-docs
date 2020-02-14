@@ -13,7 +13,7 @@ EaW-Godot Port Documentation
    :caption: Contents:
 
    readme
-   basegame/*.rst
+   basegame/*_contents.rst
 
 
 Indices and tables
