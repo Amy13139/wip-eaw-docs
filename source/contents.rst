@@ -3,5 +3,4 @@
 .. toctree::
 	:glob:
 
-	readme
 	index
