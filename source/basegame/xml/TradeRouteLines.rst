@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_trade_route_lines:
 .. Template to use for XML type documentation
 
-XML TYPE
+TradeRouteLines
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Disclaimer: *Does not include trade routes, does include line*
 
 
 Structure

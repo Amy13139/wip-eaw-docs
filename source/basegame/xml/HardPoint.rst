@@ -1,7 +1,7 @@
-.. _xml_type_template:
+.. _xml_hardpoint:
 .. Template to use for XML type documentation
 
-XML TYPE
+HardPoint
 ===================================================
 
 

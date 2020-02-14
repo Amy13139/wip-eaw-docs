@@ -1,13 +1,19 @@
-.. _xml_type_template:
+.. _xml_lightning_type_manager:
 .. Template to use for XML type documentation
 
-XML TYPE
+LightningTypeManager
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Equally Important:
+
+- Every Unit and Prop in the Game
+- All Targetable Points on Units
+- The Type of Lightning Palpatine Shoots
+
+  - He may just go with plad lightning to mix up his style, ya'know?
 
 
 Structure

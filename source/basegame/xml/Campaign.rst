@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_campaign:
 .. Template to use for XML type documentation
 
-XML TYPE
+Campaign
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Stores Campaign stuff... Probably
 
 
 Structure

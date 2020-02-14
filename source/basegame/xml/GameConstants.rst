@@ -1,7 +1,7 @@
-.. _xml_type_template:
+.. _xml_game_constants:
 .. Template to use for XML type documentation
 
-XML TYPE
+GameConstants
 ===================================================
 
 

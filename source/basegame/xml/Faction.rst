@@ -1,7 +1,7 @@
-.. _xml_type_template:
+.. _xml_faction:
 .. Template to use for XML type documentation
 
-XML TYPE
+Faction
 ===================================================
 
 

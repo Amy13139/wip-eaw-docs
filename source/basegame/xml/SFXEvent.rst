@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_sfx_event:
 .. Template to use for XML type documentation
 
-XML TYPE
+SFXEvent
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Events for explosions
 
 
 Structure

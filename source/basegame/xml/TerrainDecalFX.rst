@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_terrain_decal_fx:
 .. Template to use for XML type documentation
 
-XML TYPE
+TerrainDecalFX
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+*Sigh*
 
 
 Structure

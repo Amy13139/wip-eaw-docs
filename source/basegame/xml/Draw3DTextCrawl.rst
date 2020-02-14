@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_draw_3d_text_crawl:
 .. Template to use for XML type documentation
 
-XML TYPE
+Draw3DTextCrawl
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Text?!?!
 
 
 Structure

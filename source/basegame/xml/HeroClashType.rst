@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_hero_clash_type:
 .. Template to use for XML type documentation
 
-XML TYPE
+HeroClashType
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Probably just something about Vader "disarming" Luke if they get into a duel.
 
 
 Structure

@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_music_event:
 .. Template to use for XML type documentation
 
-XML TYPE
+MusicEvent
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Events to bring out the orchestra for
 
 
 Structure

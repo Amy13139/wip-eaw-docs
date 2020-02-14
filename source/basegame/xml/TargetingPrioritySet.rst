@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_targeting_priority_set:
 .. Template to use for XML type documentation
 
-XML TYPE
+TargetingPrioritySet
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Targeting priorities, but done really badly.
 
 
 Structure

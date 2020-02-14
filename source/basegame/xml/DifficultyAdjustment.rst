@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_difficulty_adjustments:
 .. Template to use for XML type documentation
 
-XML TYPE
+DifficultyAdjustments
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Answers the age-old question of how hard "hard" is.
 
 
 Structure

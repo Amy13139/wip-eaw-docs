@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_weather_pattern:
 .. Template to use for XML type documentation
 
-XML TYPE
+WeatherPattern
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Bringing out the inner meteorologist in every imperial officer, rebel kamikaze, and wanted mercenary.
 
 
 Structure

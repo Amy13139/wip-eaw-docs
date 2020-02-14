@@ -1,13 +1,13 @@
-.. _xml_type_template:
-.. Template to use for XML type documentation
+.. _xml_bink_movie:
+.. BIK movie storage docs
 
-XML TYPE
+Bink Movie
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+References .BIK Movie files
 
 
 Structure

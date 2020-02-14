@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_speech_event:
 .. Template to use for XML type documentation
 
-XML TYPE
+SpeechEvent
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Disclaimer: *Not sound effect, all sound effects are in SFXEvent. These are SpeechEvents*
 
 
 Structure

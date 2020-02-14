@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_megafiles:
 .. Template to use for XML type documentation
 
-XML TYPE
+megafiles.xml
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Contains names of all .meg archives for the game to load. One of 2 XML files loaded by filename
 
 
 Structure

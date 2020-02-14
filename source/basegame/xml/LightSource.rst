@@ -1,13 +1,15 @@
-.. _xml_type_template:
+.. _xml_light_source:
 .. Template to use for XML type documentation
 
-XML TYPE
+LightSource
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Lights. Lamps.
+
+| Lightsabers not included.
 
 
 Structure

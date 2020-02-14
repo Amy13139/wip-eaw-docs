@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_radar_map:
 .. Template to use for XML type documentation
 
-XML TYPE
+RadarMap
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Why they needed an XML for this is beyond mortal comprehension.
 
 
 Structure

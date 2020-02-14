@@ -6,14 +6,18 @@
 EaW-Godot Port Documentation
 ==========================================
 
+
 .. toctree::
-   :maxdepth: 10
+   :maxdepth: 2
    :caption: Contents:
 
+   readme
+   basegame/xml_file
 
 
 Indices and tables
 ==================
+
 
 * :ref:`genindex`
 * :ref:`modindex`

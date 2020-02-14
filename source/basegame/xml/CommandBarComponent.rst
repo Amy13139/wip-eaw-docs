@@ -1,4 +1,4 @@
-.. _xml_type_template:
+.. _xml_command_bar_component:
 .. Template to use for XML type documentation
 
 XML TYPE
@@ -7,7 +7,7 @@ XML TYPE
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Stores data for the button on the command bar
 
 
 Structure

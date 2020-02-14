@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_game_object_type:
 .. Template to use for XML type documentation
 
-XML TYPE
+GameObjectType
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Stores *wayyyyyyyyyyyyyyyyyyy* too much crap
 
 
 Structure

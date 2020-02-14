@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_weather_audio_manager:
 .. Template to use for XML type documentation
 
-XML TYPE
+WeatherAudioManager
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+Combine with LightingTypeManager for a realistic thunderstorm! For a Star Wars game! In Space!
 
 
 Structure

@@ -1,13 +1,13 @@
-.. _xml_type_template:
+.. _xml_tactical_camera_constants:
 .. Template to use for XML type documentation
 
-XML TYPE
+TacticalCameraConstants
 ===================================================
 
 
 About
 -----
-*Description*: This Type/Subtype does something!
+I have no idea anymore. Why? Just... Why?
 
 
 Structure
