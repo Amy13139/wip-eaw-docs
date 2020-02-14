@@ -67,18 +67,3 @@ Some subnodes contain multiple items for their data. If this is the case, it wil
 - Float; A floating point number. Must have a point and at least 1 number behind it, even for integer values.
 
   - f; Not space separator, indicates that the number has the character ``f`` attached to the end of it. Ex: ``5.0f``
-
-
-
-
-XML Type Reference
-^^^^^^^^^^^^^^^^^^
-
-.. toctree::
-	:titlesonly:
-	:glob:
-
-	xml/megafiles.xml
-	xml/Dataminerxmlfiles.xml
-	xml/*
-

@@ -9,10 +9,11 @@ EaW-Godot Port Documentation
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    :caption: Contents:
 
    readme
-   basegame/xml_file
+   basegame/*.rst
 
 
 Indices and tables
