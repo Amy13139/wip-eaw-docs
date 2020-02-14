@@ -13,7 +13,7 @@ This documentation and other EaW-Godot Port Project materials use abbreviations 
 
 About
 -----
-This documentation page contains both the Docs for the EaW-Godot Port Project and the structure of EaW/FoC Data. If you are unaware of the EaW-Godot Port project, please check out the eaw-godot-port GitHub
+This documentation page contains both the Docs for the EaW-Godot Port Project and the structure of EaW/FoC Data. If you are unaware of the EaW-Godot Port project, please check out the eaw-godot-port GitHub.
 
 
 EaW/FoC Data File Types
