@@ -3,6 +3,5 @@
 .. toctree::
 	:glob:
 
-	index
 	readme
-	basegame/*
+	index
