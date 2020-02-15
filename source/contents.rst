@@ -2,10 +2,10 @@
 .. Contents file
 
 .. toctree::
+
 	:glob:
+	:titlesonly:
 
 	readme
 
-	basegame/*_contents.rst
-
-	index
+	basegame/*_file.rst

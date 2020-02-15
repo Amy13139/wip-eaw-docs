@@ -9,6 +9,7 @@ XML Type Reference
 	:caption: XML Type Reference:
 	:glob:
 
+	xml/xml_file
 	xml/megafiles.xml
 	xml/Dataminerxmlfiles.xml
 	xml/*
