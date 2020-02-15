@@ -11,10 +11,11 @@ EaW-Godot Port Documentation
 
    :titlesonly:
    :glob:
-   :caption: Contents:
+   :caption: Index:
 
    readme
-   basegame/*_index.rst
+   basegame/*
+   basegame/xml/*
 
 
 Indices and tables
