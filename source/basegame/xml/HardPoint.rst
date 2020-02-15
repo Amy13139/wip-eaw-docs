@@ -1,27 +1,36 @@
 .. _xml_hardpoint:
 .. Template to use for XML type documentation
 
+*********
 HardPoint
-===================================================
+*********
 
 
 About
------
+=====
 Stores the individual parts of larger units. May or may not be targetable/destroyable. Most weapons in space are fired from hardpoints, with the notable exception of fighters and other small craft.
 
 
 Structure
----------
-- ``Top level node``
+=========
+``Top level node``:
 
-  - ``Node Type 1``; ``Attributes``
-  - ``Node Type 2``; ``Attributes``; Optional
-  - ``Node Type 3``; ``Attributes``
-  - ``Node Type 5``; ``Attributes``; Optional
+===============  ============== =========
+Node Name        Attributes     Optional
+===============  ============== =========
+``UniqueUnit``   ``Name``       No
+``Node Type 2``  ``Attributes`` Yes
+``Node Type 3``  ``Attributes`` No
+``Node Type 5``  ``Attributes`` Yes
+===============  ============== =========
 
-- ``Top level node variation 1``
+``Top level node variation 1``:
 
-  - ``Node Type 4``; ``Attributes``; Optional
+===============  ============== =========
+Node Name        Attributes     Optional
+===============  ============== =========
+``Node Type 4``  ``Attributes`` No
+===============  ============== =========
 
 
 ``Top level node``
