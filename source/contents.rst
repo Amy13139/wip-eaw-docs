@@ -4,23 +4,26 @@ About
 =====
 .. toctree::
 	:titlesonly:
+	:caption: About:
 
-	readme
+	index
 
 
 EaW-Godot Port Documentation
 ============================
 .. toctree::
 	:titlesonly:
+	:caption: EaW-Godot Docs:
 	:glob:
 
-	basegame/*
+	port/*
 
 
 EaW/FoC Documentation
 =====================
 .. toctree::
 	:titlesonly:
+	:caption: EaW/FoC Docs:
 	:glob:
 
 	basegame/*
