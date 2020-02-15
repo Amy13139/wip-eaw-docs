@@ -9,7 +9,7 @@ EaW-Godot Port Documentation
 
 .. toctree::
 
-   :titlesonly:
+   :maxdepth: 2
    :glob:
    :caption: Index:
 

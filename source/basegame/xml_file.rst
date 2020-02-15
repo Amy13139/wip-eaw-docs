@@ -70,6 +70,13 @@ Some subnodes contain multiple items for their data. If this is the case, it wil
 
 
 XML Type Reference
-^^^^^^^^^^^^^^^^^^
+==================
+.. toctree::
 
-:ref:`xml_contents`
+	:titlesonly:
+	:caption: XML Type Reference:
+	:glob:
+
+	xml/megafiles.xml
+	xml/Dataminerxmlfiles.xml
+	xml/*

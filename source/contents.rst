@@ -5,7 +5,7 @@
 
 	:glob:
 	:caption: Contents:
-	:titlesonly:
+	:maxdepth: 1
 
 	readme
 	basegame/*_file.rst
