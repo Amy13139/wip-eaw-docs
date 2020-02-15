@@ -1,7 +1,7 @@
 .. _xml_command_bar_component:
 .. Template to use for XML type documentation
 
-XML TYPE
+CommandBarComponent
 ===================================================
 
 

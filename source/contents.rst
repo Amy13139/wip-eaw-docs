@@ -2,7 +2,7 @@
 .. Contents file
 
 .. toctree::
-	:maxdepth: 1
+	:titlesonly:
 
 	readme
 	basegame/xml_file.rst

@@ -69,11 +69,10 @@ Some subnodes contain multiple items for their data. If this is the case, it wil
   - f; Not space separator, indicates that the number has the character ``f`` attached to the end of it. Ex: ``5.0f``
 
 
-XML Type Reference
-==================
+XML Type Reference:
+===================
 .. toctree::
 	:titlesonly:
-	:caption: XML Type Reference:
 	:glob:
 
 	xml/megafiles.xml
