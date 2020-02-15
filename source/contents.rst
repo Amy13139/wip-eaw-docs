@@ -2,7 +2,6 @@
 .. Contents file
 
 .. toctree::
-
 	:maxdepth: 1
 
 	readme
