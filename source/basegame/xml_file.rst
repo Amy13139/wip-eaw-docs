@@ -70,7 +70,7 @@ Some subnodes contain multiple items for their data. If this is the case, it wil
 
 
 XML Type Reference:
-===================
+-------------------
 .. toctree::
 	:titlesonly:
 	:glob:
