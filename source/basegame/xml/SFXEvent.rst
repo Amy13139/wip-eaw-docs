@@ -1,27 +1,36 @@
 .. _xml_sfx_event:
 .. Template to use for XML type documentation
 
+********
 SFXEvent
-===================================================
+********
 
 
 About
------
-Events for explosions
+=====
+	*Events for explosions -luke13139*
 
 
 Structure
----------
-- ``Top level node``
+=========
+``Top level node``:
 
-  - ``Node Type 1``; ``Attributes``
-  - ``Node Type 2``; ``Attributes``; Optional
-  - ``Node Type 3``; ``Attributes``
-  - ``Node Type 5``; ``Attributes``; Optional
+===============  ============== =========
+Node Name        Attributes     Optional
+===============  ============== =========
+``UniqueUnit``   ``Name``       No
+``Node Type 2``  ``Attributes`` Yes
+``Node Type 3``  ``Attributes`` No
+``Node Type 5``  ``Attributes`` Yes
+===============  ============== =========
 
-- ``Top level node variation 1``
+``Top level node variation 1``:
 
-  - ``Node Type 4``; ``Attributes``; Optional
+===============  ============== =========
+Node Name        Attributes     Optional
+===============  ============== =========
+``Node Type 4``  ``Attributes`` No
+===============  ============== =========
 
 
 ``Top level node``
@@ -31,22 +40,22 @@ Structure
 
 ``Node 1``
 ^^^^^^^^^^
-- ``Subnode``; ``Attributes``;
+- ``Subnode``:
 	Type; Description
 
-- ``Subnode 2``; ``Attributes``; Optional
+- ``Subnode 2``:
 	Type; Description
 
-- ``Subnode 3``; ``Attributes``;
+- ``Subnode 3``:
 	Type, Type, Type; Description
 
-- ``Subnode 5``; ``Attributes``; Optional
-	Type; Type; Type; Description
+- ``Subnode 5``:
+	Type | Type | Type; Description
 
 
 ``Node 2``
 ^^^^^^^^^^
-- ``Subnode 6``; ``Attributes``; Optional
+- ``Subnode 6``:
 	Type; Description
 
 
@@ -57,5 +66,10 @@ Structure
 
 ``Node 1``
 ^^^^^^^^^^
-- ``Subnode 4``; ``Attributes``; Optional
+- ``Subnode 4``:
 	Type; Description
+
+
+EaW-Godot Port Connection
+=========================
+This file is imported into a thing

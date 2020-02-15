@@ -1,22 +1,25 @@
 .. _xml_data_miner_xml_files:
 .. Template to use for XML type documentation
 
+*********************
 Dataminerxmlfiles.xml
-===================================================
+*********************
 
 
 About
------
+=====
 This XML file is one of the 2 XML files loaded by filename, the other being ``megafiles.xml``. Unlike ``megafiles.xml``, this file is located in the Data/XML directory. This file contains the names of the other XML files for the program to load, and it contains their type.
 
 
 Structure
----------
+=========
+``GameXMLFiles``:
 
-
-- ``GameXMLFiles``
-
-  - ``File``; ``filename, type, metafile``
+===============  ============================= =========
+Node Name        Attributes                    Optional
+===============  ============================= =========
+``File``         ``filename, type, metafile``      No
+===============  ============================= =========
 
 
 ``GameXMLFiles``
@@ -25,7 +28,7 @@ Structure
 
 File
 ^^^^
-The only node type within Dataminerxmlfiles.xml, it specifes a file and it's type of data. Any number of these nodes can be present.
+The only node type within Dataminerxmlfiles.xml, it specifes a file and it's type of data.
 
 - Attribute: filename
 	File; The name of an XML file to load

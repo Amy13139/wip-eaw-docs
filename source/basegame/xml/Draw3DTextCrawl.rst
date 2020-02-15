@@ -1,17 +1,18 @@
 .. _xml_draw_3d_text_crawl:
 .. Template to use for XML type documentation
 
+***************
 Draw3DTextCrawl
-===================================================
+***************
 
 
 About
------
-Text?!?!
+=====
+	*Text?!?! Crawling?!?! -luke13139*
 
 
 Structure
----------
+=========
 - ``Top level node``
 
   - ``Node Type 1``; ``Attributes``
@@ -31,22 +32,22 @@ Structure
 
 ``Node 1``
 ^^^^^^^^^^
-- ``Subnode``; ``Attributes``;
+- ``Subnode``:
 	Type; Description
 
-- ``Subnode 2``; ``Attributes``; Optional
+- ``Subnode 2``:
 	Type; Description
 
-- ``Subnode 3``; ``Attributes``;
+- ``Subnode 3``:
 	Type, Type, Type; Description
 
-- ``Subnode 5``; ``Attributes``; Optional
-	Type; Type; Type; Description
+- ``Subnode 5``:
+	Type | Type | Type; Description
 
 
 ``Node 2``
 ^^^^^^^^^^
-- ``Subnode 6``; ``Attributes``; Optional
+- ``Subnode 6``:
 	Type; Description
 
 
@@ -57,5 +58,10 @@ Structure
 
 ``Node 1``
 ^^^^^^^^^^
-- ``Subnode 4``; ``Attributes``; Optional
+- ``Subnode 4``:
 	Type; Description
+
+
+EaW-Godot Port Connection
+=========================
+This file is imported into a thing
