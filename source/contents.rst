@@ -26,7 +26,7 @@ EaW/FoC Documentation
 	basegame/*
 
 
-Indices and tables
+Indices and Tables
 ==================
 * :ref:`genindex`
 * :ref:`modindex`
