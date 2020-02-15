@@ -3,9 +3,7 @@
 
 .. toctree::
 
-	:glob:
-	:caption: Contents:
 	:maxdepth: 1
 
 	readme
-	basegame/*_file.rst
+	basegame/xml_file.rst
