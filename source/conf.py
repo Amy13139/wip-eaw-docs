@@ -14,7 +14,10 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 from os import path, getcwd
-from build_docs.build_docs import build
+try:
+	from build_docs.build_docs import build
+except ModuleNotFoundError:
+	from build_docs import build
 
 
 # -- Project information -----------------------------------------------------
