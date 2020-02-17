@@ -2,9 +2,9 @@ from build_docs import *
 from os import path, getcwd
 # Doc Generation Script
 # Variables
-eaw_data_dir = path.join(getcwd(), "data/")
-foc_data_dir = path.join(eaw_data_dir, "corruption/")
-basegame_data_dir = path.join(getcwd(), "basegame/")
+eaw_data_dir = path.join(getcwd(), "data")
+foc_data_dir = path.join(eaw_data_dir, "corruption")
+basegame_data_dir = path.join(getcwd(), "basegame")
 xml_data_dir = path.join(basegame_data_dir, "xml")
 
 # Build docs
