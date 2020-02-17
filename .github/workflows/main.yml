@@ -9,5 +9,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      name: Build Extra Documentation Files
+    - name: Build Extra Documentation Files
       run: python3 "source/build.py"
