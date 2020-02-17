@@ -56,4 +56,4 @@ exclude_patterns = []
 html_static_path = ['_static']
 
 # Run build.py
-run("python build.py")
+run("build.py")
