@@ -1,0 +1,12 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Build Extra Documentation Files
+      run: python3 build.py
