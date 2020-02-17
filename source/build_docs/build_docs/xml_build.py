@@ -124,7 +124,7 @@ def parse_xml_dir(xml_dir, use_dataminerxml=False):
 		data_xml = ET.parse(data_xml_path).getroot()
 		for item in data_xml:
 			if item.tag == "File":
-				file = path.join(xml_dir, item.get("filename").strip())
+				file = path.join(xml_dir, item.get("filename").strip().capitalize())
 				xml_files.append(file)
 		# Parse XML files
 		for xml_path in xml_files:
