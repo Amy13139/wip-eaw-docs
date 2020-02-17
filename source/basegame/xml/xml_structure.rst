@@ -29,7 +29,7 @@ Node Name                                                         Attributes
 
 Container
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -264,7 +264,7 @@ Node Name                                                         Attributes
 
 Difficulty_Adjustment
 ^^^^^^^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Credit_Multiplier:
@@ -322,7 +322,7 @@ Node Name                                                         Attributes
 
 DynamicTrack
 ^^^^^^^^^^^^
-- Attribute: name:
+- Attribute - name:
 	String; The name of the node, can be referenced by other nodes
 
 - width:
@@ -365,7 +365,7 @@ Node Name                                                         Attributes
 
 GroundCompany
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -540,7 +540,7 @@ Node Name                                                         Attributes
 
 SpaceUnit
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -3901,7 +3901,7 @@ Node Name                                                         Attributes
 
 GenericHeroUnit
 ^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -4226,7 +4226,7 @@ Node Name                                                         Attributes
 
 GroundBase
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -4327,7 +4327,7 @@ Node Name                                                         Attributes
 
 GroundBuildable
 ^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Behavior:
@@ -4637,7 +4637,7 @@ GroundBuildable
 
 SpecialStructure
 ^^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - GUI_Bounds_Scale:
@@ -4809,7 +4809,7 @@ Node Name                                                         Attributes
 
 GroundInfantry
 ^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -5302,7 +5302,7 @@ Node Name                                                         Attributes
 
 GroundStructure
 ^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - GUI_Bounds_Scale:
@@ -5666,7 +5666,7 @@ Node Name                                                         Attributes
 
 GroundVehicle
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Blob_Shadow_Below_Detail_Level:
@@ -6345,7 +6345,7 @@ Node Name                                                         Attributes
 
 HardPoint
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Type:
@@ -6487,7 +6487,7 @@ Node Name                                                         Attributes
 
 HeroCompany
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -6677,7 +6677,7 @@ Node Name                                                         Attributes
 
 HeroUnit
 ^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Is_Named_Hero:
@@ -7176,7 +7176,7 @@ Node Name                                                         Attributes
 
 Hero_Clash
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Clash_Type:
@@ -7264,7 +7264,7 @@ Node Name                                                         Attributes
 
 GroundCompany
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -7391,7 +7391,7 @@ Node Name                                                         Attributes
 
 Indigenous_Unit
 ^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -7887,7 +7887,7 @@ Node Name                                                         Attributes
 
 LandBombingUnit
 ^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -8152,7 +8152,7 @@ Node Name                                                         Attributes
 
 LandPrimarySkydome
 ^^^^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -8204,7 +8204,7 @@ Node Name                                                         Attributes
 
 LandSecondarySkydome
 ^^^^^^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -8256,7 +8256,7 @@ Node Name                                                         Attributes
 
 LightSource
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Diffuse:
@@ -8299,7 +8299,7 @@ Node Name                                                         Attributes
 
 LightningEffect
 ^^^^^^^^^^^^^^^
-- Attribute: name:
+- Attribute - name:
 	String; The name of the node, can be referenced by other nodes
 
 - Texture_Name:
@@ -8372,7 +8372,7 @@ Node Name                                                         Attributes
 
 Marker
 ^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -8697,7 +8697,7 @@ Node Name                                                         Attributes
 
 MiscObject
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -8782,7 +8782,7 @@ Node Name                                                         Attributes
 
 Movie
 ^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Movie_File:
@@ -8843,7 +8843,7 @@ Node Name                                                         Attributes
 
 MusicEvent
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Files:
@@ -8883,7 +8883,7 @@ Node Name                                                         Attributes
 
 Particle
 ^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Land_Model_Name:
@@ -8947,7 +8947,7 @@ Node Name                                                         Attributes
 
 Planet
 ^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -9158,10 +9158,10 @@ Node Name                                                         Attributes
 
 Projectile
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
-- Attribute: Description:
+- Attribute - Description:
 	String; An optional description for the node, only used to help anyone reading the XML.
 
 - Text_ID:
@@ -9468,7 +9468,7 @@ Node Name                                                         Attributes
 
 Prop_Forest
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -9535,7 +9535,7 @@ Node Name                                                         Attributes
 
 Prop_Desert
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -9642,7 +9642,7 @@ Node Name                                                         Attributes
 
 Props_Generic
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -9853,7 +9853,7 @@ Props_Generic
 
 SpaceProp
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -9887,7 +9887,7 @@ Node Name                                                         Attributes
 
 Props_Snow
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -9953,7 +9953,7 @@ Node Name                                                         Attributes
 
 Props_Story
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -10053,7 +10053,7 @@ Props_Story
 
 SpaceStructure
 ^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - No_Colorization_Color:
@@ -10213,7 +10213,7 @@ SpaceStructure
 
 GroundBuildable
 ^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Variant_Of_Existing_Type:
@@ -10232,7 +10232,7 @@ Node Name                                                         Attributes
 
 Props_Swamp
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -10302,7 +10302,7 @@ Node Name                                                         Attributes
 
 Props_Temperate
 ^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -10411,7 +10411,7 @@ Node Name                                                         Attributes
 
 Props_Urban
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -10457,7 +10457,7 @@ Node Name                                                         Attributes
 
 Props_Volcanic
 ^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -10563,7 +10563,7 @@ Node Name                                                         Attributes
 
 GroundCompany
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -10753,7 +10753,7 @@ Node Name                                                         Attributes
 
 ScriptMarker
 ^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -10787,7 +10787,7 @@ Node Name                                                         Attributes
 
 SpaceBuildable
 ^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Select_Box_Scale:
@@ -11085,7 +11085,7 @@ Node Name                                                         Attributes
 
 SpaceUnit
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -11521,7 +11521,7 @@ Node Name                                                         Attributes
 
 SpacePrimarySkydome
 ^^^^^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -11576,7 +11576,7 @@ Node Name                                                         Attributes
 
 SpaceProp
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -11721,7 +11721,7 @@ Node Name                                                         Attributes
 
 SpaceSecondarySkydome
 ^^^^^^^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -11773,7 +11773,7 @@ Node Name                                                         Attributes
 
 SpaceUnit
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -12158,7 +12158,7 @@ Node Name                                                         Attributes
 
 SpaceUnit
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -12564,7 +12564,7 @@ Node Name                                                         Attributes
 
 SpaceUnit
 ^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -12841,7 +12841,7 @@ Node Name                                                         Attributes
 
 SpecialEffect
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Land_Model_Name:
@@ -12875,7 +12875,7 @@ Node Name                                                         Attributes
 
 SpecialStructure
 ^^^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - GUI_Bounds_Scale:
@@ -13467,7 +13467,7 @@ Node Name                                                         Attributes
 
 SpeechEvent
 ^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Files:
@@ -13495,7 +13495,7 @@ Node Name                                                         Attributes
 
 Squadron
 ^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -13704,7 +13704,7 @@ Node Name                                                         Attributes
 
 StarBase
 ^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - GUI_Bounds_Scale:
@@ -13999,7 +13999,7 @@ StarBase
 
 Starbase
 ^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Variant_Of_Existing_Type:
@@ -14027,7 +14027,7 @@ Node Name                                                         Attributes
 
 TextScroll
 ^^^^^^^^^^
-- Attribute: name:
+- Attribute - name:
 	String; The name of the node, can be referenced by other nodes
 
 - Data_Specifications:
@@ -14046,7 +14046,7 @@ Node Name                                                         Attributes
 
 TacticalCamera
 ^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Pitch_Default:
@@ -14212,7 +14212,7 @@ Node Name                                                         Attributes
 
 TechBuilding
 ^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -14288,7 +14288,7 @@ Node Name                                                         Attributes
 
 Decal
 ^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Category:
@@ -14337,7 +14337,7 @@ Node Name                                                         Attributes
 
 TradeRouteLine
 ^^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Settings_For_Faction:
@@ -14366,7 +14366,7 @@ Node Name                                                         Attributes
 
 TransportUnit
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -14694,7 +14694,7 @@ TransportUnit
 
 UniqueUnit
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Text_ID:
@@ -14747,7 +14747,7 @@ Node Name                                                         Attributes
 
 UniqueUnit
 ^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Variant_Of_Existing_Type:
@@ -15480,7 +15480,7 @@ UniqueUnit
 
 GroundVehicle
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Blob_Shadow_Below_Detail_Level:
@@ -15862,7 +15862,7 @@ Node Name                                                         Attributes
 
 UpgradeObject
 ^^^^^^^^^^^^^
-- Attribute: Name:
+- Attribute - Name:
 	String; The name of the node, can be referenced by other nodes
 
 - Behavior:
@@ -15981,13 +15981,13 @@ Node Name                                                         Attributes
 
 Weather_Scenario
 ^^^^^^^^^^^^^^^^
-- Attribute: name:
+- Attribute - name:
 	String; The name of the node, can be referenced by other nodes
 
 - Phase:
 	Ref; *Description Here*
 
-- Attribute: emitter_name:
+- Attribute - emitter_name:
 	File; *Description Here*
 
 
