@@ -73,7 +73,7 @@ def parse_xml_dir(xml_dir, use_dataminerxml=False):
 	"""Iterates over a single directory of XML Files, fails if directory contains a file that is not an XML or TXT.
 
 	:param xml_dir: The absolute path to the directory to parse.
-	:param use_dataminerxml: If True, only parses files from Dataminerxmlfiles.xml
+	:param use_dataminerxml: If True, only parses files from Dataminerxmlfiles.Xml
 
 	:returns: {top_level_node: {node: {subnode: type, ...}, ...}, ...}
 	"""
@@ -113,7 +113,7 @@ def parse_xml_dir(xml_dir, use_dataminerxml=False):
 		# Setup Variables
 		xml_files = []
 		# Ensure file exists
-		data_xml_path = path.join(xml_dir, "Dataminerxmlfiles.xml")
+		data_xml_path = path.join(xml_dir, "Dataminerxmlfiles.Xml")
 		if not path.exists(data_xml_path):
 			raise Exception("'{}' does not exist".format(data_xml_path))
 
