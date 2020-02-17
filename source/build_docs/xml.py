@@ -33,9 +33,9 @@ DESCRIPTORS = {
 }
 
 # Default EaW and FoC XML Directories, used when the program is run
-DEFAULT_XML_DIR_EAW = path.join(getcwd(), "build_docs\\XML")
-DEFAULT_XML_DIR_FOC = path.join(getcwd(), "build_docs\\corruption\\XML")
-DEFAULT_OUTPUT_FILE = path.join(getcwd(), "basegame\\xml\\" "xml_structure.rst")
+DEFAULT_XML_DIR_EAW = path.join(getcwd(), "build_docs/XML")
+DEFAULT_XML_DIR_FOC = path.join(getcwd(), "build_docs/corruption/XML")
+DEFAULT_OUTPUT_FILE = path.join(getcwd(), "basegame/xml/" "xml_structure.rst")
 
 # Tab character
 TAB = "\t"
