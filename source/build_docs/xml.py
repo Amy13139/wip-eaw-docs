@@ -33,9 +33,9 @@ DESCRIPTORS = {
 }
 
 # Default EaW and FoC XML Directories, used when the program is run
-DEFAULT_XML_DIR_EAW = path.join(getcwd(), "build_docs/XML")
-DEFAULT_XML_DIR_FOC = path.join(getcwd(), "build_docs/corruption/XML")
-DEFAULT_OUTPUT_FILE = path.join(getcwd(), "basegame/xml" "xml_structure.rst")
+DEFAULT_XML_DIR_EAW = path.join(getcwd(), "build_docs", "XML")
+DEFAULT_XML_DIR_FOC = path.join(getcwd(), "build_docs", "corruption", "XML")
+DEFAULT_OUTPUT_FILE = path.join(getcwd(), "basegame", "xml" "xml_structure.rst")
 
 # Tab character
 TAB = "\t"
@@ -323,12 +323,12 @@ def get_type(value):
 	else:
 		# Check if value is File/Filepath
 		if value.lower()[-4:] in VALID_FILE_EXT:
-			if "\\" in value:
+			if "\\" in value or "/" in value:
 				return "Filepath"
 			return "File"
 
 		# Check if value is Dir
-		if "\\" in value:
+		if "\\" in value or "/" in value:
 			return "Dir"
 
 		# Check if value is Floatf
