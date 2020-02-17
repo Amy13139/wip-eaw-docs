@@ -39,27 +39,26 @@ Some subnodes contain multiple items for their data. If this is the case, it wil
 Data Type Name  Description
 =============== =================================================================================
 Int             A 32-bit integer
-String          Characters, cushioned by quotation marks
-Bool            A boolean value.
-Ref \*          A Reference to a node, by name. No quotation marks
+File            A filename, may have an incorrect extension due to how the game was made
+Filepath        A path to a file. Same as filename, but with a full path before it. Root of "Data/".
+Dir             A path to a directory. Root of "Data/".
+String          Only for attributes, indicates no special type for the attribute.
+Bool            A boolean value. Can be yes/no or true/false, capitalization varies. See suffixes
+Ref ``node``    A Reference to a node by its name.
 Float           A floating point number. Must have a decimal and tenths digit
 Floatf          Same as a float, but the number has an "``f``" attached to the end of it.
 =============== =================================================================================
 
 .. note::
-	# indicates a number; \* indicates any value, but a condition may be provided in the description or as a suffix.
+	# characters indicate a number will be in their place when the suffix is used.
 
 ====================== ======================== ================================================================================================
 Suffix                 Applicable To            Description
 ====================== ======================== ================================================================================================
 [#,#]                  Int, Float, Floatf       Numerical value must within the range of the two numbers. Inclusive.
 <#, >#, <=#, >=#,      Int, Float, Floatf       Numerical value must satisfy the conditional operator.
-File                   String                   String is a filename
-Filepath               String                   String is a path to a file. Should starts with Data\\.
-Dirpath                String                   String is a path to a directory. Should starts with Data\\.
 t/f                    Bool                     Boolean is ``true`` or ``false``. Capitalization may vary, and it carries from the suffix.
 Y/N                    Bool                     Boolean is ``Yes`` or ``No``. Capitalization may vary, and it carries from the suffix.
-\*                     Ref                      Name of a node type. Shows the type of node that the subnode can reference
 ====================== ======================== ================================================================================================
 
 

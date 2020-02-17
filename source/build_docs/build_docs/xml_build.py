@@ -420,6 +420,12 @@ def build_table_output(output_file, xml_tree):
 		out_file.write(header + "\n")
 		out_file.write(str(sep * len(header)) + "\n")
 
+	def write_footer(out_file, lines):
+		out_file.write("\n")
+		for line in range(lines):
+			out_file.write("| \n")
+		out_file.write("\n")
+
 	def write_list_subnode(out_file, list_subnode, list_type):
 		# Copy subnode
 		print_subnode = list_subnode
@@ -471,8 +477,7 @@ def build_table_output(output_file, xml_tree):
 					file.write(get_table_str(codify(node), attrib_string.strip(", ")))
 
 				file.write(table_sep_str)
-				file.write("\n")
-				file.write("\n")
+				write_footer(file, 1)
 
 				# Write top node sections
 				# Iterate over nodes
@@ -481,18 +486,14 @@ def build_table_output(output_file, xml_tree):
 					# Begin subnodes
 					for subnode in sorted(xml_tree[top_level_node][node]):
 						write_list_subnode(file, subnode, xml_tree[top_level_node][node][subnode])
-					file.write("\n")
-					file.write("\n")
+					write_footer(file, 1)
 
 			# Write top node sections immediately if subnode only
 			else:
-				file.write("\n")
-				file.write("\n")
 				# Iterate over subnodes
 				for subnode in sorted(xml_tree[top_level_node]):
 					write_list_subnode(file, subnode, xml_tree[top_level_node][subnode])
-					file.write("\n")
-					file.write("\n")
+			write_footer(file, 2)
 
 
 if __name__ == "__main__":
