@@ -62,6 +62,9 @@ def build_xml_structure(xml_dir_eaw=DEFAULT_XML_DIR_EAW, xml_dir_foc=DEFAULT_XML
 	# Then FoC XML Iteration
 	xml_tree = add_tree_dict(xml_tree, parse_xml_dir(xml_dir_foc, True))
 
+	# Create File
+	if not path.exists(output_file):
+		open(output_file, "x")
 	# Build output as either table or tabbed list
 	if table_output:
 		build_table_output(output_file, xml_tree)
