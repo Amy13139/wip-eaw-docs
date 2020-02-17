@@ -1,2 +1,2 @@
 sphinx>=2.0
-/source/build_docs
+./source/build_docs
