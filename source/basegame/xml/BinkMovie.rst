@@ -1,62 +1,45 @@
 .. _xml_bink_movie:
 .. BIK movie storage docs
 
-**********
-Bink Movie
-**********
+*********
+BinkMovie
+*********
 
 
 About
 =====
-References .BIK Movie files
+References .BIK Movie files, giving them a name attribute which can be referenced
 
 
 Structure
 =========
-``Top level node``:
+``Movies``:
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
-
-``Top level node variation 1``:
-
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+===============  ==============
+Node Name        Attributes
+===============  ==============
+``Movie``        ``Name``
+===============  ==============
 
 
-``Top level node``
+``Movies``
 ------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
+Stores ``Movie`` nodes only.
 
 
-``Node 1``
+``Movie``
 ^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Attribute: ``Name``:
+	ID to use for references to the node
 
-- ``Subnode 2``:
-	Type; Description
+- ``Movie_File``:
+	Filepath; The path to the .BIK file for the movie
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- ``Cannot_Skip``:
+	Bool t/f; If true, the movie cannot be skipped by pressing any buttons.
 
 - ``Subnode 5``:
 	Type | Type | Type; Description
-
-
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
 
 
 ``Top level node variation 1``

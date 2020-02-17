@@ -1,0 +1,4841 @@
+Campaign_Files:
+	File - File
+
+CommandBar_Component_Files:
+	File - File
+
+Containers:
+	Container:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Attack_Move_Response_Range - Float
+		Autonomous_Move_Extension_Vs_Attacker - Float
+		Autoresolve_Health - Int
+		Behavior - Ref, Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Initially_Locked - Bool Y/N
+		Build_Limit_Current_For_All_Allies - Int
+		Build_Limit_Lifetime_Per_Player - Int
+		CategoryMask - Ref
+		ContainerArrangement - Ref
+		Damage - Int
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		FormationOrder - Ref
+		FormationSpacing - Ref
+		Formation_Priority - Int
+		GUI_Bracket_Size - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Velocity - Int
+		Galactic_Model_Name - File
+		Guard_Chase_Range - Float
+		Hyperspace - Bool y/n
+		Hyperspace_Speed - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Bomber - Bool y/n
+		Is_Escort - Bool Y/N
+		Is_Named_Hero - Bool Y/N
+		Is_Squashable - Ref
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref
+		Land_FOW_Reveal_Range - Float
+		Layer_Z_Adjust - Float
+		Mass - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Min_Speed - Float
+		MovementClass - Ref
+		MovementPredictionInterval - Float
+		Name_Adjust - Ref, Ref, Float
+		OccupationStyle - Ref
+		Override_Acceleration - Float
+		Override_Deceleration - Float
+		Political_Faction - Ref
+		Pre_Lit - Bool Y/N
+		Radar_Icon_Scale_Land - Int
+		Radar_Icon_Scale_Space - Int
+		Scale_Factor - Float
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Show_Name - Bool Y/N
+		SpaceBehavior - Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Layer - Ref
+		Squadron_Formation_Error_Tolerance - Float
+		Squadron_Offsets - Float, Float, Float
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Production_Queue - Ref
+		Targeting_Max_Attack_Distance - Float
+		Tech_Level - Int
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+
+Difficulty_Adjustments:
+	Difficulty_Adjustment:
+		Attribute: Name - String
+		Bribe_Cost_Multiplier - Float
+		Credit_Multiplier - Float
+		Damage_Multiplier - Float
+		Galactic_AI_Contrast_Multiplier - Float
+		Galactic_AI_Goal_Cycle_Sleep_Duration - Float
+		Galactic_Build_Time_Multiplier - Float
+		Health_Multiplier - Float
+		Land_AI_Contrast_Multiplier - Float
+		Land_AI_Goal_Cycle_Sleep_Duration - Float
+		Land_Build_Time_Multiplier - Float
+		Shield_Multiplier - Float
+		Space_AI_Contrast_Multiplier - Float
+		Space_AI_Goal_Cycle_Sleep_Duration - Float
+		Space_Build_Time_Multiplier - Float
+
+DynamicTracks:
+	DynamicTrack:
+		Attribute: name - String
+		Render_Mode - Ref
+		fade_begin_distance - Float
+		fade_distance_per_second - Float
+		fade_end_distance - Float
+		min_geometry_lod - Float
+		opacity - Float
+		segment_length - Int
+		texture_name - File
+		width - Floatf
+
+EmpireGroundCompanies:
+	GroundCompany:
+		Attribute: Name - String
+		Affiliation - Ref
+		Autoresolve_Health - Int
+		Behavior - Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Tab_Land_Units - Bool Y/N
+		Build_Time_Reduced_By_Multiple_Factories - Ref
+		Build_Time_Seconds - Int
+		Company_Transport_Unit - Ref
+		Company_Units - Ref, Ref
+		Create_Team_Type - Ref
+		Damage - Int
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Formation_Priority - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Icon_Name - File
+		Is_Dummy - Bool Y/N
+		Is_Escort - Bool y/n
+		Land_Model_Name - File
+		Maintenance_Cost - Float
+		Max_Squad_Size - Ref
+		Population_Value - Int
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - Ref
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Fleet_Move - Ref
+		Scale_Factor - Int
+		Score_Cost_Credits - Int
+		Ship_Class - Ref
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Production_Queue - Ref
+		Tech_Level - Int
+		Text_ID - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+
+Faction_Files:
+	File - File
+
+FighterUnits:
+	SpaceUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Affiliation - Ref
+		Air_Vehicle_Turret_Target - Ref
+		Armor_Type - Ref
+		Asteroid_Damage_Hit_Particles - Ref
+		Avoid_Enemy_Exclusion_Range - Float
+		Bank_Turn_Angle - Int
+		Begin_Turn_Towards_Distance - Float
+		Build_Cost_Credits - Int
+		Build_Time_Seconds - Int
+		CategoryMask - Ref | Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Collision_Box_Modifier - Float
+		Create_Team - Bool Y/N
+		Custom_Footprint_Radius - Float
+		Damage - Int
+		Damage_Type - Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Fire_Inaccuracy_Distance - Ref, Float
+		Fires_Forward - Bool y/n
+		FormationOrder - Int
+		Formation_Priority - Int
+		HardPoints - Ref, Ref
+		Hyperspace - Bool Y/N
+		Hyperspace_Speed - Float
+		Icon_Name - File
+		Is_Bomber - Bool y/n
+		Is_Escort - Bool y/n
+		Is_Visible_On_Radar - Bool Y/N
+		Land_Bomber_Type - Ref
+		Land_FOW_Reveal_Range - Float
+		Maintenance_Cost - Float
+		Mass - Float
+		Max_Lift - Int
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Min_Speed - Float
+		Min_Speed_Fraction_For_Turn - Float
+		Minimum_Follow_Distance - Float
+		Mouse_Collide_Override_Sphere_Radius - Float
+		MovementClass - Ref
+		No_Colorization_Color - Int, Int, Int, Int
+		Number_per_Squadron - Int
+		Out_Of_Combat_Defense_Adjustment - Float
+		Political_Control - Int
+		Population_Value - Int
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Ranged_Target_Z_Adjust - Int
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Int
+		Required_Star_Base_Level - Int
+		SFXEvent_Ambient_Moving - Ref
+		SFXEvent_Ambient_Moving_Max_Delay_Seconds - Ref
+		SFXEvent_Ambient_Moving_Min_Delay_Seconds - Ref
+		SFXEvent_Assist_Attack - Ref
+		SFXEvent_Assist_Move - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Attack_Hardpoint - Ref, Ref
+		SFXEvent_Enemy_Damaged_Health_Critical_Warning - Ref
+		SFXEvent_Enemy_Damaged_Health_Low_Warning - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Hardpoint - Ref
+		SFXEvent_Health_Critical_Warning - Ref
+		SFXEvent_Health_Low_Warning - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Move_Into_Asteroid_Field - Ref
+		SFXEvent_Move_Into_Nebula - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Shield_Armor_Type - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Ship_Class - Ref
+		Size_Value - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Model_Name - File
+		Spin_Away_On_Death - Bool Y/N
+		Spin_Away_On_Death_Chance - Float
+		Spin_Away_On_Death_Explosion - Ref
+		Spin_Away_On_Death_SFXEvent_Start_Die - Ref
+		Spin_Away_On_Death_Time - Floatf
+		Squadron_Capacity - Int
+		Strafe_Distance - Float
+		Surface_Bombardment_Capable - Bool y/n
+		Tactical_Health - Int
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Text_ID - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rotate_Extent_Degrees - Int
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+
+GameConstants:
+	AITechLevelProductionTimeWeight - Float
+	AIUsesFogOfWarGalactic - Ref
+	AIUsesFogOfWarLand - Ref
+	AIUsesFogOfWarSpace - Ref
+	AI_BuildTaskReservationSeconds - Float
+	AI_FogCellsPerThreatCell - Int
+	AI_LandAreaThreatScaleFactor - Float
+	AI_LandEvaluatorRegionSize - Float
+	AI_LandThreatDistanceFactor - Float
+	AI_LandThreatLookAheadTime - Float
+	AI_LandThreatTurnRateFactor - Float
+	AI_SpaceAreaThreatScaleFactor - Float
+	AI_SpaceEvaluatorRegionSize - Float
+	AI_SpaceThreatDecayStep - Float
+	AI_SpaceThreatDistanceFactor - Float
+	AI_SpaceThreatLookAheadTime - Float
+	AI_SpaceThreatTurnRateFactor - Float
+	Activated_Black_Market_Ability_Names - Ref, Ref, Ref
+	Activated_Corrupt_Planet_Ability_Names - Ref, Ref
+	Activated_Destroy_Planet_Ability_Names - Ref
+	Activated_Hack_Super_Weapon_Ability_Names - Ref
+	Activated_Neutralize_Hero_Ability_Names - Ref, Ref, ...
+	Activated_Remove_Corruption_Ability_Names - Ref, Ref, Ref, Ref, Ref, Ref, Ref
+	Activated_Sabotage_Ability_Names - Ref, Ref
+	Activated_Siphon_Credits_Ability_Names - Ref, Ref
+	Activated_Slice_Ability_Names - Ref, Ref
+	Activated_System_Spy_Ability_Names - Ref
+	Advisor_Hint_Duration - Float
+	Advisor_Hint_Interval - Int
+	Allow_Reinforcement_Percentage_Normalized - Float
+	AlwaysBypassAutoResolve - Ref
+	Animate_During_Galactic_Mode_Pause - Bool y/n
+	ApproximationForwardDistance - Float
+	ApproximationSmoothCosAngle - Float
+	Armor_Types - Ref, Ref, ...
+	Asteroid_Field_Damage - Int
+	Asteroid_Field_Damage_Rate - Float
+	AutoResolveAttritionAllowanceFactor - Float
+	AutoResolveDisplayTime - Float
+	AutoResolveLoserAttrition - Float
+	AutoResolveTransportLosses - Float
+	AutoResolveVoteDefaultTimeOut - Int
+	AutoResolveVoteDefaultToTactical - Bool T/F
+	AutoResolveWinnerAttrition - Float
+	Auto_Resolve_Tactical_Multiplier - Float
+	Auto_Rotate_For_Space_Targeting - Bool T/F
+	AutomaticAutoResolve - Bool Y/N
+	Base_Land_Targeting_Arc_Angle_Coefficient - Float
+	Base_Shield_Delay_Time - Float
+	Base_Shield_Speed_Modifier - Floatf
+	Base_Shield_Vulnerability_Modifier - Floatf
+	Battle_Load_Planet_Ambient - Float, Float, Float
+	Battle_Load_Planet_Direction - Int, Float, Float
+	Battle_Load_Planet_Viewport - Float, Float, Float, Float
+	Battle_Pending_Message_Color - Int, Int, Int, Int
+	Battle_Pending_Message_Font - Ref
+	Battle_Pending_Message_Font_Size - Ref
+	Battle_Pending_Message_Pos_X - Float
+	Battle_Pending_Message_Pos_Y - Float
+	Battle_Pending_Timeout_Seconds - Ref
+	BeaconPlaceDelay - Int
+	BetweenFormationSpacing - Float
+	Bink_Player_Caption_Font_Name - Ref
+	Bink_Player_Caption_Font_Size - Int
+	Black_Market_Income_Mult_Max - Float
+	Black_Market_Income_Mult_Min - Float
+	Blockade_Run_Attrition_Factor - Float
+	Bombardment_Distribution - Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int
+	Bombardment_Offset - Ref
+	Bombing_Run_Reduction_Per_Squadron_Percent - Int
+	Bribery_Fleet_Reveal_Range - Float
+	CB_Flash_Count - Int
+	CB_Flash_Duration - Floatf
+	CB_Movie_Color - Ref
+	CB_Movie_Offset - Ref
+	Camera_FX_Manager_Letterbox_Height - Floatf
+	Camera_Stop_Left - Floatf
+	Camera_Stop_Right - Floatf
+	Camera_Z_Position - Float
+	CloseEnoughAngleForMoveStart - Ref
+	Command_Bar_Default_Font_Name - Ref
+	Command_Bar_Default_Font_Size - Int
+	Control_Point_Domination_Victory_Time_In_Secs - Float
+	Corrupt_Side_Leader_Name - Ref
+	Corrupt_Side_Name - Ref
+	Corruption_Choice_Benefit - Ref
+	Corruption_Choice_Encyclopedia - Ref
+	Corruption_Choice_Icon_Name - Ref
+	Corruption_Choice_Income_Percentage - Float, Float, Float, Float, Float, Float, Float, Float
+	Corruption_Choice_Name - Ref
+	Corruption_Encyclopedia_Backdrop - Ref
+	Corruption_Encyclopedia_Complete - Ref
+	Corruption_Encyclopedia_Header - Ref
+	Corruption_Encyclopedia_Incomplete - Ref
+	Corruption_Encyclopedia_Left_Edge - Ref
+	Corruption_Encyclopedia_Money_Icon - Ref
+	Corruption_Encyclopedia_Spacing - Ref
+	Corruption_Hyperspace_Bonus - Float
+	Corruption_Line_Grow_Seconds - Float
+	Corruption_Line_Radius - Float
+	Corruption_Line_Start_End_Offset - Float
+	Corruption_Mission_Requirement_Icon_Name - Ref
+	Corruption_Particle_Line_Name - Ref
+	Corruption_Particle_Name - Ref
+	Corruption_Path_Color - Int, Int, Int, Int
+	Corruption_Path_Offset - Int, Int, Int
+	Corruption_Path_Width - Int
+	Corruption_Planet_Icon - Ref
+	Corruption_Planet_Icon_Encyclopedia_Desc - Ref
+	Corruption_Planet_Icon_Encyclopedia_Name - Ref
+	Countdowns_Font_Name - Ref
+	Countdowns_Font_Size - Int
+	Credit_Cap_Per_Planet - Float
+	Credits_Bottom_Color - Int, Float, Float
+	Credits_Display_Font_Name - Ref
+	Credits_Display_Font_Size - Ref
+	Credits_Font - Ref
+	Credits_Font_Size - Ref
+	Credits_Header_Bottom_Color - Int, Float, Float
+	Credits_Header_Top_Color - Int, Float, Float
+	Credits_Logo_1_Height - Float
+	Credits_Logo_1_Name - Ref
+	Credits_Logo_1_Width - Float
+	Credits_Logo_1_Y_Offset - Float
+	Credits_Logo_2_Height - Float
+	Credits_Logo_2_Name - Ref
+	Credits_Logo_2_Width - Float
+	Credits_Logo_2_Y_Offset - Float
+	Credits_Logo_3_Height - Float
+	Credits_Logo_3_Name - Ref
+	Credits_Logo_3_Width - Float
+	Credits_Logo_3_Y_Offset - Float
+	Credits_Margin - Float
+	Credits_Scroll_Rate - Float
+	Credits_Spacing - Float
+	Credits_Top_Color - Int, Float, Float
+	CrouchIdleWalkBlendTime - Float
+	CrouchMoveBlendTime - Float
+	Crouch_Move_Fire_Angle_Cutoff - Ref
+	CurrentPathCostCoefficientSpace - Float
+	Damage_To_Armor_Mod - Ref, Ref, Float
+	Damage_Types - Ref, Ref, ...
+	Debug_Hot_Key_Load_Campaign - Ref
+	Debug_Hot_Key_Load_Map - Dir
+	Debug_Hot_Key_Load_Map_Script - Ref
+	Default_Bounty_By_Category_MP - Ref, Int
+	Default_Bounty_By_Category_SP - Ref, Int
+	Default_Defense_Adjust - Float
+	Default_Hero_Respawn_Time - Float
+	Demo_Attract_Map_Cycle_Delay_Seconds - Int
+	Demo_Attract_Maps - Ref
+	Demo_Attract_Start_Timeout_Seconds - Int
+	Depleted_Shield_Damage_Increment - Float
+	Depleted_Shield_Disable_Time - Float
+	Depleted_Shield_Regen_Cap - Float
+	DesiredLandFOWCellSize - Float
+	DesiredSpaceFOWCellSize - Float
+	DestinationSearchRadiusIncrementSpace - Float
+	Destination_Collision_Query_Extension - Ref
+	Diminishing_Firepower - Int, Float, Float, Float, Float, Float, Int, Int, Int, Int
+	Display_Bink_Movie_Frames - Bool T/F
+	Distribute_Credit_Quantum - Int
+	DoubleClickMoveMaxSpeedRatio - Float
+	Droid_Date_Color - Ref
+	Droid_Encyclopedia_Offset - Ref
+	Droid_Seperator_Color - Ref
+	Droid_Text_Color - Ref
+	DynamicAvoidanceRectangleBound - Ref
+	DynamicLandComplexityQuota - Ref
+	DynamicLandQuotaResetInterval - Ref
+	DynamicObstacleOverlapPenalty - Float
+	Earthquake_Shake_Magnitude - Float, Float, Float
+	Earthquake_Shake_Speed - Float
+	Earthquake_Transition_Time - Float
+	Elevated_Vulnerability_Duration - Float
+	Elevated_Vulnerability_Factor - Float
+	Encyclopedia_Class_Y_Offset - Int
+	Encyclopedia_Cost_Offset - Int
+	Encyclopedia_Delay - Int
+	Encyclopedia_Fade_Rate - Float
+	Encyclopedia_Icon_X_Offset - Int
+	Encyclopedia_Icon_Y_Offset - Ref
+	Encyclopedia_Min_Display_Time - Float
+	Encyclopedia_Name_Offset - Int
+	Encyclopedia_Population_Offset - Int
+	Enemy_Color - Int, Int, Int, Int
+	EnergyRechargeIntervalInSecs - Float
+	EnergyToShieldExchangeRate - Float
+	Energy_Beam_Color - Int, Int, Int
+	Energy_Beam_Frames - Int
+	Energy_Beam_Texture - File
+	Energy_Beam_Width - Float
+	Engines_Disabled_Speed_Modifier - Float
+	Event_Message_Default_Font_Name - Ref
+	Event_Message_Default_Font_Size - Int
+	Evil_Side_Leader_Name - Ref
+	Evil_Side_Name - Ref
+	FinalFacing180Penalty - Float
+	FinalFormationFacingDeltaCoefficient - Float
+	FinalFormationFacingMinimumAngle - Float
+	First_Strike_Extra_Damage_Percent - Float
+	First_Strike_Particle - Ref
+	Fiscal_Cycle_Time_In_Secs - Float
+	Fleeing_Infantry_Speed_Bonus - Ref
+	Fleet_Hyperspace_Band_Texture_Name - File
+	Fleet_Maintenance_Update_Delay_Seconds - Float
+	Fleet_Movement_Line_Texture_Name - File
+	Force_Ability_Disable_Time - Float
+	FormationMaximumSideError - Float
+	FormationMinimumSideError - Float
+	FramesPerCollisionCheck - Ref
+	FramesPerPositionApproximationRebuild - Int
+	GMC_Battle_Fade_Time - Float
+	GMC_Battle_Zoom_Time - Float
+	GMC_InitialPitchAngleDegrees - Float
+	GMC_InitialPullbackDistance - Float
+	GMC_ZoomTime - Float
+	GMC_ZoomedPitchAngleDegrees - Float
+	GMC_ZoomedPositionOffsetPlanetRadiusFractions - Float, Float, Float
+	GMC_ZoomedPullbackPlanetRadiusFraction - Float
+	GUI_Attack_Move_Command_Ack_Effect - Ref
+	GUI_Attack_Movement_Click_Radar_Event_Name - Ref
+	GUI_Cycle_Color - Int, Ref, Ref
+	GUI_Cycle_Speed - Int
+	GUI_Darken_Level - Float
+	GUI_Double_Click_Move_Command_Ack_Effect - Ref
+	GUI_Flash_Duration - Float
+	GUI_Flash_Level - Float
+	GUI_Guard_Move_Command_Ack_Effect - Ref
+	GUI_Hilite_Level - Float
+	GUI_Move_Acknowledge_Scale_Land - Float
+	GUI_Move_Acknowledge_Scale_Space - Float
+	GUI_Move_Command_Ack_Effect - Ref
+	GUI_Movement_Click_Radar_Event_Name - Ref
+	GUI_Movement_Double_Click_Radar_Event_Name - Ref
+	GUI_Planet_Fade_Duration - Float
+	GUI_Planet_Flash_Level - Float
+	GUI_Rapid_Flash_Duration - Float
+	GUI_Strategic_Countdown_Timers_Screen_Spacing - Float
+	GUI_Strategic_Countdown_Timers_Screen_X - Float
+	GUI_Strategic_Countdown_Timers_Screen_Y - Float
+	GUI_Tactical_Countdown_Timers_Screen_Spacing - Float
+	GUI_Tactical_Countdown_Timers_Screen_X - Float
+	GUI_Tactical_Countdown_Timers_Screen_Y - Float
+	Galactic_Right_Button_Scroll_Speed_Factor - Float
+	Galactic_Scroll_Plane - Float
+	Galactic_Zoom_Acceleration - Int
+	Galactic_Zoom_In_Light_Angle - Ref
+	Galactic_Zoom_In_Station_Offset - Ref
+	Galactic_Zoom_In_Station_Rotation - Float
+	Galactic_Zoom_Light_Level - Float
+	Galactic_Zoom_Out_Light_Angle - Ref
+	Game_Object_Name_Font_Name - Ref
+	Game_Object_Name_Font_Size - Int
+	Game_Scoring_Script_Name - Ref
+	Garrisoned_Max_Attack_Distance_Multiplier - Float
+	Good_Ground_Color_Tint - Int, Int, Int
+	Good_Side_Leader_Name - Ref
+	Good_Side_Name - Ref
+	GripperCombatGridSnapDistance - Float
+	Hack_Super_Weapon_Cost - Float
+	Hack_Super_Weapon_Particle_Effect - Ref
+	Hack_Super_Weapon_Required_Type - Ref
+	HardPoint_Target_Reticle_Enemy_Screen_Size - Float
+	HardPoint_Target_Reticle_Enemy_Texture - Ref, Ref
+	HardPoint_Target_Reticle_Enemy_Tracked_Texture - Ref, Ref
+	HardPoint_Target_Reticle_Friendly_Disabled_Texture - Ref, Ref
+	HardPoint_Target_Reticle_Friendly_Disabled_Tracked_Texture - Ref, Ref
+	HardPoint_Target_Reticle_Friendly_Repairing_Texture - Ref, Ref
+	HardPoint_Target_Reticle_Friendly_Screen_Size - Float
+	HardPoint_Target_Reticle_Friendly_Texture - Ref, Ref
+	HardPoint_Target_Reticle_Friendly_Tracked_Texture - Ref, Ref
+	Hardpoint_Recharge_Cutoff_For_Opportunity_Fire - Float
+	Health_Bar_Scale - Float
+	Health_Bar_Spacing - Float
+	Health_Critical_Percent_Threshold - Float
+	Health_Low_Percent_Threshold - Float
+	High_Ground_Color_Tint - Int, Int, Int
+	High_Threat_Reachability_Tolerance - Float
+	Hint_Text_Color - Ref
+	Hull_Vs_Hard_Points_Health_Constraint - Float
+	Icons_Per_Column - Int
+	IdleMovementFrames - Float
+	IdleWalkBlendTime - Float
+	In_Game_Cinematics - Bool T/F
+	In_Game_Message_Default_Font_Name - Ref
+	In_Game_Message_Default_Font_Size - Int
+	Income_Redistribution - Float
+	Indigenous_Spawn_Destruction_Reward - Int
+	InfantryFormationRecruitmentDistance - Ref
+	InfantryTurnBlendTime - Float
+	Infantry_Ground_Color_Tint - Int, Int, Int
+	Ion_Storm_Shield_Disable_Time - Float
+	Japanese_Line_Percent - Float
+	Japanese_ST_Line_Percent - Float
+	LandDestinationProximity - Float
+	LandFOWColor - Int, Int, Int, Int
+	LandFOWRegrowTime - Float
+	LandObjectTrackingInterval - Ref
+	LandObjectTrackingTreeCount - Ref
+	LandPredictionTimeInterval - Float
+	LandTemporaryDestinationProximity - Float
+	LandWaitOperatorSpeedCoefficient - Float
+	Land_Auto_Resolve_Delay_Seconds - Float
+	Land_Base_Destruction_Forces_Retreat - Bool T/F
+	Land_Capture_Allowed_Countdown_Seconds - Float
+	Land_Collidable_Grid_Cull_Size - Floatf
+	Land_Guard_Range - Float
+	Land_Health_Bar_Scale - Float
+	Land_Retreat_Allowed_Countdown_Seconds - Float
+	Land_Retreat_Attrition_Factor - Float
+	Land_Tactical_Camera_Locked - Ref
+	Large_Coin_Stack_Size - Int
+	Laser_Beam_Z_Scale_Factor - Float
+	Laser_Kite_Z_Scale_Factor - Float
+	Lava_Ground_Color_Tint - Int, Int, Int
+	Left_Queue_Tint - Ref
+	Localized_Menu_Overlay - Ref, File
+	Localized_Splash_Screen - Ref, File
+	Localized_UK_English_Splash_Screen - Ref
+	Long_Encyclopedia_Delay - Int
+	LoopWaypointLineTextureName - Ref
+	Lose_Message_Color - Int, Int, Int, Int
+	Low_Threat_Reachability_Tolerance - Float
+	MP_Color_Blue - Int, Int, Int
+	MP_Color_Cyan - Int, Int, Int
+	MP_Color_Eight - Int, Int, Int
+	MP_Color_Gray - Int, Int, Int
+	MP_Color_Green - Int, Int, Int
+	MP_Color_Orange - Int, Int, Int
+	MP_Color_Purple - Int, Int, Int
+	MP_Color_Red - Int, Int, Int
+	MP_Color_Yellow - Int, Int, Int
+	MP_Default_Allow_Auto_Resolve - Ref
+	MP_Default_Allow_Heroes - Ref
+	MP_Default_Allow_Random_Events - Ref
+	MP_Default_Allow_SuperWeapons - Ref
+	MP_Default_Credits - Ref
+	MP_Default_Free_Starting_Units - Ref
+	MP_Default_Game_Timer - Ref
+	MP_Default_Land_Tactical_Win_Condition - Ref
+	MP_Default_Max_Tech_Level - Ref
+	MP_Default_Pre_Built_Base - Ref
+	MP_Default_Space_Tactical_Win_Condition - Ref
+	MP_Default_Start_Tech_Level - Ref
+	MP_Default_Win_Condition - Ref
+	MP_Default_Win_Condition_Float_Param - Float
+	MP_Default_Win_Condition_Int_Param - Ref
+	Main_Menu_Demo_Attract_Mode - Ref
+	Map_Preview_Image_Size - Ref
+	MatchFacingDeltaSpace - Float
+	MaxCombatAccuracyAlignmentBonus - Float
+	MaxCombatDamageAlignmentBonus - Float
+	MaxCombatSensorRangeAlignmentBonus - Float
+	MaxCreditIncomeAlignmentBonus - Float
+	MaxCreditIncomeAlignmentPenalty - Float
+	MaxInfluenceTransitionAlignmentBonus - Float
+	MaxInfluenceTransitionAlignmentPenalty - Float
+	MaxLandFormationFormupFrames - Float
+	MaxObstacleCostLand - Float
+	MaxObstacleCostSpace - Float
+	MaxRotationsSpace - Float
+	MaxWaypointsPerPath - Ref
+	Max_Bombard_Interval_Seconds - Float
+	Max_Bombing_Run_Interval_Seconds - Float
+	Max_Formation_Area - Float
+	Max_Galactic_Zoom_Distance - Int
+	Max_Galactic_Zoom_Speed - Int
+	Max_Ground_Forces_On_Planet - Ref
+	Max_Move_Frame_Delay - Ref
+	Max_Remote_Bombs_Per_Player - Int
+	Max_Skirmish_Credits - Int
+	MaximumFleetMovementDistance - Float
+	MaximumGroundbaseLevel - Ref
+	MaximumPoliticalControl - Ref
+	MaximumSpecialStructures - Ref
+	MaximumSpecialStructuresLand - Ref
+	MaximumSpecialStructuresSpace - Ref
+	MaximumStarbaseLevel - Ref
+	Medium_Coin_Stack_Size - Int
+	Medium_Threat_Reachability_Tolerance - Float
+	Melee_Cutoff_Range - Float
+	Message_Of_The_Day_URL - Ref
+	MinLandPredictionDistance - Float
+	MinObstacleCostLand - Float
+	MinObstacleCostSpace - Float
+	Min_Accuracy_For_Icon - Float
+	Min_Bombard_Interval_Seconds - Float
+	Min_Bombing_Run_Interval_Seconds - Float
+	Min_Galactic_Zoom_Speed - Int
+	Min_Health_Bar_Scale - Float
+	Min_Sight_Range_For_Icon - Float
+	Min_Skirmish_Credits - Int
+	MinimumDragDistance - Float
+	MinimumDragSelectDistance - Float
+	MinimumStoppedVsStoppedOverlapCoefficient - Float
+	Minimum_Tactical_Overrun_Time_In_Secs - Float
+	Mouse_Over_Highlight_Scale - Float
+	MoveBlendTime - Float
+	MovementReevaluationFrameCount - Ref
+	MovingVsMovingLookAheadTime - Float
+	Multiplayer_Losing_Team_Bonus_Credit_Percentage - Float
+	Nebula_Ability_Disable_Time - Float
+	Nebula_Effect_Color - Int, Int, Int, Int
+	Neutral_UI_Color - Int, Int, Int, Int
+	Num_Structures_For_Large_Planet_Name - Int
+	Num_Structures_For_Medium_Planet_Name - Int
+	Object_Max_Health_Multiplier_Land - Float
+	Object_Max_Health_Multiplier_Space - Float
+	Object_Max_Speed_Multiplier_Galactic - Float
+	Object_Max_Speed_Multiplier_Land - Float
+	Object_Max_Speed_Multiplier_Space - Float
+	Object_Visual_Status_Particle_Attach_Bone_Names - Ref, Ref, Ref, Ref, Ref, Ref
+	ObstacleAreaOverlapForMaxSpace - Float
+	Occlusion_Silhouettes_Enabled - Bool t/f
+	OccupationRadiusCoefficientSpace - Float
+	OffMapCostPenalty - Float
+	Override_Death_Persistence_Duration - Float
+	Particle_Brightness_Per_Corruption_Level - Float, Float
+	Particle_Energy_Per_Corruption_Level - Float, Float
+	Particle_Scale_Per_Corruption_Level - Float, Float
+	Pay_As_You_Go - Bool t/f
+	Planet_Ability_Icon_Names - File, File, File, File, File, File, File, File, File, File, File, File, File, File, File, File, File, File
+	Planet_Ability_RGBs - Int, Int, ...
+	Planet_Ability_Text_IDs - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+	Planet_Reveal_Delay_Time - Float
+	PlayModeSwitchMovies - Bool Y/N
+	Player_Color - Int, Int, Int, Int
+	Political_Control_Change_Time_Seconds - Int
+	Political_Income_Curve - Int, Int, Int, Int, Int, Int
+	Preferred_Pathfinder_Types - Ref, Ref, ...
+	Production_Speed_Factor - Float
+	Production_Speed_Mod_Base_Vs_Tech_0 - Float
+	Production_Speed_Mod_Base_Vs_Tech_1 - Float
+	Production_Speed_Mod_Base_Vs_Tech_2 - Float
+	Production_Speed_Mod_Base_Vs_Tech_3 - Float
+	Production_Speed_Mod_Base_Vs_Tech_4 - Float
+	Progressive_Taxation - Int, Int, Int, Float, Int, Float
+	Push_Scroll_Speed_Modifier - Float
+	Quickmatch_Map_Exclusion_List - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+	Radar_Colorize_Multiplayer_Enemy - Bool Y/N
+	Radar_Colorize_Selected_Units - Bool Y/N
+	Radar_Multiplayer_Enemy_Color - Int, Int, Int
+	Radar_Selected_Units_Color - Int, Int, Int, Int
+	Raid_Force_Free_Object_Category_Mask - Ref
+	Raid_Force_Limited_Object_Category_Mask - Ref | Ref | Ref
+	Raid_Force_Max_Heros - Ref
+	Raid_Force_Max_Limited_Objects - Ref
+	Raid_Force_Required_Faction - Ref
+	Random_Story_Empire_Construction - Ref
+	Random_Story_Empire_Destroy - Ref
+	Random_Story_Max_Triggers - Int
+	Random_Story_Rebel_Construction - Ref
+	Random_Story_Rebel_Destroy - Ref
+	Random_Story_Reward_Empire_Buildable - Ref
+	Random_Story_Reward_Empire_Unit - Ref
+	Random_Story_Reward_Rebel_Buildable - Ref
+	Random_Story_Reward_Rebel_Unit - Ref
+	Random_Story_Rewards - Ref
+	Random_Story_Triggers - Ref
+	ReinforcementOverlayBadColor - Int, Int, Int, Int
+	ReinforcementOverlayGoodColor - Int, Int, Int, Int
+	RepushDistance - Float
+	RetreatAutoResolveLoserAttrition - Float
+	RetreatAutoResolveWinnerAttrition - Float
+	Right_Queue_Tint - Ref
+	Rotate_Formation_Facing_Moves - Ref
+	Sabotage_Particle_Effect - Ref
+	Saliency_Health - Float
+	Saliency_Power - Float
+	Saliency_Size - Float
+	Saliency_Speed - Float
+	Saliency_Targets - Float
+	Saliency_X - Float
+	Saliency_Y - Float
+	Scroll_Acceleration_Factor - Float
+	Scroll_Deceleration_Factor - Float
+	Sensor_Jamming_Time - Float
+	SetupPhaseCountdownSeconds - Int
+	SetupPhaseEnabled - Ref
+	SetupPhaseFOWColor - Int, Int, Int, Int
+	SetupPhaseInvalidDragColor - Int, Int, Int, Int
+	ShieldRechargeIntervalInSecs - Float
+	Shield_Flash_Duration - Float
+	Shield_Flash_Scale - Float, Float, Float
+	ShipNameTextFiles - Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir
+	Ships_Per_Stack - Int
+	Short_Range_Attack_Formation_Coefficient - Float
+	ShouldDisplayPotentialPath - Ref
+	ShouldDisplayPredictionPaths - Ref
+	ShouldDisplaySyncedPaths - Ref
+	ShouldInfantryTeamsSplitAcrossFormations - Ref
+	ShouldSkipLandFormup - Ref
+	ShouldUseSpaceIdleMovement - Ref
+	ShowUnitAIPlanAttachment - Ref
+	Skirmish_Buy_Credits - Int
+	Skirmish_Reinforcement_Delay_Frames - Int
+	Slow_Ground_Color_Tint - Int, Int, Int
+	Solo_Attack_Range - Float
+	SpaceFOWColor - Int, Int, Int, Int
+	SpaceFOWHeight - Float
+	SpaceFOWRegrowTime - Float
+	SpaceIdleMovementSpeed - Float
+	SpaceIdlePathCullCoefficient - Float
+	SpaceLocomotorFacingLookaheadAcc - Float
+	SpaceObjectTrackingInterval - Ref
+	SpaceObjectTrackingTreeCount - Ref
+	SpacePathFailureDistanceCutoffCoefficient - Float
+	SpacePathFailureForwardExpansionIncrement - Float
+	SpacePathFailureMaxExpansionsCoefficient - Float
+	SpacePathFailureRotationExpansionIncrement - Float
+	SpacePathfindFrameDelayDelta - Ref
+	SpacePathfindMaxExpansions - Ref
+	SpacePathingTries - Ref
+	SpaceReinforceFOWColor - Int, Int, Int, Int
+	SpaceReinforceFeedbackOnlyWhileDragging - Bool t/f
+	SpaceStaticObstacleAvoidanceBonusDistance - Ref
+	Space_Auto_Resolve_Delay_Seconds - Float
+	Space_Capture_Allowed_Countdown_Seconds - Float
+	Space_Collidable_Grid_Cull_Size - Float
+	Space_Elevated_Vulnerability_Duration - Float
+	Space_Elevated_Vulnerability_Factor - Float
+	Space_Guard_Range - Float
+	Space_Large_Ship_Grid_Cull_Size - Float
+	Space_Reinforcement_Collision_Check_Distance - Float
+	Space_Retreat_Allowed_Countdown_Seconds - Float
+	Space_Retreat_Attrition_Factor - Float
+	Space_Station_Destruction_Forces_Retreat - Bool T/F
+	Space_Tactical_Camera_Locked - Ref
+	SpecialAlignedOperatorBonus - Float
+	Speech_Text_Color - Ref
+	Spread_Out_Spacing_Coefficient - Float
+	Star_Wars_Crawl_Start_Fadeout_Frame - Int
+	Starting_Galactic_Camera_Position - Float, Float, Float
+	Strategic_Edge_Scroll_Region - Int
+	Strategic_Max_Scroll_Speed - Int
+	Strategic_Min_Scroll_Speed - Int
+	Strategic_Offscreen_Scroll_Region - Int
+	Strategic_Queue_Tactical_Battles - Ref
+	SyncedFrameInterval - Float
+	System_Text_Color - Ref
+	Tactical_Build_Time_Multiplier - Float
+	Tactical_Edge_Scroll_Region - Int
+	Tactical_Max_Scroll_Speed - Int
+	Tactical_Min_Scroll_Speed - Int
+	Tactical_Offscreen_Scroll_Region - Int
+	Tactical_Overrun_Multiple - Floatf
+	Task_Text_Color - Ref
+	TeamCrouchMoveBlendTime - Float
+	TeamMoveBlendTime - Float
+	Team_Healthbar_Offset - Int
+	Telekinesis_Hover_Height - Float
+	Telekinesis_Max_Bob_Height - Float
+	Telekinesis_Max_Wobble_Angle - Float
+	Telekinesis_Transition_Time - Float
+	Telekinesis_Wobble_Cycle_Time - Float
+	Telekinesis_Wobble_Fade_Time - Float
+	Terrain_Resurface_Rand - Int
+	Terrain_Resurface_Tolerance - Float
+	Text_Button_Default_Font_Name - Ref
+	Text_Button_Default_Font_Size - Int
+	Text_Reveal_Rate - Int
+	ThreatExpansionDistance - Float
+	Tool_Tip_Font_Name - Ref
+	Tool_Tip_Font_Size - Int
+	Tool_Tip_Small_Font_Name - Ref
+	Tool_Tip_Small_Font_Size - Int
+	Tooltip_Delay - Int
+	Tractor_Beam_Color - Int, Int, Int
+	Tractor_Beam_Frames - Int
+	Tractor_Beam_Texture - File
+	Tractor_Beam_Width - Float
+	TradeRouteMovementFactor - Float
+	TurnInPlaceSlowdownCapital - Float
+	TurnInPlaceSlowdownCorvette - Float
+	TurnInPlaceSlowdownFrigate - Float
+	Under_Construction_Damage_Multiplier - Float
+	Unit_Command_Rankings_By_Category - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+	UseLinearCollisionChecks - Ref
+	Use_Neutral_UI_Color - Bool t/f
+	Use_Reinforcement_Points - Bool T/F
+	VehicleFormationRecruitmentDistance - Ref
+	WaitOperatorBaseFrameTime - Ref
+	WaitOperatorCostCoefficient - Float
+	WaitOperatorSpeedCoefficient - Float
+	WalkAnimationCutoff - Float
+	Water_Clip_Plane_Offset - Float
+	Water_Render_Target_Resolution - Int
+	WaypointFlagModelName - Ref
+	WaypointLineLandDashLength - Float
+	WaypointLineLandDashVelocity - Float
+	WaypointLineLandGapLength - Float
+	WaypointLineTextureName - Ref
+	Win_Lose_Message_Font - Ref
+	Win_Lose_Message_Font_Size - Ref
+	Win_Message_Color - Int, Int, Int, Int
+	XYExpansionDistanceLand - Float
+	XYExpansionDistanceSpace - Float
+
+Game_Object_Files:
+	File - File
+
+GenericHeroUnits:
+	GenericHeroUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Always_Spawn_In_Orbit - Bool Y/N
+		Armor_Type - Ref
+		Attach_To_Flagship_During_Space_Battle - Bool Y/N
+		Attack_Move_Response_Range - Float
+		Autoresolve_Health - Int
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Bone_Name - Ref
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		CanCellStack - Bool y/n
+		Can_Be_Neutralized_By_Major_Heroes - Bool Y/N
+		Can_Be_Neutralized_By_Minor_Heroes - Bool Y/N
+		Can_Hyperspace_Without_Activating_Ability - Bool Y/N
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Create_Team - Bool Y/N
+		Crouch_Animation_Speed - Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Custom_Soft_Footprint_Radius - Float
+		Damage - Int
+		Death_Fade_Time - Float
+		Death_Persistence_Duration - Float
+		Death_SFXEvent_Start_Die - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Execute_Script_On_Type - Bool t/f
+		FormationOrder - Ref
+		FormationRaggedness - Float
+		FormationSpacing - Float
+		GUI_Row - Ref
+		Ground_Infantry_Turret_Target - Ref
+		Guard_Chase_Range - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Generic_Hero - Bool Y/N
+		Is_Sprite - Bool Y/N
+		Is_Squashable - Ref
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Anim_Override_Name - File
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Bool Y/N
+		Lua_Script - Ref
+		Mass - Float
+		MaxJiggleDistance - Ref
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		MovementClass - Ref
+		Movement_Animation_Speed - Float
+		Neutralization_Cost - Float
+		No_Colorization_Color - Int, Int, Int, Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Occlusion_Silhouette_Enabled - Int
+		OccupationStyle - Ref
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Play_SFXEvent_On_Sighting - Bool T/F
+		Political_Control - Int
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Ranged_Target_Z_Adjust - Float
+		Ranking_In_Category - Ref
+		Rotation_Animation_Speed - Float
+		SFXEvent_Attack - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Group_Attack - Ref
+		SFXEvent_Group_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Show_Hero_Head - Bool Y/N
+		Size_Value - Int
+		Space_Layer - Ref
+		Stay_In_Transport_During_Ground_Battle - Bool Y/N
+		SurfaceFX_Name - Ref, Ref
+		Tactical_Health - Int
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Text_ID - Ref
+		Type - Ref
+		UnitCollisionClass - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		Walk_Animation_Speed - Float
+
+GroundBases:
+	GroundBase:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Affiliation - Ref
+		Autoresolve_Health - Int
+		Base_Level - Int
+		Behavior - Ref
+		Build_Cost_Credits - Int
+		Build_Tab_Outpost - Bool Y/N
+		Build_Time_Seconds - Int
+		CategoryMask - Ref
+		Damage - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Icon_Name - File
+		Is_Dummy - Bool Y/N
+		Next_Level_Base - None
+		Prev_Level_Base - None
+		Required_Ground_Base_Level - Int
+		Required_Star_Base_Level - Int
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		Size_Value - Int
+		Tech_Level - Int
+		Text_ID - Ref
+		Victory_Relevant - Bool y/n
+
+GroundBuildables:
+	GroundBuildable:
+		Attribute: Name - String
+		Abilities - Ref
+		Affiliation - Ref
+		Armor_Type - Ref
+		Base_Level_Available - Ref
+		Base_Position - Ref
+		Base_Shield_Always_Off - Ref
+		Behavior - Ref, Ref, ...
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Capture_Point_Radius - Int
+		Capture_Point_Transition_Time_Seconds - Float
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Ref
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Custom_Soft_Footprint_Radius - Float
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Exclude_From_Distance_Fade - Bool t/f
+		Fine_Tune_Occupied_Passability - Ref
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Height - Ref
+		GUI_Bracket_Size - Ref
+		GUI_Bracket_Width - Ref
+		Has_Land_Evaluator - Bool T/F
+		Hides_When_Built_On - Bool T/F
+		Icon_Name - File
+		Immune_To_Damage - Bool T/F
+		Influences_Capture_Point - Ref
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Community_Property - Bool Y/N
+		Is_Dummy - Bool Y/N
+		Is_Visible_On_Radar - Ref
+		LandBehavior - Ref
+		Land_Damage_Alternates - Int, Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float, Int
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - Ref
+		Last_State_Visible_Under_FOW - Ref
+		Loop_Idle_Anim_00 - Ref
+		MP_Encyclopedia_Text - Ref
+		Mass - Float
+		Minimum_Time_Before_Pad_Can_Build_Again - Float
+		Movie_Object - Bool t/f
+		No_Reflection_Below_Detail_Level - Ref
+		No_Refraction_Below_Detail_Level - Ref
+		Obstacle_Height - Float
+		Obstacle_Proxy_Type - Ref
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		Ownership_Sticks - Bool Y/N
+		Political_Control - Int
+		Property_Flags - Ref
+		Radar_Icon_Name - File
+		Radar_Icon_Size - Ref
+		Radar_Show_Facing - Bool Y/N
+		Ranged_Target_Z_Adjust - Float
+		Required_Ground_Base_Level - Ref
+		Reveal_During_Setup_Phase - Ref
+		Reveal_During_Setup_Phase_Only - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Sold_Tactical - Ref
+		SFXEvent_Special_Weapon_Ready - Ref
+		SFXEvent_Unit_Lost - Ref
+		SFXEvent_Unit_Under_Attack - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Ref
+		Select_Box_Z_Adjust - Floatf
+		Shield_Points - Ref
+		Shield_Refresh_Rate - Int
+		Size_Value - Int
+		Space_Layer - Ref
+		Tactical_Build_Cost_Campaign - Int
+		Tactical_Build_Cost_Multiplayer - Ref
+		Tactical_Build_Start_Lower_Z - Ref
+		Tactical_Build_Time_Seconds - Ref
+		Tactical_Buildable_Constructed - Ref
+		Tactical_Buildable_Objects_Campaign - Ref, Ref, ...
+		Tactical_Buildable_Objects_Multiplayer - Ref, Ref, ...
+		Tactical_Health - Ref
+		Tactical_Sell_Credits - Ref
+		Terrain_Texture_Modifier_Join_Distance - Float
+		Terrain_Texture_Modifier_Material - Int
+		Terrain_Texture_Modifier_Square - Bool t/f
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Ref
+		Visible_To_Enemies_When_Empty - Ref
+	SpecialStructure:
+		Attribute: Name - String
+		Affiliation - Ref
+		Armor_Type - Ref
+		Base_Position - Ref
+		Behavior - Ref, Ref, Ref
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Encyclopedia_Text - Ref, Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Size - Int
+		Has_Land_Evaluator - Bool T/F
+		Icon_Name - File
+		Influences_Capture_Point - Ref
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Community_Property - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref
+		Land_Damage_Alternates - Int, Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float, Int
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Last_State_Visible_Under_FOW - Ref
+		MP_Encyclopedia_Text - Ref
+		Mass - Float
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Obstacle_Proxy_Type - Ref
+		Radar_Icon_Size - Ref
+		Ranged_Target_Z_Adjust - Float
+		Reveal_During_Setup_Phase - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Select_Box_Scale - Int
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Size_Value - Int
+		Space_Layer - Ref
+		Tactical_Build_Cost_Multiplayer - Ref
+		Tactical_Build_Start_Lower_Z - Float
+		Tactical_Build_Time_Seconds - Ref
+		Tactical_Buildable_Constructed - Ref
+		Tactical_Health - Int
+		Terrain_Texture_Modifier_Square - Bool t/f
+		Text_ID - Ref
+
+GroundInfantry_Units:
+	GroundInfantry:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Armor_Type - Ref
+		Attack_Move_Response_Range - Float
+		Bank_Turn_Angle - Int
+		Base_Shield_Penetration_Particle - Ref
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Bone_Name - Ref
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Build_Cost_Credits - Int
+		Build_Time_Seconds - Int
+		Burning_Damage_Per_Second - Float
+		CanCellStack - Bool y/n
+		CategoryMask - Ref
+		Cinematic_Anim_Blend_Seconds - Float
+		Cinematic_Anim_Index - Int
+		Cinematic_Anim_Speed - Float
+		Collidable_By_Projectile_Living - Bool Y/N
+		Conversion_Ability_Changes_To_Enemy - Ref
+		Create_Team - Bool Y/N
+		Crouch_Animation_Speed - Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Custom_Soft_Footprint_Radius - Float
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_Fade_Time - Float
+		Death_Persistence_Duration - Float
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Deploys - Bool Y/N
+		Destruction_Survivors - Ref, Float
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Fire_Category_Restrictions - Ref
+		FormationGrouping - Ref
+		FormationOrder - Ref
+		FormationRaggedness - Float
+		FormationSpacing - Float
+		Formation_Formup_Wait_Style - Ref
+		GUI_Bracket_Height - Int
+		GUI_Bracket_Size - Int
+		GUI_Bracket_Width - Int
+		Ground_Infantry_Turret_Target - Ref
+		Guard_Chase_Range - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Influences_Capture_Point - Ref
+		IsBuildable - Bool Y/N
+		Is_Affected_By_Gravity_Control_Field - Ref
+		Is_Combustible - Bool y/n
+		Is_Squashable - Ref
+		Is_Squashable_By_Supercrusher - Bool Y/N
+		Is_Stationary_When_Attacking - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_Damage_Alternates - Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Anim_Override_Name - File
+		Land_Model_Name - File
+		Land_Terrain_Model_Mapping - Ref, File, Ref, File, Ref, File, Ref, File, Ref, File, Ref, File, Ref, File
+		LateralAcceleration - Float
+		Loop_Idle_Anim_00 - Bool Y/N
+		Lua_Script - Ref
+		Mass - Float
+		MaxJiggleDistance - Float
+		Max_Rate_Of_Roll - Int
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Ref
+		Min_Speed_Fraction_For_Turn - Ref
+		MinimumPushReturnDistance - Ref
+		Mouse_Collide_Override_Sphere_Radius - Float
+		MovementClass - Ref
+		Movement_Animation_Speed - Float
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Occlusion_Silhouette_Enabled - Int
+		OccupationStyle - Ref
+		On_Fire_Speed_Modifier - Floatf
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Pause_During_Cinematic_Anim - Bool y/n
+		Political_Control - Int
+		Presence_Induced_Animations - Ref, Ref, Ref, Ref
+		Projectile_Appearance_Delay_Frames - Ref
+		Projectile_Damage - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Ranged_Target_Z_Adjust - Float
+		Required_Timeline - Int
+		Rotation_Animation_Speed - Float
+		SFXEvent_Ambient_Moving - Ref
+		SFXEvent_Ambient_Moving_Max_Delay_Seconds - Ref
+		SFXEvent_Ambient_Moving_Min_Delay_Seconds - Ref
+		SFXEvent_Assist_Attack - Ref
+		SFXEvent_Assist_Move - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Tactical_Build_Cancelled - Ref
+		SFXEvent_Tactical_Build_Complete - Ref
+		SFXEvent_Tactical_Build_Started - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Sensor_Range - Int
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Size_Value - Int
+		Space_Layer - Ref
+		Specific_Death_Anim_Index - None
+		Specific_Death_Anim_Type - Ref
+		Stealth_Capable - Bool Y/N
+		SurfaceFX_Name - Ref, Ref
+		Surface_Type_Cover_Damage_Shield - Float
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - Ref
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Health - Int
+		Tactical_Production_Queue - Ref
+		Targeting_Allowed_When_Burning - Bool y/n
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Text_ID - Ref
+		Turret_Elevate_Extent_Degrees - Float
+		Turret_Rotate_Extent_Degrees - Float
+		Type - Ref
+		UnitCollisionClass - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		WaitsForFormationFormup - Bool t/f
+		Walk_Animation_Speed - Float
+		Walk_Transition - Bool Y/N
+		Weather_Category - Ref
+		Wind_Disturbance_Radius - Int
+		Wind_Disturbance_Sphere_Alpha - Float
+		Wind_Disturbance_Strength - Int
+
+GroundStructures:
+	GroundStructure:
+		Attribute: Name - String
+		AI_Combat_Power - Ref
+		Abilities - Ref
+		Affiliation - Ref
+		Apply_Y_Turret_Rotate_To_Axis - Int
+		Apply_Z_Turret_Rotate_To_Axis - Int
+		Armor_Type - Ref
+		Attack_Category_Restrictions - Ref
+		Autoresolve_Health - Int
+		Barrel_Bone_Name - Ref
+		Base_Level_Available - Ref
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Ref
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Damage - Int
+		Damage_Type - Ref
+		Death_Clone_Is_Obstacle - Bool y/n
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Enemy_Spawn_Text - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Facing_Adjust - Float, Float, Float
+		Friendly_Spawn_Text - Ref
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Height - Ref
+		GUI_Bracket_Size - Ref
+		GUI_Bracket_Width - Ref
+		GUI_Hide_Health_Bar - Bool t/f
+		Has_Land_Evaluator - Bool T/F
+		Icon_Name - File
+		Influences_Capture_Point - Ref
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Branched_Map_Discardable - Bool T/F
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool Y/N
+		Is_Squashable_By_Supercrusher - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref
+		Land_Damage_Alternates - Int, Int, ...
+		Land_Damage_SFX - Ref, Ref, ...
+		Land_Damage_Thresholds - Float, Float, Float, Float
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - Ref
+		Last_State_Visible_Under_FOW - Ref
+		Loads_When_Faction_Present - Ref
+		Loop_Idle_Anim_00 - Ref
+		Lua_Script - Ref
+		Mass - Float
+		Max_Distance_From_Spawner - Int
+		Multisample_FOW_Check - Bool Y/N
+		No_Colorization_Color - Int, Int, Int, Int
+		No_Reflection_Below_Detail_Level - Ref
+		No_Refraction_Below_Detail_Level - Ref
+		Obstacle_Height - Float
+		Obstacle_Proxy_Type - Ref
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		OverridePassability - Ref
+		Projectile_Damage - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref | Ref
+		Radar_Icon_Size - Ref
+		Ranged_Target_Z_Adjust - Float
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Ref
+		Required_Special_Structures - Ref
+		Reveal_During_Setup_Phase - Ref
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Sold_Tactical - Ref
+		SFXEvent_Turret_Rotating_Loop - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Ref
+		Select_Box_Z_Adjust - Floatf
+		Shield_Points - Ref
+		Shield_Refresh_Rate - Int
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Space_Obstacle_Offset - Ref
+		Spawn_Indigenous_Units_Chance - Floatf
+		Spawn_Indigenous_Units_In_Packs - Bool Y/N
+		Spawn_Indigenous_Units_Radius - Floatf
+		Spawned_Indigenous_Pack_Type - Ref
+		Spawned_Indigenous_Units_Delay_Seconds - Float
+		Spawned_Indigenous_Units_Quantity - Int
+		Spawned_Indigenous_Units_Type - Ref
+		Tactical_Health - Ref
+		Tactical_Sell_Credits - Ref
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Min_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Text_ID - Ref
+		Turret_Bone_Name - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rotate_Extent_Degrees - Int
+		Turret_Rotate_Speed - Float
+		UnitCollisionClass - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Ref
+
+GroundVehicles:
+	GroundVehicle:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Air_Vehicle_Turret_Target - Ref
+		Apply_Y_Turret_Rotate_To_Axis - Int
+		Apply_Z_Turret_Rotate_To_Axis - Int
+		Armor_Type - Ref
+		Asteroid_Damage_Hit_Particles - Ref
+		Attack_Animation_Is_Overlay - Bool y/n
+		Attack_Move_Response_Range - Float
+		Auto_Deploys - Bool Y/N
+		Autonomous_Move_Extension_Vs_Attacker - Float
+		Autoresolve_Health - Float
+		Bank_Turn_Angle - Int
+		Barrel_Bone_Name - Ref
+		Base_Shield_Penetration_Particle - Ref
+		Behavior - Ref, Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Bone_Name - Ref
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Cache_Crusher_Boxes - Bool Y/N
+		CanCellStack - Bool y/n
+		CategoryMask - Ref
+		Close_Enough_Angle_For_Move_Start - Ref
+		Collidable_By_Projectile_Dead - Bool Y/N
+		Collidable_By_Projectile_Living - Bool Y/N
+		Converted_To_Enemy_Die_Time_Seconds - Int
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Hard_YExtent_Deployed - Float
+		Custom_Hard_YExtent_Offset - Float
+		Damage - Int
+		Damage_Type - Ref
+		Damaged_Smoke_Asset_Name - File
+		Death_Clone - Ref, Ref
+		Death_Clone_Is_Obstacle - Bool y/n
+		Death_Explosions - Ref
+		Death_Explosions_End - Ref
+		Death_Fade_Time - Float
+		Death_Persistence_Duration - Float
+		Death_SFXEvent_End_Die - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Deployment_Anim_Rate - Float
+		Deploys - Bool Y/N
+		Destruction_Survivors - Ref, Float
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Exit_Door_Angle_Degrees - Float
+		Exit_Door_Distance - Float
+		Fire_Category_Restrictions - Ref
+		Fire_Weapon_When_Deployed - Bool Y/N
+		Fire_Weapon_When_In_Normal_Attack_Mode - Bool Y/N
+		Fire_Weapon_When_In_Rocket_Attack_Mode - Bool Y/N
+		Fire_Weapon_When_Undeployed - Bool Y/N
+		Fires_Forward - Bool y/n
+		FormationGrouping - Ref
+		FormationOrder - Ref
+		FormationRaggedness - Ref
+		FormationSpacing - Float
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Size - Int
+		Glory_Cinematics - Ref, Ref, Ref
+		Ground_Infantry_Turret_Target - Ref
+		Ground_Vehicle_Turret_Target - Ref
+		Guard_Chase_Range - Float
+		HardPoints - Ref
+		Hardpoints - Ref
+		Has_Land_Evaluator - Bool Y/N
+		Has_Pre_Turn_Anim - Ref
+		Hover_Offset - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Influences_Capture_Point - Ref
+		IsDeathClone - Ref
+		IsDeathCloneObstacle - Ref
+		Is_Affected_By_Gravity_Control_Field - Ref
+		Is_Sprite - Bool Y/N
+		Is_Squashable - Ref
+		Is_Squashable_By_Supercrusher - Bool Y/N
+		Is_Supercrusher - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_Damage_Alternates - Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Layer_Z_Adjust - Float
+		Locomotor_Has_Animation_Priority - Bool y/n
+		Loop_Idle_Anim_00 - Bool Y/N
+		Lua_Script - Ref
+		Mass - Float
+		MaxFacingLookAheadFrames - Float
+		MaxJiggleDistance - Ref
+		MaxSecondaryTurnROTCoefficient - Float
+		Max_Lift - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		MinSecondaryTurnROTCoefficient - Float
+		Min_Speed - Float
+		Min_Speed_Fraction_For_Turn - Float
+		MinimumPushReturnDistance - Ref
+		Mouse_Collide_Override_Sphere_Radius - Float
+		MovementBoxExpansionFactor - Float
+		MovementClass - Ref
+		MovementPredictionInterval - Float
+		Movement_Animation_Speed - Float
+		No_Colorization_Color - Int, Int, Int, Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Occlusion_Silhouette_Enabled - Int
+		OccupationStyle - Ref
+		Overall_Length - Float
+		Overall_Width - Float
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		PathFrameDelay - Ref
+		Political_Control - Int
+		Prepare_Strafe_Height - Float
+		Presence_Range - Float
+		Projectile_Appearance_Delay_Frames - Int, Int
+		Projectile_Damage - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Ranged_Target_Z_Adjust - Float
+		Ranking_In_Category - Int
+		Remove_Upon_Death - Bool t/f
+		Required_Timeline - Int
+		Rotation_Animation_Speed - Float
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Ambient_Moving - Ref
+		SFXEvent_Ambient_Moving_Max_Delay_Seconds - Ref
+		SFXEvent_Ambient_Moving_Min_Delay_Seconds - Ref
+		SFXEvent_Assist_Attack - Ref
+		SFXEvent_Assist_Move - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Tactical_Build_Cancelled - Ref
+		SFXEvent_Tactical_Build_Complete - Ref
+		SFXEvent_Tactical_Build_Started - Ref
+		SFXEvent_Turret_Rotating_Loop - Ref
+		SFXEvent_Unit_Lost - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		SecondaryTurnAngle - Ref
+		SecondaryTurnInPlaceROTCoefficient - Float
+		SecondaryTurnLookaheadDistance - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Selt_Destruct_SFXEvent_Start_Die - Ref
+		Sensor_Range - Int
+		Shield_Armor_Type - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Should_Cause_Limited_Turrets_To_Turn - Ref
+		Should_Reinforcements_Move - Ref
+		Size_Value - Int
+		Space_Layer - Ref
+		Specific_Death_Anim_Index - None
+		Specific_Death_Anim_Type - Ref
+		Spin_Away_On_Death - Bool Y/N
+		Spin_Away_On_Death_Chance - Float
+		Spin_Away_On_Death_Explosion - Ref
+		Spin_Away_On_Death_SFXEvent_Start_Die - Ref
+		Spin_Away_On_Death_Time - Floatf
+		Stationary_Space_Layer - Ref
+		Stealth_Capable - Bool Y/N
+		Stopped_Rate_Of_Turn - Float
+		SurfaceFX_Name - Ref
+		Surface_Type_Cover_Damage_Shield - Float
+		Tactical_Health - Int
+		Target_Bones - Ref, Ref, Ref
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Fire_Inaccuracy_Fixed_Radius - Ref
+		Targeting_Land_Model_Stay_Horiz_Flat - Ref
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Min_Attack_Distance - Ref
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Text_ID - Ref
+		Tread_Scroll_Rate - Float
+		Turret_Bone_Name - Ref
+		Turret_Deployed_Rest_Angle - Float, Float, Float
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rest_Angle - Float, Float, Float
+		Turret_Rotate_Extent_Degrees - Int
+		Turret_Rotate_Speed - Float
+		Turret_Targets_Air_Vehicles - Ref
+		Turret_Targets_Anything_Else - Ref
+		Turret_Targets_Ground_Infantry - Ref
+		Turret_Targets_Ground_Vehicles - Ref
+		Type - Ref
+		UnitCollisionClass - Ref
+		Unit_Abilities_Data - Ref
+		UseSecondaryFacing - Ref
+		Variant_Of_Existing_Type - Ref
+		Vehicle_Thief_Inside_Clone - Ref
+		Victory_Relevant - Bool y/n
+		Walk_Transition - Bool Y/N
+		Weather_Category - Ref
+		Wind_Disturbance_Radius - Int
+		Wind_Disturbance_Sphere_Alpha - Float
+		Wind_Disturbance_Strength - Int
+
+HardPoints:
+	HardPoint:
+		Attribute: Name - String
+		Allow_Opportunity_Fire_When_Idle - Bool T/F
+		Allow_Opportunity_Fire_When_Targeting - Bool T/F
+		Allows_Special_Weapon_Use - Ref
+		Attachment_Bone - Ref
+		Collision_Mesh - Ref
+		Damage_Decal - Ref
+		Damage_Particles - Ref
+		Damage_Type - Ref
+		Death_Breakoff_Prop - Ref
+		Death_Explosion_Particles - Ref
+		Death_Explosion_SFXEvent - Ref
+		Engine_Particles - Ref
+		Fighter_Bay_Flyout_Distance - Float
+		Fire_Bone_A - Ref
+		Fire_Bone_B - Ref
+		Fire_Bone_C - Ref
+		Fire_Bone_D - Ref
+		Fire_Category_Restrictions - Ref, Ref
+		Fire_Cone_Height - Float
+		Fire_Cone_Width - Float
+		Fire_Inaccuracy_Distance - Ref, Float
+		Fire_Max_Recharge_Seconds - Float
+		Fire_Min_Recharge_Seconds - Float
+		Fire_Projectile_Type - Ref
+		Fire_Pulse_Count - Int
+		Fire_Pulse_Delay_Seconds - Float
+		Fire_Range_Distance - Float
+		Fire_SFXEvent - Ref
+		Fire_When_Deployed - Bool Y/N
+		Fire_When_In_Normal_Attack_Mode - Bool Y/N
+		Fire_When_In_Rocket_Attack_Mode - Bool Y/N
+		Fire_When_Undeployed - Bool Y/N
+		Health - Float
+		Is_Destroyable - Bool Y/N
+		Is_Targetable - Bool Y/N
+		Model_To_Attach - File
+		Projectile_Damage - Int
+		Repair_Amount_Per_Frame - Float
+		Repair_Cost_Per_Frame - Float
+		Special_Ability_Name - Ref
+		Tooltip_Text - Ref
+		Type - Ref
+
+HeroCompanies:
+	HeroCompany:
+		Attribute: Name - String
+		Affiliation - Ref
+		Attack_Move_Response_Range - Float
+		Available_In_Skirmish - Bool y/n
+		Behavior - Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Limit_Current_Per_Player - Int
+		Build_Limit_Lifetime_For_All_Allies - Ref
+		Build_Tab_Heroes - Bool Y/N
+		Build_Time_Reduced_By_Multiple_Factories - Ref
+		Build_Time_Seconds - Int
+		Can_Be_Only_One - Bool t/f
+		CategoryMask - Ref
+		Combat_Power_Value - Int
+		Company_Transport_Unit - Ref
+		Company_Units - Ref
+		Create_Team_Type - Ref
+		Damage - Int
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Formation_Priority - Int
+		GUI_Row - Int
+		Guard_Chase_Range - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Dummy - Bool Y/N
+		Is_Force_Sensitive - Bool Y/N
+		Is_Generic_Hero - Bool Y/N
+		Is_Homogeneous - Bool Y/N
+		Is_Named_Hero - Bool Y/N
+		Is_Stealth_Company - Bool Y/N
+		Lua_Script - None
+		Max_Squad_Size - Ref
+		Population_Value - Int
+		Ranking_In_Category - Ref
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Hero_Respawned - Ref
+		SFXEvent_Move - Ref
+		Score_Cost_Credits - Ref
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Production_Queue - Ref
+		Tech_Level - Int
+		Text_ID - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+
+HeroUnits:
+	HeroUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Alternate_Max_Rate_Of_Turn - Float
+		Alternate_Max_Speed - Float
+		Always_Spawn_In_Orbit - Bool Y/N
+		Armor_Type - Ref
+		Attach_To_Flagship_During_Space_Battle - Bool Y/N
+		Attack_Move_Response_Range - Float
+		Autonomous_Move_Extension_Vs_Attacker - Float
+		Autoresolve_Health - Int
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Bone_Name - Ref
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		CanCellStack - Bool y/n
+		Can_Be_Neutralized_By_Major_Heroes - Bool Y/N
+		Can_Be_Neutralized_By_Minor_Heroes - Bool Y/N
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Ref
+		Create_Team - Ref
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Custom_Soft_Footprint_Radius - Float
+		Damage - Int
+		Damage_Type - Ref
+		Death_Explosions - Ref
+		Death_Fade_Time - Float
+		Death_Persistence_Duration - Float
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Deploys - Bool Y/N
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		FormationOrder - Ref
+		FormationRaggedness - Float
+		FormationSpacing - Float
+		GUI_Bracket_Height - Int
+		GUI_Bracket_Size - Int
+		GUI_Bracket_Width - Int
+		GalacticBehavior - Ref
+		Galactic_Influence_Range - Float
+		Ground_Infantry_Turret_Target - Ref
+		Guard_Chase_Range - Float
+		Has_Land_Evaluator - Bool T/F
+		Highlight_Blob_Material_Name - Ref
+		Holster_Disable_Engine_Loops - Ref
+		Holster_Drawn_Bone_Translation - Float, Float, Float
+		Holster_Holstered_Bone_Translation - Float, Float, Float
+		Holster_Minimum_Drawn_Time_In_Secs - Float
+		Holster_Transition_Time_In_Secs - Float
+		Holster_Weapon_Bone_Name - Ref
+		Hover_Offset - Float
+		Hyperspace_Fleet_Reveal_Range - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		IsBuildable - Bool Y/N
+		Is_Force_Sensitive - Bool Y/N
+		Is_Named_Hero - Bool Y/N
+		Is_Squashable - Ref
+		Is_Stationary_When_Attacking - Bool Y/N
+		Is_Super_Weapon_Killer - Bool Y/N
+		Is_Visible_On_Enemy_Radar - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Bool Y/N
+		Lua_Script - Ref
+		Mass - Float
+		MaxJiggleDistance - Float
+		Max_Lift - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Min_Speed - Float
+		MinimumPushReturnDistance - Ref
+		Mouse_Collide_Override_Sphere_Radius - Float
+		MovementClass - Ref
+		Movement_Animation_Speed - Float
+		Neutralization_Cost - Float
+		Occlusion_Silhouette_Enabled - Int
+		OccupationStyle - Ref
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Play_SFXEvent_On_Sighting - Bool T/F
+		Political_Control - Int
+		Political_Faction - Ref
+		Presence_Range - Float
+		Primary_Locomotor_Name - Ref
+		Projectile_Appearance_Delay_Frames - Ref
+		Projectile_Damage - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Ranged_Target_Z_Adjust - Float
+		Ranking_In_Category - Ref
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		Respawn_Whole_Team_When_Killed - Bool Y/N
+		Rotation_Animation_Speed - Float
+		SFXEvent_Ambient_Moving - Ref
+		SFXEvent_Announce - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Attacked - Ref
+		SFXEvent_Deploy - Ref
+		SFXEvent_Draw_Weapon - Ref
+		SFXEvent_Enemy_Health_Critical_Warning - Ref
+		SFXEvent_Enemy_Health_Low_Warning - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Group_Attack - Ref
+		SFXEvent_Group_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Health_Critical_Warning - Ref
+		SFXEvent_Health_Low_Warning - Ref
+		SFXEvent_Holster_Weapon - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Tactical_Build_Cancelled - Ref
+		SFXEvent_Tactical_Build_Complete - Ref
+		SFXEvent_Tactical_Build_Started - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Secondary_Locomotor_Name - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Selection_Blob_Material_Name - Ref
+		Sensor_Range - Int
+		Share_Damage_With_Teammates - Bool Y/N
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Size_Value - Int
+		Space_Layer - Ref
+		Spawn_Planet - Ref
+		Stay_In_Transport_During_Ground_Battle - Bool Y/N
+		Stealth_Capable - Bool Y/N
+		SurfaceFX_Name - Ref, Ref
+		Tactical_Health - Int
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Text_ID - Ref
+		Type - Ref
+		Unique_Ground_Unit - Ref
+		Unique_Space_Unit - Ref
+		UnitCollisionClass - Ref
+		Unit_Abilities_Data - Ref
+		Uses_Multiple_Locomotors - Ref
+		Victory_Relevant - Bool y/n
+		WaitsForFormationFormup - Bool t/f
+		Walk_Animation_Speed - Float
+
+Hero_Clashes:
+	Hero_Clash:
+		Attribute: Name - String
+		Clash_Actions - Ref
+		Clash_Range - Float
+		Clash_Type - Ref
+		Combat_Distance - Float
+		Damage_Amount - Float
+		Damage_Percentage - Float
+		First_Hero_Conversation_Anim_Type - Ref
+		First_Hero_Damage_Multiplier - Float
+		First_Hero_Draw_Anim_Type - Ref
+		First_Hero_Lose_Anim_Type - Ref
+		First_Hero_Type - Ref
+		First_Hero_Win_Anim_Type - Ref
+		First_Hero_Win_Exchange_Chance - Float
+		First_Hero_Win_Speech - Ref
+		Involved_Hero_Types - Ref, Ref, Ref
+		Play_Conversation_Events - Bool Y/N
+		Second_Hero_Conversation_Anim_Type - Ref
+		Second_Hero_Damage_Multiplier - Float
+		Second_Hero_Draw_Anim_Type - Ref
+		Second_Hero_Lose_Anim_Type - Ref
+		Second_Hero_Type - Ref
+		Second_Hero_Win_Anim_Type - Ref
+		Second_Hero_Win_Exchange_Chance - Float
+		Second_Hero_Win_Speech - Ref
+
+Indigenous_Companies:
+	GroundCompany:
+		Attribute: Name - String
+		Affiliation - Ref
+		Autoresolve_Health - Int
+		Behavior - Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Tab_Land_Units - Bool Y/N
+		Build_Time_Seconds - Int
+		Company_Transport_Unit - Ref
+		Company_Units - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Create_Team_Type - Ref
+		Damage - Int
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Formation_Priority - Int
+		Icon_Name - File
+		Is_Dummy - Bool Y/N
+		Is_Escort - Bool y/n
+		Max_Squad_Size - Ref
+		Population_Value - Int
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		SFXEvent_Tactical_Build_Cancelled - Ref
+		SFXEvent_Tactical_Build_Complete - Ref
+		SFXEvent_Tactical_Build_Started - Ref
+		Score_Cost_Credits - Int
+		Ship_Class - Ref
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Production_Queue - Ref
+		Tech_Level - Int
+		Text_ID - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Ref
+
+Indigenous_Units:
+	Indigenous_Unit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Air_Vehicle_Turret_Target - Ref
+		Allow_Idle_When_Moving - Bool Y/N
+		Armor_Type - Ref
+		Attack_Move_Response_Range - Float
+		Avoidance_Disabled - Ref
+		Bank_Turn_Angle - Int
+		Base_Shield_Penetration_Particle - Ref
+		Begin_Turn_Towards_Distance - Float
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Bone_Name - Ref
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Build_Cost_Credits - Int
+		Build_Time_Seconds - Int
+		Burning_Damage_Per_Second - Float
+		CanCellStack - Bool y/n
+		Can_Indigenous_Unit_Stop - Bool Y/N
+		CategoryMask - Ref
+		Close_Enough_Angle_For_Move_Start - Float
+		Collidable_By_Projectile_Dead - Bool Y/N
+		Collidable_By_Projectile_Living - Bool Y/N
+		Create_Team - Bool T/F
+		Create_Team_Type - Ref
+		Crouch_Animation_Speed - Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Soft_Footprint_Radius - Float
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Clone_Is_Obstacle - Bool y/n
+		Death_Fade_Time - Float
+		Death_Persistence_Duration - Float
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Deploys - Bool Y/N
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Fire_Category_Restrictions - Ref, Ref
+		FormationGrouping - Ref
+		FormationOrder - Ref
+		FormationRaggedness - Float
+		FormationSpacing - Float
+		GUI_Bracket_Height - Int
+		GUI_Bracket_Size - Int
+		GUI_Bracket_Width - Int
+		Ground_Infantry_Turret_Target - Ref
+		Guard_Chase_Range - Float
+		Harass_Enemy_Exclusion_Range - Float
+		Has_Pre_Turn_Anim - Ref
+		Hover_Offset - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Influences_Capture_Point - Ref
+		IsBuildable - Bool Y/N
+		IsDeathCloneObstacle - Ref
+		Is_Combustible - Bool y/n
+		Is_Squashable - Ref
+		Is_Stationary_When_Attacking - Bool Y/N
+		Is_Valid_Target - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Anim_Override_Name - File
+		Land_Model_Name - File
+		Layer_Z_Adjust - Float
+		Loop_Idle_Anim_00 - Bool Y/N
+		Mass - Float
+		MaxFacingLookAheadFrames - Float
+		MaxJiggleDistance - Ref
+		Max_Lift - Int
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Min_Speed - Float
+		Min_Speed_Fraction_For_Turn - Float
+		MinimumPushReturnDistance - Ref
+		Mouse_Collide_Override_Sphere_Radius - Float
+		MovementClass - Ref
+		Movement_Animation_Speed - Float
+		Movie_Object - Bool t/f
+		No_Colorization_Color - Int, Int, Int, Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Occlusion_Silhouette_Enabled - Int
+		OccupationStyle - Ref
+		On_Fire_Speed_Modifier - Floatf
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Political_Control - Int
+		Prepare_Strafe_Height - Float
+		Projectile_Appearance_Delay_Frames - Ref
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Int
+		Projectile_Types - Ref
+		Ranged_Target_Z_Adjust - Float
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Tech_Structure - None
+		Required_Timeline - Int
+		Rotation_Animation_Speed - Float
+		SFXEvent_Ambient_Moving - None
+		SFXEvent_Ambient_Moving_Max_Delay_Seconds - Ref
+		SFXEvent_Ambient_Moving_Min_Delay_Seconds - Ref
+		SFXEvent_Assist_Attack - Ref
+		SFXEvent_Assist_Move - Ref
+		SFXEvent_Attack - None
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Move - None
+		SFXEvent_Select - None
+		Scale_Factor - Float
+		Score_Cost_Credits - Int
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Sensor_Range - Int
+		Size_Value - Int
+		Space_Layer - Ref
+		Specific_Death_Anim_Index - Ref
+		Specific_Death_Anim_Type - Ref
+		Squash_Damage_Type - Ref
+		SurfaceFX_Name - Ref, Ref
+		Tactical_Health - Int
+		Targeting_Allowed_When_Burning - Bool y/n
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Min_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Text_ID - Ref
+		Turret_Bone_Name - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rotate_Extent_Degrees - Int
+		Turret_Rotate_Speed - Float
+		Turret_Targets_Air_Vehicles - Ref
+		Turret_Targets_Anything_Else - Ref
+		Turret_Targets_Ground_Infantry - Ref
+		Turret_Targets_Ground_Vehicles - Ref
+		Turret_XY_Only - Bool Y/N
+		Type - Ref
+		UnitCollisionClass - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		Walk_Animation_Speed - Float
+		Walk_Transition - Bool Y/N
+		Weather_Category - Ref
+		Wind_Disturbance_Radius - Int
+		Wind_Disturbance_Sphere_Alpha - Float
+		Wind_Disturbance_Strength - Int
+
+LandBombingRunUnits:
+	LandBombingUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Affiliation - Ref
+		Air_Vehicle_Turret_Target - Ref
+		Armor_Type - Ref
+		Autoresolve_Health - Float
+		Bank_Turn_Angle - Int
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - None
+		Blob_Shadow_Scale - Float, Float
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Damage - Int
+		Damage_Hit_Particles - Ref
+		Damaged_Smoke_Asset_Name - File
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Deploys - Bool Y/N
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Fires_Forward - Bool y/n
+		Guard_Chase_Range - Float
+		Hover_Offset - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Layer_Z_Adjust - Float
+		Mass - Float
+		MaxFacingLookAheadFrames - Float
+		Max_Lift - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Min_Speed - Float
+		MovementClass - Ref
+		No_Colorization_Color - Int, Int, Int, Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		OccupationStyle - Ref
+		Prepare_Strafe_Height - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Ranged_Target_Z_Adjust - Float
+		Remove_Upon_Death - Bool t/f
+		SFXEvent_Ambient_Moving - Ref
+		SFXEvent_Ambient_Moving_Max_Delay_Seconds - Ref
+		SFXEvent_Ambient_Moving_Min_Delay_Seconds - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Bomb_Run_Incoming - Ref
+		SFXEvent_Bomb_Run_Select_Target - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Hardpoint - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Shield_Hit_Particles - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Size_Value - Int
+		Space_Layer - Ref
+		Spin_Away_On_Death - Bool Y/N
+		Spin_Away_On_Death_Chance - Float
+		Spin_Away_On_Death_Explosion - Ref
+		Spin_Away_On_Death_SFXEvent_Start_Die - Ref
+		Spin_Away_On_Death_Time - Floatf
+		Tactical_Health - Int
+		Targeting_Max_Attack_Distance - Float
+		Text_ID - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rotate_Extent_Degrees - Int
+		Type - Ref
+		Victory_Relevant - Bool y/n
+		XSFXEvent_Ambient_Loop - Ref
+
+LandPrimarySkydomes:
+	LandPrimarySkydome:
+		Attribute: Name - String
+		Behavior - Ref
+		Exclude_From_Distance_Fade - Bool t/f
+		Galactic_Model_Name - None
+		In_Background - Bool y/n
+		Is_Decoration - Bool Y/N
+		Land_Model_Name - File
+		Layer_Z_Adjust - Float
+		Loop_Idle_Anim_00 - Bool Y/N
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Scale_Factor - Float
+		Text_ID - None
+
+LandSecondarySkydomes:
+	LandSecondarySkydome:
+		Attribute: Name - String
+		Behavior - None
+		Exclude_From_Distance_Fade - Bool t/f
+		Galactic_Model_Name - None
+		In_Background - Bool y/n
+		Is_Decoration - Bool Y/N
+		Land_Model_Name - File
+		Layer_Z_Adjust - Float
+		Loop_Idle_Anim_00 - Bool Y/N
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Scale_Factor - Float
+		Text_ID - None
+
+LightSources:
+	LightSource:
+		Attribute: Name - String
+		Auto_Destruct_Fade_Time - Float
+		Auto_Destruct_Time - Float
+		Blob_Color - Int, Int, Int
+		Blob_Intensity - Float
+		Blob_Radius - Float
+		Diffuse - Int, Int, Int
+		Falloff_Start - Int
+		Intensity - Float
+		Radius - Float
+
+LightningEffects:
+	LightningEffect:
+		Attribute: name - String
+		Bolt_Creation_Interval_Max - Float
+		Bolt_Creation_Interval_Min - Float
+		Color_End - Int, Int, Int, Int
+		Color_Start - Int, Int, Int, Int
+		Cycles_Per_Distance - Float
+		Detail - Int
+		Displace - Float, Float, Float
+		Fadeout_Time_Max - Float
+		Fadeout_Time_Min - Float
+		Number_Bolts - Int
+		Radius - Int
+		Replace_Faded - Ref
+		Rotations_Per_Second - Int
+		Texture_Name - File
+		Texture_Repeat - Float
+		Texture_Scroll - Float
+		Update_All - Bool t/f
+		Width_Max - Float
+		Width_Min - Float
+
+Markers:
+	Marker:
+		Attribute: Name - String
+		Additional_Population_Capacity - Int
+		Affiliation - Ref
+		Apply_Y_Turret_Rotate_To_Axis - Int
+		Apply_Z_Turret_Rotate_To_Axis - Int
+		Armor_Type - Ref
+		Barrel_Bone_Name - Ref
+		Begin_Control_Transition_Radar_Event - Ref
+		Behavior - Ref
+		Capture_Point_Radius - Float
+		Capture_Point_Transition_Time_Seconds - Float
+		Cash_Point_Credits_Per_Second - Int
+		Cash_Point_Radius - Int
+		Cash_Point_Transition_Time_Seconds - Float
+		CategoryMask - Ref
+		Collidable_By_Projectile_Dead - Bool Y/N
+		Collidable_By_Projectile_Living - Bool Y/N
+		Control_Point_Domination_Condition_Relevant - Bool Y/N
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		End_Control_Transition_Radar_Event - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Faction_Anim_Subindex - Ref, Int
+		GUI_Bracket_Size - Int
+		Galactic_Model_Name - File
+		Has_Land_Evaluator - Bool Y/N
+		Icon_Name - File
+		Immune_To_Damage - Bool T/F
+		In_Background - Bool Y/N
+		Influences_Capture_Point - Bool T/F
+		Influences_Cash_Point - Bool y/n
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Community_Property - Bool Y/N
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool t/f
+		Is_Marker - Bool Y/N
+		Is_Valid_Target - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_Damage_Alternates - Int, Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float, Int
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Last_State_Visible_Under_FOW - Ref
+		Lua_Script - Ref
+		Map_Load_Spawn_Table - Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref
+		Marker_For_Specific_Object_Type - Ref
+		Mass - Float
+		Multisample_FOW_Check - Bool Y/N
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Obstacle_Height - Float
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Radar_Icon_Name - File
+		Radar_Icon_Size - Ref
+		Radar_Range_Icon_Name - File
+		Radar_Show_Facing - Bool Y/N
+		Ranged_Target_Z_Adjust - Float
+		Reinforcement_Enabling_Radius - Float
+		Reinforcement_Region_Blob_Name - Ref
+		Reveal_During_Setup_Phase - Ref
+		Reveal_For_Attacker - Bool t/f
+		Reveal_For_Defender - Bool t/f
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Debug_Test_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Special_Weapon_Ready - Ref
+		Scale_Factor - Float
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Shield_Points - Int
+		Space_Model_Name - File
+		Tactical_Health - Int
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Terrain_Texture_Modifier_Join_Distance - Float
+		Terrain_Texture_Modifier_Material - Int
+		Terrain_Texture_Modifier_Square - Bool t/f
+		Text_ID - Ref
+		Tooltip_Text - Ref
+		Turret_Bone_Name - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rotate_Extent_Degrees - Int
+		Turret_Rotate_Speed - Float
+		Turret_Targets_Air_Vehicles - Ref
+		Turret_Targets_Anything_Else - Ref
+		Turret_Targets_Ground_Infantry - Ref
+		Turret_Targets_Ground_Vehicles - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+
+MiscObjects:
+	MiscObject:
+		Attribute: Name - String
+		Affiliation - Ref
+		Beacon_Lifetime_In_Secs - Float
+		Beacon_Radar_Map_Event_Name - Ref
+		Behavior - Ref, Ref
+		CategoryMask - Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Encyclopedia_Text - Ref
+		Is_Decoration - Bool Y/N
+		Is_Visible_On_Radar - Bool T/F
+		LandBehavior - Ref
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Bool Y/N
+		Lua_Script - Ref
+		Model_Name - File
+		Radar_Icon_Name - File
+		Radar_Icon_Size - Ref
+		SFXEvent_Beacon_Placed - Ref
+		Scale_Factor - Float
+		Space_Model_Name - File
+		Tactical_Health - Ref
+		Text_ID - Ref
+		Variant_Of_Existing_Type - Ref
+
+Movies:
+	Movie:
+		Attribute: Name - String
+		Alpha - Bool t/f
+		Cannot_Skip - Bool t/f
+		Caption_Duration - Ref, Int
+		Caption_Frame - Ref, Int
+		Commandbar_Offset - Ref
+		Halt_Game_Music - Ref
+		Has_Credits - Bool t/f
+		Movie_File - Filepath
+		Movie_Start_Frame - Int
+		Overlay - Bool t/f
+		Pause_Game_While_Playing - Bool t/f
+		SFXEvent_Frame - Ref, Int
+		SpeechEvent_Frame - Ref, Int
+		Text_Crawl_Name - Ref
+		Text_Crawl_Start_Frame - Int
+
+MusicEvents:
+	MusicEvent:
+		Attribute: Name - String
+		Fade_In_Seconds - Float
+		Fade_Out_Previous_Seconds - Float
+		Files - File, File, ...
+		Loop - Ref
+		MSS_Internal_Loop - Ref
+		Play_Sequentially - Ref
+		Play_Sequentialy - Ref
+		Volume_Percent - Ref
+
+Particles:
+	Particle:
+		Attribute: Name - String
+		Allow_Particle_Model_Culling - Bool y/n
+		Behavior - Ref
+		Exclude_From_Distance_Fade - Ref
+		Explosion_Jitter_Factor - Int
+		Explosion_Scorch_Mark - Ref
+		Galactic_Model_Name - File
+		In_Background - Ref
+		Is_Decoration - Ref
+		Is_Editor_Placed - Bool t/f
+		Land_Model_Name - Ref
+		Model_Visible_To_Enemy - Bool Y/N
+		No_Particle_Below_Detail_Level - Float
+		Particle_Attach_To_Collision - Int
+		Particle_Lifetime_Frames - Ref
+		Scale_Factor - Float
+		Space_Model_Name - File
+
+Planets:
+	Planet:
+		Attribute: Name - String
+		Abilities - Ref
+		Additional_Population_Capacity - Int
+		Always_Instantiate_Galactic - Bool y/n
+		Behavior - Ref, Ref, Ref
+		Camera_Aligned - Bool y/n
+		Describe_Advantage - Ref
+		Describe_History - Ref
+		Describe_Population - Ref
+		Describe_Tactical - Ref
+		Describe_Terrain - Ref
+		Describe_Weather - Ref
+		Describe_Wildlife - Ref
+		Destroyed_Galactic_Model_Name - File
+		Destroyed_Space_Tactical_Map - None
+		Encyclopedia_Text - Ref
+		Encyclopedia_Weather_Icon - File
+		Encyclopedia_Weather_Info - Ref
+		Encyclopedia_Weather_Name - Ref
+		Facing_Adjust - Float, Float, Float
+		Force_Strength - Float
+		GUI_Model_Name - File
+		Galactic_Influence_Range - Float
+		Galactic_Model_Name - File
+		Galactic_Position - Float, Float, Float
+		Hyperspace_Fleet_Reveal_Range - Float
+		In_Background - Bool y/n
+		Land_Tactical_Map - Ref
+		Loop_Idle_Anim_00 - Bool Y/N
+		Mass - Float
+		Max_Ground_Base - Int
+		Max_Space_Base - Int
+		Mouse_Collide_Override_Sphere_Radius - Float
+		Name_Adjust - Ref, Ref, Float
+		Native_Icon_Name - File
+		Planet_Ability_Description - Ref
+		Planet_Ability_Icon - File
+		Planet_Ability_Name - Ref
+		Planet_Black_Market_Influences - Bool Y/N
+		Planet_Capture_Bonus_Reward - Ref
+		Planet_Credit_Value - Int
+		Planet_Destroyed_Credit_Value - Int
+		Planet_Groundbase_Stealth - Bool Y/N
+		Planet_Is_Destroyable_By_TSW - Ref
+		Planet_Is_Mining_Colony - Bool Y/N
+		Planet_Restricted_Unit_Categories - None
+		Planet_Restricted_Unit_Types - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Planet_Retains_Residual_Influence - Ref
+		Planet_Slice_Affinity_Types - None
+		Planet_Slice_Difficulty_Rating - Int
+		Planet_Surface_Accessible - Ref
+		Planet_Tech_Availability_Rating - Int
+		Planet_Vigilance - Bool Y/N
+		Political_Control - Int
+		Potential_Indigenous_Power - Ref, Int
+		Pre_Lit - Bool y/n
+		Scale_Factor - Float
+		Show_Name - Bool Y/N
+		Space_Tactical_Map - Ref
+		Special_Structures - Int
+		Special_Structures_Land - Int
+		Special_Structures_Space - Int
+		Terrain - Ref
+		Text_ID - Ref
+		The_Force - Ref
+		Zoomed_Terrain_Index - Int
+
+Projectiles:
+	Projectile:
+		Attribute: Description - String
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Behavior - Ref, Ref
+		Damage_Type - Ref
+		Death_Explosions - None
+		Death_SFXEvent_Start_Die - None
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Explode_When_Reached_Target_Radius - Ref
+		Internal_Damage_Type - Ref
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Bool Y/N
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Model_Visible_To_Enemy - Bool Y/N
+		Projectile_Absorbed_By_Shields_Particle - Ref
+		Projectile_Acceleration_Per_Frame - Float
+		Projectile_Blast_Area_Damage - Float
+		Projectile_Blast_Area_Dropoff - Bool T/F
+		Projectile_Blast_Area_Dropoff_Tiers - Int
+		Projectile_Blast_Area_Immune_Faction - Ref
+		Projectile_Blast_Area_Range - Float
+		Projectile_Block_Chance_Modifier - Float
+		Projectile_Bomb_Fall_Accel_Rate - Float
+		Projectile_Category - Ref
+		Projectile_Cause_Invulnerability_Duration_Frames - Ref
+		Projectile_Cause_Invulnerability_Max_Targets - Ref
+		Projectile_Cause_Invulnerability_On_Detonation - Ref
+		Projectile_Cause_Invulnerability_Radius - Float
+		Projectile_Cause_Invulnerability_Spawn_Effect - Ref
+		Projectile_Cause_Invulnerability_Targets_Category_Mask - Ref | Ref | Ref | Ref
+		Projectile_Convert_Enemy_On_Detonation - Ref
+		Projectile_Convert_Enemy_Radius - Ref
+		Projectile_Convert_Enemy_Spawn_Effect - Ref
+		Projectile_Convert_Enemy_Targets_Category_Mask - Ref
+		Projectile_Custom_Render - Int
+		Projectile_Damage - Float
+		Projectile_Damage_Delay_Secs - Float
+		Projectile_Damages_Random_Hard_Points - Bool y/n
+		Projectile_Disable_Engines_Duration - Float
+		Projectile_Disables_Engines_When_Power_Drained - Bool Y/N
+		Projectile_Does_Energy_Damage - Bool Y/N
+		Projectile_Does_Hitpoint_Damage - Bool Y/N
+		Projectile_Does_Shield_Damage - Bool Y/N
+		Projectile_Energy_Per_Shot - Int
+		Projectile_Grenade_Can_Lob_Slower - Bool y/n
+		Projectile_Grenade_Gravity - Float
+		Projectile_Grenade_Gravity_Lob_Mod - Float
+		Projectile_Grenade_Sticks_On_Collision - Bool y/n
+		Projectile_Ground_Detonation_Particle - None
+		Projectile_Ground_Detonation_SurfaceFX - None
+		Projectile_Instant_Heal_Duration_Frames - Ref
+		Projectile_Instant_Heal_Health_Increase - Ref
+		Projectile_Instant_Heal_On_Detonation - Ref
+		Projectile_Instant_Heal_Radius - Ref
+		Projectile_Instant_Heal_Spawn_Effect - Ref
+		Projectile_Instant_Heal_Targets_Category_Mask - Ref | Ref
+		Projectile_Ion_Stun_Duration - Float
+		Projectile_Ion_Stun_On_Detonation - Bool t/f
+		Projectile_Ion_Stun_Shot_Rate_Reduction_Percent - Float
+		Projectile_Ion_Stun_Speed_Reduction_Percent - Floatf
+		Projectile_Ion_Stun_Stack_Duration - Bool Y/N
+		Projectile_Laser_Color - Int, Int, Int, Int
+		Projectile_Length - Float
+		Projectile_Lifetime_Detonation_Particle - Ref
+		Projectile_Max_Flight_Distance - Float
+		Projectile_Max_Lifetime - Float
+		Projectile_Max_Scan_Range - Float
+		Projectile_Object_Armor_Reduced_Detonation_Particle - Ref
+		Projectile_Object_Detonation_Particle - Ref
+		Projectile_Redirect_Chance_Modifier - Float
+		Projectile_Rocket_Curve_Distance - Int
+		Projectile_Rocket_Curve_Offset - Int
+		Projectile_Rocket_Straight_Distance - Int
+		Projectile_SFXEvent_Detonate - Ref
+		Projectile_SFXEvent_Detonate_Reduced_By_Armor - Ref
+		Projectile_Stun_Duration_Frames - Int
+		Projectile_Stun_On_Detonation - Bool Y/N
+		Projectile_Stun_Radius - Int
+		Projectile_Stun_Spawn_Effect - Ref
+		Projectile_Stun_Victims_Category_Mask - Ref | Ref
+		Projectile_Stun_Victims_Unit_Types - Ref
+		Projectile_Target_Point_On_Terrain - Ref
+		Projectile_Texture_Slot - Int, Int
+		Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent - Float
+		Projectile_Weaken_Enemy_Duration_Seconds - Float
+		Projectile_Weaken_Enemy_On_Detonation - Bool Y/N
+		Projectile_Weaken_Enemy_Radius - Int
+		Projectile_Weaken_Enemy_Spawn_Effect - Ref
+		Projectile_Weaken_Enemy_Take_Damage_Increase_Percent - Int
+		Projectile_Weaken_Enemy_Targets_Category_Mask - Ref
+		Projectile_Width - Float
+		SFXEvent_Fire - Ref
+		Scale_Factor - Float
+		Space_FOW_Reveal_Range - Float
+		Space_Model_Name - File
+		Text_ID - Ref
+		Variant_Of_Existing_Type - Ref
+
+Prop_Forest:
+	Prop_Forest:
+		Attribute: Name - String
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Hard_YExtent_Offset - Float
+		Is_Decoration - Bool Y/N
+		LandBehavior - Ref
+		Land_Model_Name - File
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Scale_Factor - Float
+		Space_Layer - Ref
+		Tactical_Model_Name - File
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+
+Props_Desert:
+	Prop_Desert:
+		Attribute: Name - String
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Hard_YExtent_Offset - Float
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool Y/N
+		LandBehavior - Ref
+		Land_Model_Name - File
+		Max_Distance_From_Spawner - Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Obstacle_Height - Float
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		Scale_Factor - Float
+		Space_Layer - Ref | Ref | Ref
+		Space_Obstacle_Offset - Ref
+		Space_Obstacle_Radius - Ref
+		Spawn_Indigenous_Units_Chance - Floatf
+		Spawn_Indigenous_Units_In_Packs - Bool Y/N
+		Spawn_Indigenous_Units_Radius - Floatf
+		Spawned_Indigenous_Units_Delay_Seconds - Float
+		Spawned_Indigenous_Units_Quantity - Int
+		Spawned_Indigenous_Units_Type - Ref
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+
+Props_Generic:
+	Props_Generic:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Armor_Type - Ref
+		Avoidance_Disabled - Ref
+		Behavior - Ref
+		CategoryMask - Ref
+		Collidable_By_Projectile_Dead - Bool Y/N
+		Collidable_By_Projectile_Living - Bool Y/N
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Damage - Int
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Deploys - Bool Y/N
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		FormationGrouping - Ref
+		FormationOrder - Ref
+		FormationSpacing - Float
+		Ground_Vehicle_Turret_Target - Ref
+		Has_Land_Evaluator - Bool Y/N
+		Icon_Name - File
+		Influences_Capture_Point - Ref
+		Is_Affected_By_Gravity_Control_Field - Ref
+		Is_Branched_Map_Discardable - Bool Y/N
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool Y/N
+		Is_Valid_Target - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Bool Y/N
+		Mass - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		MinimumPushReturnDistance - Ref
+		MovementClass - Ref
+		Movement_Animation_Speed - Float
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Obstacle_Height - Float
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		Occlusion_Silhouette_Enabled - Int
+		OccupationStyle - Ref
+		Overall_Length - Float
+		Overall_Width - Float
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Political_Control - Int
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Size_Value - Int
+		Snap_Movement_Orders_To_Center - Ref
+		Space_Layer - Ref
+		SurfaceFX_Name - Ref, Ref
+		Tactical_Health - Int
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+		Victory_Relevant - Bool Y/N
+		Weather_Category - Ref
+		Wind_Disturbance_Radius - Int
+		Wind_Disturbance_Sphere_Alpha - Float
+		Wind_Disturbance_Strength - Int
+	SpaceProp:
+		Attribute: Name - String
+		Is_Decoration - Ref
+		Is_Discardable - Ref
+		Land_Model_Name - Ref
+		Scale_Factor - Ref
+		Sort_Order_Adjust - Ref
+		Text_ID - None
+
+Props_Snow:
+	Props_Snow:
+		Attribute: Name - String
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Hard_YExtent_Offset - Float
+		Is_Decoration - Bool Y/N
+		LandBehavior - Ref
+		Land_Model_Name - File
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Scale_Factor - Float
+		Space_Layer - Ref
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+
+Props_Story:
+	GroundBuildable:
+		Attribute: Name - String
+		Variant_Of_Existing_Type - Ref
+	Props_Story:
+		Attribute: Name - String
+		Affiliation - Ref
+		Armor_Type - Ref
+		Base_Level_Available - Int
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Is_Decoration - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Bool Y/N
+		Mass - Float
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Obstacle_Height - Float
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		Radar_Icon_Scale_Land - Float
+		Radar_Icon_Scale_Space - Float
+		Ranged_Target_Z_Adjust - Float
+		Scale_Factor - Float
+		Tactical_Health - Int
+		Text_ID - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+	SpaceStructure:
+		Attribute: Name - String
+		Affiliation - Ref
+		Armor_Type - Ref
+		Base_Level_Available - Int
+		Behavior - None
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_Projectiles - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Facing_Adjust - Float, Float, Float
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Size - Int
+		Has_Space_Evaluator - Bool T/F
+		Icon_Name - File
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref
+		Land_Damage_Alternates - Int, Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float, Int
+		Layer_Z_Adjust - Float
+		Mass - Float
+		No_Colorization_Color - Int, Int, Int, Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Property_Flags - Ref
+		Radar_Icon_Size - Ref
+		Ranged_Target_Z_Adjust - Float
+		Remove_Upon_Death - Bool t/f
+		Reveal_During_Setup_Phase - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Select_Box_Scale - Int
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		SpaceBehavior - Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Space_Obstacle_Offset - Ref
+		Space_Obstacle_Radius - Ref
+		Tactical_Health - Int
+		Text_ID - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		Visible_On_Radar_When_Fogged - Bool T/F
+
+Props_Swamp:
+	Props_Swamp:
+		Attribute: Name - String
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Hard_YExtent_Offset - Float
+		Encyclopedia_Unit_Class - Ref
+		Is_Decoration - Bool Y/N
+		Is_Editor_Placed - Bool t/f
+		LandBehavior - Ref
+		Land_Model_Name - File
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Scale_Factor - Float
+		Space_Layer - Ref
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+
+Props_Temperate:
+	Props_Temperate:
+		Attribute: Name - String
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Hard_YExtent_Offset - Float
+		Exclude_From_Distance_Fade - Bool t/f
+		Idle_Anim_00_Rate_Mod - Float
+		In_Background - Ref
+		Is_Decoration - Ref
+		Is_Discardable - Ref
+		LandBehavior - Ref
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Ref
+		Max_Distance_From_Spawner - Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Scale_Factor - Float
+		Sort_Order_Adjust - Ref
+		Space_Layer - Ref
+		Spawn_Indigenous_Units_Chance - Floatf
+		Spawn_Indigenous_Units_In_Packs - Bool Y/N
+		Spawn_Indigenous_Units_Radius - Floatf
+		Spawned_Indigenous_Units_Delay_Seconds - Float
+		Spawned_Indigenous_Units_Quantity - Int
+		Spawned_Indigenous_Units_Type - Ref, Ref
+		Tactical_Model_Name - File
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+		Variant_Of_Existing_Type - Ref
+
+Props_Urban:
+	Props_Urban:
+		Attribute: Name - String
+		Behavior - Ref
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool Y/N
+		LandBehavior - Ref
+		Land_Model_Name - File
+		Loop_Idle_Anim_00 - Bool Y/N
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Scale_Factor - Float
+		Text_ID - Ref
+
+Props_Volcanic:
+	Props_Volcanic:
+		Attribute: Name - String
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Custom_Hard_YExtent_Offset - Float
+		Is_Decoration - Bool Y/N
+		Is_Editor_Placed - Bool t/f
+		LandBehavior - Ref
+		Land_Model_Name - File
+		Scale_Factor - Float
+		Space_Layer - Ref
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+
+RadarMap:
+	RadarMapEvents:
+		Radar_Map_Event - Ref
+	RadarMapSettings:
+		Color - Int, Int, Int, Int
+		Land_Backdrop_Texture_Name - File
+		Land_FOW_Color - Int, Int, Int, Int
+		Land_Is_Guide_Rectangle - Bool Y/N
+		Passability_Color_Settings - Ref
+		Space_Asteroid_Field_Border_Color - Int, Int, Int, Int
+		Space_Asteroid_Field_Color - Int, Int, Int, Int
+		Space_Backdrop_Texture_Name - File
+		Space_FOW_Color - Int, Int, Int, Int
+		Space_Is_Guide_Rectangle - Bool Y/N
+		Use_Event_System - Bool Y/N
+
+RebelGroundCompanies:
+	GroundCompany:
+		Attribute: Name - String
+		Affiliation - Ref
+		Autoresolve_Health - Int
+		Behavior - Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Tab_Land_Units - Bool Y/N
+		Build_Time_Reduced_By_Multiple_Factories - Ref
+		Build_Time_Seconds - Int
+		Company_Transport_Unit - Ref
+		Company_Units - Ref, Ref, Ref, Ref, Ref
+		Create_Team_Type - Ref
+		Damage - Int
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Formation_Priority - Int
+		Formation_Prority - Int
+		GUI_Distance - Int
+		GUI_Model - File
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Icon_Name - File
+		Ignore_For_Reoptimization - Ref
+		Is_Dummy - Bool Y/N
+		Is_Escort - Bool y/n
+		Is_Homogeneous - Bool Y/N
+		Land_Model_Name - File
+		Maintenance_Cost - Float
+		Max_Squad_Size - Ref
+		Population_Value - Int
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - Ref
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Fleet_Move - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Int
+		Ship_Class - Ref
+		Slice_Cost_Credits - Int
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Production_Queue - Ref
+		Tech_Level - Int
+		Text_ID - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+
+SFXEvent_Files:
+	File - Ref
+
+ScriptMarkers:
+	ScriptMarker:
+		Attribute: Name - String
+		Behavior - Ref, Ref
+		Is_Marker - Ref
+		Land_Model_Name - Ref
+		Lua_Script - Ref
+		Space_Model_Name - Ref
+		Text_ID - Ref
+
+SpaceBuildables:
+	SpaceBuildable:
+		Attribute: Name - String
+		Abilities - Ref
+		Affiliation - Ref
+		Apply_Y_Turret_Rotate_To_Axis - Int
+		Apply_Z_Turret_Rotate_To_Axis - Int
+		Armor_Type - Ref
+		Base_Level_Available - Ref
+		Behavior - Ref, Ref, Ref, Ref, Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Initially_Locked - Bool Y/N
+		Capture_Point_Radius - Float
+		Capture_Point_Transition_Time_Seconds - Int
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Custom_Soft_Footprint_Radius - Ref
+		Damage - Int
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Destroy_When_Child_Dies - Bool T/F
+		Encyclopedia_Text - Ref, Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Fire_Inaccuracy_Distance - Ref, Float
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Size - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Has_Space_Evaluator - Bool T/F
+		Hides_When_Built_On - Bool T/F
+		Icon_Name - File
+		Influences_Capture_Point - Ref
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Community_Property - Bool Y/N
+		Is_Dummy - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		Land_Damage_Alternates - Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float
+		Last_State_Visible_Under_FOW - Ref
+		Loop_Idle_Anim_00 - Ref
+		MP_Encyclopedia_Text - Ref, Ref
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Ownership_Sticks - Bool Y/N
+		Projectile_Damage - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Radar_Icon_Name - File
+		Radar_Icon_Size - Ref
+		Radar_Show_Facing - Bool Y/N
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Size_Value - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Int
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Space_Obstacle_Offset - Ref
+		Tactical_Build_Cost_Campaign - Int
+		Tactical_Build_Cost_Multiplayer - Ref
+		Tactical_Build_Start_Lower_Z - Float
+		Tactical_Build_Time_Seconds - Ref
+		Tactical_Buildable_Constructed - Ref
+		Tactical_Buildable_Objects_Campaign - Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Tactical_Buildable_Objects_Multiplayer - Ref, Ref, Ref, Ref
+		Tactical_Health - Int
+		Tactical_Respawn_Time_In_Secs - Int
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Text_ID - Ref
+		Turret_Bone_Name - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rest_Angle - Float, Float, Float
+		Turret_Rotate_Extent_Degrees - Int
+		Turret_Rotate_Speed - Float
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		Visible_To_Enemies_When_Empty - Bool T/F
+
+SpaceCorvettes:
+	SpaceUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Affiliation - Ref
+		Armor_Type - Ref
+		Attack_Move_Response_Range - Float
+		Autonomous_Move_Extension_Vs_Attacker - Float
+		Autoresolve_Health - Int
+		Bank_Turn_Angle - Int
+		Behavior - Ref, Ref, Ref, Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Tab_Space_Units - Bool Y/N
+		Build_Time_Seconds - Int
+		CategoryMask - Ref | Ref | Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Collision_Box_Modifier - Float
+		Custom_Footprint_Radius - Float
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Fire_Inaccuracy_Distance - Ref, Float
+		Fires_Forward - Bool y/n
+		FormationOrder - Int
+		FormationPriority - Int
+		Formation_Priority - Int
+		GUI_Bracket_Size - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Guard_Chase_Range - Float
+		HardPoints - Ref, Ref, Ref
+		Hardpoints - Ref, Ref, Ref, Ref, Ref
+		Has_Space_Evaluator - Bool T/F
+		Hyperspace - Bool Y/N
+		Hyperspace_Speed - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Bomber - Bool y/n
+		Is_Escort - Bool Y/N
+		Is_Interdictor - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		Layer_Z_Adjust - Float
+		Maintenance_Cost - Float
+		Mass - Float
+		Max_Lift - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Min_Speed - Float
+		Min_Speed_Fraction_For_Turn - Float
+		Minimum_Follow_Distance - Float
+		MovementClass - Ref
+		No_Colorization_Color - Int, Int, Int, Int
+		Number_per_Squadron - Int
+		Out_Of_Combat_Defense_Adjustment - Float
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Political_Control - Int
+		Population_Value - Int
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Int
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Ranged_Target_Z_Adjust - Int
+		Ranking_In_Category - Int
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Attack_Hardpoint - Ref, Ref
+		SFXEvent_Attack_With_Non_Hero_Ability - Ref
+		SFXEvent_Barrage - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Move_Into_Nebula - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Stop - Ref
+		SFXEvent_Tactical_Build_Cancelled - Ref
+		SFXEvent_Tactical_Build_Complete - Ref
+		SFXEvent_Tactical_Build_Started - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Ref
+		Shield_Armor_Type - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Ship_Class - Ref
+		Should_Attacker_Hold_Fire_For_Special_Ability - Bool T/F
+		Size_Value - Int
+		Slice_Cost_Credits - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Squadron_Capacity - Int
+		Surface_Bombardment_Capable - Bool Y/N
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Health - Int
+		Tactical_Production_Queue - Ref
+		Targeting_Fire_Inaccuracy_Fixed_Radius - Ref
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Min_Attack_Distance - Int
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Tech_Level - Int
+		Text_ID - Ref
+		Transport_Capacity - Int
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rotate_Extent_Degrees - Int
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		xxxSpace_Model_Name - File
+
+SpacePrimarySkydomes:
+	SpacePrimarySkydome:
+		Attribute: Name - String
+		Behavior - Ref
+		Exclude_From_Distance_Fade - Bool t/f
+		Galactic_Model_Name - None
+		In_Background - Bool Y/N
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool Y/N
+		Land_Model_Name - File
+		Layer_Z_Adjust - Float
+		Loop_Idle_Anim_00 - Bool Y/N
+		Scale_Factor - Float
+		Sort_Order_Adjust - None
+		Space_Model_Name - File
+		Text_ID - None
+
+SpaceProps:
+	SpaceProp:
+		Attribute: Name - String
+		Abilities - Ref
+		Affiliation - Ref, Ref
+		Behavior - Ref, Ref
+		CategoryMask - Ref
+		Collidable_By_Projectile_Dead - Bool Y/N
+		Collidable_By_Projectile_Living - Bool Y/N
+		Death_By_TSW_Replacements - Ref, Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Debris_Attached_Particle - Ref
+		Debris_Facing_Rotate_Vector - Float, Float, Float
+		Debris_Max_Lifetime_Seconds - Float
+		Debris_Min_Lifetime_Seconds - Float
+		Debris_Movement_Vector - Float, Float, Float
+		Exclude_From_Distance_Fade - Bool t/f
+		Idle_Anim_00_Rate_Mod - Float
+		In_Background - Bool Y/N
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Asteroid_Field - Ref
+		Is_Decoration - Ref
+		Is_Discardable - Ref
+		Is_Impassable_Asteroid - Ref
+		Is_Ion_Storm - Bool Y/N
+		Is_Nebula - Ref
+		Is_Valid_Target - Bool Y/N
+		Is_Visible_On_Radar - Ref
+		Layer_Z_Adjust - Int
+		Loop_Idle_Anim_00 - Ref
+		Radar_Icon_Name - Ref
+		Radar_Icon_Size - Ref
+		Remove_Upon_Death - Bool t/f
+		Scale - Float
+		Scale_Factor - Float
+		Sort_Order_Adjust - Ref
+		SpaceBehavior - Ref
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Space_Obstacle_Offset - Ref
+		Space_Obstacle_Radius - Ref
+		Tactical_Health - Ref
+		Text_ID - None
+		Variant_Of_Existing_Type - Ref
+		Visible_On_Radar_When_Fogged - Bool T/F
+
+SpaceSecondarySkydomes:
+	SpaceSecondarySkydome:
+		Attribute: Name - String
+		Behavior - None
+		Exclude_From_Distance_Fade - Bool t/f
+		Galactic_Model_Name - None
+		In_Background - Bool y/n
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool Y/N
+		Layer_Z_Adjust - Float
+		Loop_Idle_Anim_00 - Bool Y/N
+		Scale_Factor - Float
+		Sort_Order_Adjust - Ref
+		Space_Model_Name - File
+		Text_ID - None
+
+SpaceUnitsCapital:
+	SpaceUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Armor_Type - Ref
+		Asteroid_Damage_Hit_Particles - Ref
+		Attack_Move_Response_Range - Float
+		Autoresolve_Health - Int
+		Bank_Turn_Angle - Int
+		Behavior - Ref, Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Tab_Space_Units - Bool Y/N
+		Build_Time_Seconds - Int
+		CategoryMask - Ref | Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Formation_Priority - Int
+		GUI_Bracket_Height - Int
+		GUI_Bracket_Size - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Glory_Cinematics - Ref
+		Guard_Chase_Range - Float
+		HardPoints - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Has_Space_Evaluator - Bool T/F
+		Hyperspace - Bool Y/N
+		Hyperspace_Speed - Int
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Visible_On_Radar - Bool Y/N
+		Layer_Z_Adjust - Float
+		Maintenance_Cost - Float
+		Mass - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		MovementClass - Ref
+		Multisample_FOW_Check - Bool Y/N
+		No_Colorization_Color - Int, Int, Int, Int
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Political_Faction - Ref
+		Population_Value - Int
+		Radar_Icon_Name - File
+		Radar_Icon_Scale_Land - Float
+		Radar_Icon_Scale_Space - Float
+		Ranking_In_Category - Int
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Int
+		Required_Planets - Ref, Ref, Ref, Ref
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		Reserve_Spawned_Units_Tech_0 - Ref, Int
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Attack_Hardpoint - Ref, Ref
+		SFXEvent_Barrage - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Damaged_By_Asteroid - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Hardpoint_Destroyed - Ref, Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Move_Into_Asteroid_Field - Ref
+		SFXEvent_Move_Into_Nebula - Ref
+		SFXEvent_Move_Opposite - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Stop - Ref
+		Scale_Factor - Int
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Ref
+		Shield_Armor_Type - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Ship_Class - Ref
+		Size_Value - Int
+		Slice_Cost_Credits - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Full_Stop_Command - Ref
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Spawned_Squadron_Delay_Seconds - Int
+		Squadron_Capacity - Int
+		Starting_Spawned_Units_Tech_0 - Ref, Int
+		Surface_Bombardment_Capable - Bool y/n
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Health - Int
+		Tactical_Production_Queue - Ref
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Tech_Level - Int
+		Text_ID - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		Visible_On_Radar_When_Fogged - Bool t/f
+		xxxSpace_Model_Name - File
+
+SpaceUnitsFrigates:
+	SpaceUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Affiliation - Ref, Ref, Ref
+		Armor_Type - Ref
+		Asteroid_Damage_Hit_Particles - Ref
+		Attack_Move_Response_Range - Float
+		Autoresolve_Health - Int
+		Bank_Turn_Angle - Int
+		Behavior - Ref, Ref, Ref, Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Tab_Space_Units - Bool Y/N
+		Build_Time_Seconds - Int
+		CategoryMask - Ref | Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_Leave_Hulk_Behind - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Disallows_Hyperspace_Retreat - Ref
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Formation_Priority - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Guard_Chase_Range - Float
+		HardPoints - Ref
+		Has_Space_Evaluator - Bool T/F
+		Hyperspace - Bool Y/N
+		Hyperspace_Speed - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Bomber - Bool y/n
+		Is_Escort - Bool y/n
+		Is_Interdictor - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		Layer_Z_Adjust - Float
+		Lua_Script - Ref
+		Maintenance_Cost - Float
+		Mass - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Moniker - Ref
+		MovementClass - Ref
+		No_Colorization_Color - Int, Int, Int, Int
+		Number_per_Squadron - Int
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Play_SFXEvent_On_Sighting - Bool T/F
+		Political_Control - Int
+		Population_Value - Int
+		Radar_Icon_Scale_Land - Float
+		Radar_Icon_Scale_Space - Float
+		Ranged_Target_Z_Adjust - Float
+		Ranking_In_Category - Int
+		Reinforcement_Prevention_Radius - Ref
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		Reserve_Spawned_Units_Tech_0 - Ref, Int
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Attack_Hardpoint - Ref, Ref
+		SFXEvent_Barrage - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Damaged_By_Asteroid - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Hardpoint_Destroyed - Ref, Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Move_Into_Asteroid_Field - Ref
+		SFXEvent_Move_Into_Nebula - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Stop - Ref
+		SFXEvent_Tactical_Build_Cancelled - Ref
+		SFXEvent_Tactical_Build_Complete - Ref
+		SFXEvent_Tactical_Build_Started - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Ref
+		Shield_Armor_Type - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Ship_Class - Ref
+		Size_Value - Int
+		Slice_Cost_Credits - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Full_Stop_Command - Ref
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Spawned_Squadron_Delay_Seconds - Int
+		Squadron_Capacity - Int
+		Starting_Spawned_Units_Tech_0 - Ref, Int
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Health - Int
+		Tactical_Production_Queue - Ref
+		Target_Bones - Ref, Ref
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Tech_Level - Int
+		Text_ID - Ref
+		Transport_Capacity - Int
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		xxxSpace_Model_Name - File
+
+SpaceUnitsSupers:
+	SpaceUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Autoresolve_Health - Int
+		Bank_Turn_Angle - Int
+		Behavior - Ref
+		Build_Cost_Credits - Int
+		Build_Countdown_Text_ID - Ref
+		Build_Countdown_Text_RGBA - Int, Int, Int, Int
+		Build_Countdown_Timer - Ref
+		Build_Limit_Current_Per_Player - Int
+		Build_Limit_Lifetime_Per_Player - Int
+		Build_Music_Completed - Ref
+		Build_Speech_Completed - Ref
+		Build_Speech_Countdowns - Ref
+		Build_Speech_Stopped - Ref
+		Build_Speech_Underway - Ref
+		Build_Tab_Special_Structures - Bool Y/N
+		Build_Time_Seconds - Int
+		CategoryMask - Ref
+		Collision_Box_Modifier - Float
+		Damage - Int
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Formation_Priority - Int
+		GUI_Row - Ref
+		GalacticBehavior - Ref
+		Galactic_Fleet_Override_Icon_Index - Ref
+		Galactic_Fleet_Override_Model_Name - Ref
+		Hyperspace - Bool Y/N
+		Hyperspace_Speed - Float
+		Icon_Name - File
+		In_Background - Bool Y/N
+		Is_Bomber - Bool y/n
+		Is_Escort - Bool y/n
+		Is_Visible_On_Radar - Bool Y/N
+		Maintenance_Cost - Float
+		Mass - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Number_per_Squadron - Int
+		Political_Faction - Ref
+		Population_Value - Int
+		Prevents_Story_Campaign_Autoresolve - Bool y/n
+		Radar_Clip_To_Visible_Region - Bool Y/N
+		Radar_Icon_Name - File
+		Radar_Icon_Size - Ref
+		Radar_Register_As_Foreground_Object - Bool Y/N
+		Ranking_In_Category - Ref
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		SFXEvent_Fire - Ref
+		Scale_Factor - Float
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Ship_Class - Ref
+		Size_Value - Int
+		SpaceBehavior - Ref, Ref
+		Space_Escort_Unit_Types - Ref, Ref, Ref, Ref, Ref
+		Space_Model_Name - File
+		Space_Override_Population_Value - Int
+		Squadron_Capacity - Int
+		TSW_Attack_Anim_Duration_Seconds - Float
+		TSW_Attack_Distance_From_Target - Float
+		TSW_Explosion_Debris_Creation_Frame_Delay - Ref
+		TSW_MusicEvent_Activation_Start - Ref
+		TSW_Post_Destruction_Wait_Frames - Ref
+		TSW_Post_Music_Wait_Frames - Ref
+		TSW_Power_Up_Countdown_Seconds - Float
+		TSW_SFXEvent_Activate_Voice - Ref
+		TSW_SFXEvent_GUI_Bttton_Press - Ref
+		TSW_SFXEvent_Weapon_Power_Up - Ref
+		TSW_Start_Distance_From_Target - Float
+		TSW_Start_Pos_Match_Targets_Z - Ref
+		TSW_Z_Adjust_Relative_To_Target_Pos - Float
+		Tactical_Health - Int
+		Tech_Level - Int
+		Text_ID - Ref
+		Transport_Capacity - Int
+		Victory_Relevant - Bool Y/N
+
+SpecialEffects:
+	SpecialEffect:
+		Attribute: Name - String
+		Behavior - Ref
+		Is_Decoration - Bool Y/N
+		Is_Discardable - Bool Y/N
+		Land_Model_Name - File
+		Scale_Factor - Float
+		Space_Model_Name - File
+
+SpecialStructures:
+	SpecialStructure:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Apply_Y_Turret_Rotate_To_Axis - Int
+		Apply_Z_Turret_Rotate_To_Axis - Int
+		Armor_Type - Ref
+		Autoresolve_Health - Int
+		Barrel_Bone_Name - Ref
+		Base_Level_Available - Int
+		Base_Position - Ref
+		Base_Shield_Always_Off - Ref
+		Base_Shield_Radius - Int
+		Behavior - Ref, Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Bombing_Run_Prevention_Radius - Int
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Max_Instances_Per_Planet - Ref
+		Build_Requires_Initial_Placement - Bool t/f
+		Build_Tab_Special_Structures - Bool Y/N
+		Build_Time_Seconds - Int
+		Can_Contain_Heroes_During_Ground_Battle - Ref
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Custom_Soft_Footprint_Radius - Ref
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Clone_Is_Obstacle - Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Destruction_Survivors - Ref, Float
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Exclude_From_Distance_Fade - Bool t/f
+		Fine_Tune_Occupied_Passability - Bool Y/N
+		Fire_Inaccuracy_Distance - Ref, Float
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Height - Int
+		GUI_Bracket_Size - Int
+		GUI_Bracket_Width - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Galactic_Influence_Range - Float
+		Gravity_Control_Field_Range - Float
+		HQ_Win_Condition_Relevant - Bool y/n
+		Has_Land_Evaluator - Bool T/F
+		Has_Space_Evaluator - Bool T/F
+		Hyperspace_Fleet_Reveal_Range - Float
+		Icon_Name - File
+		Influences_Capture_Point - Bool T/F
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Community_Property - Bool Y/N
+		Is_Dummy - Bool Y/N
+		Is_Impassable_Asteroid - Ref
+		Is_Interdictor - Bool Y/N
+		Is_Special_Weapon_In_Space - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_Damage_Alternates - Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Land_Victory_Relevant - Bool Y/N
+		Last_State_Visible_Under_FOW - Ref
+		Layer_Z_Adjust - Float
+		Lobbing_Superweapon_Chargeup_Frames - Int
+		Lobbing_Superweapon_Chargeup_Particle - Ref
+		Lobbing_Superweapon_Chargeup_Particle_Bone_Name - Ref
+		Lobbing_Superweapon_SFXEvent_Chargeup - Ref
+		Lobbing_Superweapon_SFXEvent_Fire - Ref
+		Loop_Idle_Anim_00 - Bool Y/N
+		MP_Encyclopedia_Text - Ref, Ref
+		Mass - Float
+		Modifies_Reveal_Range - Bool y/n
+		Movie_Object - Bool t/f
+		Multisample_FOW_Check - Bool Y/N
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Obstacle_Height - Float
+		Obstacle_Proxy_Type - Ref
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		Ownership_Sticks - Bool Y/N
+		Place_At_Every_Specific_Marker_Position - Bool T/F
+		Place_Other_Type_At_Every_Specific_Marker_Position - Ref
+		Political_Control - Int
+		Prevents_Blockade_Run_Attrition - Bool T/F
+		Projectile_Damage - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref | Ref
+		Radar_Icon_Name - None
+		Radar_Icon_Size - Ref
+		Radar_Range_Icon_Name - File
+		Radar_Show_Facing - Bool Y/N
+		Ranged_Target_Z_Adjust - Float
+		Reinforcement_Prevention_Radius - Int
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		Requires_Base_Power - Bool T/F
+		Reserve_Spawned_Units_Tech_0 - Ref, Ref
+		Reveal_During_Setup_Phase - Ref
+		Reveal_Range_Modifier - Float
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Powered_Active_Loop - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Sold_Tactical - Ref
+		SFXEvent_Special_Weapon_Ready - Ref
+		SFXEvent_Turret_Rotating_Loop - Ref
+		SFXEvent_Unit_Lost - Ref
+		SFXEvent_Unit_Under_Attack - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		SecondaryOccupationPassability - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Shield_Normal_Color - Float, Float, Float, Float
+		Shield_Off_Anim - Ref
+		Shield_On_Anim - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Shield_Upgraded_Color - Float, Float, Float, Float
+		Ship_Class - Ref
+		Size_Value - Int
+		Slice_Cost_Credits - Int
+		SpaceAutoResolveHitRate - Int
+		SpaceAutoResolveStunRate - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Space_Obstacle_Offset - Ref
+		Space_Victory_Relevant - Bool Y/N
+		Spawn_Garrison_On_Load - Bool T/F
+		Spawned_Squadron_Delay_Seconds - Int
+		Spawned_Squadron_Location_Bones - Ref
+		Spawned_Squadron_Location_Flyout_Distances - Float
+		Special_Weapon_Index - Int
+		Special_Weapon_Target_Action_Index - Ref
+		Special_Weapon_Valid_Targets - Ref | Ref | Ref | Ref | Ref
+		Starting_Spawned_Units_Tech_0 - Ref, Int
+		Tactical_Additional_Structure_Type - Ref
+		Tactical_Buildable_Objects_Campaign - Ref, Ref, Ref, Ref, Ref, Ref
+		Tactical_Buildable_Objects_Multiplayer - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Tactical_Health - Int
+		Tactical_Sell_Credits - Ref
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Min_Attack_Distance - Ref
+		Targeting_Priority_Set - Ref
+		Tech_Level - Int
+		Terrain_Texture_Modifier_Join_Distance - Float
+		Terrain_Texture_Modifier_Material - Int
+		Terrain_Texture_Modifier_Square - Bool t/f
+		Text_ID - Ref
+		Turret_Bone_Name - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rest_Angle - Float, Float, Float
+		Turret_Rotate_Extent_Degrees - Int
+		Turret_Rotate_Speed - Float
+		Turret_Targets_Air_Vehicles - Ref
+		Turret_Targets_Anything_Else - Ref
+		Turret_Targets_Ground_Infantry - Ref
+		Turret_Targets_Ground_Vehicles - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		Weapon_Quantity - Int
+		Weapon_Type - Ref
+
+SpeechEvents:
+	SpeechEvent:
+		Attribute: Name - String
+		Files - Ref
+		Overlap_Test - Ref
+		Text_ID - Ref
+		Volume_Percent - Ref
+
+Squadrons:
+	Squadron:
+		Attribute: Name - String
+		Abilities - Ref
+		Affiliation - Ref
+		Attack_Move_Response_Range - Float
+		Autonomous_Move_Extension_Vs_Attacker - Float
+		Autoresolve_Health - Int
+		Behavior - Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Limit_Current_For_All_Allies - Int
+		Build_Limit_Lifetime_Per_Player - Ref
+		Build_Tab_Space_Units - Bool Y/N
+		Build_Time_Seconds - Int
+		Create_Team_Type - Ref
+		Damage - Int
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		FormationOrder - Int
+		Formation_Priority - Int
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Guard_Chase_Range - Float
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Is_Bomber - Bool y/n
+		Is_Dummy - Bool Y/N
+		Is_Escort - Bool Y/N
+		Is_Homogeneous - Bool Y/N
+		Is_Named_Hero - Bool Y/N
+		Max_Squad_Size - Ref
+		Political_Control - Int
+		Population_Value - Int
+		Property_Flags - Ref
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Tech_Structure - None
+		Required_Timeline - None
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Hero_Respawned - Ref
+		SFXEvent_Tactical_Build_Cancelled - Ref
+		SFXEvent_Tactical_Build_Complete - Ref
+		SFXEvent_Tactical_Build_Started - Ref
+		Score_Cost_Credits - Ref
+		Slice_Cost_Credits - Int
+		SpaceBehavior - Ref
+		Space_FOW_Reveal_Range - Float
+		Squadron_Formation_Error_Tolerance - Float
+		Squadron_Offsets - Float, Float, Float
+		Squadron_Units - Ref, Ref
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Production_Queue - Ref
+		Tech_Level - Int
+		Text_ID - Ref
+		Unit_Abilities_Data - Ref
+		Variant_Of_Existing_Type - Ref
+
+StarBases:
+	StarBase:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Additional_Population_Capacity - Int
+		Affiliation - Ref
+		Armor_Type - Ref
+		Autoresolve_Health - Int
+		Available_In_Skirmish - Bool Y/N
+		Base_Level - Int
+		Behavior - Ref, Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Tab_Space_Station - Bool Y/N
+		Build_Time_Seconds - Int
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Custom_Soft_Footprint_Radius - Ref
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_Persistence_Duration - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		GUI_Angles - Ref
+		GUI_Bounds_Scale - Float
+		GUI_Distance - Int
+		GUI_Model_Name - File
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		GUI_X_Rot - Int
+		Galactic_Model_Name - File
+		HardPoints - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Has_Space_Evaluator - Bool T/F
+		Icon_Name - File
+		Initial_State_Visible_Under_FOW - Bool T/F
+		Is_Community_Property - Bool Y/N
+		Is_Dummy - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		Last_State_Visible_Under_FOW - Ref
+		Layer_Z_Adjust - Float
+		Multisample_FOW_Check - Bool Y/N
+		Next_Level_Base - None
+		Prev_Level_Base - Ref
+		Radar_Icon_Name - File
+		Radar_Icon_Scale_Land - Float
+		Radar_Icon_Scale_Space - Float
+		Radar_Icon_Size - Ref
+		Radar_Rotate_Icon - Bool Y/N
+		Reinforcement_Prevention_Radius - Ref
+		Required_Ground_Base_Level - Int
+		Required_Star_Base_Level - Int
+		Reserve_Spawned_Units_Tech_0 - Ref, Ref
+		Retreat_Self_Destruct_Explosion - Ref
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Attack_Hardpoint - Ref, Ref
+		SFXEvent_Barrage - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Hardpoint_All_Weapons_Destroyed - Ref
+		SFXEvent_Hardpoint_Destroyed - Ref, Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Unit_Under_Attack - Ref
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Ref
+		Shield_Armor_Type - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Should_Death_Clone_Play_Idle - Ref
+		Size_Value - Int
+		Slice_Cost_Credits - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Space_Obstacle_Offset - Ref
+		Spawned_Squadron_Delay_Seconds - Int
+		Starting_Spawned_Units_Tech_0 - Ref, Int
+		Tactical_Buildable_Objects_Campaign - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Tactical_Buildable_Objects_Multiplayer - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Tactical_Health - Int
+		Targeting_Max_Attack_Distance - Float
+		Tech_Level - Int
+		Text_ID - Ref
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+		Visible_On_Radar_When_Fogged - Bool T/F
+		Visible_To_Enemies_When_Empty - Bool T/F
+	Starbase:
+		Attribute: Name - String
+		Behavior - Ref, Ref, Ref
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Initially_Locked - Bool Y/N
+		Variant_Of_Existing_Type - Ref
+
+StarWars3DTextScroll:
+	TextScroll:
+		Attribute: name - String
+		Data_Specifications - Ref
+
+TacticalCameras:
+	TacticalCamera:
+		Attribute: Name - String
+		Bottom_Bounds_Buffer - Floatf
+		Distance_Default - Float
+		Distance_Max - Float
+		Distance_Min - Float
+		Distance_Per_Mouse_Unit - Float
+		Distance_Smooth_Time - Float
+		Distance_Spline - Ref, Float, Float, Float, Float
+		Far_Clip - Float
+		Fov_Default - Float
+		Fov_Max - Float
+		Fov_Min - Float
+		Fov_Per_Mouse_Unit - Float
+		Fov_Smooth_Time - Float
+		Fov_Smooth_time - Float
+		Location_Follows_Terrain - Int
+		Location_Height_Down_Smooth_Time - Float
+		Location_Height_Smooth_Time - Float
+		Location_Height_Up_Smooth_Time - Float
+		MinHeightAboveTerrain - Float
+		Min_Height_Above_Terrain - Float
+		Near_Clip - Float
+		Object_Fade_Begin - Floatf
+		Object_Fade_End - Floatf
+		Pitch_Default - Float
+		Pitch_Max - Float
+		Pitch_Min - Float
+		Pitch_Per_Mouse_Unit - Float
+		Pitch_Per_Zoom_Unit - Float
+		Pitch_Spline - Float, Float, Float, Float, Float, Float, Float, Int
+		Pitch_When_Zoomed_In - Float
+		Pitch_Zoom_Begin_Fraction - Float
+		Side_Bounds_Buffer - Floatf
+		Spline_Steps - Int
+		Tactical_Overview_Click_Time - Float
+		Tactical_Overview_Clicks - Int
+		Tactical_Overview_Distance - Float
+		Tactical_Overview_Distance2 - Float
+		Tactical_Overview_FOV - Float
+		Tactical_Overview_FOV2 - Float
+		Tactical_Overview_Pitch - Float
+		Tactical_Overview_Pitch2 - Float
+		Top_Bounds_Buffer - Floatf
+		Use_Splines - Bool y/n
+		Yaw_Default - Float
+		Yaw_Max - Float
+		Yaw_Min - Float
+		Yaw_Per_Mouse_Unit - Float
+
+Targeting_Priority_Set_Files:
+	File - File
+
+TechBuildings:
+	TechBuilding:
+		Attribute: Name - String
+		Affiliation - Ref
+		Behavior - None
+		Build_Advances_Tech_Level - Int
+		Build_Cost_Credits - Int
+		Build_Limit_Current_Per_Player - Int
+		Build_Tab_Special_Structures - Bool Y/N
+		Build_Time_Reduced_By_Multiple_Factories - Ref
+		Build_Time_Seconds - Int
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		GUI_Row - Ref
+		Icon_Name - File
+		Is_Dummy - Bool Y/N
+		Required_Ground_Base_Level - Int
+		Required_Special_Structures - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		Tech_Level - Int
+		Text_ID - Ref
+
+TerrainDecals:
+	Decal:
+		Attribute: Name - String
+		Category - Ref
+		Fadeout_Time - Int
+		Intensity - Float
+		Permanent - Bool t/f
+		Random_Rotate - Bool Y/N
+		Random_Size_Offset - Float
+		Render_Mode - Ref
+		Scale - Int, Int
+		Slot_Scale - Int
+		UV_Slot - Int, Int
+		Z_Angle - Int
+
+TradeRouteLines:
+	TradeRouteLine:
+		Attribute: Name - String
+		Settings_For_Faction - Ref
+
+Trade_Route_Files:
+	File - File
+
+TransportUnits:
+	TransportUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Affiliation - Ref
+		Armor_Type - Ref
+		Asteroid_Damage_Hit_Particles - Ref
+		Autoresolve_Health - Int
+		Bank_Turn_Angle - Int
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Build_Cost_Credits - Int
+		Build_Time_Seconds - Int
+		Can_Participate_In_Space_Battle - Ref
+		CategoryMask - Ref
+		Collidable_By_Projectile_Living - Bool Y/N
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Encyclopedia_Unit_Class - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Exclude_From_Distance_Fade - Bool t/f
+		Exit_Door_Angle_Degrees - Float
+		Exit_Door_Distance - Float
+		Fire_Category_Restrictions - Ref, Ref, Ref, Ref, Ref
+		Fire_Cone_Height - Float
+		Fire_Cone_Width - Float
+		Fire_Inaccuracy_Distance - Ref, Float
+		Formation_Priority - Int
+		GUI_Bracket_Size - Int
+		HardPoints - Ref
+		Has_Space_Evaluator - Bool T/F
+		Hover_Offset - Float
+		Hyperspace - Bool Y/N
+		Hyperspace_Speed - Float
+		Icon_Name - File
+		Is_Escort - Bool y/n
+		Is_Valid_Target - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref
+		Land_Damage_Alternates - Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Landing_Transport_Variant - Ref
+		Layer_Z_Adjust - Float
+		Mass - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Min_Speed - Int
+		Mouse_Collide_Override_Sphere_Radius - Int
+		MovementClass - Ref
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Obstacle_Height - Float
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Ranged_Target_Z_Adjust - Float
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Int
+		Required_Planets - None
+		Required_Special_Structures - None
+		Required_Star_Base_Level - Int
+		Required_Timeline - Int
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Ship_Class - Ref
+		Size_Value - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Layer - Ref
+		Space_Model_Name - File
+		TacticalBehavior - Ref
+		Tactical_Health - Int
+		Targeting_Max_Attack_Distance - Float
+		Tech_Level - Int
+		Text_ID - Ref
+		UnitCollisionClass - Ref
+		Use_Special_Submit_Rules - Ref
+		Use_Transported_Object_Bounds_For_Landing_Z - Ref
+		User_Bound_Max - Int, Int, Int
+		User_Bound_Min - Ref, Ref, Int
+		Variant_Of_Existing_Type - Ref
+		Victory_Relevant - Bool y/n
+	UniqueUnit:
+		Attribute: Name - String
+		Bank_Turn_Angle - Int
+		CategoryMask - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Layer_Z_Adjust - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Remove_Upon_Death - Bool t/f
+		Scale_Factor - Float
+		Space_Model_Name - File
+		Text_ID - Ref
+
+UniqueUnits:
+	GroundVehicle:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Affiliation - Ref
+		Armor_Type - Ref
+		Attack_Animation_Is_Overlay - Bool y/n
+		Autoresolve_Health - Int
+		Base_Shield_Penetration_Particle - Ref
+		Behavior - Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		CategoryMask - Ref | Ref
+		Collidable_By_Projectile_Dead - Bool Y/N
+		Collidable_By_Projectile_Living - Bool Y/N
+		Converted_To_Enemy_Die_Time_Seconds - Int
+		Custom_Hard_XExtent - Float
+		Custom_Hard_YExtent - Float
+		Damage - Int
+		Death_Clone - Ref, Ref
+		Death_Explosions - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Deploys - Bool Y/N
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		FormationGrouping - Ref
+		FormationOrder - Ref
+		FormationRaggedness - Float
+		FormationSpacing - Float
+		GUI_Bounds_Scale - Float
+		GUI_Bracket_Size - Int
+		Ground_Vehicle_Turret_Target - Ref
+		Has_Land_Evaluator - Bool Y/N
+		Has_Pre_Turn_Anim - Ref
+		Icon_Name - File
+		Influences_Capture_Point - Ref
+		Is_Affected_By_Gravity_Control_Field - Ref
+		Is_Squashable_By_Supercrusher - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Land_Damage_Alternates - Int, Int, Int
+		Land_Damage_SFX - Ref, Ref, Ref, Ref
+		Land_Damage_Thresholds - Int, Float, Float
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Locomotor_Has_Animation_Priority - Bool y/n
+		Loop_Idle_Anim_00 - Bool Y/N
+		Mass - Float
+		MaxJiggleDistance - Ref
+		MaxSecondaryTurnROTCoefficient - Float
+		Max_Rate_Of_Turn - Int
+		Max_Speed - Float
+		MinSecondaryTurnROTCoefficient - Float
+		Min_Speed - Float
+		Min_Speed_Fraction_For_Turn - Float
+		MinimumPushReturnDistance - Ref
+		MovementClass - Ref
+		MovementPredictionInterval - Ref
+		Movement_Animation_Speed - Float
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Occlusion_Silhouette_Enabled - Int
+		OccupationStyle - Ref
+		Overall_Length - Float
+		Overall_Width - Float
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Ranged_Target_Z_Adjust - Float
+		Remove_Upon_Death - Bool t/f
+		Rotation_Animation_Speed - Float
+		SFXEvent_Assist_Attack - Ref
+		SFXEvent_Assist_Move - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Select - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		SecondaryTurnAngle - Ref
+		SecondaryTurnInPlaceROTCoefficient - Float
+		SecondaryTurnLookaheadDistance - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Floatf
+		Sensor_Range - Int
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Size_Value - Int
+		Space_Layer - Ref
+		Stopped_Rate_Of_Turn - Float
+		SurfaceFX_Name - Ref
+		Tactical_Health - Int
+		Targeting_Fire_Inaccuracy - Ref, Float
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Text_ID - Ref
+		Turret_Elevate_Extent_Degrees - Float
+		Turret_Rotate_Extent_Degrees - Float
+		Type - Ref
+		UnitCollisionClass - Ref
+		Unit_Abilities_Data - Ref
+		UseSecondaryFacing - Ref
+		Variant_Of_Existing_Type - Ref
+		Vehicle_Thief_Inside_Clone - Ref
+		Victory_Relevant - Bool y/n
+		Walk_Transition - Bool Y/N
+		Weather_Category - Ref
+		Wind_Disturbance_Radius - Int
+		Wind_Disturbance_Sphere_Alpha - Float
+		Wind_Disturbance_Strength - Int
+	UniqueUnit:
+		Attribute: Name - String
+		AI_Combat_Power - Int
+		Abilities - Ref
+		Affiliation - Ref
+		Apply_Y_Turret_Rotate_To_Axis - Int
+		Apply_Z_Turret_Rotate_To_Axis - Int
+		Armor_Type - Ref
+		Asteroid_Damage_Hit_Particles - Ref
+		Attack_Animation_Is_Overlay - Bool y/n
+		Attack_Move_Response_Range - Float
+		Auto_Deploys - Bool Y/N
+		Autonomous_Move_Extension_Vs_Attacker - Float
+		Autoresolve_Health - Int
+		Bank_Turn_Angle - Int
+		Base_Shield_Penetration_Particle - Ref
+		Begin_Turn_Towards_Distance - Float
+		Behavior - Ref, Ref, Ref, Ref
+		Blob_Shadow_Below_Detail_Level - Int
+		Blob_Shadow_Material_Name - Ref
+		Blob_Shadow_Scale - Float, Float
+		Build_Can_Be_Unlocked_By_Slicer - Bool Y/N
+		Build_Cost_Credits - Int
+		Build_Initially_Locked - Bool Y/N
+		Build_Limit_Current_For_All_Allies - Int
+		Build_Limit_Current_Per_Player - Int
+		Build_Limit_Lifetime_For_All_Allies - Ref
+		Build_Limit_Lifetime_Per_Player - Ref
+		Build_Tab_Space_Units - Bool Y/N
+		CategoryMask - Ref | Ref | Ref
+		Collidable_By_Projectile_Dead - Bool Y/N
+		Collidable_By_Projectile_Living - Bool Y/N
+		Collision_Box_Modifier - Float
+		Converted_To_Enemy_Die_Time_Seconds - Int
+		Create_Team - Bool Y/N
+		Create_Team_Type - Ref
+		Custom_Footprint_Radius - Float
+		Custom_Hard_XExtent - Float
+		Custom_Hard_XExtent_Offset - Float
+		Custom_Hard_YExtent - Float
+		Damage - Int
+		Damage_Type - Ref
+		Death_Clone - Ref, Ref
+		Death_Clone_Is_Obstacle - Bool y/n
+		Death_Explosions - Ref
+		Death_Explosions_End - Ref
+		Death_Persistence_Duration - Ref
+		Death_SFXEvent_End_Die - Ref
+		Death_SFXEvent_Start_Die - Ref
+		Defend_Mode_Energy_Regen_Multiplier - Float
+		Defend_Mode_Shield_Regen_Multiplier - Float
+		Defend_Mode_Speed_Multiplier - Float
+		Defend_Mode_Weapon_Delay_Multiplier - Float
+		Dense_FOW_Reveal_Range_Multiplier - Float
+		Deploys - Bool Y/N
+		Display_Contained_Hero_Grab_Bars - Bool T/F
+		Encyclopedia_Good_Against - Ref
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Encyclopedia_Vulnerable_To - Ref
+		Energy_Capacity - Int
+		Energy_Refresh_Rate - Int
+		Exclude_From_Distance_Fade - Bool t/f
+		Fire_Category_Restrictions - Ref, Ref, Ref, Ref, Ref
+		Fire_Inaccuracy_Distance - Ref, Float
+		Fires_Forward - Bool y/n
+		FormationGrouping - Ref
+		FormationOrder - Int
+		FormationPriority - Int
+		Formation_Priority - Int
+		GUI_Bracket_Height - Int
+		GUI_Bracket_Size - Int
+		GUI_Bracket_Width - Int
+		GUI_Distance - Int
+		GUI_Offset - Ref
+		GUI_Row - Ref
+		GUI_Velocity - Int
+		Glory_Cinematics - Ref
+		Guard_Chase_Range - Float
+		HardPoints - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Has_Land_Evaluator - Bool T/F
+		Has_Pre_Turn_Anim - Ref
+		Has_Space_Evaluator - Bool T/F
+		Hero_Ability - None
+		Hover_Offset - Float
+		Hyperspace - Bool Y/N
+		Hyperspace_Speed - Int
+		Icon_Name - File
+		Idle_Chase_Range - Float
+		Influences_Capture_Point - Ref
+		IsDeathClone - Ref
+		Is_Bomber - Bool y/n
+		Is_Escort - Bool y/n
+		Is_Named_Hero - Bool Y/N
+		Is_Super_Weapon_Killer - Bool Y/N
+		Is_Supercrusher - Bool Y/N
+		Is_Valid_Target - Bool Y/N
+		Is_Visible_On_Radar - Bool Y/N
+		LandBehavior - Ref
+		Land_FOW_Reveal_Range - Float
+		Land_Model_Name - File
+		Landing_Transport_Variant - Ref
+		Layer_Z_Adjust - Float
+		Locomotor_Has_Animation_Priority - Bool y/n
+		Lua_Script - Ref
+		Maintenance_Cost - Float
+		Mass - Float
+		Max_Lift - Float
+		Max_Rate_Of_Roll - Float
+		Max_Rate_Of_Turn - Float
+		Max_Speed - Float
+		Max_Thrust - Float
+		Min_Speed - Float
+		Min_Speed_Fraction_For_Turn - Float
+		MinimumPushReturnDistance - Ref
+		Minimum_Follow_Distance - Float
+		MovementBoxExpansionFactor - Float
+		MovementClass - Ref
+		MovementPredictionInterval - Float
+		Movement_Animation_Speed - Float
+		Multisample_FOW_Check - Bool Y/N
+		No_Colorization_Color - Int, Int, Int, Int
+		No_Reflection_Below_Detail_Level - Int
+		No_Refraction_Below_Detail_Level - Int
+		Number_per_Squadron - Int
+		Obstacle_Height - Float
+		Obstacle_Width - Float
+		Obstacle_X_Offset - Float
+		Obstacle_Y_Offset - Float
+		OccupationStyle - Ref
+		Out_Of_Combat_Defense_Adjustment - Float
+		Overall_Length - Float
+		Overall_Width - Float
+		OverrideAcceleration - Float
+		OverrideDeceleration - Float
+		Political_Control - Int
+		Political_Faction - Ref
+		Population_Value - Int
+		Prevents_Story_Campaign_Autoresolve - Bool y/n
+		Projectile_Appearance_Delay_Frames - Int, Int
+		Projectile_Damage - Float
+		Projectile_Fire_Pulse_Count - Int
+		Projectile_Fire_Pulse_Delay_Seconds - Float
+		Projectile_Fire_Recharge_Seconds - Float
+		Projectile_Types - Ref
+		Property_Flags - Ref
+		Radar_Icon_Name - File
+		Radar_Icon_Scale_Land - Float
+		Radar_Icon_Scale_Space - Float
+		Ranged_Target_Z_Adjust - Float
+		Ranking_In_Category - Int
+		Redirect_Damage_To_Teammates - Bool Y/N
+		Remove_Upon_Death - Bool t/f
+		Required_Ground_Base_Level - Int
+		Required_Star_Base_Level - Int
+		Respawn_Whole_Team_When_Killed - Bool Y/N
+		Rotation_Animation_Speed - Float
+		SFXEvent_Ambient_Loop - Ref
+		SFXEvent_Ambient_Moving - Ref
+		SFXEvent_Ambient_Moving_Max_Delay_Seconds - Ref
+		SFXEvent_Ambient_Moving_Min_Delay_Seconds - Ref
+		SFXEvent_Assist_Attack - Ref
+		SFXEvent_Assist_Move - Ref
+		SFXEvent_Attack - Ref
+		SFXEvent_Attack_Hardpoint - Ref, Ref
+		SFXEvent_Barrage - Ref
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Deploy - Ref
+		SFXEvent_Enemy_Damaged_Health_Critical_Warning - Ref
+		SFXEvent_Enemy_Damaged_Health_Low_Warning - Ref
+		SFXEvent_Enemy_Health_Critical_Warning - Ref
+		SFXEvent_Enemy_Health_Low_Warning - Ref
+		SFXEvent_Engine_Cinematic_Focus_Loop - Ref
+		SFXEvent_Engine_Idle_Loop - Ref
+		SFXEvent_Engine_Moving_Loop - Ref
+		SFXEvent_Fire - Ref
+		SFXEvent_Fleet_Move - Ref
+		SFXEvent_Guard - Ref
+		SFXEvent_Hardpoint_Destroyed - Ref, Ref
+		SFXEvent_Health_Critical_Warning - Ref
+		SFXEvent_Health_Low_Warning - Ref
+		SFXEvent_Move - Ref
+		SFXEvent_Move_Into_Asteroid_Field - Ref
+		SFXEvent_Move_Into_Nebula - Ref
+		SFXEvent_Select - Ref
+		SFXEvent_Stop - Ref
+		SFXEvent_Unit_Lost - Ref
+		Scale_Factor - Float
+		Score_Cost_Credits - Ref
+		Select_Box_Scale - Int
+		Select_Box_Z_Adjust - Ref
+		Shield_Points - Int
+		Shield_Refresh_Rate - Int
+		Ship_Class - Ref
+		Size_Value - Int
+		SpaceBehavior - Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref
+		Space_FOW_Reveal_Range - Float
+		Space_Full_Stop_Command - Ref
+		Space_Layer - Ref
+		Space_Model_Name - File
+		Specific_Death_Anim_Index - Ref
+		Specific_Death_Anim_Type - None
+		Spin_Away_On_Death - Bool Y/N
+		Spin_Away_On_Death_Chance - Float
+		Spin_Away_On_Death_Explosion - Ref
+		Spin_Away_On_Death_SFXEvent_Start_Die - Ref
+		Spin_Away_On_Death_Time - Floatf
+		Squadron_Capacity - Int
+		Stopped_Rate_Of_Turn - Int
+		Surface_Bombardment_Capable - Bool y/n
+		Tactical_Build_Cost_Multiplayer - Int
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Int
+		Tactical_Health - Int
+		Tactical_Production_Queue - Ref
+		Target_Bones - Ref, Ref, Ref
+		Targeting_Max_Attack_Distance - Float
+		Targeting_Priority_Set - Ref
+		Targeting_Stickiness_Time_Threshold - Float
+		Tech_Level - Int
+		Text_ID - Ref
+		Transport_Capacity - Int
+		Turret_Bone_Name - Ref
+		Turret_Elevate_Extent_Degrees - Int
+		Turret_Rotate_Extent_Degrees - Int
+		Turret_Rotate_Speed - Float
+		Turret_Targets_Air_Vehicles - Ref
+		Turret_Targets_Anything_Else - Ref
+		Turret_Targets_Ground_Infantry - Ref
+		Turret_Targets_Ground_Vehicles - Ref
+		Type - Ref
+		UnitCollisionClass - Ref
+		Unit_Abilities_Data - Ref
+		User_Bound_Max - Int, Int, Int
+		User_Bound_Min - Ref, Ref, Int
+		Variant_Of_Existing_Type - Ref
+		Vehicle_Thief_Inside_Clone - Ref
+		Victory_Relevant - Bool y/n
+		Visible_On_Radar_When_Fogged - Bool t/f
+		Walk_Transition - Bool Y/N
+		Weather_Category - Ref
+		xxxSpace_Model_Name - File
+
+UpgradeObjects:
+	UpgradeObject:
+		Attribute: Name - String
+		Abilities - Ref
+		Affiliation - Ref
+		Behavior - Ref
+		Build_Limit_Current_For_All_Allies - Int
+		Build_Limit_Current_Per_Player - Int
+		CategoryMask - Ref
+		Destroy_Previous_Upgrade_Level - Bool Y/N
+		Encyclopedia_Text - Ref
+		Encyclopedia_Unit_Class - Ref
+		Icon_Name - File
+		Is_Skirmish_Tactical_Super_Weapon - Bool t/f
+		Next_Upgrade_Level_Type - None
+		Previous_Upgrade_Level_Type - None
+		SFXEvent_Build_Cancelled - Ref
+		SFXEvent_Build_Complete - Ref
+		SFXEvent_Build_Started - Ref
+		SFXEvent_Special_Weapon_Ready - Ref
+		Show_In_Sidebar_When_Complete - Ref
+		Show_In_Sidebar_While_Building - Ref
+		Tactical_Build_Cost_Campaign - Int
+		Tactical_Build_Cost_Multiplayer - Ref
+		Tactical_Build_Increments_Tech_Level - Ref
+		Tactical_Build_Prerequisites - None
+		Tactical_Build_Time_Seconds - Ref
+		Tactical_Destruction_Decrements_Tech_Level - Ref
+		Tactical_Production_Queue - Ref
+		Text_ID - Ref
+		Variant_Of_Existing_Type - Ref
+
+WeatherAudio:
+	Ambient_SFXEvent_Intermittent - Ref, Ref, Float, Float
+	Weather_SFXEvent_Intermittent - Ref, Float, Ref, Float, Float
+	Weather_SFXEvent_Loop - Ref, Float, Ref
+
+Weather_Scenarios:
+	Weather_Scenario:
+		Attribute: emitter_name - File
+		Attribute: name - String
+		Phase - Ref

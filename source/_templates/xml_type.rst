@@ -15,22 +15,23 @@ Structure
 =========
 ``Top level node``:
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+===============  ==============
+Node Name        Attributes
+===============  ==============
+``UniqueUnit``   ``Name``
+``Node Type 2``  ``Attributes``
+``Node Type 3``  ``Attributes``
+``Node Type 5``  ``Attributes``
+===============  ==============
+
 
 ``Top level node variation 1``:
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+===============  ==============
+Node Name        Attributes
+===============  ==============
+``Node Type 4``  ``Attributes``
+===============  ==============
 
 
 ``Top level node``

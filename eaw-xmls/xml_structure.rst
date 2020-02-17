@@ -1,0 +1,16246 @@
+.. File generated from EaW XML Files
+
+Campaign_Files
+--------------
+
+
+- File:
+	File; *Description Here*
+
+
+
+CommandBar_Component_Files
+--------------------------
+
+
+- File:
+	File; *Description Here*
+
+
+
+``Containers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Container``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+Containers
+----------
+
+
+Container
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Galactic_Model_Name:
+	File; *Description Here*
+
+- Pre_Lit:
+	Bool Y/N; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Show_Name:
+	Bool Y/N; *Description Here*
+
+- Name_Adjust:
+	Ref, Ref, Float; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- Political_Faction:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Scale_Land:
+	Int; *Description Here*
+
+- Radar_Icon_Scale_Space:
+	Int; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Is_Named_Hero:
+	Bool Y/N; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool Y/N; *Description Here*
+
+- Is_Bomber:
+	Bool y/n; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Hyperspace:
+	Bool y/n; *Description Here*
+
+- Hyperspace_Speed:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- Squadron_Formation_Error_Tolerance:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Autonomous_Move_Extension_Vs_Attacker:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Squadron_Offsets:
+	Float, Float, Float; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Build_Limit_Current_For_All_Allies:
+	Int; *Description Here*
+
+- Build_Limit_Lifetime_Per_Player:
+	Int; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- FormationSpacing:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Is_Squashable:
+	Ref; *Description Here*
+
+- MovementPredictionInterval:
+	Float; *Description Here*
+
+- ContainerArrangement:
+	Ref; *Description Here*
+
+- Override_Acceleration:
+	Float; *Description Here*
+
+- Override_Deceleration:
+	Float; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+
+
+``Difficulty_Adjustments``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Difficulty_Adjustment``                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+Difficulty_Adjustments
+----------------------
+
+
+Difficulty_Adjustment
+^^^^^^^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Credit_Multiplier:
+	Float; *Description Here*
+
+- Galactic_AI_Contrast_Multiplier:
+	Float; *Description Here*
+
+- Space_AI_Contrast_Multiplier:
+	Float; *Description Here*
+
+- Land_AI_Contrast_Multiplier:
+	Float; *Description Here*
+
+- Galactic_Build_Time_Multiplier:
+	Float; *Description Here*
+
+- Space_Build_Time_Multiplier:
+	Float; *Description Here*
+
+- Land_Build_Time_Multiplier:
+	Float; *Description Here*
+
+- Damage_Multiplier:
+	Float; *Description Here*
+
+- Galactic_AI_Goal_Cycle_Sleep_Duration:
+	Float; *Description Here*
+
+- Space_AI_Goal_Cycle_Sleep_Duration:
+	Float; *Description Here*
+
+- Land_AI_Goal_Cycle_Sleep_Duration:
+	Float; *Description Here*
+
+- Health_Multiplier:
+	Float; *Description Here*
+
+- Shield_Multiplier:
+	Float; *Description Here*
+
+- Bribe_Cost_Multiplier:
+	Float; *Description Here*
+
+
+
+``DynamicTracks``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``DynamicTrack``                                                  ``name``                                                         
+================================================================= =================================================================
+
+
+DynamicTracks
+-------------
+
+
+DynamicTrack
+^^^^^^^^^^^^
+- AAA_Attribute: name:
+	String; *Description Here*
+
+- width:
+	Floatf; *Description Here*
+
+- opacity:
+	Float; *Description Here*
+
+- segment_length:
+	Int; *Description Here*
+
+- fade_begin_distance:
+	Float; *Description Here*
+
+- fade_end_distance:
+	Float; *Description Here*
+
+- fade_distance_per_second:
+	Float; *Description Here*
+
+- texture_name:
+	File; *Description Here*
+
+- Render_Mode:
+	Ref; *Description Here*
+
+- min_geometry_lod:
+	Float; *Description Here*
+
+
+
+``EmpireGroundCompanies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundCompany``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+EmpireGroundCompanies
+---------------------
+
+
+GroundCompany
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Time_Reduced_By_Multiple_Factories:
+	Ref; *Description Here*
+
+- Build_Tab_Land_Units:
+	Bool Y/N; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	Ref; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Company_Transport_Unit:
+	Ref; *Description Here*
+
+- Company_Units:
+	Ref, Ref; *Description Here*
+
+- Max_Squad_Size:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Int; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Create_Team_Type:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Int; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+
+
+Faction_Files
+-------------
+
+
+- File:
+	File; *Description Here*
+
+
+
+``FighterUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+FighterUnits
+------------
+
+
+SpaceUnit
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Mouse_Collide_Override_Sphere_Radius:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Begin_Turn_Towards_Distance:
+	Float; *Description Here*
+
+- Fires_Forward:
+	Bool y/n; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Hyperspace:
+	Bool Y/N; *Description Here*
+
+- Hyperspace_Speed:
+	Float; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Max_Lift:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Shield_Armor_Type:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Int; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Is_Bomber:
+	Bool y/n; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Squadron_Capacity:
+	Int; *Description Here*
+
+- Number_per_Squadron:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Damage_Type:
+	Ref; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Asteroid_Damage_Hit_Particles:
+	Ref; *Description Here*
+
+- Fire_Inaccuracy_Distance:
+	Ref, Float; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Attack_Hardpoint:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Health_Low_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Health_Critical_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Enemy_Damaged_Health_Low_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Enemy_Damaged_Health_Critical_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Min_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Max_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref | Ref; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Custom_Footprint_Radius:
+	Float; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- FormationOrder:
+	Int; *Description Here*
+
+- Out_Of_Combat_Defense_Adjustment:
+	Float; *Description Here*
+
+- Minimum_Follow_Distance:
+	Float; *Description Here*
+
+- Create_Team:
+	Bool Y/N; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Collision_Box_Modifier:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Spin_Away_On_Death:
+	Bool Y/N; *Description Here*
+
+- Spin_Away_On_Death_Chance:
+	Float; *Description Here*
+
+- Spin_Away_On_Death_Time:
+	Floatf; *Description Here*
+
+- Spin_Away_On_Death_Explosion:
+	Ref; *Description Here*
+
+- Spin_Away_On_Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Strafe_Distance:
+	Float; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- SFXEvent_Assist_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Asteroid_Field:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Nebula:
+	Ref; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Land_Bomber_Type:
+	Ref; *Description Here*
+
+- HardPoints:
+	Ref, Ref; *Description Here*
+
+- Air_Vehicle_Turret_Target:
+	Ref; *Description Here*
+
+- Min_Speed_Fraction_For_Turn:
+	Float; *Description Here*
+
+- Avoid_Enemy_Exclusion_Range:
+	Float; *Description Here*
+
+- Surface_Bombardment_Capable:
+	Bool y/n; *Description Here*
+
+- SFXEvent_Hardpoint:
+	Ref; *Description Here*
+
+
+
+GameConstants
+-------------
+
+
+- Strategic_Queue_Tactical_Battles:
+	Ref; *Description Here*
+
+
+
+- Object_Max_Speed_Multiplier_Galactic:
+	Float; *Description Here*
+
+
+
+- Object_Max_Speed_Multiplier_Space:
+	Float; *Description Here*
+
+
+
+- Object_Max_Speed_Multiplier_Land:
+	Float; *Description Here*
+
+
+
+- Object_Max_Health_Multiplier_Space:
+	Float; *Description Here*
+
+
+
+- Object_Max_Health_Multiplier_Land:
+	Float; *Description Here*
+
+
+
+- Use_Neutral_UI_Color:
+	Bool t/f; *Description Here*
+
+
+
+- Neutral_UI_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Default_Defense_Adjust:
+	Float; *Description Here*
+
+
+
+- Production_Speed_Factor:
+	Float; *Description Here*
+
+
+
+- Player_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Enemy_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Elevated_Vulnerability_Duration:
+	Float; *Description Here*
+
+
+
+- Elevated_Vulnerability_Factor:
+	Float; *Description Here*
+
+
+
+- Space_Elevated_Vulnerability_Duration:
+	Float; *Description Here*
+
+
+
+- Space_Elevated_Vulnerability_Factor:
+	Float; *Description Here*
+
+
+
+- Fleet_Movement_Line_Texture_Name:
+	File; *Description Here*
+
+
+
+- Fleet_Hyperspace_Band_Texture_Name:
+	File; *Description Here*
+
+
+
+- WaypointLineTextureName:
+	Ref; *Description Here*
+
+
+
+- LoopWaypointLineTextureName:
+	Ref; *Description Here*
+
+
+
+- WaypointFlagModelName:
+	Ref; *Description Here*
+
+
+
+- Fleet_Maintenance_Update_Delay_Seconds:
+	Float; *Description Here*
+
+
+
+- Space_Auto_Resolve_Delay_Seconds:
+	Float; *Description Here*
+
+
+
+- Land_Auto_Resolve_Delay_Seconds:
+	Float; *Description Here*
+
+
+
+- Political_Control_Change_Time_Seconds:
+	Int; *Description Here*
+
+
+
+- Melee_Cutoff_Range:
+	Float; *Description Here*
+
+
+
+- Tactical_Edge_Scroll_Region:
+	Int; *Description Here*
+
+
+
+- Tactical_Max_Scroll_Speed:
+	Int; *Description Here*
+
+
+
+- Tactical_Min_Scroll_Speed:
+	Int; *Description Here*
+
+
+
+- Tactical_Offscreen_Scroll_Region:
+	Int; *Description Here*
+
+
+
+- Strategic_Edge_Scroll_Region:
+	Int; *Description Here*
+
+
+
+- Strategic_Max_Scroll_Speed:
+	Int; *Description Here*
+
+
+
+- Strategic_Min_Scroll_Speed:
+	Int; *Description Here*
+
+
+
+- Strategic_Offscreen_Scroll_Region:
+	Int; *Description Here*
+
+
+
+- Push_Scroll_Speed_Modifier:
+	Float; *Description Here*
+
+
+
+- Scroll_Deceleration_Factor:
+	Float; *Description Here*
+
+
+
+- Scroll_Acceleration_Factor:
+	Float; *Description Here*
+
+
+
+- Pay_As_You_Go:
+	Bool t/f; *Description Here*
+
+
+
+- Political_Income_Curve:
+	Int, Int, Int, Int, Int, Int; *Description Here*
+
+
+
+- Progressive_Taxation:
+	Int, Int, Int, Float, Int, Float; *Description Here*
+
+
+
+- Income_Redistribution:
+	Float; *Description Here*
+
+
+
+- Credit_Cap_Per_Planet:
+	Float; *Description Here*
+
+
+
+- Multiplayer_Losing_Team_Bonus_Credit_Percentage:
+	Float; *Description Here*
+
+
+
+- Fiscal_Cycle_Time_In_Secs:
+	Float; *Description Here*
+
+
+
+- Medium_Coin_Stack_Size:
+	Int; *Description Here*
+
+
+
+- Large_Coin_Stack_Size:
+	Int; *Description Here*
+
+
+
+- Black_Market_Income_Mult_Min:
+	Float; *Description Here*
+
+
+
+- Black_Market_Income_Mult_Max:
+	Float; *Description Here*
+
+
+
+- Num_Structures_For_Medium_Planet_Name:
+	Int; *Description Here*
+
+
+
+- Num_Structures_For_Large_Planet_Name:
+	Int; *Description Here*
+
+
+
+- GMC_InitialPitchAngleDegrees:
+	Float; *Description Here*
+
+
+
+- GMC_ZoomedPitchAngleDegrees:
+	Float; *Description Here*
+
+
+
+- GMC_InitialPullbackDistance:
+	Float; *Description Here*
+
+
+
+- GMC_ZoomedPullbackPlanetRadiusFraction:
+	Float; *Description Here*
+
+
+
+- GMC_ZoomedPositionOffsetPlanetRadiusFractions:
+	Float, Float, Float; *Description Here*
+
+
+
+- GMC_ZoomTime:
+	Float; *Description Here*
+
+
+
+- GMC_Battle_Zoom_Time:
+	Float; *Description Here*
+
+
+
+- GMC_Battle_Fade_Time:
+	Float; *Description Here*
+
+
+
+- Galactic_Right_Button_Scroll_Speed_Factor:
+	Float; *Description Here*
+
+
+
+- Galactic_Scroll_Plane:
+	Float; *Description Here*
+
+
+
+- GUI_Move_Command_Ack_Effect:
+	Ref; *Description Here*
+
+
+
+- GUI_Double_Click_Move_Command_Ack_Effect:
+	Ref; *Description Here*
+
+
+
+- GUI_Attack_Move_Command_Ack_Effect:
+	Ref; *Description Here*
+
+
+
+- GUI_Guard_Move_Command_Ack_Effect:
+	Ref; *Description Here*
+
+
+
+- GUI_Attack_Movement_Click_Radar_Event_Name:
+	Ref; *Description Here*
+
+
+
+- GUI_Movement_Click_Radar_Event_Name:
+	Ref; *Description Here*
+
+
+
+- GUI_Movement_Double_Click_Radar_Event_Name:
+	Ref; *Description Here*
+
+
+
+- GUI_Move_Acknowledge_Scale_Land:
+	Float; *Description Here*
+
+
+
+- GUI_Move_Acknowledge_Scale_Space:
+	Float; *Description Here*
+
+
+
+- MaximumPoliticalControl:
+	Ref; *Description Here*
+
+
+
+- MaximumStarbaseLevel:
+	Ref; *Description Here*
+
+
+
+- MaximumGroundbaseLevel:
+	Ref; *Description Here*
+
+
+
+- MaximumSpecialStructures:
+	Ref; *Description Here*
+
+
+
+- MaximumSpecialStructuresLand:
+	Ref; *Description Here*
+
+
+
+- MaximumSpecialStructuresSpace:
+	Ref; *Description Here*
+
+
+
+- MaximumFleetMovementDistance:
+	Float; *Description Here*
+
+
+
+- TradeRouteMovementFactor:
+	Float; *Description Here*
+
+
+
+- Tooltip_Delay:
+	Int; *Description Here*
+
+
+
+- Encyclopedia_Delay:
+	Int; *Description Here*
+
+
+
+- Long_Encyclopedia_Delay:
+	Int; *Description Here*
+
+
+
+- Text_Reveal_Rate:
+	Int; *Description Here*
+
+
+
+- Japanese_Line_Percent:
+	Float; *Description Here*
+
+
+
+- Japanese_ST_Line_Percent:
+	Float; *Description Here*
+
+
+
+- AIUsesFogOfWarGalactic:
+	Ref; *Description Here*
+
+
+
+- AIUsesFogOfWarSpace:
+	Ref; *Description Here*
+
+
+
+- AIUsesFogOfWarLand:
+	Ref; *Description Here*
+
+
+
+- SetupPhaseEnabled:
+	Ref; *Description Here*
+
+
+
+- ShowUnitAIPlanAttachment:
+	Ref; *Description Here*
+
+
+
+- AITechLevelProductionTimeWeight:
+	Float; *Description Here*
+
+
+
+- AlwaysBypassAutoResolve:
+	Ref; *Description Here*
+
+
+
+- AutomaticAutoResolve:
+	Bool Y/N; *Description Here*
+
+
+
+- AutoResolveAttritionAllowanceFactor:
+	Float; *Description Here*
+
+
+
+- AutoResolveTransportLosses:
+	Float; *Description Here*
+
+
+
+- AutoResolveDisplayTime:
+	Float; *Description Here*
+
+
+
+- AutoResolveVoteDefaultToTactical:
+	Bool T/F; *Description Here*
+
+
+
+- AutoResolveVoteDefaultTimeOut:
+	Int; *Description Here*
+
+
+
+- RetreatAutoResolveLoserAttrition:
+	Float; *Description Here*
+
+
+
+- RetreatAutoResolveWinnerAttrition:
+	Float; *Description Here*
+
+
+
+- AutoResolveLoserAttrition:
+	Float; *Description Here*
+
+
+
+- AutoResolveWinnerAttrition:
+	Float; *Description Here*
+
+
+
+- Minimum_Tactical_Overrun_Time_In_Secs:
+	Float; *Description Here*
+
+
+
+- Tactical_Overrun_Multiple:
+	Floatf; *Description Here*
+
+
+
+- Space_Retreat_Allowed_Countdown_Seconds:
+	Float; *Description Here*
+
+
+
+- Land_Retreat_Allowed_Countdown_Seconds:
+	Float; *Description Here*
+
+
+
+- Space_Capture_Allowed_Countdown_Seconds:
+	Float; *Description Here*
+
+
+
+- Land_Capture_Allowed_Countdown_Seconds:
+	Float; *Description Here*
+
+
+
+- GripperCombatGridSnapDistance:
+	Float; *Description Here*
+
+
+
+- PlayModeSwitchMovies:
+	Bool Y/N; *Description Here*
+
+
+
+- MaxInfluenceTransitionAlignmentBonus:
+	Float; *Description Here*
+
+
+
+- MaxInfluenceTransitionAlignmentPenalty:
+	Float; *Description Here*
+
+
+
+- MaxCreditIncomeAlignmentBonus:
+	Float; *Description Here*
+
+
+
+- MaxCreditIncomeAlignmentPenalty:
+	Float; *Description Here*
+
+
+
+- MaxCombatAccuracyAlignmentBonus:
+	Float; *Description Here*
+
+
+
+- MaxCombatDamageAlignmentBonus:
+	Float; *Description Here*
+
+
+
+- MaxCombatSensorRangeAlignmentBonus:
+	Float; *Description Here*
+
+
+
+- Max_Galactic_Zoom_Distance:
+	Int; *Description Here*
+
+
+
+- Min_Galactic_Zoom_Speed:
+	Int; *Description Here*
+
+
+
+- Max_Galactic_Zoom_Speed:
+	Int; *Description Here*
+
+
+
+- Galactic_Zoom_Acceleration:
+	Int; *Description Here*
+
+
+
+- Galactic_Zoom_Light_Level:
+	Float; *Description Here*
+
+
+
+- Galactic_Zoom_In_Light_Angle:
+	Ref; *Description Here*
+
+
+
+- Galactic_Zoom_Out_Light_Angle:
+	Ref; *Description Here*
+
+
+
+- Galactic_Zoom_In_Station_Offset:
+	Ref; *Description Here*
+
+
+
+- Galactic_Zoom_In_Station_Rotation:
+	Float; *Description Here*
+
+
+
+- Starting_Galactic_Camera_Position:
+	Float, Float, Float; *Description Here*
+
+
+
+- Camera_Stop_Left:
+	Floatf; *Description Here*
+
+
+
+- Camera_Stop_Right:
+	Floatf; *Description Here*
+
+
+
+- Camera_Z_Position:
+	Float; *Description Here*
+
+
+
+- Credits_Display_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Credits_Display_Font_Size:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Triggers:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Max_Triggers:
+	Int; *Description Here*
+
+
+
+- Random_Story_Rebel_Construction:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Empire_Construction:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Rebel_Destroy:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Empire_Destroy:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Rewards:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Reward_Rebel_Buildable:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Reward_Empire_Buildable:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Reward_Rebel_Unit:
+	Ref; *Description Here*
+
+
+
+- Random_Story_Reward_Empire_Unit:
+	Ref; *Description Here*
+
+
+
+- Space_Tactical_Camera_Locked:
+	Ref; *Description Here*
+
+
+
+- Land_Tactical_Camera_Locked:
+	Ref; *Description Here*
+
+
+
+- ShieldRechargeIntervalInSecs:
+	Float; *Description Here*
+
+
+
+- EnergyRechargeIntervalInSecs:
+	Float; *Description Here*
+
+
+
+- EnergyToShieldExchangeRate:
+	Float; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Enemy_Screen_Size:
+	Float; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Friendly_Screen_Size:
+	Float; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Enemy_Texture:
+	Ref, Ref; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Enemy_Tracked_Texture:
+	Ref, Ref; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Friendly_Texture:
+	Ref, Ref; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Friendly_Tracked_Texture:
+	Ref, Ref; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Friendly_Repairing_Texture:
+	Ref, Ref; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Friendly_Disabled_Texture:
+	Ref, Ref; *Description Here*
+
+
+
+- HardPoint_Target_Reticle_Friendly_Disabled_Tracked_Texture:
+	Ref, Ref; *Description Here*
+
+
+
+- Terrain_Resurface_Rand:
+	Int; *Description Here*
+
+
+
+- Terrain_Resurface_Tolerance:
+	Float; *Description Here*
+
+
+
+- Max_Ground_Forces_On_Planet:
+	Ref; *Description Here*
+
+
+
+- Allow_Reinforcement_Percentage_Normalized:
+	Float; *Description Here*
+
+
+
+- Default_Hero_Respawn_Time:
+	Float; *Description Here*
+
+
+
+- LandFOWColor:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- SpaceFOWColor:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- SpaceReinforceFOWColor:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- SetupPhaseFOWColor:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- SetupPhaseInvalidDragColor:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- SpaceFOWHeight:
+	Float; *Description Here*
+
+
+
+- SetupPhaseCountdownSeconds:
+	Int; *Description Here*
+
+
+
+- DesiredLandFOWCellSize:
+	Float; *Description Here*
+
+
+
+- DesiredSpaceFOWCellSize:
+	Float; *Description Here*
+
+
+
+- LandFOWRegrowTime:
+	Float; *Description Here*
+
+
+
+- SpaceFOWRegrowTime:
+	Float; *Description Here*
+
+
+
+- SpaceReinforceFeedbackOnlyWhileDragging:
+	Bool t/f; *Description Here*
+
+
+
+- Game_Scoring_Script_Name:
+	Ref; *Description Here*
+
+
+
+- Water_Render_Target_Resolution:
+	Int; *Description Here*
+
+
+
+- Water_Clip_Plane_Offset:
+	Float; *Description Here*
+
+
+
+- Occlusion_Silhouettes_Enabled:
+	Bool t/f; *Description Here*
+
+
+
+- Laser_Beam_Z_Scale_Factor:
+	Float; *Description Here*
+
+
+
+- Laser_Kite_Z_Scale_Factor:
+	Float; *Description Here*
+
+
+
+- Mouse_Over_Highlight_Scale:
+	Float; *Description Here*
+
+
+
+- AI_SpaceEvaluatorRegionSize:
+	Float; *Description Here*
+
+
+
+- AI_LandEvaluatorRegionSize:
+	Float; *Description Here*
+
+
+
+- AI_SpaceThreatDistanceFactor:
+	Float; *Description Here*
+
+
+
+- AI_LandThreatDistanceFactor:
+	Float; *Description Here*
+
+
+
+- AI_SpaceThreatTurnRateFactor:
+	Float; *Description Here*
+
+
+
+- AI_LandThreatTurnRateFactor:
+	Float; *Description Here*
+
+
+
+- AI_SpaceAreaThreatScaleFactor:
+	Float; *Description Here*
+
+
+
+- AI_LandAreaThreatScaleFactor:
+	Float; *Description Here*
+
+
+
+- AI_SpaceThreatLookAheadTime:
+	Float; *Description Here*
+
+
+
+- AI_LandThreatLookAheadTime:
+	Float; *Description Here*
+
+
+
+- AI_FogCellsPerThreatCell:
+	Int; *Description Here*
+
+
+
+- AI_SpaceThreatDecayStep:
+	Float; *Description Here*
+
+
+
+- AI_BuildTaskReservationSeconds:
+	Float; *Description Here*
+
+
+
+- MinimumDragSelectDistance:
+	Float; *Description Here*
+
+
+
+- MinimumDragDistance:
+	Float; *Description Here*
+
+
+
+- GUI_Flash_Level:
+	Float; *Description Here*
+
+
+
+- GUI_Flash_Duration:
+	Float; *Description Here*
+
+
+
+- GUI_Rapid_Flash_Duration:
+	Float; *Description Here*
+
+
+
+- GUI_Cycle_Speed:
+	Int; *Description Here*
+
+
+
+- GUI_Darken_Level:
+	Float; *Description Here*
+
+
+
+- GUI_Cycle_Color:
+	Int, Ref, Ref; *Description Here*
+
+
+
+- GUI_Hilite_Level:
+	Float; *Description Here*
+
+
+
+- GUI_Planet_Flash_Level:
+	Float; *Description Here*
+
+
+
+- GUI_Planet_Fade_Duration:
+	Float; *Description Here*
+
+
+
+- CB_Flash_Duration:
+	Floatf; *Description Here*
+
+
+
+- CB_Flash_Count:
+	Int; *Description Here*
+
+
+
+- Good_Side_Name:
+	Ref; *Description Here*
+
+
+
+- Evil_Side_Name:
+	Ref; *Description Here*
+
+
+
+- Good_Side_Leader_Name:
+	Ref; *Description Here*
+
+
+
+- Evil_Side_Leader_Name:
+	Ref; *Description Here*
+
+
+
+- Ships_Per_Stack:
+	Int; *Description Here*
+
+
+
+- Encyclopedia_Population_Offset:
+	Int; *Description Here*
+
+
+
+- Encyclopedia_Name_Offset:
+	Int; *Description Here*
+
+
+
+- Encyclopedia_Cost_Offset:
+	Int; *Description Here*
+
+
+
+- Encyclopedia_Icon_X_Offset:
+	Int; *Description Here*
+
+
+
+- Encyclopedia_Icon_Y_Offset:
+	Ref; *Description Here*
+
+
+
+- Encyclopedia_Class_Y_Offset:
+	Int; *Description Here*
+
+
+
+- Encyclopedia_Fade_Rate:
+	Float; *Description Here*
+
+
+
+- Encyclopedia_Min_Display_Time:
+	Float; *Description Here*
+
+
+
+- Min_Accuracy_For_Icon:
+	Float; *Description Here*
+
+
+
+- Min_Sight_Range_For_Icon:
+	Float; *Description Here*
+
+
+
+- Left_Queue_Tint:
+	Ref; *Description Here*
+
+
+
+- Right_Queue_Tint:
+	Ref; *Description Here*
+
+
+
+- Icons_Per_Column:
+	Int; *Description Here*
+
+
+
+- Hint_Text_Color:
+	Ref; *Description Here*
+
+
+
+- System_Text_Color:
+	Ref; *Description Here*
+
+
+
+- Task_Text_Color:
+	Ref; *Description Here*
+
+
+
+- Speech_Text_Color:
+	Ref; *Description Here*
+
+
+
+- CB_Movie_Offset:
+	Ref; *Description Here*
+
+
+
+- CB_Movie_Color:
+	Ref; *Description Here*
+
+
+
+- GUI_Tactical_Countdown_Timers_Screen_X:
+	Float; *Description Here*
+
+
+
+- GUI_Tactical_Countdown_Timers_Screen_Y:
+	Float; *Description Here*
+
+
+
+- GUI_Tactical_Countdown_Timers_Screen_Spacing:
+	Float; *Description Here*
+
+
+
+- GUI_Strategic_Countdown_Timers_Screen_X:
+	Float; *Description Here*
+
+
+
+- GUI_Strategic_Countdown_Timers_Screen_Y:
+	Float; *Description Here*
+
+
+
+- GUI_Strategic_Countdown_Timers_Screen_Spacing:
+	Float; *Description Here*
+
+
+
+- BeaconPlaceDelay:
+	Int; *Description Here*
+
+
+
+- WaypointLineLandDashLength:
+	Float; *Description Here*
+
+
+
+- WaypointLineLandGapLength:
+	Float; *Description Here*
+
+
+
+- WaypointLineLandDashVelocity:
+	Float; *Description Here*
+
+
+
+- MaxWaypointsPerPath:
+	Ref; *Description Here*
+
+
+
+- Asteroid_Field_Damage:
+	Int; *Description Here*
+
+
+
+- Asteroid_Field_Damage_Rate:
+	Float; *Description Here*
+
+
+
+- SpacePathfindMaxExpansions:
+	Ref; *Description Here*
+
+
+
+- CurrentPathCostCoefficientSpace:
+	Float; *Description Here*
+
+
+
+- SpacePathfindFrameDelayDelta:
+	Ref; *Description Here*
+
+
+
+- SpacePathFailureDistanceCutoffCoefficient:
+	Float; *Description Here*
+
+
+
+- SpacePathFailureMaxExpansionsCoefficient:
+	Float; *Description Here*
+
+
+
+- SpacePathFailureRotationExpansionIncrement:
+	Float; *Description Here*
+
+
+
+- SpacePathFailureForwardExpansionIncrement:
+	Float; *Description Here*
+
+
+
+- SpacePathingTries:
+	Ref; *Description Here*
+
+
+
+- SpaceStaticObstacleAvoidanceBonusDistance:
+	Ref; *Description Here*
+
+
+
+- MinObstacleCostSpace:
+	Float; *Description Here*
+
+
+
+- MaxObstacleCostSpace:
+	Float; *Description Here*
+
+
+
+- ObstacleAreaOverlapForMaxSpace:
+	Float; *Description Here*
+
+
+
+- XYExpansionDistanceSpace:
+	Float; *Description Here*
+
+
+
+- MaxRotationsSpace:
+	Float; *Description Here*
+
+
+
+- MatchFacingDeltaSpace:
+	Float; *Description Here*
+
+
+
+- OccupationRadiusCoefficientSpace:
+	Float; *Description Here*
+
+
+
+- DestinationSearchRadiusIncrementSpace:
+	Float; *Description Here*
+
+
+
+- UseLinearCollisionChecks:
+	Ref; *Description Here*
+
+
+
+- WaitOperatorCostCoefficient:
+	Float; *Description Here*
+
+
+
+- WaitOperatorBaseFrameTime:
+	Ref; *Description Here*
+
+
+
+- WaitOperatorSpeedCoefficient:
+	Float; *Description Here*
+
+
+
+- LandWaitOperatorSpeedCoefficient:
+	Float; *Description Here*
+
+
+
+- SpaceLocomotorFacingLookaheadAcc:
+	Float; *Description Here*
+
+
+
+- FinalFacing180Penalty:
+	Float; *Description Here*
+
+
+
+- SpecialAlignedOperatorBonus:
+	Float; *Description Here*
+
+
+
+- ThreatExpansionDistance:
+	Float; *Description Here*
+
+
+
+- OffMapCostPenalty:
+	Float; *Description Here*
+
+
+
+- MaxLandFormationFormupFrames:
+	Float; *Description Here*
+
+
+
+- SpaceObjectTrackingInterval:
+	Ref; *Description Here*
+
+
+
+- SpaceObjectTrackingTreeCount:
+	Ref; *Description Here*
+
+
+
+- ShouldDisplayPredictionPaths:
+	Ref; *Description Here*
+
+
+
+- ShouldDisplaySyncedPaths:
+	Ref; *Description Here*
+
+
+
+- SyncedFrameInterval:
+	Float; *Description Here*
+
+
+
+- LandPredictionTimeInterval:
+	Float; *Description Here*
+
+
+
+- RepushDistance:
+	Float; *Description Here*
+
+
+
+- MinLandPredictionDistance:
+	Float; *Description Here*
+
+
+
+- ShouldSkipLandFormup:
+	Ref; *Description Here*
+
+
+
+- ShouldInfantryTeamsSplitAcrossFormations:
+	Ref; *Description Here*
+
+
+
+- VehicleFormationRecruitmentDistance:
+	Ref; *Description Here*
+
+
+
+- InfantryFormationRecruitmentDistance:
+	Ref; *Description Here*
+
+
+
+- CloseEnoughAngleForMoveStart:
+	Ref; *Description Here*
+
+
+
+- DynamicObstacleOverlapPenalty:
+	Float; *Description Here*
+
+
+
+- DynamicAvoidanceRectangleBound:
+	Ref; *Description Here*
+
+
+
+- ShouldDisplayPotentialPath:
+	Ref; *Description Here*
+
+
+
+- TurnInPlaceSlowdownCorvette:
+	Float; *Description Here*
+
+
+
+- TurnInPlaceSlowdownFrigate:
+	Float; *Description Here*
+
+
+
+- TurnInPlaceSlowdownCapital:
+	Float; *Description Here*
+
+
+
+- FormationMinimumSideError:
+	Float; *Description Here*
+
+
+
+- FormationMaximumSideError:
+	Float; *Description Here*
+
+
+
+- ApproximationSmoothCosAngle:
+	Float; *Description Here*
+
+
+
+- ApproximationForwardDistance:
+	Float; *Description Here*
+
+
+
+- MinimumStoppedVsStoppedOverlapCoefficient:
+	Float; *Description Here*
+
+
+
+- MovingVsMovingLookAheadTime:
+	Float; *Description Here*
+
+
+
+- LandTemporaryDestinationProximity:
+	Float; *Description Here*
+
+
+
+- LandDestinationProximity:
+	Float; *Description Here*
+
+
+
+- BetweenFormationSpacing:
+	Float; *Description Here*
+
+
+
+- Destination_Collision_Query_Extension:
+	Ref; *Description Here*
+
+
+
+- FramesPerPositionApproximationRebuild:
+	Int; *Description Here*
+
+
+
+- FramesPerCollisionCheck:
+	Ref; *Description Here*
+
+
+
+- MovementReevaluationFrameCount:
+	Ref; *Description Here*
+
+
+
+- DynamicLandComplexityQuota:
+	Ref; *Description Here*
+
+
+
+- DynamicLandQuotaResetInterval:
+	Ref; *Description Here*
+
+
+
+- FinalFormationFacingMinimumAngle:
+	Float; *Description Here*
+
+
+
+- FinalFormationFacingDeltaCoefficient:
+	Float; *Description Here*
+
+
+
+- WalkAnimationCutoff:
+	Float; *Description Here*
+
+
+
+- DoubleClickMoveMaxSpeedRatio:
+	Float; *Description Here*
+
+
+
+- Fleeing_Infantry_Speed_Bonus:
+	Ref; *Description Here*
+
+
+
+- IdleWalkBlendTime:
+	Float; *Description Here*
+
+
+
+- CrouchIdleWalkBlendTime:
+	Float; *Description Here*
+
+
+
+- MoveBlendTime:
+	Float; *Description Here*
+
+
+
+- CrouchMoveBlendTime:
+	Float; *Description Here*
+
+
+
+- TeamMoveBlendTime:
+	Float; *Description Here*
+
+
+
+- TeamCrouchMoveBlendTime:
+	Float; *Description Here*
+
+
+
+- InfantryTurnBlendTime:
+	Float; *Description Here*
+
+
+
+- Map_Preview_Image_Size:
+	Ref; *Description Here*
+
+
+
+- Countdowns_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Countdowns_Font_Size:
+	Int; *Description Here*
+
+
+
+- In_Game_Message_Default_Font_Name:
+	Ref; *Description Here*
+
+
+
+- In_Game_Message_Default_Font_Size:
+	Int; *Description Here*
+
+
+
+- Event_Message_Default_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Event_Message_Default_Font_Size:
+	Int; *Description Here*
+
+
+
+- Bink_Player_Caption_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Bink_Player_Caption_Font_Size:
+	Int; *Description Here*
+
+
+
+- Tool_Tip_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Tool_Tip_Font_Size:
+	Int; *Description Here*
+
+
+
+- Tool_Tip_Small_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Tool_Tip_Small_Font_Size:
+	Int; *Description Here*
+
+
+
+- Command_Bar_Default_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Command_Bar_Default_Font_Size:
+	Int; *Description Here*
+
+
+
+- Text_Button_Default_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Text_Button_Default_Font_Size:
+	Int; *Description Here*
+
+
+
+- Game_Object_Name_Font_Name:
+	Ref; *Description Here*
+
+
+
+- Game_Object_Name_Font_Size:
+	Int; *Description Here*
+
+
+
+- Win_Message_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Lose_Message_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Win_Lose_Message_Font:
+	Ref; *Description Here*
+
+
+
+- Win_Lose_Message_Font_Size:
+	Ref; *Description Here*
+
+
+
+- Battle_Pending_Message_Font:
+	Ref; *Description Here*
+
+
+
+- Battle_Pending_Message_Font_Size:
+	Ref; *Description Here*
+
+
+
+- Battle_Pending_Message_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Battle_Pending_Message_Pos_X:
+	Float; *Description Here*
+
+
+
+- Battle_Pending_Message_Pos_Y:
+	Float; *Description Here*
+
+
+
+- Control_Point_Domination_Victory_Time_In_Secs:
+	Float; *Description Here*
+
+
+
+- Camera_FX_Manager_Letterbox_Height:
+	Floatf; *Description Here*
+
+
+
+- LandObjectTrackingInterval:
+	Ref; *Description Here*
+
+
+
+- LandObjectTrackingTreeCount:
+	Ref; *Description Here*
+
+
+
+- MinObstacleCostLand:
+	Float; *Description Here*
+
+
+
+- MaxObstacleCostLand:
+	Float; *Description Here*
+
+
+
+- XYExpansionDistanceLand:
+	Float; *Description Here*
+
+
+
+- Shield_Flash_Scale:
+	Float, Float, Float; *Description Here*
+
+
+
+- Shield_Flash_Duration:
+	Float; *Description Here*
+
+
+
+- Hull_Vs_Hard_Points_Health_Constraint:
+	Float; *Description Here*
+
+
+
+- Telekinesis_Hover_Height:
+	Float; *Description Here*
+
+
+
+- Telekinesis_Transition_Time:
+	Float; *Description Here*
+
+
+
+- Telekinesis_Wobble_Cycle_Time:
+	Float; *Description Here*
+
+
+
+- Telekinesis_Wobble_Fade_Time:
+	Float; *Description Here*
+
+
+
+- Telekinesis_Max_Wobble_Angle:
+	Float; *Description Here*
+
+
+
+- Telekinesis_Max_Bob_Height:
+	Float; *Description Here*
+
+
+
+- Earthquake_Transition_Time:
+	Float; *Description Here*
+
+
+
+- Earthquake_Shake_Speed:
+	Float; *Description Here*
+
+
+
+- Earthquake_Shake_Magnitude:
+	Float, Float, Float; *Description Here*
+
+
+
+- Low_Threat_Reachability_Tolerance:
+	Float; *Description Here*
+
+
+
+- Medium_Threat_Reachability_Tolerance:
+	Float; *Description Here*
+
+
+
+- High_Threat_Reachability_Tolerance:
+	Float; *Description Here*
+
+
+
+- Auto_Rotate_For_Space_Targeting:
+	Bool T/F; *Description Here*
+
+
+
+- In_Game_Cinematics:
+	Bool T/F; *Description Here*
+
+
+
+- Display_Bink_Movie_Frames:
+	Bool T/F; *Description Here*
+
+
+
+- Engines_Disabled_Speed_Modifier:
+	Float; *Description Here*
+
+
+
+- Crouch_Move_Fire_Angle_Cutoff:
+	Ref; *Description Here*
+
+
+
+- Max_Move_Frame_Delay:
+	Ref; *Description Here*
+
+
+
+- Spread_Out_Spacing_Coefficient:
+	Float; *Description Here*
+
+
+
+- Max_Formation_Area:
+	Float; *Description Here*
+
+
+
+- Short_Range_Attack_Formation_Coefficient:
+	Float; *Description Here*
+
+
+
+- Solo_Attack_Range:
+	Float; *Description Here*
+
+
+
+- Base_Land_Targeting_Arc_Angle_Coefficient:
+	Float; *Description Here*
+
+
+
+- Rotate_Formation_Facing_Moves:
+	Ref; *Description Here*
+
+
+
+- ShouldUseSpaceIdleMovement:
+	Ref; *Description Here*
+
+
+
+- SpaceIdleMovementSpeed:
+	Float; *Description Here*
+
+
+
+- SpaceIdlePathCullCoefficient:
+	Float; *Description Here*
+
+
+
+- IdleMovementFrames:
+	Float; *Description Here*
+
+
+
+- ReinforcementOverlayGoodColor:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- ReinforcementOverlayBadColor:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Space_Retreat_Attrition_Factor:
+	Float; *Description Here*
+
+
+
+- Land_Retreat_Attrition_Factor:
+	Float; *Description Here*
+
+
+
+- Blockade_Run_Attrition_Factor:
+	Float; *Description Here*
+
+
+
+- Production_Speed_Mod_Base_Vs_Tech_0:
+	Float; *Description Here*
+
+
+
+- Production_Speed_Mod_Base_Vs_Tech_1:
+	Float; *Description Here*
+
+
+
+- Production_Speed_Mod_Base_Vs_Tech_2:
+	Float; *Description Here*
+
+
+
+- Production_Speed_Mod_Base_Vs_Tech_3:
+	Float; *Description Here*
+
+
+
+- Production_Speed_Mod_Base_Vs_Tech_4:
+	Float; *Description Here*
+
+
+
+- Unit_Command_Rankings_By_Category:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+
+
+- Space_Collidable_Grid_Cull_Size:
+	Float; *Description Here*
+
+
+
+- Space_Large_Ship_Grid_Cull_Size:
+	Float; *Description Here*
+
+
+
+- Land_Collidable_Grid_Cull_Size:
+	Floatf; *Description Here*
+
+
+
+- Raid_Force_Required_Faction:
+	Ref; *Description Here*
+
+
+
+- Raid_Force_Limited_Object_Category_Mask:
+	Ref | Ref | Ref; *Description Here*
+
+
+
+- Raid_Force_Max_Limited_Objects:
+	Ref; *Description Here*
+
+
+
+- Raid_Force_Max_Heros:
+	Ref; *Description Here*
+
+
+
+- Raid_Force_Free_Object_Category_Mask:
+	Ref; *Description Here*
+
+
+
+- Health_Low_Percent_Threshold:
+	Float; *Description Here*
+
+
+
+- Health_Critical_Percent_Threshold:
+	Float; *Description Here*
+
+
+
+- Under_Construction_Damage_Multiplier:
+	Float; *Description Here*
+
+
+
+- Damage_Types:
+	Ref, Ref, ...; *Description Here*
+
+
+
+- Armor_Types:
+	Ref, Ref, ...; *Description Here*
+
+
+
+- Damage_To_Armor_Mod:
+	Ref, Ref, Float; *Description Here*
+
+
+
+- Demo_Attract_Maps:
+	Ref; *Description Here*
+
+
+
+- Demo_Attract_Start_Timeout_Seconds:
+	Int; *Description Here*
+
+
+
+- Demo_Attract_Map_Cycle_Delay_Seconds:
+	Int; *Description Here*
+
+
+
+- Battle_Pending_Timeout_Seconds:
+	Ref; *Description Here*
+
+
+
+- Message_Of_The_Day_URL:
+	Ref; *Description Here*
+
+
+
+- Skirmish_Buy_Credits:
+	Int; *Description Here*
+
+
+
+- Skirmish_Reinforcement_Delay_Frames:
+	Int; *Description Here*
+
+
+
+- Distribute_Credit_Quantum:
+	Int; *Description Here*
+
+
+
+- Diminishing_Firepower:
+	Int, Float, Float, Float, Float, Float, Int, Int, Int, Int; *Description Here*
+
+
+
+- Ion_Storm_Shield_Disable_Time:
+	Float; *Description Here*
+
+
+
+- Nebula_Ability_Disable_Time:
+	Float; *Description Here*
+
+
+
+- Depleted_Shield_Disable_Time:
+	Float; *Description Here*
+
+
+
+- Depleted_Shield_Damage_Increment:
+	Float; *Description Here*
+
+
+
+- Depleted_Shield_Regen_Cap:
+	Float; *Description Here*
+
+
+
+- Nebula_Effect_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Base_Shield_Speed_Modifier:
+	Floatf; *Description Here*
+
+
+
+- Base_Shield_Vulnerability_Modifier:
+	Floatf; *Description Here*
+
+
+
+- Hardpoint_Recharge_Cutoff_For_Opportunity_Fire:
+	Float; *Description Here*
+
+
+
+- Battle_Load_Planet_Viewport:
+	Float, Float, Float, Float; *Description Here*
+
+
+
+- Battle_Load_Planet_Direction:
+	Int, Float, Float; *Description Here*
+
+
+
+- Battle_Load_Planet_Ambient:
+	Float, Float, Float; *Description Here*
+
+
+
+- Saliency_Size:
+	Float; *Description Here*
+
+
+
+- Saliency_Power:
+	Float; *Description Here*
+
+
+
+- Saliency_X:
+	Float; *Description Here*
+
+
+
+- Saliency_Y:
+	Float; *Description Here*
+
+
+
+- Saliency_Health:
+	Float; *Description Here*
+
+
+
+- Saliency_Targets:
+	Float; *Description Here*
+
+
+
+- Saliency_Speed:
+	Float; *Description Here*
+
+
+
+- Planet_Reveal_Delay_Time:
+	Float; *Description Here*
+
+
+
+- Base_Shield_Delay_Time:
+	Float; *Description Here*
+
+
+
+- Star_Wars_Crawl_Start_Fadeout_Frame:
+	Int; *Description Here*
+
+
+
+- Activated_Slice_Ability_Names:
+	Ref, Ref; *Description Here*
+
+
+
+- Activated_Sabotage_Ability_Names:
+	Ref, Ref; *Description Here*
+
+
+
+- Activated_Neutralize_Hero_Ability_Names:
+	Ref, Ref, ...; *Description Here*
+
+
+
+- Activated_Siphon_Credits_Ability_Names:
+	Ref, Ref; *Description Here*
+
+
+
+- Activated_System_Spy_Ability_Names:
+	Ref; *Description Here*
+
+
+
+- Activated_Destroy_Planet_Ability_Names:
+	Ref; *Description Here*
+
+
+
+- Use_Reinforcement_Points:
+	Bool T/F; *Description Here*
+
+
+
+- Min_Skirmish_Credits:
+	Int; *Description Here*
+
+
+
+- Max_Skirmish_Credits:
+	Int; *Description Here*
+
+
+
+- MP_Default_Credits:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Start_Tech_Level:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Max_Tech_Level:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Allow_Auto_Resolve:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Game_Timer:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Win_Condition:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Win_Condition_Int_Param:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Win_Condition_Float_Param:
+	Float; *Description Here*
+
+
+
+- MP_Default_Allow_Heroes:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Allow_SuperWeapons:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Pre_Built_Base:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Allow_Random_Events:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Free_Starting_Units:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Land_Tactical_Win_Condition:
+	Ref; *Description Here*
+
+
+
+- MP_Default_Space_Tactical_Win_Condition:
+	Ref; *Description Here*
+
+
+
+- Tactical_Build_Time_Multiplier:
+	Float; *Description Here*
+
+
+
+- Health_Bar_Scale:
+	Float; *Description Here*
+
+
+
+- Land_Health_Bar_Scale:
+	Float; *Description Here*
+
+
+
+- Min_Health_Bar_Scale:
+	Float; *Description Here*
+
+
+
+- Team_Healthbar_Offset:
+	Int; *Description Here*
+
+
+
+- Object_Visual_Status_Particle_Attach_Bone_Names:
+	Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+
+
+- Tractor_Beam_Width:
+	Float; *Description Here*
+
+
+
+- Tractor_Beam_Frames:
+	Int; *Description Here*
+
+
+
+- Tractor_Beam_Texture:
+	File; *Description Here*
+
+
+
+- Tractor_Beam_Color:
+	Int, Int, Int; *Description Here*
+
+
+
+- Energy_Beam_Width:
+	Float; *Description Here*
+
+
+
+- Energy_Beam_Frames:
+	Int; *Description Here*
+
+
+
+- Energy_Beam_Texture:
+	File; *Description Here*
+
+
+
+- Energy_Beam_Color:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Blue:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Red:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Green:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Orange:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Cyan:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Purple:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Yellow:
+	Int, Int, Int; *Description Here*
+
+
+
+- MP_Color_Gray:
+	Int, Int, Int; *Description Here*
+
+
+
+- Localized_Splash_Screen:
+	Ref, File; *Description Here*
+
+
+
+- Localized_UK_English_Splash_Screen:
+	Ref; *Description Here*
+
+
+
+- Localized_Menu_Overlay:
+	Ref, File; *Description Here*
+
+
+
+- Preferred_Pathfinder_Types:
+	Ref, Ref, ...; *Description Here*
+
+
+
+- Credits_Spacing:
+	Float; *Description Here*
+
+
+
+- Credits_Scroll_Rate:
+	Float; *Description Here*
+
+
+
+- Credits_Font:
+	Ref; *Description Here*
+
+
+
+- Credits_Header_Top_Color:
+	Int, Float, Float; *Description Here*
+
+
+
+- Credits_Header_Bottom_Color:
+	Int, Float, Float; *Description Here*
+
+
+
+- Credits_Top_Color:
+	Int, Float, Float; *Description Here*
+
+
+
+- Credits_Bottom_Color:
+	Int, Float, Float; *Description Here*
+
+
+
+- Credits_Font_Size:
+	Ref; *Description Here*
+
+
+
+- Credits_Margin:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_1_Name:
+	Ref; *Description Here*
+
+
+
+- Credits_Logo_1_Width:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_1_Height:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_1_Y_Offset:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_2_Name:
+	Ref; *Description Here*
+
+
+
+- Credits_Logo_2_Width:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_2_Height:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_2_Y_Offset:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_3_Name:
+	Ref; *Description Here*
+
+
+
+- Credits_Logo_3_Width:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_3_Height:
+	Float; *Description Here*
+
+
+
+- Credits_Logo_3_Y_Offset:
+	Float; *Description Here*
+
+
+
+- ShipNameTextFiles:
+	Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir, Ref, Dir; *Description Here*
+
+
+
+- Main_Menu_Demo_Attract_Mode:
+	Ref; *Description Here*
+
+
+
+- Planet_Ability_Icon_Names:
+	File, File, File, File, File, File, File, File, File, File, File, File, File, File, File, File, File, File; *Description Here*
+
+
+
+- Planet_Ability_Text_IDs:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+
+
+- Planet_Ability_RGBs:
+	Int, Int, ...; *Description Here*
+
+
+
+- Droid_Date_Color:
+	Ref; *Description Here*
+
+
+
+- Droid_Text_Color:
+	Ref; *Description Here*
+
+
+
+- Droid_Seperator_Color:
+	Ref; *Description Here*
+
+
+
+- Droid_Encyclopedia_Offset:
+	Ref; *Description Here*
+
+
+
+- Indigenous_Spawn_Destruction_Reward:
+	Int; *Description Here*
+
+
+
+- Advisor_Hint_Interval:
+	Int; *Description Here*
+
+
+
+- Advisor_Hint_Duration:
+	Float; *Description Here*
+
+
+
+- Radar_Colorize_Selected_Units:
+	Bool Y/N; *Description Here*
+
+
+
+- Radar_Selected_Units_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Radar_Colorize_Multiplayer_Enemy:
+	Bool Y/N; *Description Here*
+
+
+
+- Radar_Multiplayer_Enemy_Color:
+	Int, Int, Int; *Description Here*
+
+
+
+- Animate_During_Galactic_Mode_Pause:
+	Bool y/n; *Description Here*
+
+
+
+- Land_Base_Destruction_Forces_Retreat:
+	Bool T/F; *Description Here*
+
+
+
+- Space_Station_Destruction_Forces_Retreat:
+	Bool T/F; *Description Here*
+
+
+
+- Space_Reinforcement_Collision_Check_Distance:
+	Float; *Description Here*
+
+
+
+- Health_Bar_Spacing:
+	Float; *Description Here*
+
+
+
+- Good_Ground_Color_Tint:
+	Int, Int, Int; *Description Here*
+
+
+
+- Max_Bombing_Run_Interval_Seconds:
+	Float; *Description Here*
+
+
+
+- Min_Bombing_Run_Interval_Seconds:
+	Float; *Description Here*
+
+
+
+- Bombing_Run_Reduction_Per_Squadron_Percent:
+	Int; *Description Here*
+
+
+
+- Space_Guard_Range:
+	Float; *Description Here*
+
+
+
+- Land_Guard_Range:
+	Float; *Description Here*
+
+
+
+- Override_Death_Persistence_Duration:
+	Float; *Description Here*
+
+
+
+- Auto_Resolve_Tactical_Multiplier:
+	Float; *Description Here*
+
+
+
+- Quickmatch_Map_Exclusion_List:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+
+
+- Debug_Hot_Key_Load_Map:
+	Dir; *Description Here*
+
+
+
+- Debug_Hot_Key_Load_Map_Script:
+	Ref; *Description Here*
+
+
+
+- Debug_Hot_Key_Load_Campaign:
+	Ref; *Description Here*
+
+
+
+- Corruption_Particle_Name:
+	Ref; *Description Here*
+
+
+
+- Corruption_Particle_Line_Name:
+	Ref; *Description Here*
+
+
+
+- Particle_Brightness_Per_Corruption_Level:
+	Float, Float; *Description Here*
+
+
+
+- Particle_Scale_Per_Corruption_Level:
+	Float, Float; *Description Here*
+
+
+
+- Particle_Energy_Per_Corruption_Level:
+	Float, Float; *Description Here*
+
+
+
+- Corruption_Line_Radius:
+	Float; *Description Here*
+
+
+
+- Corruption_Line_Start_End_Offset:
+	Float; *Description Here*
+
+
+
+- Corruption_Line_Grow_Seconds:
+	Float; *Description Here*
+
+
+
+- Corruption_Path_Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+- Corruption_Path_Width:
+	Int; *Description Here*
+
+
+
+- Corruption_Path_Offset:
+	Int, Int, Int; *Description Here*
+
+
+
+- Corrupt_Side_Name:
+	Ref; *Description Here*
+
+
+
+- Corrupt_Side_Leader_Name:
+	Ref; *Description Here*
+
+
+
+- Force_Ability_Disable_Time:
+	Float; *Description Here*
+
+
+
+- Activated_Black_Market_Ability_Names:
+	Ref, Ref, Ref; *Description Here*
+
+
+
+- Activated_Corrupt_Planet_Ability_Names:
+	Ref, Ref; *Description Here*
+
+
+
+- Activated_Remove_Corruption_Ability_Names:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+
+
+- Activated_Hack_Super_Weapon_Ability_Names:
+	Ref; *Description Here*
+
+
+
+- MP_Color_Eight:
+	Int, Int, Int; *Description Here*
+
+
+
+- High_Ground_Color_Tint:
+	Int, Int, Int; *Description Here*
+
+
+
+- Slow_Ground_Color_Tint:
+	Int, Int, Int; *Description Here*
+
+
+
+- Lava_Ground_Color_Tint:
+	Int, Int, Int; *Description Here*
+
+
+
+- Infantry_Ground_Color_Tint:
+	Int, Int, Int; *Description Here*
+
+
+
+- Max_Bombard_Interval_Seconds:
+	Float; *Description Here*
+
+
+
+- Min_Bombard_Interval_Seconds:
+	Float; *Description Here*
+
+
+
+- Bombardment_Offset:
+	Ref; *Description Here*
+
+
+
+- Bombardment_Distribution:
+	Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int; *Description Here*
+
+
+
+- Sabotage_Particle_Effect:
+	Ref; *Description Here*
+
+
+
+- Hack_Super_Weapon_Particle_Effect:
+	Ref; *Description Here*
+
+
+
+- Hack_Super_Weapon_Required_Type:
+	Ref; *Description Here*
+
+
+
+- Sensor_Jamming_Time:
+	Float; *Description Here*
+
+
+
+- First_Strike_Extra_Damage_Percent:
+	Float; *Description Here*
+
+
+
+- First_Strike_Particle:
+	Ref; *Description Here*
+
+
+
+- Garrisoned_Max_Attack_Distance_Multiplier:
+	Float; *Description Here*
+
+
+
+- Max_Remote_Bombs_Per_Player:
+	Int; *Description Here*
+
+
+
+- Default_Bounty_By_Category_SP:
+	Ref, Int; *Description Here*
+
+
+
+- Default_Bounty_By_Category_MP:
+	Ref, Int; *Description Here*
+
+
+
+- Corruption_Hyperspace_Bonus:
+	Float; *Description Here*
+
+
+
+- Corruption_Choice_Icon_Name:
+	Ref; *Description Here*
+
+
+
+- Corruption_Choice_Name:
+	Ref; *Description Here*
+
+
+
+- Corruption_Choice_Benefit:
+	Ref; *Description Here*
+
+
+
+- Corruption_Mission_Requirement_Icon_Name:
+	Ref; *Description Here*
+
+
+
+- Corruption_Choice_Encyclopedia:
+	Ref; *Description Here*
+
+
+
+- Corruption_Choice_Income_Percentage:
+	Float, Float, Float, Float, Float, Float, Float, Float; *Description Here*
+
+
+
+- Bribery_Fleet_Reveal_Range:
+	Float; *Description Here*
+
+
+
+- Corruption_Planet_Icon:
+	Ref; *Description Here*
+
+
+
+- Corruption_Planet_Icon_Encyclopedia_Name:
+	Ref; *Description Here*
+
+
+
+- Corruption_Planet_Icon_Encyclopedia_Desc:
+	Ref; *Description Here*
+
+
+
+- Corruption_Encyclopedia_Backdrop:
+	Ref; *Description Here*
+
+
+
+- Corruption_Encyclopedia_Header:
+	Ref; *Description Here*
+
+
+
+- Corruption_Encyclopedia_Complete:
+	Ref; *Description Here*
+
+
+
+- Corruption_Encyclopedia_Incomplete:
+	Ref; *Description Here*
+
+
+
+- Corruption_Encyclopedia_Money_Icon:
+	Ref; *Description Here*
+
+
+
+- Corruption_Encyclopedia_Left_Edge:
+	Ref; *Description Here*
+
+
+
+- Corruption_Encyclopedia_Spacing:
+	Ref; *Description Here*
+
+
+
+- Hack_Super_Weapon_Cost:
+	Float; *Description Here*
+
+
+
+Game_Object_Files
+-----------------
+
+
+- File:
+	File; *Description Here*
+
+
+
+``GenericHeroUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GenericHeroUnit``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+GenericHeroUnits
+----------------
+
+
+GenericHeroUnit
+^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Sprite:
+	Bool Y/N; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Is_Generic_Hero:
+	Bool Y/N; *Description Here*
+
+- Attach_To_Flagship_During_Space_Battle:
+	Bool Y/N; *Description Here*
+
+- Stay_In_Transport_During_Ground_Battle:
+	Bool Y/N; *Description Here*
+
+- Always_Spawn_In_Orbit:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- Neutralization_Cost:
+	Float; *Description Here*
+
+- Can_Be_Neutralized_By_Major_Heroes:
+	Bool Y/N; *Description Here*
+
+- Can_Be_Neutralized_By_Minor_Heroes:
+	Bool Y/N; *Description Here*
+
+- Can_Hyperspace_Without_Activating_Ability:
+	Bool Y/N; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Ranking_In_Category:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Show_Hero_Head:
+	Bool Y/N; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Land_Model_Anim_Override_Name:
+	File; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- SurfaceFX_Name:
+	Ref, Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- CanCellStack:
+	Bool y/n; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- Walk_Animation_Speed:
+	Float; *Description Here*
+
+- Crouch_Animation_Speed:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- FormationSpacing:
+	Float; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Group_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Group_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Blob_Shadow_Bone_Name:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Ground_Infantry_Turret_Target:
+	Ref; *Description Here*
+
+- Is_Squashable:
+	Ref; *Description Here*
+
+- Create_Team:
+	Bool Y/N; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Execute_Script_On_Type:
+	Bool t/f; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Play_SFXEvent_On_Sighting:
+	Bool T/F; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Death_Fade_Time:
+	Float; *Description Here*
+
+- Death_Persistence_Duration:
+	Float; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- FormationRaggedness:
+	Float; *Description Here*
+
+- MaxJiggleDistance:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Rotation_Animation_Speed:
+	Float; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Occlusion_Silhouette_Enabled:
+	Int; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+
+
+``GroundBases``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundBase``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+GroundBases
+-----------
+
+
+GroundBase
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Outpost:
+	Bool Y/N; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Base_Level:
+	Int; *Description Here*
+
+- Prev_Level_Base:
+	None; *Description Here*
+
+- Next_Level_Base:
+	None; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+
+
+``GroundBuildables``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundBuildable``                                               ``Name``                                                         
+``SpecialStructure``                                              ``Name``                                                         
+================================================================= =================================================================
+
+
+GroundBuildables
+----------------
+
+
+GroundBuildable
+^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Behavior:
+	Ref, Ref, ...; *Description Here*
+
+- Tactical_Buildable_Objects_Campaign:
+	Ref, Ref, ...; *Description Here*
+
+- Tactical_Buildable_Objects_Multiplayer:
+	Ref, Ref, ...; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	Ref; *Description Here*
+
+- Capture_Point_Radius:
+	Int; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Ref; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Select_Box_Scale:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Shield_Points:
+	Ref; *Description Here*
+
+- Tactical_Health:
+	Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Base_Level_Available:
+	Ref; *Description Here*
+
+- Required_Ground_Base_Level:
+	Ref; *Description Here*
+
+- Reveal_During_Setup_Phase:
+	Ref; *Description Here*
+
+- Reveal_During_Setup_Phase_Only:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Victory_Relevant:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Ref; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- GUI_Bracket_Width:
+	Ref; *Description Here*
+
+- GUI_Bracket_Height:
+	Ref; *Description Here*
+
+- GUI_Bracket_Size:
+	Ref; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool T/F; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Visible_To_Enemies_When_Empty:
+	Ref; *Description Here*
+
+- Immune_To_Damage:
+	Bool T/F; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Tactical_Buildable_Constructed:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Campaign:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Ref; *Description Here*
+
+- Tactical_Build_Start_Lower_Z:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Obstacle_Proxy_Type:
+	Ref; *Description Here*
+
+- Capture_Point_Transition_Time_Seconds:
+	Float; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float, Int; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Minimum_Time_Before_Pad_Can_Build_Again:
+	Float; *Description Here*
+
+- Terrain_Texture_Modifier_Square:
+	Bool t/f; *Description Here*
+
+- Hides_When_Built_On:
+	Bool T/F; *Description Here*
+
+- Is_Community_Property:
+	Bool Y/N; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Base_Position:
+	Ref; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- MP_Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Last_State_Visible_Under_FOW:
+	Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Base_Shield_Always_Off:
+	Ref; *Description Here*
+
+- Terrain_Texture_Modifier_Material:
+	Int; *Description Here*
+
+- Terrain_Texture_Modifier_Join_Distance:
+	Float; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- Fine_Tune_Occupied_Passability:
+	Ref; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Float; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Movie_Object:
+	Bool t/f; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Radar_Show_Facing:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Unit_Under_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Unit_Lost:
+	Ref; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- SFXEvent_Special_Weapon_Ready:
+	Ref; *Description Here*
+
+- Ownership_Sticks:
+	Bool Y/N; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Tactical_Sell_Credits:
+	Ref; *Description Here*
+
+- SFXEvent_Sold_Tactical:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+
+
+SpecialStructure
+^^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Behavior:
+	Ref, Ref, Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Terrain_Texture_Modifier_Square:
+	Bool t/f; *Description Here*
+
+- Obstacle_Proxy_Type:
+	Ref; *Description Here*
+
+- Tactical_Buildable_Constructed:
+	Ref; *Description Here*
+
+- Tactical_Build_Start_Lower_Z:
+	Float; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Is_Community_Property:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Base_Position:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float, Int; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Reveal_During_Setup_Phase:
+	Ref; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool T/F; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Ref; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref, Ref; *Description Here*
+
+- MP_Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Last_State_Visible_Under_FOW:
+	Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+
+
+``GroundInfantry_Units``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundInfantry``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+GroundInfantry_Units
+--------------------
+
+
+GroundInfantry
+^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Is_Affected_By_Gravity_Control_Field:
+	Ref; *Description Here*
+
+- Base_Shield_Penetration_Particle:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref; *Description Here*
+
+- Max_Speed:
+	Ref; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Int; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- LateralAcceleration:
+	Float; *Description Here*
+
+- Min_Speed_Fraction_For_Turn:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- FormationSpacing:
+	Float; *Description Here*
+
+- Walk_Transition:
+	Bool Y/N; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- MinimumPushReturnDistance:
+	Ref; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- CanCellStack:
+	Bool y/n; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Sensor_Range:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Stealth_Capable:
+	Bool Y/N; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- SurfaceFX_Name:
+	Ref, Ref; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Mouse_Collide_Override_Sphere_Radius:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- Fire_Category_Restrictions:
+	Ref; *Description Here*
+
+- Wind_Disturbance_Radius:
+	Int; *Description Here*
+
+- Wind_Disturbance_Strength:
+	Int; *Description Here*
+
+- Wind_Disturbance_Sphere_Alpha:
+	Float; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Destruction_Survivors:
+	Ref, Float; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Min_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Max_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Cancelled:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Blob_Shadow_Bone_Name:
+	Ref; *Description Here*
+
+- Occlusion_Silhouette_Enabled:
+	Int; *Description Here*
+
+- Ground_Infantry_Turret_Target:
+	Ref; *Description Here*
+
+- Is_Squashable:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Surface_Type_Cover_Damage_Shield:
+	Float; *Description Here*
+
+- Weather_Category:
+	Ref; *Description Here*
+
+- Is_Squashable_By_Supercrusher:
+	Bool Y/N; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Death_Fade_Time:
+	Float; *Description Here*
+
+- Death_Persistence_Duration:
+	Float; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Conversion_Ability_Changes_To_Enemy:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Land_Model_Anim_Override_Name:
+	File; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Float; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Presence_Induced_Animations:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Land_Terrain_Model_Mapping:
+	Ref, File, Ref, File, Ref, File, Ref, File, Ref, File, Ref, File, Ref, File; *Description Here*
+
+- Rotation_Animation_Speed:
+	Float; *Description Here*
+
+- Walk_Animation_Speed:
+	Float; *Description Here*
+
+- Crouch_Animation_Speed:
+	Float; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Create_Team:
+	Bool Y/N; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Specific_Death_Anim_Type:
+	Ref; *Description Here*
+
+- Specific_Death_Anim_Index:
+	None; *Description Here*
+
+- Formation_Formup_Wait_Style:
+	Ref; *Description Here*
+
+- FormationRaggedness:
+	Float; *Description Here*
+
+- WaitsForFormationFormup:
+	Bool t/f; *Description Here*
+
+- FormationGrouping:
+	Ref; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Pause_During_Cinematic_Anim:
+	Bool y/n; *Description Here*
+
+- Cinematic_Anim_Speed:
+	Float; *Description Here*
+
+- Cinematic_Anim_Blend_Seconds:
+	Float; *Description Here*
+
+- Cinematic_Anim_Index:
+	Int; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	Ref; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- GUI_Bracket_Width:
+	Int; *Description Here*
+
+- GUI_Bracket_Height:
+	Int; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Is_Combustible:
+	Bool y/n; *Description Here*
+
+- On_Fire_Speed_Modifier:
+	Floatf; *Description Here*
+
+- Targeting_Allowed_When_Burning:
+	Bool y/n; *Description Here*
+
+- Burning_Damage_Per_Second:
+	Float; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- IsBuildable:
+	Bool Y/N; *Description Here*
+
+- Is_Stationary_When_Attacking:
+	Bool Y/N; *Description Here*
+
+- Projectile_Appearance_Delay_Frames:
+	Ref; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Float; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Float; *Description Here*
+
+- MaxJiggleDistance:
+	Float; *Description Here*
+
+
+
+``GroundStructures``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundStructure``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+GroundStructures
+----------------
+
+
+GroundStructure
+^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Friendly_Spawn_Text:
+	Ref; *Description Here*
+
+- Enemy_Spawn_Text:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Ref; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Spawned_Indigenous_Units_Type:
+	Ref; *Description Here*
+
+- Spawned_Indigenous_Units_Delay_Seconds:
+	Float; *Description Here*
+
+- Spawned_Indigenous_Units_Quantity:
+	Int; *Description Here*
+
+- Spawn_Indigenous_Units_In_Packs:
+	Bool Y/N; *Description Here*
+
+- Spawn_Indigenous_Units_Radius:
+	Floatf; *Description Here*
+
+- Spawn_Indigenous_Units_Chance:
+	Floatf; *Description Here*
+
+- Max_Distance_From_Spawner:
+	Int; *Description Here*
+
+- Spawned_Indigenous_Pack_Type:
+	Ref; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Multisample_FOW_Check:
+	Bool Y/N; *Description Here*
+
+- Last_State_Visible_Under_FOW:
+	Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+- Is_Branched_Map_Discardable:
+	Bool T/F; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Reveal_During_Setup_Phase:
+	Ref; *Description Here*
+
+- Select_Box_Scale:
+	Ref; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Shield_Points:
+	Ref; *Description Here*
+
+- Tactical_Health:
+	Ref; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Ref; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Land_Damage_Thresholds:
+	Float, Float, Float, Float; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, ...; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, ...; *Description Here*
+
+- GUI_Bracket_Size:
+	Ref; *Description Here*
+
+- Space_Obstacle_Offset:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool T/F; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Loads_When_Faction_Present:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- Death_Clone_Is_Obstacle:
+	Bool y/n; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- AI_Combat_Power:
+	Ref; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Is_Discardable:
+	Bool Y/N; *Description Here*
+
+- Facing_Adjust:
+	Float, Float, Float; *Description Here*
+
+- Is_Squashable_By_Supercrusher:
+	Bool Y/N; *Description Here*
+
+- OverridePassability:
+	Ref; *Description Here*
+
+- GUI_Hide_Health_Bar:
+	Bool t/f; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Tactical_Sell_Credits:
+	Ref; *Description Here*
+
+- SFXEvent_Sold_Tactical:
+	Ref; *Description Here*
+
+- Required_Special_Structures:
+	Ref; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- GUI_Bracket_Width:
+	Ref; *Description Here*
+
+- GUI_Bracket_Height:
+	Ref; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- Obstacle_Proxy_Type:
+	Ref; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Base_Level_Available:
+	Ref; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Rotate_Speed:
+	Float; *Description Here*
+
+- Turret_Bone_Name:
+	Ref; *Description Here*
+
+- Barrel_Bone_Name:
+	Ref; *Description Here*
+
+- Apply_Z_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Apply_Y_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Property_Flags:
+	Ref | Ref; *Description Here*
+
+- SFXEvent_Turret_Rotating_Loop:
+	Ref; *Description Here*
+
+- Targeting_Min_Attack_Distance:
+	Float; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Attack_Category_Restrictions:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Damage_Type:
+	Ref; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Required_Ground_Base_Level:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+
+
+``GroundVehicles``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundVehicle``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+GroundVehicles
+--------------
+
+
+GroundVehicle
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Ranking_In_Category:
+	Int; *Description Here*
+
+- Cache_Crusher_Boxes:
+	Bool Y/N; *Description Here*
+
+- Is_Supercrusher:
+	Bool Y/N; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Autoresolve_Health:
+	Float; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Dead:
+	Bool Y/N; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Locomotor_Has_Animation_Priority:
+	Bool y/n; *Description Here*
+
+- Attack_Animation_Is_Overlay:
+	Bool y/n; *Description Here*
+
+- Projectile_Appearance_Delay_Frames:
+	Int, Int; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- Rotation_Animation_Speed:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Stopped_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Walk_Transition:
+	Bool Y/N; *Description Here*
+
+- Has_Pre_Turn_Anim:
+	Ref; *Description Here*
+
+- Min_Speed_Fraction_For_Turn:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- FormationGrouping:
+	Ref; *Description Here*
+
+- MinimumPushReturnDistance:
+	Ref; *Description Here*
+
+- MovementPredictionInterval:
+	Float; *Description Here*
+
+- MovementBoxExpansionFactor:
+	Float; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Auto_Deploys:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Targeting_Min_Attack_Distance:
+	Ref; *Description Here*
+
+- Target_Bones:
+	Ref, Ref, Ref; *Description Here*
+
+- Turret_Targets_Ground_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Ground_Infantry:
+	Ref; *Description Here*
+
+- Turret_Targets_Air_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Anything_Else:
+	Ref; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Bone_Name:
+	Ref; *Description Here*
+
+- Turret_Rotate_Speed:
+	Float; *Description Here*
+
+- Apply_Z_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Apply_Y_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Unit_Lost:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Cancelled:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Ground_Vehicle_Turret_Target:
+	Ref; *Description Here*
+
+- Air_Vehicle_Turret_Target:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Overall_Length:
+	Float; *Description Here*
+
+- Overall_Width:
+	Float; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool Y/N; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Autonomous_Move_Extension_Vs_Attacker:
+	Float; *Description Here*
+
+- Weather_Category:
+	Ref; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Vehicle_Thief_Inside_Clone:
+	Ref; *Description Here*
+
+- Base_Shield_Penetration_Particle:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Converted_To_Enemy_Die_Time_Seconds:
+	Int; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Specific_Death_Anim_Type:
+	Ref; *Description Here*
+
+- Death_Clone_Is_Obstacle:
+	Bool y/n; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- Death_Persistence_Duration:
+	Float; *Description Here*
+
+- Death_Explosions_End:
+	Ref; *Description Here*
+
+- Death_SFXEvent_End_Die:
+	Ref; *Description Here*
+
+- IsDeathCloneObstacle:
+	Ref; *Description Here*
+
+- Presence_Range:
+	Float; *Description Here*
+
+- Specific_Death_Anim_Index:
+	None; *Description Here*
+
+- Glory_Cinematics:
+	Ref, Ref, Ref; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Custom_Hard_YExtent_Offset:
+	Float; *Description Here*
+
+- Is_Squashable_By_Supercrusher:
+	Bool Y/N; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- FormationSpacing:
+	Float; *Description Here*
+
+- FormationRaggedness:
+	Ref; *Description Here*
+
+- MaxJiggleDistance:
+	Ref; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Damage_Type:
+	Ref; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Barrel_Bone_Name:
+	Ref; *Description Here*
+
+- Occlusion_Silhouette_Enabled:
+	Int; *Description Here*
+
+- Should_Reinforcements_Move:
+	Ref; *Description Here*
+
+- Deployment_Anim_Rate:
+	Float; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Death_Fade_Time:
+	Float; *Description Here*
+
+- Close_Enough_Angle_For_Move_Start:
+	Ref; *Description Here*
+
+- Fire_Weapon_When_Deployed:
+	Bool Y/N; *Description Here*
+
+- Fire_Weapon_When_Undeployed:
+	Bool Y/N; *Description Here*
+
+- Turret_Rest_Angle:
+	Float, Float, Float; *Description Here*
+
+- Turret_Deployed_Rest_Angle:
+	Float, Float, Float; *Description Here*
+
+- HardPoints:
+	Ref; *Description Here*
+
+- IsDeathClone:
+	Ref; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Max_Lift:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Stationary_Space_Layer:
+	Ref; *Description Here*
+
+- PathFrameDelay:
+	Ref; *Description Here*
+
+- Hover_Offset:
+	Float; *Description Here*
+
+- Prepare_Strafe_Height:
+	Float; *Description Here*
+
+- MaxFacingLookAheadFrames:
+	Float; *Description Here*
+
+- Should_Cause_Limited_Turrets_To_Turn:
+	Ref; *Description Here*
+
+- Damaged_Smoke_Asset_Name:
+	File; *Description Here*
+
+- Spin_Away_On_Death:
+	Bool Y/N; *Description Here*
+
+- Spin_Away_On_Death_Chance:
+	Float; *Description Here*
+
+- Spin_Away_On_Death_Time:
+	Floatf; *Description Here*
+
+- Spin_Away_On_Death_Explosion:
+	Ref; *Description Here*
+
+- Spin_Away_On_Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Wind_Disturbance_Radius:
+	Int; *Description Here*
+
+- Wind_Disturbance_Strength:
+	Int; *Description Here*
+
+- Wind_Disturbance_Sphere_Alpha:
+	Float; *Description Here*
+
+- SFXEvent_Ambient_Moving:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Min_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Max_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- Custom_Hard_YExtent_Deployed:
+	Float; *Description Here*
+
+- Sensor_Range:
+	Int; *Description Here*
+
+- Targeting_Fire_Inaccuracy_Fixed_Radius:
+	Ref; *Description Here*
+
+- Fire_Category_Restrictions:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- Tread_Scroll_Rate:
+	Float; *Description Here*
+
+- SurfaceFX_Name:
+	Ref; *Description Here*
+
+- Blob_Shadow_Bone_Name:
+	Ref; *Description Here*
+
+- Stealth_Capable:
+	Bool Y/N; *Description Here*
+
+- CanCellStack:
+	Bool y/n; *Description Here*
+
+- Is_Sprite:
+	Bool Y/N; *Description Here*
+
+- Mouse_Collide_Override_Sphere_Radius:
+	Float; *Description Here*
+
+- Ground_Infantry_Turret_Target:
+	Ref; *Description Here*
+
+- Is_Squashable:
+	Ref; *Description Here*
+
+- Surface_Type_Cover_Damage_Shield:
+	Float; *Description Here*
+
+- UseSecondaryFacing:
+	Ref; *Description Here*
+
+- SecondaryTurnInPlaceROTCoefficient:
+	Float; *Description Here*
+
+- SecondaryTurnAngle:
+	Ref; *Description Here*
+
+- MinSecondaryTurnROTCoefficient:
+	Float; *Description Here*
+
+- MaxSecondaryTurnROTCoefficient:
+	Float; *Description Here*
+
+- SecondaryTurnLookaheadDistance:
+	Ref; *Description Here*
+
+- Shield_Armor_Type:
+	Ref; *Description Here*
+
+- Is_Affected_By_Gravity_Control_Field:
+	Ref; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Turret_Rotating_Loop:
+	Ref; *Description Here*
+
+- Fire_Weapon_When_In_Rocket_Attack_Mode:
+	Bool Y/N; *Description Here*
+
+- Fire_Weapon_When_In_Normal_Attack_Mode:
+	Bool Y/N; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- Targeting_Land_Model_Stay_Horiz_Flat:
+	Ref; *Description Here*
+
+- Selt_Destruct_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Hardpoints:
+	Ref; *Description Here*
+
+- Destruction_Survivors:
+	Ref, Float; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Fires_Forward:
+	Bool y/n; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- Asteroid_Damage_Hit_Particles:
+	Ref; *Description Here*
+
+- Exit_Door_Angle_Degrees:
+	Float; *Description Here*
+
+- Exit_Door_Distance:
+	Float; *Description Here*
+
+
+
+``HardPoints``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``HardPoint``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+HardPoints
+----------
+
+
+HardPoint
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Is_Targetable:
+	Bool Y/N; *Description Here*
+
+- Is_Destroyable:
+	Bool Y/N; *Description Here*
+
+- Tooltip_Text:
+	Ref; *Description Here*
+
+- Health:
+	Float; *Description Here*
+
+- Death_Explosion_Particles:
+	Ref; *Description Here*
+
+- Death_Explosion_SFXEvent:
+	Ref; *Description Here*
+
+- Damage_Type:
+	Ref; *Description Here*
+
+- Model_To_Attach:
+	File; *Description Here*
+
+- Attachment_Bone:
+	Ref; *Description Here*
+
+- Collision_Mesh:
+	Ref; *Description Here*
+
+- Damage_Decal:
+	Ref; *Description Here*
+
+- Damage_Particles:
+	Ref; *Description Here*
+
+- Death_Breakoff_Prop:
+	Ref; *Description Here*
+
+- Fire_Bone_A:
+	Ref; *Description Here*
+
+- Fire_Bone_B:
+	Ref; *Description Here*
+
+- Fire_Cone_Width:
+	Float; *Description Here*
+
+- Fire_Cone_Height:
+	Float; *Description Here*
+
+- Fire_Projectile_Type:
+	Ref; *Description Here*
+
+- Fire_Min_Recharge_Seconds:
+	Float; *Description Here*
+
+- Fire_Max_Recharge_Seconds:
+	Float; *Description Here*
+
+- Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Fire_Range_Distance:
+	Float; *Description Here*
+
+- Fire_SFXEvent:
+	Ref; *Description Here*
+
+- Fire_Inaccuracy_Distance:
+	Ref, Float; *Description Here*
+
+- Engine_Particles:
+	Ref; *Description Here*
+
+- Projectile_Damage:
+	Int; *Description Here*
+
+- Allow_Opportunity_Fire_When_Targeting:
+	Bool T/F; *Description Here*
+
+- Fire_Category_Restrictions:
+	Ref, Ref; *Description Here*
+
+- Repair_Cost_Per_Frame:
+	Float; *Description Here*
+
+- Repair_Amount_Per_Frame:
+	Float; *Description Here*
+
+- Fighter_Bay_Flyout_Distance:
+	Float; *Description Here*
+
+- Special_Ability_Name:
+	Ref; *Description Here*
+
+- Fire_Bone_C:
+	Ref; *Description Here*
+
+- Fire_Bone_D:
+	Ref; *Description Here*
+
+- Allow_Opportunity_Fire_When_Idle:
+	Bool T/F; *Description Here*
+
+- Fire_When_In_Rocket_Attack_Mode:
+	Bool Y/N; *Description Here*
+
+- Fire_When_In_Normal_Attack_Mode:
+	Bool Y/N; *Description Here*
+
+- Fire_When_Deployed:
+	Bool Y/N; *Description Here*
+
+- Fire_When_Undeployed:
+	Bool Y/N; *Description Here*
+
+- Allows_Special_Weapon_Use:
+	Ref; *Description Here*
+
+
+
+``HeroCompanies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``HeroCompany``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+HeroCompanies
+-------------
+
+
+HeroCompany
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Row:
+	Int; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Time_Reduced_By_Multiple_Factories:
+	Ref; *Description Here*
+
+- Build_Tab_Heroes:
+	Bool Y/N; *Description Here*
+
+- Combat_Power_Value:
+	Int; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Company_Transport_Unit:
+	Ref; *Description Here*
+
+- Company_Units:
+	Ref; *Description Here*
+
+- Is_Generic_Hero:
+	Bool Y/N; *Description Here*
+
+- Is_Stealth_Company:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Hero_Respawned:
+	Ref; *Description Here*
+
+- Lua_Script:
+	None; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Build_Limit_Current_Per_Player:
+	Int; *Description Here*
+
+- Build_Limit_Lifetime_For_All_Allies:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Is_Homogeneous:
+	Bool Y/N; *Description Here*
+
+- Max_Squad_Size:
+	Ref; *Description Here*
+
+- Create_Team_Type:
+	Ref; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Is_Named_Hero:
+	Bool Y/N; *Description Here*
+
+- Available_In_Skirmish:
+	Bool y/n; *Description Here*
+
+- Can_Be_Only_One:
+	Bool t/f; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Ranking_In_Category:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Is_Force_Sensitive:
+	Bool Y/N; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+
+
+``HeroUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``HeroUnit``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+HeroUnits
+---------
+
+
+HeroUnit
+^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Is_Named_Hero:
+	Bool Y/N; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GalacticBehavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Uses_Multiple_Locomotors:
+	Ref; *Description Here*
+
+- Hover_Offset:
+	Float; *Description Here*
+
+- Primary_Locomotor_Name:
+	Ref; *Description Here*
+
+- Secondary_Locomotor_Name:
+	Ref; *Description Here*
+
+- SurfaceFX_Name:
+	Ref, Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Ref; *Description Here*
+
+- CanCellStack:
+	Bool y/n; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- GUI_Bracket_Width:
+	Int; *Description Here*
+
+- GUI_Bracket_Height:
+	Int; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Mouse_Collide_Override_Sphere_Radius:
+	Float; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Alternate_Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Alternate_Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- FormationSpacing:
+	Float; *Description Here*
+
+- MinimumPushReturnDistance:
+	Ref; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- Max_Lift:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Sensor_Range:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Stealth_Capable:
+	Bool Y/N; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Deploy:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Group_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Group_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Health_Low_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Health_Critical_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Ranking_In_Category:
+	Ref; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Blob_Shadow_Bone_Name:
+	Ref; *Description Here*
+
+- Ground_Infantry_Turret_Target:
+	Ref; *Description Here*
+
+- Attach_To_Flagship_During_Space_Battle:
+	Bool Y/N; *Description Here*
+
+- Stay_In_Transport_During_Ground_Battle:
+	Bool Y/N; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- Always_Spawn_In_Orbit:
+	Bool Y/N; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Selection_Blob_Material_Name:
+	Ref; *Description Here*
+
+- Highlight_Blob_Material_Name:
+	Ref; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool T/F; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Autonomous_Move_Extension_Vs_Attacker:
+	Float; *Description Here*
+
+- Neutralization_Cost:
+	Float; *Description Here*
+
+- Can_Be_Neutralized_By_Major_Heroes:
+	Bool Y/N; *Description Here*
+
+- Can_Be_Neutralized_By_Minor_Heroes:
+	Bool Y/N; *Description Here*
+
+- Occlusion_Silhouette_Enabled:
+	Int; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Play_SFXEvent_On_Sighting:
+	Bool T/F; *Description Here*
+
+- Death_Fade_Time:
+	Float; *Description Here*
+
+- Death_Persistence_Duration:
+	Float; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- IsBuildable:
+	Bool Y/N; *Description Here*
+
+- Spawn_Planet:
+	Ref; *Description Here*
+
+- Is_Force_Sensitive:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Draw_Weapon:
+	Ref; *Description Here*
+
+- SFXEvent_Holster_Weapon:
+	Ref; *Description Here*
+
+- Holster_Weapon_Bone_Name:
+	Ref; *Description Here*
+
+- Holster_Drawn_Bone_Translation:
+	Float, Float, Float; *Description Here*
+
+- Holster_Holstered_Bone_Translation:
+	Float, Float, Float; *Description Here*
+
+- Holster_Transition_Time_In_Secs:
+	Float; *Description Here*
+
+- Holster_Minimum_Drawn_Time_In_Secs:
+	Float; *Description Here*
+
+- Holster_Disable_Engine_Loops:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- Political_Faction:
+	Ref; *Description Here*
+
+- Is_Stationary_When_Attacking:
+	Bool Y/N; *Description Here*
+
+- Projectile_Appearance_Delay_Frames:
+	Ref; *Description Here*
+
+- Presence_Range:
+	Float; *Description Here*
+
+- Unique_Ground_Unit:
+	Ref; *Description Here*
+
+- SFXEvent_Announce:
+	Ref; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Damage_Type:
+	Ref; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- FormationRaggedness:
+	Float; *Description Here*
+
+- WaitsForFormationFormup:
+	Bool t/f; *Description Here*
+
+- Is_Squashable:
+	Ref; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Rotation_Animation_Speed:
+	Float; *Description Here*
+
+- Walk_Animation_Speed:
+	Float; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- MaxJiggleDistance:
+	Float; *Description Here*
+
+- Galactic_Influence_Range:
+	Float; *Description Here*
+
+- Is_Visible_On_Enemy_Radar:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Tactical_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving:
+	Ref; *Description Here*
+
+- Hyperspace_Fleet_Reveal_Range:
+	Float; *Description Here*
+
+- Unique_Space_Unit:
+	Ref; *Description Here*
+
+- SFXEvent_Attacked:
+	Ref; *Description Here*
+
+- Share_Damage_With_Teammates:
+	Bool Y/N; *Description Here*
+
+- Respawn_Whole_Team_When_Killed:
+	Bool Y/N; *Description Here*
+
+- Create_Team:
+	Ref; *Description Here*
+
+- Is_Super_Weapon_Killer:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Enemy_Health_Low_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Enemy_Health_Critical_Warning:
+	Ref; *Description Here*
+
+
+
+``Hero_Clashes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Hero_Clash``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+Hero_Clashes
+------------
+
+
+Hero_Clash
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Clash_Type:
+	Ref; *Description Here*
+
+- Involved_Hero_Types:
+	Ref, Ref, Ref; *Description Here*
+
+- Clash_Range:
+	Float; *Description Here*
+
+- Play_Conversation_Events:
+	Bool Y/N; *Description Here*
+
+- First_Hero_Type:
+	Ref; *Description Here*
+
+- Second_Hero_Type:
+	Ref; *Description Here*
+
+- Combat_Distance:
+	Float; *Description Here*
+
+- Damage_Amount:
+	Float; *Description Here*
+
+- Damage_Percentage:
+	Float; *Description Here*
+
+- First_Hero_Damage_Multiplier:
+	Float; *Description Here*
+
+- Second_Hero_Damage_Multiplier:
+	Float; *Description Here*
+
+- First_Hero_Win_Exchange_Chance:
+	Float; *Description Here*
+
+- Second_Hero_Win_Exchange_Chance:
+	Float; *Description Here*
+
+- First_Hero_Win_Anim_Type:
+	Ref; *Description Here*
+
+- First_Hero_Lose_Anim_Type:
+	Ref; *Description Here*
+
+- First_Hero_Draw_Anim_Type:
+	Ref; *Description Here*
+
+- First_Hero_Conversation_Anim_Type:
+	Ref; *Description Here*
+
+- Second_Hero_Win_Anim_Type:
+	Ref; *Description Here*
+
+- Second_Hero_Lose_Anim_Type:
+	Ref; *Description Here*
+
+- Second_Hero_Draw_Anim_Type:
+	Ref; *Description Here*
+
+- Second_Hero_Conversation_Anim_Type:
+	Ref; *Description Here*
+
+- First_Hero_Win_Speech:
+	Ref; *Description Here*
+
+- Second_Hero_Win_Speech:
+	Ref; *Description Here*
+
+- Clash_Actions:
+	Ref; *Description Here*
+
+
+
+``Indigenous_Companies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundCompany``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+Indigenous_Companies
+--------------------
+
+
+GroundCompany
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Company_Transport_Unit:
+	Ref; *Description Here*
+
+- Company_Units:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Victory_Relevant:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Int; *Description Here*
+
+- Max_Squad_Size:
+	Ref; *Description Here*
+
+- Create_Team_Type:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- SFXEvent_Tactical_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Cancelled:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Build_Tab_Land_Units:
+	Bool Y/N; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+
+
+``Indigenous_Units``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Indigenous_Unit``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+Indigenous_Units
+----------------
+
+
+Indigenous_Unit
+^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Land_Model_Anim_Override_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref; *Description Here*
+
+- SurfaceFX_Name:
+	Ref, Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- CanCellStack:
+	Bool y/n; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- GUI_Bracket_Width:
+	Int; *Description Here*
+
+- GUI_Bracket_Height:
+	Int; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- Rotation_Animation_Speed:
+	Float; *Description Here*
+
+- Mouse_Collide_Override_Sphere_Radius:
+	Float; *Description Here*
+
+- Is_Combustible:
+	Bool y/n; *Description Here*
+
+- On_Fire_Speed_Modifier:
+	Floatf; *Description Here*
+
+- Targeting_Allowed_When_Burning:
+	Bool y/n; *Description Here*
+
+- Burning_Damage_Per_Second:
+	Float; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- FormationSpacing:
+	Float; *Description Here*
+
+- MinimumPushReturnDistance:
+	Ref; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- FormationGrouping:
+	Ref; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- IsBuildable:
+	Bool Y/N; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Blob_Shadow_Bone_Name:
+	Ref; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Int; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- SFXEvent_Select:
+	None; *Description Here*
+
+- SFXEvent_Move:
+	None; *Description Here*
+
+- SFXEvent_Attack:
+	None; *Description Here*
+
+- SFXEvent_Assist_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Weather_Category:
+	Ref; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Ground_Infantry_Turret_Target:
+	Ref; *Description Here*
+
+- Is_Squashable:
+	Ref; *Description Here*
+
+- Death_Fade_Time:
+	Float; *Description Here*
+
+- Death_Persistence_Duration:
+	Float; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Create_Team:
+	Bool T/F; *Description Here*
+
+- Movie_Object:
+	Bool t/f; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Specific_Death_Anim_Type:
+	Ref; *Description Here*
+
+- Specific_Death_Anim_Index:
+	Ref; *Description Here*
+
+- FormationRaggedness:
+	Float; *Description Here*
+
+- Projectile_Appearance_Delay_Frames:
+	Ref; *Description Here*
+
+- Walk_Animation_Speed:
+	Float; *Description Here*
+
+- Fire_Category_Restrictions:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving:
+	None; *Description Here*
+
+- SFXEvent_Ambient_Moving_Min_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Max_Delay_Seconds:
+	Ref; *Description Here*
+
+- Create_Team_Type:
+	Ref; *Description Here*
+
+- Crouch_Animation_Speed:
+	Float; *Description Here*
+
+- Targeting_Min_Attack_Distance:
+	Float; *Description Here*
+
+- Harass_Enemy_Exclusion_Range:
+	Float; *Description Here*
+
+- Is_Stationary_When_Attacking:
+	Bool Y/N; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Dead:
+	Bool Y/N; *Description Here*
+
+- Is_Valid_Target:
+	Bool Y/N; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Tech_Structure:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Sensor_Range:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Base_Shield_Penetration_Particle:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Int; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Turret_Bone_Name:
+	Ref; *Description Here*
+
+- Turret_Rotate_Speed:
+	Float; *Description Here*
+
+- Turret_Targets_Ground_Infantry:
+	Ref; *Description Here*
+
+- Turret_Targets_Ground_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Air_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Anything_Else:
+	Ref; *Description Here*
+
+- Turret_XY_Only:
+	Bool Y/N; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Walk_Transition:
+	Bool Y/N; *Description Here*
+
+- Has_Pre_Turn_Anim:
+	Ref; *Description Here*
+
+- Death_Clone_Is_Obstacle:
+	Bool y/n; *Description Here*
+
+- IsDeathCloneObstacle:
+	Ref; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Max_Lift:
+	Int; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Begin_Turn_Towards_Distance:
+	Float; *Description Here*
+
+- Allow_Idle_When_Moving:
+	Bool Y/N; *Description Here*
+
+- Wind_Disturbance_Radius:
+	Int; *Description Here*
+
+- Wind_Disturbance_Strength:
+	Int; *Description Here*
+
+- Wind_Disturbance_Sphere_Alpha:
+	Float; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Occlusion_Silhouette_Enabled:
+	Int; *Description Here*
+
+- Air_Vehicle_Turret_Target:
+	Ref; *Description Here*
+
+- Hover_Offset:
+	Float; *Description Here*
+
+- Prepare_Strafe_Height:
+	Float; *Description Here*
+
+- MaxFacingLookAheadFrames:
+	Float; *Description Here*
+
+- Can_Indigenous_Unit_Stop:
+	Bool Y/N; *Description Here*
+
+- MaxJiggleDistance:
+	Ref; *Description Here*
+
+- Avoidance_Disabled:
+	Ref; *Description Here*
+
+- Close_Enough_Angle_For_Move_Start:
+	Float; *Description Here*
+
+- Squash_Damage_Type:
+	Ref; *Description Here*
+
+- Min_Speed_Fraction_For_Turn:
+	Float; *Description Here*
+
+
+
+``LandBombingRunUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LandBombingUnit``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+LandBombingRunUnits
+-------------------
+
+
+LandBombingUnit
+^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Autoresolve_Health:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Max_Lift:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Min_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Max_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Bomb_Run_Select_Target:
+	Ref; *Description Here*
+
+- SFXEvent_Bomb_Run_Incoming:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Fires_Forward:
+	Bool y/n; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Damage_Hit_Particles:
+	Ref; *Description Here*
+
+- Shield_Hit_Particles:
+	Ref; *Description Here*
+
+- Damaged_Smoke_Asset_Name:
+	File; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	None; *Description Here*
+
+- Air_Vehicle_Turret_Target:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- Hover_Offset:
+	Float; *Description Here*
+
+- Prepare_Strafe_Height:
+	Float; *Description Here*
+
+- MaxFacingLookAheadFrames:
+	Float; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Spin_Away_On_Death:
+	Bool Y/N; *Description Here*
+
+- Spin_Away_On_Death_Chance:
+	Float; *Description Here*
+
+- Spin_Away_On_Death_Time:
+	Floatf; *Description Here*
+
+- Spin_Away_On_Death_Explosion:
+	Ref; *Description Here*
+
+- Spin_Away_On_Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- SFXEvent_Hardpoint:
+	Ref; *Description Here*
+
+- XSFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+
+
+``LandPrimarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LandPrimarySkydome``                                            ``Name``                                                         
+================================================================= =================================================================
+
+
+LandPrimarySkydomes
+-------------------
+
+
+LandPrimarySkydome
+^^^^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	None; *Description Here*
+
+- Galactic_Model_Name:
+	None; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- In_Background:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+
+
+``LandSecondarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LandSecondarySkydome``                                          ``Name``                                                         
+================================================================= =================================================================
+
+
+LandSecondarySkydomes
+---------------------
+
+
+LandSecondarySkydome
+^^^^^^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	None; *Description Here*
+
+- Galactic_Model_Name:
+	None; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Behavior:
+	None; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- In_Background:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+
+
+``LightSources``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LightSource``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+LightSources
+------------
+
+
+LightSource
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Diffuse:
+	Int, Int, Int; *Description Here*
+
+- Intensity:
+	Float; *Description Here*
+
+- Radius:
+	Float; *Description Here*
+
+- Falloff_Start:
+	Int; *Description Here*
+
+- Auto_Destruct_Time:
+	Float; *Description Here*
+
+- Auto_Destruct_Fade_Time:
+	Float; *Description Here*
+
+- Blob_Radius:
+	Float; *Description Here*
+
+- Blob_Color:
+	Int, Int, Int; *Description Here*
+
+- Blob_Intensity:
+	Float; *Description Here*
+
+
+
+``LightningEffects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LightningEffect``                                               ``name``                                                         
+================================================================= =================================================================
+
+
+LightningEffects
+----------------
+
+
+LightningEffect
+^^^^^^^^^^^^^^^
+- AAA_Attribute: name:
+	String; *Description Here*
+
+- Texture_Name:
+	File; *Description Here*
+
+- Texture_Repeat:
+	Float; *Description Here*
+
+- Texture_Scroll:
+	Float; *Description Here*
+
+- Width_Max:
+	Float; *Description Here*
+
+- Width_Min:
+	Float; *Description Here*
+
+- Displace:
+	Float, Float, Float; *Description Here*
+
+- Detail:
+	Int; *Description Here*
+
+- Color_Start:
+	Int, Int, Int, Int; *Description Here*
+
+- Color_End:
+	Int, Int, Int, Int; *Description Here*
+
+- Fadeout_Time_Max:
+	Float; *Description Here*
+
+- Fadeout_Time_Min:
+	Float; *Description Here*
+
+- Number_Bolts:
+	Int; *Description Here*
+
+- Bolt_Creation_Interval_Min:
+	Float; *Description Here*
+
+- Bolt_Creation_Interval_Max:
+	Float; *Description Here*
+
+- Update_All:
+	Bool t/f; *Description Here*
+
+- Cycles_Per_Distance:
+	Float; *Description Here*
+
+- Rotations_Per_Second:
+	Int; *Description Here*
+
+- Radius:
+	Int; *Description Here*
+
+- Replace_Faded:
+	Ref; *Description Here*
+
+
+
+``Markers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Marker``                                                        ``Name``                                                         
+================================================================= =================================================================
+
+
+Markers
+-------
+
+
+Marker
+^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Is_Marker:
+	Bool Y/N; *Description Here*
+
+- Galactic_Model_Name:
+	File; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Reveal_For_Attacker:
+	Bool t/f; *Description Here*
+
+- Is_Discardable:
+	Bool t/f; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Reveal_For_Defender:
+	Bool t/f; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Marker_For_Specific_Object_Type:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Dead:
+	Bool Y/N; *Description Here*
+
+- Is_Valid_Target:
+	Bool Y/N; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- In_Background:
+	Bool Y/N; *Description Here*
+
+- Cash_Point_Credits_Per_Second:
+	Int; *Description Here*
+
+- Cash_Point_Radius:
+	Int; *Description Here*
+
+- Influences_Cash_Point:
+	Bool y/n; *Description Here*
+
+- Cash_Point_Transition_Time_Seconds:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Debug_Test_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- Tooltip_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Capture_Point_Transition_Time_Seconds:
+	Float; *Description Here*
+
+- Reinforcement_Enabling_Radius:
+	Float; *Description Here*
+
+- Capture_Point_Radius:
+	Float; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Show_Facing:
+	Bool Y/N; *Description Here*
+
+- Radar_Range_Icon_Name:
+	File; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Begin_Control_Transition_Radar_Event:
+	Ref; *Description Here*
+
+- End_Control_Transition_Radar_Event:
+	Ref; *Description Here*
+
+- Reinforcement_Region_Blob_Name:
+	Ref; *Description Here*
+
+- Faction_Anim_Subindex:
+	Ref, Int; *Description Here*
+
+- Influences_Capture_Point:
+	Bool T/F; *Description Here*
+
+- Control_Point_Domination_Condition_Relevant:
+	Bool Y/N; *Description Here*
+
+- Last_State_Visible_Under_FOW:
+	Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+- Additional_Population_Capacity:
+	Int; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Immune_To_Damage:
+	Bool T/F; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Multisample_FOW_Check:
+	Bool Y/N; *Description Here*
+
+- Terrain_Texture_Modifier_Material:
+	Int; *Description Here*
+
+- Terrain_Texture_Modifier_Join_Distance:
+	Float; *Description Here*
+
+- Terrain_Texture_Modifier_Square:
+	Bool t/f; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Is_Community_Property:
+	Bool Y/N; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float, Int; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Reveal_During_Setup_Phase:
+	Ref; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Rotate_Speed:
+	Float; *Description Here*
+
+- Turret_Bone_Name:
+	Ref; *Description Here*
+
+- Barrel_Bone_Name:
+	Ref; *Description Here*
+
+- Apply_Z_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Apply_Y_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Turret_Targets_Ground_Infantry:
+	Ref; *Description Here*
+
+- Turret_Targets_Ground_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Air_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Anything_Else:
+	Ref; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Special_Weapon_Ready:
+	Ref; *Description Here*
+
+- Map_Load_Spawn_Table:
+	Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref, Float, Ref; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+
+
+``MiscObjects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``MiscObject``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+MiscObjects
+-----------
+
+
+MiscObject
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Model_Name:
+	File; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool T/F; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Tactical_Health:
+	Ref; *Description Here*
+
+- Beacon_Radar_Map_Event_Name:
+	Ref; *Description Here*
+
+- Beacon_Lifetime_In_Secs:
+	Float; *Description Here*
+
+- SFXEvent_Beacon_Placed:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+
+
+``Movies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Movie``                                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+Movies
+------
+
+
+Movie
+^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Movie_File:
+	Filepath; *Description Here*
+
+- Cannot_Skip:
+	Bool t/f; *Description Here*
+
+- Commandbar_Offset:
+	Ref; *Description Here*
+
+- Alpha:
+	Bool t/f; *Description Here*
+
+- Halt_Game_Music:
+	Ref; *Description Here*
+
+- SFXEvent_Frame:
+	Ref, Int; *Description Here*
+
+- Caption_Frame:
+	Ref, Int; *Description Here*
+
+- Caption_Duration:
+	Ref, Int; *Description Here*
+
+- SpeechEvent_Frame:
+	Ref, Int; *Description Here*
+
+- Overlay:
+	Bool t/f; *Description Here*
+
+- Has_Credits:
+	Bool t/f; *Description Here*
+
+- Movie_Start_Frame:
+	Int; *Description Here*
+
+- Text_Crawl_Name:
+	Ref; *Description Here*
+
+- Text_Crawl_Start_Frame:
+	Int; *Description Here*
+
+- Pause_Game_While_Playing:
+	Bool t/f; *Description Here*
+
+
+
+``MusicEvents``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``MusicEvent``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+MusicEvents
+-----------
+
+
+MusicEvent
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Files:
+	File, File, ...; *Description Here*
+
+- Volume_Percent:
+	Ref; *Description Here*
+
+- Fade_In_Seconds:
+	Float; *Description Here*
+
+- Fade_Out_Previous_Seconds:
+	Float; *Description Here*
+
+- Loop:
+	Ref; *Description Here*
+
+- MSS_Internal_Loop:
+	Ref; *Description Here*
+
+- Play_Sequentially:
+	Ref; *Description Here*
+
+- Play_Sequentialy:
+	Ref; *Description Here*
+
+
+
+``Particles``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Particle``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+Particles
+---------
+
+
+Particle
+^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Land_Model_Name:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Particle_Lifetime_Frames:
+	Ref; *Description Here*
+
+- Explosion_Jitter_Factor:
+	Int; *Description Here*
+
+- Explosion_Scorch_Mark:
+	Ref; *Description Here*
+
+- Allow_Particle_Model_Culling:
+	Bool y/n; *Description Here*
+
+- No_Particle_Below_Detail_Level:
+	Float; *Description Here*
+
+- Particle_Attach_To_Collision:
+	Int; *Description Here*
+
+- Is_Editor_Placed:
+	Bool t/f; *Description Here*
+
+- Model_Visible_To_Enemy:
+	Bool Y/N; *Description Here*
+
+- Galactic_Model_Name:
+	File; *Description Here*
+
+- In_Background:
+	Ref; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Ref; *Description Here*
+
+
+
+``Planets``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Planet``                                                        ``Name``                                                         
+================================================================= =================================================================
+
+
+Planets
+-------
+
+
+Planet
+^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Galactic_Model_Name:
+	File; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Always_Instantiate_Galactic:
+	Bool y/n; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Show_Name:
+	Bool Y/N; *Description Here*
+
+- Name_Adjust:
+	Ref, Ref, Float; *Description Here*
+
+- Behavior:
+	Ref, Ref, Ref; *Description Here*
+
+- Pre_Lit:
+	Bool y/n; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Camera_Aligned:
+	Bool y/n; *Description Here*
+
+- Terrain:
+	Ref; *Description Here*
+
+- Planet_Credit_Value:
+	Int; *Description Here*
+
+- Galactic_Position:
+	Float, Float, Float; *Description Here*
+
+- Special_Structures:
+	Int; *Description Here*
+
+- In_Background:
+	Bool y/n; *Description Here*
+
+- Max_Ground_Base:
+	Int; *Description Here*
+
+- Max_Space_Base:
+	Int; *Description Here*
+
+- Zoomed_Terrain_Index:
+	Int; *Description Here*
+
+- Destroyed_Galactic_Model_Name:
+	File; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- Mouse_Collide_Override_Sphere_Radius:
+	Float; *Description Here*
+
+- Facing_Adjust:
+	Float, Float, Float; *Description Here*
+
+- Planet_Destroyed_Credit_Value:
+	Int; *Description Here*
+
+- Special_Structures_Land:
+	Int; *Description Here*
+
+- Special_Structures_Space:
+	Int; *Description Here*
+
+- The_Force:
+	Ref; *Description Here*
+
+- Force_Strength:
+	Float; *Description Here*
+
+- Planet_Surface_Accessible:
+	Ref; *Description Here*
+
+- Planet_Capture_Bonus_Reward:
+	Ref; *Description Here*
+
+- Land_Tactical_Map:
+	Ref; *Description Here*
+
+- Space_Tactical_Map:
+	Ref; *Description Here*
+
+- Destroyed_Space_Tactical_Map:
+	None; *Description Here*
+
+- Planet_Slice_Difficulty_Rating:
+	Int; *Description Here*
+
+- Planet_Tech_Availability_Rating:
+	Int; *Description Here*
+
+- Planet_Slice_Affinity_Types:
+	None; *Description Here*
+
+- Describe_Population:
+	Ref; *Description Here*
+
+- Describe_Wildlife:
+	Ref; *Description Here*
+
+- Describe_Terrain:
+	Ref; *Description Here*
+
+- Describe_Weather:
+	Ref; *Description Here*
+
+- Describe_Tactical:
+	Ref; *Description Here*
+
+- Describe_Advantage:
+	Ref; *Description Here*
+
+- Describe_History:
+	Ref; *Description Here*
+
+- Planet_Ability_Name:
+	Ref; *Description Here*
+
+- Planet_Ability_Description:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Weather_Icon:
+	File; *Description Here*
+
+- Encyclopedia_Weather_Name:
+	Ref; *Description Here*
+
+- Encyclopedia_Weather_Info:
+	Ref; *Description Here*
+
+- Planet_Ability_Icon:
+	File; *Description Here*
+
+- Native_Icon_Name:
+	File; *Description Here*
+
+- Potential_Indigenous_Power:
+	Ref, Int; *Description Here*
+
+- Additional_Population_Capacity:
+	Int; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Planet_Is_Mining_Colony:
+	Bool Y/N; *Description Here*
+
+- Planet_Black_Market_Influences:
+	Bool Y/N; *Description Here*
+
+- Galactic_Influence_Range:
+	Float; *Description Here*
+
+- Hyperspace_Fleet_Reveal_Range:
+	Float; *Description Here*
+
+- Planet_Groundbase_Stealth:
+	Bool Y/N; *Description Here*
+
+- Planet_Restricted_Unit_Categories:
+	None; *Description Here*
+
+- Planet_Restricted_Unit_Types:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Planet_Is_Destroyable_By_TSW:
+	Ref; *Description Here*
+
+- Planet_Retains_Residual_Influence:
+	Ref; *Description Here*
+
+- Planet_Vigilance:
+	Bool Y/N; *Description Here*
+
+
+
+``Projectiles``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Projectile``                                                    ``Description``, ``Name``                                        
+================================================================= =================================================================
+
+
+Projectiles
+-----------
+
+
+Projectile
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- AAA_Attribute: Description:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Projectile_Custom_Render:
+	Int; *Description Here*
+
+- Projectile_Width:
+	Float; *Description Here*
+
+- Projectile_Length:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- Projectile_Category:
+	Ref; *Description Here*
+
+- Projectile_Max_Flight_Distance:
+	Float; *Description Here*
+
+- Projectile_Does_Shield_Damage:
+	Bool Y/N; *Description Here*
+
+- Projectile_Does_Energy_Damage:
+	Bool Y/N; *Description Here*
+
+- Projectile_Does_Hitpoint_Damage:
+	Bool Y/N; *Description Here*
+
+- Projectile_Object_Detonation_Particle:
+	Ref; *Description Here*
+
+- Projectile_Object_Armor_Reduced_Detonation_Particle:
+	Ref; *Description Here*
+
+- Projectile_Ground_Detonation_Particle:
+	None; *Description Here*
+
+- Projectile_Lifetime_Detonation_Particle:
+	Ref; *Description Here*
+
+- Projectile_Absorbed_By_Shields_Particle:
+	Ref; *Description Here*
+
+- Projectile_Ground_Detonation_SurfaceFX:
+	None; *Description Here*
+
+- Projectile_SFXEvent_Detonate_Reduced_By_Armor:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Projectile_Texture_Slot:
+	Int, Int; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Projectile_Energy_Per_Shot:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- Projectile_SFXEvent_Detonate:
+	Ref; *Description Here*
+
+- Projectile_Ion_Stun_On_Detonation:
+	Bool t/f; *Description Here*
+
+- Projectile_Disables_Engines_When_Power_Drained:
+	Bool Y/N; *Description Here*
+
+- Projectile_Ion_Stun_Duration:
+	Float; *Description Here*
+
+- Projectile_Ion_Stun_Speed_Reduction_Percent:
+	Floatf; *Description Here*
+
+- Projectile_Ion_Stun_Shot_Rate_Reduction_Percent:
+	Float; *Description Here*
+
+- Projectile_Ion_Stun_Stack_Duration:
+	Bool Y/N; *Description Here*
+
+- Projectile_Stun_On_Detonation:
+	Bool Y/N; *Description Here*
+
+- Projectile_Stun_Duration_Frames:
+	Int; *Description Here*
+
+- Projectile_Stun_Radius:
+	Int; *Description Here*
+
+- Projectile_Stun_Spawn_Effect:
+	Ref; *Description Here*
+
+- Projectile_Stun_Victims_Category_Mask:
+	Ref | Ref; *Description Here*
+
+- Damage_Type:
+	Ref; *Description Here*
+
+- Projectile_Laser_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Projectile_Disable_Engines_Duration:
+	Float; *Description Here*
+
+- Projectile_Max_Scan_Range:
+	Float; *Description Here*
+
+- Projectile_Rocket_Curve_Distance:
+	Int; *Description Here*
+
+- Projectile_Rocket_Curve_Offset:
+	Int; *Description Here*
+
+- Projectile_Rocket_Straight_Distance:
+	Int; *Description Here*
+
+- Explode_When_Reached_Target_Radius:
+	Ref; *Description Here*
+
+- Projectile_Blast_Area_Dropoff:
+	Bool T/F; *Description Here*
+
+- Projectile_Blast_Area_Dropoff_Tiers:
+	Int; *Description Here*
+
+- Projectile_Blast_Area_Damage:
+	Float; *Description Here*
+
+- Projectile_Blast_Area_Range:
+	Float; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Projectile_Target_Point_On_Terrain:
+	Ref; *Description Here*
+
+- Projectile_Stun_Victims_Unit_Types:
+	Ref; *Description Here*
+
+- Projectile_Instant_Heal_On_Detonation:
+	Ref; *Description Here*
+
+- Projectile_Instant_Heal_Duration_Frames:
+	Ref; *Description Here*
+
+- Projectile_Instant_Heal_Radius:
+	Ref; *Description Here*
+
+- Projectile_Instant_Heal_Spawn_Effect:
+	Ref; *Description Here*
+
+- Projectile_Instant_Heal_Targets_Category_Mask:
+	Ref | Ref; *Description Here*
+
+- Projectile_Instant_Heal_Health_Increase:
+	Ref; *Description Here*
+
+- Projectile_Cause_Invulnerability_On_Detonation:
+	Ref; *Description Here*
+
+- Projectile_Cause_Invulnerability_Duration_Frames:
+	Ref; *Description Here*
+
+- Projectile_Cause_Invulnerability_Radius:
+	Float; *Description Here*
+
+- Projectile_Cause_Invulnerability_Max_Targets:
+	Ref; *Description Here*
+
+- Projectile_Cause_Invulnerability_Spawn_Effect:
+	Ref; *Description Here*
+
+- Projectile_Cause_Invulnerability_Targets_Category_Mask:
+	Ref | Ref | Ref | Ref; *Description Here*
+
+- Projectile_Convert_Enemy_On_Detonation:
+	Ref; *Description Here*
+
+- Projectile_Convert_Enemy_Radius:
+	Ref; *Description Here*
+
+- Projectile_Convert_Enemy_Spawn_Effect:
+	Ref; *Description Here*
+
+- Projectile_Convert_Enemy_Targets_Category_Mask:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Model_Visible_To_Enemy:
+	Bool Y/N; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Projectile_Grenade_Gravity:
+	Float; *Description Here*
+
+- Projectile_Grenade_Gravity_Lob_Mod:
+	Float; *Description Here*
+
+- Projectile_Grenade_Can_Lob_Slower:
+	Bool y/n; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	None; *Description Here*
+
+- Projectile_Max_Lifetime:
+	Float; *Description Here*
+
+- Projectile_Damages_Random_Hard_Points:
+	Bool y/n; *Description Here*
+
+- Projectile_Acceleration_Per_Frame:
+	Float; *Description Here*
+
+- Projectile_Bomb_Fall_Accel_Rate:
+	Float; *Description Here*
+
+- Projectile_Grenade_Sticks_On_Collision:
+	Bool y/n; *Description Here*
+
+- Death_Explosions:
+	None; *Description Here*
+
+- Projectile_Blast_Area_Immune_Faction:
+	Ref; *Description Here*
+
+- Projectile_Damage_Delay_Secs:
+	Float; *Description Here*
+
+- Projectile_Block_Chance_Modifier:
+	Float; *Description Here*
+
+- Projectile_Redirect_Chance_Modifier:
+	Float; *Description Here*
+
+- Internal_Damage_Type:
+	Ref; *Description Here*
+
+- Projectile_Weaken_Enemy_On_Detonation:
+	Bool Y/N; *Description Here*
+
+- Projectile_Weaken_Enemy_Duration_Seconds:
+	Float; *Description Here*
+
+- Projectile_Weaken_Enemy_Radius:
+	Int; *Description Here*
+
+- Projectile_Weaken_Enemy_Spawn_Effect:
+	Ref; *Description Here*
+
+- Projectile_Weaken_Enemy_Take_Damage_Increase_Percent:
+	Int; *Description Here*
+
+- Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent:
+	Float; *Description Here*
+
+- Projectile_Weaken_Enemy_Targets_Category_Mask:
+	Ref; *Description Here*
+
+
+
+``Prop_Forest``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Prop_Forest``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+Prop_Forest
+-----------
+
+
+Prop_Forest
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent_Offset:
+	Float; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Tactical_Model_Name:
+	File; *Description Here*
+
+
+
+``Props_Desert``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Prop_Desert``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Desert
+------------
+
+
+Prop_Desert
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref | Ref | Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent_Offset:
+	Float; *Description Here*
+
+- Spawned_Indigenous_Units_Type:
+	Ref; *Description Here*
+
+- Spawned_Indigenous_Units_Delay_Seconds:
+	Float; *Description Here*
+
+- Spawned_Indigenous_Units_Quantity:
+	Int; *Description Here*
+
+- Spawn_Indigenous_Units_In_Packs:
+	Bool Y/N; *Description Here*
+
+- Spawn_Indigenous_Units_Radius:
+	Floatf; *Description Here*
+
+- Spawn_Indigenous_Units_Chance:
+	Floatf; *Description Here*
+
+- Max_Distance_From_Spawner:
+	Int; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Space_Obstacle_Offset:
+	Ref; *Description Here*
+
+- Space_Obstacle_Radius:
+	Ref; *Description Here*
+
+- Is_Discardable:
+	Bool Y/N; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+
+
+``Props_Generic``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Generic``                                                 ``Name``                                                         
+``SpaceProp``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Generic
+-------------
+
+
+Props_Generic
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Is_Valid_Target:
+	Bool Y/N; *Description Here*
+
+- Is_Discardable:
+	Bool Y/N; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Is_Branched_Map_Discardable:
+	Bool Y/N; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Avoidance_Disabled:
+	Ref; *Description Here*
+
+- Snap_Movement_Orders_To_Center:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- FormationSpacing:
+	Float; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- FormationGrouping:
+	Ref; *Description Here*
+
+- MinimumPushReturnDistance:
+	Ref; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Is_Affected_By_Gravity_Control_Field:
+	Ref; *Description Here*
+
+- SurfaceFX_Name:
+	Ref, Ref; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Dead:
+	Bool Y/N; *Description Here*
+
+- Wind_Disturbance_Radius:
+	Int; *Description Here*
+
+- Wind_Disturbance_Strength:
+	Int; *Description Here*
+
+- Wind_Disturbance_Sphere_Alpha:
+	Float; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- Occlusion_Silhouette_Enabled:
+	Int; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool Y/N; *Description Here*
+
+- Ground_Vehicle_Turret_Target:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Overall_Length:
+	Float; *Description Here*
+
+- Overall_Width:
+	Float; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool Y/N; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Weather_Category:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+
+
+SpaceProp
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	None; *Description Here*
+
+- Land_Model_Name:
+	Ref; *Description Here*
+
+- Is_Decoration:
+	Ref; *Description Here*
+
+- Is_Discardable:
+	Ref; *Description Here*
+
+- Scale_Factor:
+	Ref; *Description Here*
+
+- Sort_Order_Adjust:
+	Ref; *Description Here*
+
+
+
+``Props_Snow``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Snow``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Snow
+----------
+
+
+Props_Snow
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent_Offset:
+	Float; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+
+
+``Props_Story``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundBuildable``                                               ``Name``                                                         
+``Props_Story``                                                   ``Name``                                                         
+``SpaceStructure``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Story
+-----------
+
+
+Props_Story
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Base_Level_Available:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Scale_Land:
+	Float; *Description Here*
+
+- Radar_Icon_Scale_Space:
+	Float; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+
+
+SpaceStructure
+^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Facing_Adjust:
+	Float, Float, Float; *Description Here*
+
+- Behavior:
+	None; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Base_Level_Available:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Reveal_During_Setup_Phase:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+- Visible_On_Radar_When_Fogged:
+	Bool T/F; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float, Int; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Death_Projectiles:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Space_Obstacle_Radius:
+	Ref; *Description Here*
+
+- Space_Obstacle_Offset:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+
+
+GroundBuildable
+^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+
+
+``Props_Swamp``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Swamp``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Swamp
+-----------
+
+
+Props_Swamp
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Is_Editor_Placed:
+	Bool t/f; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent_Offset:
+	Float; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+
+
+``Props_Temperate``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Temperate``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Temperate
+---------------
+
+
+Props_Temperate
+^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent_Offset:
+	Float; *Description Here*
+
+- Spawned_Indigenous_Units_Type:
+	Ref, Ref; *Description Here*
+
+- Spawned_Indigenous_Units_Delay_Seconds:
+	Float; *Description Here*
+
+- Spawned_Indigenous_Units_Quantity:
+	Int; *Description Here*
+
+- Spawn_Indigenous_Units_In_Packs:
+	Bool Y/N; *Description Here*
+
+- Spawn_Indigenous_Units_Radius:
+	Floatf; *Description Here*
+
+- Spawn_Indigenous_Units_Chance:
+	Floatf; *Description Here*
+
+- Max_Distance_From_Spawner:
+	Int; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Is_Decoration:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Tactical_Model_Name:
+	File; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+- Is_Discardable:
+	Ref; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Ref; *Description Here*
+
+- Idle_Anim_00_Rate_Mod:
+	Float; *Description Here*
+
+- Sort_Order_Adjust:
+	Ref; *Description Here*
+
+- In_Background:
+	Ref; *Description Here*
+
+
+
+``Props_Urban``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Urban``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Urban
+-----------
+
+
+Props_Urban
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Is_Discardable:
+	Bool Y/N; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+
+
+``Props_Volcanic``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Volcanic``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+Props_Volcanic
+--------------
+
+
+Props_Volcanic
+^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Is_Editor_Placed:
+	Bool t/f; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent_Offset:
+	Float; *Description Here*
+
+
+
+``RadarMap``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``RadarMapEvents``                                                None                                                             
+``RadarMapSettings``                                              None                                                             
+================================================================= =================================================================
+
+
+RadarMap
+--------
+
+
+RadarMapEvents
+^^^^^^^^^^^^^^
+- Radar_Map_Event:
+	Ref; *Description Here*
+
+
+
+RadarMapSettings
+^^^^^^^^^^^^^^^^
+- Use_Event_System:
+	Bool Y/N; *Description Here*
+
+- Space_Backdrop_Texture_Name:
+	File; *Description Here*
+
+- Space_FOW_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Space_Is_Guide_Rectangle:
+	Bool Y/N; *Description Here*
+
+- Space_Asteroid_Field_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Space_Asteroid_Field_Border_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Land_Backdrop_Texture_Name:
+	File; *Description Here*
+
+- Land_FOW_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Land_Is_Guide_Rectangle:
+	Bool Y/N; *Description Here*
+
+- Passability_Color_Settings:
+	Ref; *Description Here*
+
+- Color:
+	Int, Int, Int, Int; *Description Here*
+
+
+
+``RebelGroundCompanies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundCompany``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+RebelGroundCompanies
+--------------------
+
+
+GroundCompany
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Time_Reduced_By_Multiple_Factories:
+	Ref; *Description Here*
+
+- Build_Tab_Land_Units:
+	Bool Y/N; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Slice_Cost_Credits:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	Ref; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Formation_Prority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Company_Transport_Unit:
+	Ref; *Description Here*
+
+- Company_Units:
+	Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Model:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Int; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Homogeneous:
+	Bool Y/N; *Description Here*
+
+- Ignore_For_Reoptimization:
+	Ref; *Description Here*
+
+- Max_Squad_Size:
+	Ref; *Description Here*
+
+- Create_Team_Type:
+	Ref; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+
+
+SFXEvent_Files
+--------------
+
+
+- File:
+	Ref; *Description Here*
+
+
+
+``ScriptMarkers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``ScriptMarker``                                                  ``Name``                                                         
+================================================================= =================================================================
+
+
+ScriptMarkers
+-------------
+
+
+ScriptMarker
+^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Is_Marker:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- Space_Model_Name:
+	Ref; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+
+
+``SpaceBuildables``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceBuildable``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+SpaceBuildables
+---------------
+
+
+SpaceBuildable
+^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Capture_Point_Transition_Time_Seconds:
+	Int; *Description Here*
+
+- Capture_Point_Radius:
+	Float; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Tactical_Buildable_Objects_Multiplayer:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- Ownership_Sticks:
+	Bool Y/N; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Base_Level_Available:
+	Ref; *Description Here*
+
+- Required_Ground_Base_Level:
+	Ref; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Int; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Is_Community_Property:
+	Bool Y/N; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- MP_Encyclopedia_Text:
+	Ref, Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Last_State_Visible_Under_FOW:
+	Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+- Tactical_Buildable_Objects_Campaign:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Ref; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Visible_To_Enemies_When_Empty:
+	Bool T/F; *Description Here*
+
+- Hides_When_Built_On:
+	Bool T/F; *Description Here*
+
+- Destroy_When_Child_Dies:
+	Bool T/F; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Ref; *Description Here*
+
+- Space_Obstacle_Offset:
+	Ref; *Description Here*
+
+- Tactical_Respawn_Time_In_Secs:
+	Int; *Description Here*
+
+- Encyclopedia_Text:
+	Ref, Ref; *Description Here*
+
+- Tactical_Buildable_Constructed:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Campaign:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Ref; *Description Here*
+
+- Tactical_Build_Start_Lower_Z:
+	Float; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Rotate_Speed:
+	Float; *Description Here*
+
+- Turret_Rest_Angle:
+	Float, Float, Float; *Description Here*
+
+- Turret_Bone_Name:
+	Ref; *Description Here*
+
+- Apply_Z_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Apply_Y_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Fire_Inaccuracy_Distance:
+	Ref, Float; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Radar_Show_Facing:
+	Bool Y/N; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+
+
+``SpaceCorvettes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+SpaceCorvettes
+--------------
+
+
+SpaceUnit
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Ref; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Ranking_In_Category:
+	Int; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Int; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Shield_Armor_Type:
+	Ref; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Hyperspace:
+	Bool Y/N; *Description Here*
+
+- Hyperspace_Speed:
+	Float; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool Y/N; *Description Here*
+
+- Is_Bomber:
+	Bool y/n; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Squadron_Capacity:
+	Int; *Description Here*
+
+- Transport_Capacity:
+	Int; *Description Here*
+
+- Number_per_Squadron:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Space_Units:
+	Bool Y/N; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Behavior:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Hardpoints:
+	Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- CategoryMask:
+	Ref | Ref | Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Stop:
+	Ref; *Description Here*
+
+- SFXEvent_Barrage:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Nebula:
+	Ref; *Description Here*
+
+- SFXEvent_Attack_Hardpoint:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Autonomous_Move_Extension_Vs_Attacker:
+	Float; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- xxxSpace_Model_Name:
+	File; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- Max_Lift:
+	Float; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- FormationPriority:
+	Int; *Description Here*
+
+- Slice_Cost_Credits:
+	Int; *Description Here*
+
+- HardPoints:
+	Ref, Ref, Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- Surface_Bombardment_Capable:
+	Bool Y/N; *Description Here*
+
+- Is_Interdictor:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Tactical_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Cancelled:
+	Ref; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Int; *Description Here*
+
+- Targeting_Fire_Inaccuracy_Fixed_Radius:
+	Ref; *Description Here*
+
+- Targeting_Min_Attack_Distance:
+	Int; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- SFXEvent_Attack_With_Non_Hero_Ability:
+	Ref; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Fires_Forward:
+	Bool y/n; *Description Here*
+
+- Fire_Inaccuracy_Distance:
+	Ref, Float; *Description Here*
+
+- Min_Speed_Fraction_For_Turn:
+	Float; *Description Here*
+
+- Custom_Footprint_Radius:
+	Float; *Description Here*
+
+- FormationOrder:
+	Int; *Description Here*
+
+- Out_Of_Combat_Defense_Adjustment:
+	Float; *Description Here*
+
+- Minimum_Follow_Distance:
+	Float; *Description Here*
+
+- Collision_Box_Modifier:
+	Float; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Should_Attacker_Hold_Fire_For_Special_Ability:
+	Bool T/F; *Description Here*
+
+
+
+``SpacePrimarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpacePrimarySkydome``                                           ``Name``                                                         
+================================================================= =================================================================
+
+
+SpacePrimarySkydomes
+--------------------
+
+
+SpacePrimarySkydome
+^^^^^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	None; *Description Here*
+
+- Galactic_Model_Name:
+	None; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Is_Discardable:
+	Bool Y/N; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Sort_Order_Adjust:
+	None; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- In_Background:
+	Bool Y/N; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+
+
+``SpaceProps``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceProp``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+SpaceProps
+----------
+
+
+SpaceProp
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	None; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Is_Decoration:
+	Ref; *Description Here*
+
+- Is_Discardable:
+	Ref; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Ref; *Description Here*
+
+- Idle_Anim_00_Rate_Mod:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- Sort_Order_Adjust:
+	Ref; *Description Here*
+
+- In_Background:
+	Bool Y/N; *Description Here*
+
+- Layer_Z_Adjust:
+	Int; *Description Here*
+
+- Radar_Icon_Name:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Ref; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Death_By_TSW_Replacements:
+	Ref, Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Scale:
+	Float; *Description Here*
+
+- Is_Impassable_Asteroid:
+	Ref; *Description Here*
+
+- Space_Obstacle_Radius:
+	Ref; *Description Here*
+
+- Space_Obstacle_Offset:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Is_Valid_Target:
+	Bool Y/N; *Description Here*
+
+- Is_Asteroid_Field:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Dead:
+	Bool Y/N; *Description Here*
+
+- Is_Ion_Storm:
+	Bool Y/N; *Description Here*
+
+- Is_Nebula:
+	Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+- Visible_On_Radar_When_Fogged:
+	Bool T/F; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Affiliation:
+	Ref, Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Tactical_Health:
+	Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref; *Description Here*
+
+- Debris_Movement_Vector:
+	Float, Float, Float; *Description Here*
+
+- Debris_Facing_Rotate_Vector:
+	Float, Float, Float; *Description Here*
+
+- Debris_Min_Lifetime_Seconds:
+	Float; *Description Here*
+
+- Debris_Max_Lifetime_Seconds:
+	Float; *Description Here*
+
+- Debris_Attached_Particle:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+
+
+``SpaceSecondarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceSecondarySkydome``                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+SpaceSecondarySkydomes
+----------------------
+
+
+SpaceSecondarySkydome
+^^^^^^^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	None; *Description Here*
+
+- Galactic_Model_Name:
+	None; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Is_Discardable:
+	Bool Y/N; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Behavior:
+	None; *Description Here*
+
+- Sort_Order_Adjust:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- In_Background:
+	Bool y/n; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+
+
+``SpaceUnitsCapital``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+SpaceUnitsCapital
+-----------------
+
+
+SpaceUnit
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Ref; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Visible_On_Radar_When_Fogged:
+	Bool t/f; *Description Here*
+
+- Multisample_FOW_Check:
+	Bool Y/N; *Description Here*
+
+- Ranking_In_Category:
+	Int; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Shield_Armor_Type:
+	Ref; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Hyperspace:
+	Bool Y/N; *Description Here*
+
+- Hyperspace_Speed:
+	Int; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Slice_Cost_Credits:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Political_Faction:
+	Ref; *Description Here*
+
+- Squadron_Capacity:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Space_Units:
+	Bool Y/N; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Asteroid_Damage_Hit_Particles:
+	Ref; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- CategoryMask:
+	Ref | Ref; *Description Here*
+
+- HardPoints:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Stop:
+	Ref; *Description Here*
+
+- SFXEvent_Barrage:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Asteroid_Field:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Nebula:
+	Ref; *Description Here*
+
+- SFXEvent_Damaged_By_Asteroid:
+	Ref; *Description Here*
+
+- SFXEvent_Attack_Hardpoint:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Hardpoint_Destroyed:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Space_Full_Stop_Command:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Scale_Land:
+	Float; *Description Here*
+
+- Radar_Icon_Scale_Space:
+	Float; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- Glory_Cinematics:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- GUI_Bracket_Height:
+	Int; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Surface_Bombardment_Capable:
+	Bool y/n; *Description Here*
+
+- Starting_Spawned_Units_Tech_0:
+	Ref, Int; *Description Here*
+
+- Spawned_Squadron_Delay_Seconds:
+	Int; *Description Here*
+
+- Reserve_Spawned_Units_Tech_0:
+	Ref, Int; *Description Here*
+
+- SFXEvent_Move_Opposite:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- xxxSpace_Model_Name:
+	File; *Description Here*
+
+
+
+``SpaceUnitsFrigates``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+SpaceUnitsFrigates
+------------------
+
+
+SpaceUnit
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Ranking_In_Category:
+	Int; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Shield_Armor_Type:
+	Ref; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Hyperspace:
+	Bool Y/N; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Hyperspace_Speed:
+	Float; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Affiliation:
+	Ref, Ref, Ref; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Slice_Cost_Credits:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Is_Bomber:
+	Bool y/n; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Squadron_Capacity:
+	Int; *Description Here*
+
+- Transport_Capacity:
+	Int; *Description Here*
+
+- Number_per_Squadron:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Space_Units:
+	Bool Y/N; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Behavior:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Death_Leave_Hulk_Behind:
+	Ref; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Asteroid_Damage_Hit_Particles:
+	Ref; *Description Here*
+
+- HardPoints:
+	Ref; *Description Here*
+
+- Target_Bones:
+	Ref, Ref; *Description Here*
+
+- CategoryMask:
+	Ref | Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Stop:
+	Ref; *Description Here*
+
+- SFXEvent_Barrage:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Asteroid_Field:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Nebula:
+	Ref; *Description Here*
+
+- SFXEvent_Damaged_By_Asteroid:
+	Ref; *Description Here*
+
+- SFXEvent_Attack_Hardpoint:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Hardpoint_Destroyed:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Space_Full_Stop_Command:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Scale_Land:
+	Float; *Description Here*
+
+- Radar_Icon_Scale_Space:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- xxxSpace_Model_Name:
+	File; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Moniker:
+	Ref; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Starting_Spawned_Units_Tech_0:
+	Ref, Int; *Description Here*
+
+- Spawned_Squadron_Delay_Seconds:
+	Int; *Description Here*
+
+- Reserve_Spawned_Units_Tech_0:
+	Ref, Int; *Description Here*
+
+- Reinforcement_Prevention_Radius:
+	Ref; *Description Here*
+
+- Is_Interdictor:
+	Bool Y/N; *Description Here*
+
+- Disallows_Hyperspace_Retreat:
+	Ref; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- Play_SFXEvent_On_Sighting:
+	Bool T/F; *Description Here*
+
+- SFXEvent_Tactical_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Cancelled:
+	Ref; *Description Here*
+
+
+
+``SpaceUnitsSupers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+SpaceUnitsSupers
+----------------
+
+
+SpaceUnit
+^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Galactic_Fleet_Override_Model_Name:
+	Ref; *Description Here*
+
+- Galactic_Fleet_Override_Icon_Index:
+	Ref; *Description Here*
+
+- Ranking_In_Category:
+	Ref; *Description Here*
+
+- Prevents_Story_Campaign_Autoresolve:
+	Bool y/n; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Hyperspace:
+	Bool Y/N; *Description Here*
+
+- Hyperspace_Speed:
+	Float; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Collision_Box_Modifier:
+	Float; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Build_Limit_Current_Per_Player:
+	Int; *Description Here*
+
+- Build_Limit_Lifetime_Per_Player:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Special_Structures:
+	Bool Y/N; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Is_Bomber:
+	Bool y/n; *Description Here*
+
+- Political_Faction:
+	Ref; *Description Here*
+
+- Squadron_Capacity:
+	Int; *Description Here*
+
+- Transport_Capacity:
+	Int; *Description Here*
+
+- Number_per_Squadron:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Space_Escort_Unit_Types:
+	Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- GalacticBehavior:
+	Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref; *Description Here*
+
+- In_Background:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- TSW_Start_Distance_From_Target:
+	Float; *Description Here*
+
+- TSW_Start_Pos_Match_Targets_Z:
+	Ref; *Description Here*
+
+- TSW_Attack_Distance_From_Target:
+	Float; *Description Here*
+
+- TSW_Power_Up_Countdown_Seconds:
+	Float; *Description Here*
+
+- TSW_Attack_Anim_Duration_Seconds:
+	Float; *Description Here*
+
+- TSW_Explosion_Debris_Creation_Frame_Delay:
+	Ref; *Description Here*
+
+- TSW_SFXEvent_GUI_Bttton_Press:
+	Ref; *Description Here*
+
+- TSW_SFXEvent_Activate_Voice:
+	Ref; *Description Here*
+
+- TSW_SFXEvent_Weapon_Power_Up:
+	Ref; *Description Here*
+
+- TSW_MusicEvent_Activation_Start:
+	Ref; *Description Here*
+
+- TSW_Post_Music_Wait_Frames:
+	Ref; *Description Here*
+
+- TSW_Post_Destruction_Wait_Frames:
+	Ref; *Description Here*
+
+- TSW_Z_Adjust_Relative_To_Target_Pos:
+	Float; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Build_Countdown_Timer:
+	Ref; *Description Here*
+
+- Build_Countdown_Text_ID:
+	Ref; *Description Here*
+
+- Build_Countdown_Text_RGBA:
+	Int, Int, Int, Int; *Description Here*
+
+- Build_Speech_Underway:
+	Ref; *Description Here*
+
+- Build_Speech_Completed:
+	Ref; *Description Here*
+
+- Build_Speech_Stopped:
+	Ref; *Description Here*
+
+- Build_Speech_Countdowns:
+	Ref; *Description Here*
+
+- Build_Music_Completed:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool Y/N; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Radar_Register_As_Foreground_Object:
+	Bool Y/N; *Description Here*
+
+- Radar_Clip_To_Visible_Region:
+	Bool Y/N; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- Space_Override_Population_Value:
+	Int; *Description Here*
+
+
+
+``SpecialEffects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpecialEffect``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+SpecialEffects
+--------------
+
+
+SpecialEffect
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Is_Decoration:
+	Bool Y/N; *Description Here*
+
+- Is_Discardable:
+	Bool Y/N; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+
+
+``SpecialStructures``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpecialStructure``                                              ``Name``                                                         
+================================================================= =================================================================
+
+
+SpecialStructures
+-----------------
+
+
+SpecialStructure
+^^^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Special_Structures:
+	Bool Y/N; *Description Here*
+
+- Build_Max_Instances_Per_Planet:
+	Ref; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Slice_Cost_Credits:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Base_Position:
+	Ref; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Is_Community_Property:
+	Bool Y/N; *Description Here*
+
+- Death_Clone_Is_Obstacle:
+	Ref; *Description Here*
+
+- Tactical_Additional_Structure_Type:
+	Ref; *Description Here*
+
+- Multisample_FOW_Check:
+	Bool Y/N; *Description Here*
+
+- Last_State_Visible_Under_FOW:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Weapon_Type:
+	Ref; *Description Here*
+
+- Weapon_Quantity:
+	Int; *Description Here*
+
+- SpaceAutoResolveStunRate:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Destruction_Survivors:
+	Ref, Float; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Reveal_During_Setup_Phase:
+	Ref; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref; *Description Here*
+
+- Is_Special_Weapon_In_Space:
+	Bool Y/N; *Description Here*
+
+- Special_Weapon_Index:
+	Int; *Description Here*
+
+- Special_Weapon_Target_Action_Index:
+	Ref; *Description Here*
+
+- Special_Weapon_Valid_Targets:
+	Ref | Ref | Ref | Ref | Ref; *Description Here*
+
+- Space_Victory_Relevant:
+	Bool Y/N; *Description Here*
+
+- Land_Victory_Relevant:
+	Bool Y/N; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Special_Weapon_Ready:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Unit_Under_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Unit_Lost:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Prevents_Blockade_Run_Attrition:
+	Bool T/F; *Description Here*
+
+- Influences_Capture_Point:
+	Bool T/F; *Description Here*
+
+- Space_Obstacle_Offset:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool T/F; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Is_Interdictor:
+	Bool Y/N; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Modifies_Reveal_Range:
+	Bool y/n; *Description Here*
+
+- Reveal_Range_Modifier:
+	Float; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+- Terrain_Texture_Modifier_Material:
+	Int; *Description Here*
+
+- Terrain_Texture_Modifier_Join_Distance:
+	Float; *Description Here*
+
+- Terrain_Texture_Modifier_Square:
+	Bool t/f; *Description Here*
+
+- Reinforcement_Prevention_Radius:
+	Int; *Description Here*
+
+- Bombing_Run_Prevention_Radius:
+	Int; *Description Here*
+
+- Radar_Icon_Name:
+	None; *Description Here*
+
+- Radar_Range_Icon_Name:
+	File; *Description Here*
+
+- Property_Flags:
+	Ref | Ref; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- Galactic_Influence_Range:
+	Float; *Description Here*
+
+- Hyperspace_Fleet_Reveal_Range:
+	Float; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Can_Contain_Heroes_During_Ground_Battle:
+	Ref; *Description Here*
+
+- Build_Requires_Initial_Placement:
+	Bool t/f; *Description Here*
+
+- MP_Encyclopedia_Text:
+	Ref, Ref; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- Obstacle_Proxy_Type:
+	Ref; *Description Here*
+
+- Shield_On_Anim:
+	Ref; *Description Here*
+
+- Shield_Off_Anim:
+	Ref; *Description Here*
+
+- Base_Shield_Radius:
+	Int; *Description Here*
+
+- Base_Shield_Always_Off:
+	Ref; *Description Here*
+
+- SecondaryOccupationPassability:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Fine_Tune_Occupied_Passability:
+	Bool Y/N; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+- Shield_Normal_Color:
+	Float, Float, Float, Float; *Description Here*
+
+- Shield_Upgraded_Color:
+	Float, Float, Float, Float; *Description Here*
+
+- SFXEvent_Powered_Active_Loop:
+	Ref; *Description Here*
+
+- Tactical_Buildable_Objects_Campaign:
+	Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Tactical_Buildable_Objects_Multiplayer:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Movie_Object:
+	Bool t/f; *Description Here*
+
+- Gravity_Control_Field_Range:
+	Float; *Description Here*
+
+- SpaceAutoResolveHitRate:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Starting_Spawned_Units_Tech_0:
+	Ref, Int; *Description Here*
+
+- Reserve_Spawned_Units_Tech_0:
+	Ref, Ref; *Description Here*
+
+- Spawned_Squadron_Delay_Seconds:
+	Int; *Description Here*
+
+- Spawned_Squadron_Location_Bones:
+	Ref; *Description Here*
+
+- Spawned_Squadron_Location_Flyout_Distances:
+	Float; *Description Here*
+
+- Spawn_Garrison_On_Load:
+	Bool T/F; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Rotate_Speed:
+	Float; *Description Here*
+
+- Turret_Bone_Name:
+	Ref; *Description Here*
+
+- Barrel_Bone_Name:
+	Ref; *Description Here*
+
+- Apply_Z_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Apply_Y_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Turret_Rest_Angle:
+	Float, Float, Float; *Description Here*
+
+- Requires_Base_Power:
+	Bool T/F; *Description Here*
+
+- SFXEvent_Turret_Rotating_Loop:
+	Ref; *Description Here*
+
+- Lobbing_Superweapon_Chargeup_Particle:
+	Ref; *Description Here*
+
+- Lobbing_Superweapon_Chargeup_Particle_Bone_Name:
+	Ref; *Description Here*
+
+- Lobbing_Superweapon_SFXEvent_Chargeup:
+	Ref; *Description Here*
+
+- Lobbing_Superweapon_SFXEvent_Fire:
+	Ref; *Description Here*
+
+- Lobbing_Superweapon_Chargeup_Frames:
+	Int; *Description Here*
+
+- Radar_Show_Facing:
+	Bool Y/N; *Description Here*
+
+- Place_At_Every_Specific_Marker_Position:
+	Bool T/F; *Description Here*
+
+- Targeting_Min_Attack_Distance:
+	Ref; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Turret_Targets_Ground_Infantry:
+	Ref; *Description Here*
+
+- Turret_Targets_Ground_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Air_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Anything_Else:
+	Ref; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Place_Other_Type_At_Every_Specific_Marker_Position:
+	Ref; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Base_Level_Available:
+	Int; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- Ownership_Sticks:
+	Bool Y/N; *Description Here*
+
+- GUI_Bracket_Width:
+	Int; *Description Here*
+
+- GUI_Bracket_Height:
+	Int; *Description Here*
+
+- HQ_Win_Condition_Relevant:
+	Bool y/n; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Is_Impassable_Asteroid:
+	Ref; *Description Here*
+
+- Fire_Inaccuracy_Distance:
+	Ref, Float; *Description Here*
+
+- Tactical_Sell_Credits:
+	Ref; *Description Here*
+
+- SFXEvent_Sold_Tactical:
+	Ref; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+
+
+``SpeechEvents``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpeechEvent``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+SpeechEvents
+------------
+
+
+SpeechEvent
+^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Files:
+	Ref; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Volume_Percent:
+	Ref; *Description Here*
+
+- Overlap_Test:
+	Ref; *Description Here*
+
+
+
+``Squadrons``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Squadron``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+Squadrons
+---------
+
+
+Squadron
+^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool Y/N; *Description Here*
+
+- Is_Bomber:
+	Bool y/n; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Space_Units:
+	Bool Y/N; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Required_Timeline:
+	None; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Squadron_Units:
+	Ref, Ref; *Description Here*
+
+- Squadron_Offsets:
+	Float, Float, Float; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- FormationOrder:
+	Int; *Description Here*
+
+- Squadron_Formation_Error_Tolerance:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Autonomous_Move_Extension_Vs_Attacker:
+	Float; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Slice_Cost_Credits:
+	Int; *Description Here*
+
+- Create_Team_Type:
+	Ref; *Description Here*
+
+- Max_Squad_Size:
+	Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref; *Description Here*
+
+- Required_Tech_Structure:
+	None; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Tactical_Build_Cancelled:
+	Ref; *Description Here*
+
+- Is_Named_Hero:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Hero_Respawned:
+	Ref; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Is_Homogeneous:
+	Bool Y/N; *Description Here*
+
+- Build_Limit_Current_For_All_Allies:
+	Int; *Description Here*
+
+- Build_Limit_Lifetime_Per_Player:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+
+
+``StarBases``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``StarBase``                                                      ``Name``                                                         
+``Starbase``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+StarBases
+---------
+
+
+StarBase
+^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Galactic_Model_Name:
+	File; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Tab_Space_Station:
+	Bool Y/N; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Base_Level:
+	Int; *Description Here*
+
+- Prev_Level_Base:
+	Ref; *Description Here*
+
+- Next_Level_Base:
+	None; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref, Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Multisample_FOW_Check:
+	Bool Y/N; *Description Here*
+
+- Reinforcement_Prevention_Radius:
+	Ref; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Shield_Armor_Type:
+	Ref; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- Starting_Spawned_Units_Tech_0:
+	Ref, Int; *Description Here*
+
+- Reserve_Spawned_Units_Tech_0:
+	Ref, Ref; *Description Here*
+
+- Spawned_Squadron_Delay_Seconds:
+	Int; *Description Here*
+
+- Tactical_Buildable_Objects_Campaign:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- HardPoints:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- GUI_Model_Name:
+	File; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Angles:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- GUI_X_Rot:
+	Int; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Barrage:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Attack_Hardpoint:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Hardpoint_All_Weapons_Destroyed:
+	Ref; *Description Here*
+
+- SFXEvent_Hardpoint_Destroyed:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Unit_Under_Attack:
+	Ref; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- Custom_Soft_Footprint_Radius:
+	Ref; *Description Here*
+
+- Space_Obstacle_Offset:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Visible_On_Radar_When_Fogged:
+	Bool T/F; *Description Here*
+
+- Radar_Icon_Size:
+	Ref; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Retreat_Self_Destruct_Explosion:
+	Ref; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Additional_Population_Capacity:
+	Int; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Death_Persistence_Duration:
+	Ref; *Description Here*
+
+- Should_Death_Clone_Play_Idle:
+	Ref; *Description Here*
+
+- Slice_Cost_Credits:
+	Int; *Description Here*
+
+- Radar_Rotate_Icon:
+	Bool Y/N; *Description Here*
+
+- Radar_Icon_Scale_Land:
+	Float; *Description Here*
+
+- Radar_Icon_Scale_Space:
+	Float; *Description Here*
+
+- Available_In_Skirmish:
+	Bool Y/N; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Is_Community_Property:
+	Bool Y/N; *Description Here*
+
+- Tactical_Buildable_Objects_Multiplayer:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Visible_To_Enemies_When_Empty:
+	Bool T/F; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Last_State_Visible_Under_FOW:
+	Ref; *Description Here*
+
+- Initial_State_Visible_Under_FOW:
+	Bool T/F; *Description Here*
+
+
+
+Starbase
+^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref, Ref, Ref; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+
+
+``StarWars3DTextScroll``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TextScroll``                                                    ``name``                                                         
+================================================================= =================================================================
+
+
+StarWars3DTextScroll
+--------------------
+
+
+TextScroll
+^^^^^^^^^^
+- AAA_Attribute: name:
+	String; *Description Here*
+
+- Data_Specifications:
+	Ref; *Description Here*
+
+
+
+``TacticalCameras``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TacticalCamera``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+TacticalCameras
+---------------
+
+
+TacticalCamera
+^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Pitch_Default:
+	Float; *Description Here*
+
+- Pitch_Min:
+	Float; *Description Here*
+
+- Pitch_Max:
+	Float; *Description Here*
+
+- Pitch_Per_Mouse_Unit:
+	Float; *Description Here*
+
+- Pitch_Per_Zoom_Unit:
+	Float; *Description Here*
+
+- Pitch_When_Zoomed_In:
+	Float; *Description Here*
+
+- Pitch_Zoom_Begin_Fraction:
+	Float; *Description Here*
+
+- Yaw_Default:
+	Float; *Description Here*
+
+- Yaw_Min:
+	Float; *Description Here*
+
+- Yaw_Max:
+	Float; *Description Here*
+
+- Yaw_Per_Mouse_Unit:
+	Float; *Description Here*
+
+- Fov_Default:
+	Float; *Description Here*
+
+- Fov_Max:
+	Float; *Description Here*
+
+- Fov_Min:
+	Float; *Description Here*
+
+- Fov_Smooth_Time:
+	Float; *Description Here*
+
+- Fov_Per_Mouse_Unit:
+	Float; *Description Here*
+
+- Distance_Default:
+	Float; *Description Here*
+
+- Distance_Max:
+	Float; *Description Here*
+
+- Distance_Min:
+	Float; *Description Here*
+
+- Distance_Smooth_Time:
+	Float; *Description Here*
+
+- Distance_Per_Mouse_Unit:
+	Float; *Description Here*
+
+- Use_Splines:
+	Bool y/n; *Description Here*
+
+- Pitch_Spline:
+	Float, Float, Float, Float, Float, Float, Float, Int; *Description Here*
+
+- Distance_Spline:
+	Ref, Float, Float, Float, Float; *Description Here*
+
+- Spline_Steps:
+	Int; *Description Here*
+
+- Tactical_Overview_Distance:
+	Float; *Description Here*
+
+- Tactical_Overview_Pitch:
+	Float; *Description Here*
+
+- Tactical_Overview_FOV:
+	Float; *Description Here*
+
+- Tactical_Overview_Clicks:
+	Int; *Description Here*
+
+- Tactical_Overview_Click_Time:
+	Float; *Description Here*
+
+- Tactical_Overview_Distance2:
+	Float; *Description Here*
+
+- Tactical_Overview_Pitch2:
+	Float; *Description Here*
+
+- Tactical_Overview_FOV2:
+	Float; *Description Here*
+
+- Location_Follows_Terrain:
+	Int; *Description Here*
+
+- Location_Height_Up_Smooth_Time:
+	Float; *Description Here*
+
+- Location_Height_Down_Smooth_Time:
+	Float; *Description Here*
+
+- Min_Height_Above_Terrain:
+	Float; *Description Here*
+
+- Near_Clip:
+	Float; *Description Here*
+
+- Far_Clip:
+	Float; *Description Here*
+
+- Object_Fade_Begin:
+	Floatf; *Description Here*
+
+- Object_Fade_End:
+	Floatf; *Description Here*
+
+- Side_Bounds_Buffer:
+	Floatf; *Description Here*
+
+- Top_Bounds_Buffer:
+	Floatf; *Description Here*
+
+- Bottom_Bounds_Buffer:
+	Floatf; *Description Here*
+
+- Location_Height_Smooth_Time:
+	Float; *Description Here*
+
+- Fov_Smooth_time:
+	Float; *Description Here*
+
+- MinHeightAboveTerrain:
+	Float; *Description Here*
+
+
+
+Targeting_Priority_Set_Files
+----------------------------
+
+
+- File:
+	File; *Description Here*
+
+
+
+``TechBuildings``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TechBuilding``                                                  ``Name``                                                         
+================================================================= =================================================================
+
+
+TechBuildings
+-------------
+
+
+TechBuilding
+^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Is_Dummy:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	Ref; *Description Here*
+
+- Build_Limit_Current_Per_Player:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Build_Time_Reduced_By_Multiple_Factories:
+	Ref; *Description Here*
+
+- Build_Advances_Tech_Level:
+	Int; *Description Here*
+
+- Build_Tab_Special_Structures:
+	Bool Y/N; *Description Here*
+
+- Behavior:
+	None; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+
+
+``TerrainDecals``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Decal``                                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+TerrainDecals
+-------------
+
+
+Decal
+^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Category:
+	Ref; *Description Here*
+
+- Render_Mode:
+	Ref; *Description Here*
+
+- Intensity:
+	Float; *Description Here*
+
+- Scale:
+	Int, Int; *Description Here*
+
+- Z_Angle:
+	Int; *Description Here*
+
+- UV_Slot:
+	Int, Int; *Description Here*
+
+- Fadeout_Time:
+	Int; *Description Here*
+
+- Permanent:
+	Bool t/f; *Description Here*
+
+- Random_Size_Offset:
+	Float; *Description Here*
+
+- Random_Rotate:
+	Bool Y/N; *Description Here*
+
+- Slot_Scale:
+	Int; *Description Here*
+
+
+
+``TradeRouteLines``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TradeRouteLine``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+TradeRouteLines
+---------------
+
+
+TradeRouteLine
+^^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Settings_For_Faction:
+	Ref; *Description Here*
+
+
+
+Trade_Route_Files
+-----------------
+
+
+- File:
+	File; *Description Here*
+
+
+
+``TransportUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TransportUnit``                                                 ``Name``                                                         
+``UniqueUnit``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+TransportUnits
+--------------
+
+
+TransportUnit
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Ref; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Use_Special_Submit_Rules:
+	Ref; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Hyperspace:
+	Bool Y/N; *Description Here*
+
+- Hyperspace_Speed:
+	Float; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Required_Timeline:
+	Int; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- Required_Special_Structures:
+	None; *Description Here*
+
+- Required_Planets:
+	None; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- Build_Time_Seconds:
+	Int; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- TacticalBehavior:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Asteroid_Damage_Hit_Particles:
+	Ref; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Fire_Inaccuracy_Distance:
+	Ref, Float; *Description Here*
+
+- Fire_Category_Restrictions:
+	Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Exit_Door_Angle_Degrees:
+	Float; *Description Here*
+
+- Exit_Door_Distance:
+	Float; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- Hover_Offset:
+	Float; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Landing_Transport_Variant:
+	Ref; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Is_Valid_Target:
+	Bool Y/N; *Description Here*
+
+- User_Bound_Min:
+	Ref, Ref, Int; *Description Here*
+
+- User_Bound_Max:
+	Int, Int, Int; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Use_Transported_Object_Bounds_For_Landing_Z:
+	Ref; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- HardPoints:
+	Ref; *Description Here*
+
+- Can_Participate_In_Space_Battle:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Mouse_Collide_Override_Sphere_Radius:
+	Int; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- Min_Speed:
+	Int; *Description Here*
+
+- Fire_Cone_Width:
+	Float; *Description Here*
+
+- Fire_Cone_Height:
+	Float; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+
+
+UniqueUnit
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+
+
+``UniqueUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundVehicle``                                                 ``Name``                                                         
+``UniqueUnit``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+UniqueUnits
+-----------
+
+
+UniqueUnit
+^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Is_Named_Hero:
+	Bool Y/N; *Description Here*
+
+- Prevents_Story_Campaign_Autoresolve:
+	Bool y/n; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- SpaceBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Ranking_In_Category:
+	Int; *Description Here*
+
+- HardPoints:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Tech_Level:
+	Int; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Fleet_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- SFXEvent_Health_Low_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Health_Critical_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Hardpoint_Destroyed:
+	Ref, Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Cinematic_Focus_Loop:
+	Ref; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Build_Cost_Credits:
+	Int; *Description Here*
+
+- CategoryMask:
+	Ref | Ref | Ref; *Description Here*
+
+- Population_Value:
+	Int; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Int; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Build_Limit_Current_Per_Player:
+	Int; *Description Here*
+
+- Build_Limit_Lifetime_For_All_Allies:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Space_Model_Name:
+	File; *Description Here*
+
+- xxxSpace_Model_Name:
+	File; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Layer_Z_Adjust:
+	Float; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Max_Thrust:
+	Float; *Description Here*
+
+- Max_Rate_Of_Roll:
+	Float; *Description Here*
+
+- Bank_Turn_Angle:
+	Int; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Ship_Class:
+	Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Behavior:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- LandBehavior:
+	Ref; *Description Here*
+
+- Is_Supercrusher:
+	Bool Y/N; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool T/F; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Dead:
+	Bool Y/N; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Locomotor_Has_Animation_Priority:
+	Bool y/n; *Description Here*
+
+- Attack_Animation_Is_Overlay:
+	Bool y/n; *Description Here*
+
+- Projectile_Appearance_Delay_Frames:
+	Int, Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- Rotation_Animation_Speed:
+	Float; *Description Here*
+
+- Stopped_Rate_Of_Turn:
+	Int; *Description Here*
+
+- Walk_Transition:
+	Bool Y/N; *Description Here*
+
+- Has_Pre_Turn_Anim:
+	Ref; *Description Here*
+
+- Min_Speed_Fraction_For_Turn:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- FormationGrouping:
+	Ref; *Description Here*
+
+- MinimumPushReturnDistance:
+	Ref; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- MovementPredictionInterval:
+	Float; *Description Here*
+
+- MovementBoxExpansionFactor:
+	Float; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Auto_Deploys:
+	Bool Y/N; *Description Here*
+
+- Political_Control:
+	Int; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Loop:
+	Ref; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Int; *Description Here*
+
+- Turret_Bone_Name:
+	Ref; *Description Here*
+
+- Turret_Rotate_Speed:
+	Float; *Description Here*
+
+- Apply_Z_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Apply_Y_Turret_Rotate_To_Axis:
+	Int; *Description Here*
+
+- Turret_Targets_Ground_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Ground_Infantry:
+	Ref; *Description Here*
+
+- Turret_Targets_Air_Vehicles:
+	Ref; *Description Here*
+
+- Turret_Targets_Anything_Else:
+	Ref; *Description Here*
+
+- Overall_Length:
+	Float; *Description Here*
+
+- Overall_Width:
+	Float; *Description Here*
+
+- Target_Bones:
+	Ref, Ref, Ref; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Ref; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Weather_Category:
+	Ref; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+- Idle_Chase_Range:
+	Float; *Description Here*
+
+- Guard_Chase_Range:
+	Float; *Description Here*
+
+- Attack_Move_Response_Range:
+	Float; *Description Here*
+
+- Targeting_Stickiness_Time_Threshold:
+	Float; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Base_Shield_Penetration_Particle:
+	Ref; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Converted_To_Enemy_Die_Time_Seconds:
+	Int; *Description Here*
+
+- Specific_Death_Anim_Type:
+	None; *Description Here*
+
+- Death_Clone_Is_Obstacle:
+	Bool y/n; *Description Here*
+
+- Obstacle_Width:
+	Float; *Description Here*
+
+- Obstacle_Height:
+	Float; *Description Here*
+
+- Obstacle_X_Offset:
+	Float; *Description Here*
+
+- Obstacle_Y_Offset:
+	Float; *Description Here*
+
+- Death_Persistence_Duration:
+	Ref; *Description Here*
+
+- Death_Explosions_End:
+	Ref; *Description Here*
+
+- Death_SFXEvent_End_Die:
+	Ref; *Description Here*
+
+- IsDeathClone:
+	Ref; *Description Here*
+
+- Specific_Death_Anim_Index:
+	Ref; *Description Here*
+
+- No_Colorization_Color:
+	Int, Int, Int, Int; *Description Here*
+
+- GUI_Bracket_Width:
+	Int; *Description Here*
+
+- GUI_Bracket_Height:
+	Int; *Description Here*
+
+- Hyperspace:
+	Bool Y/N; *Description Here*
+
+- Hyperspace_Speed:
+	Int; *Description Here*
+
+- Space_Full_Stop_Command:
+	Ref; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Formation_Priority:
+	Int; *Description Here*
+
+- Is_Bomber:
+	Bool y/n; *Description Here*
+
+- Surface_Bombardment_Capable:
+	Bool y/n; *Description Here*
+
+- Political_Faction:
+	Ref; *Description Here*
+
+- Squadron_Capacity:
+	Int; *Description Here*
+
+- Transport_Capacity:
+	Int; *Description Here*
+
+- Number_per_Squadron:
+	Int; *Description Here*
+
+- Space_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Dense_FOW_Reveal_Range_Multiplier:
+	Float; *Description Here*
+
+- Asteroid_Damage_Hit_Particles:
+	Ref; *Description Here*
+
+- Radar_Icon_Scale_Land:
+	Float; *Description Here*
+
+- Radar_Icon_Scale_Space:
+	Float; *Description Here*
+
+- Radar_Icon_Name:
+	File; *Description Here*
+
+- Visible_On_Radar_When_Fogged:
+	Bool t/f; *Description Here*
+
+- Multisample_FOW_Check:
+	Bool Y/N; *Description Here*
+
+- Has_Space_Evaluator:
+	Bool T/F; *Description Here*
+
+- Glory_Cinematics:
+	Ref; *Description Here*
+
+- Respawn_Whole_Team_When_Killed:
+	Bool Y/N; *Description Here*
+
+- Begin_Turn_Towards_Distance:
+	Float; *Description Here*
+
+- Is_Super_Weapon_Killer:
+	Bool Y/N; *Description Here*
+
+- Fires_Forward:
+	Bool y/n; *Description Here*
+
+- Max_Lift:
+	Float; *Description Here*
+
+- Is_Escort:
+	Bool y/n; *Description Here*
+
+- Damage_Type:
+	Ref; *Description Here*
+
+- Projectile_Damage:
+	Float; *Description Here*
+
+- Fire_Inaccuracy_Distance:
+	Ref, Float; *Description Here*
+
+- Fire_Category_Restrictions:
+	Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- SFXEvent_Assist_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Enemy_Health_Low_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Enemy_Health_Critical_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Unit_Lost:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Min_Delay_Seconds:
+	Ref; *Description Here*
+
+- SFXEvent_Ambient_Moving_Max_Delay_Seconds:
+	Ref; *Description Here*
+
+- Custom_Footprint_Radius:
+	Float; *Description Here*
+
+- FormationOrder:
+	Int; *Description Here*
+
+- Create_Team:
+	Bool Y/N; *Description Here*
+
+- Redirect_Damage_To_Teammates:
+	Bool Y/N; *Description Here*
+
+- Spin_Away_On_Death:
+	Bool Y/N; *Description Here*
+
+- Spin_Away_On_Death_Chance:
+	Float; *Description Here*
+
+- Spin_Away_On_Death_Time:
+	Floatf; *Description Here*
+
+- Spin_Away_On_Death_Explosion:
+	Ref; *Description Here*
+
+- Spin_Away_On_Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- Create_Team_Type:
+	Ref; *Description Here*
+
+- SFXEvent_Deploy:
+	Ref; *Description Here*
+
+- Hover_Offset:
+	Float; *Description Here*
+
+- Landing_Transport_Variant:
+	Ref; *Description Here*
+
+- Autonomous_Move_Extension_Vs_Attacker:
+	Float; *Description Here*
+
+- Build_Limit_Current_For_All_Allies:
+	Int; *Description Here*
+
+- Build_Limit_Lifetime_Per_Player:
+	Ref; *Description Here*
+
+- Is_Valid_Target:
+	Bool Y/N; *Description Here*
+
+- User_Bound_Min:
+	Ref, Ref, Int; *Description Here*
+
+- User_Bound_Max:
+	Int, Int, Int; *Description Here*
+
+- Exclude_From_Distance_Fade:
+	Bool t/f; *Description Here*
+
+- Display_Contained_Hero_Grab_Bars:
+	Bool T/F; *Description Here*
+
+- Lua_Script:
+	Ref; *Description Here*
+
+- Hero_Ability:
+	None; *Description Here*
+
+- GUI_Row:
+	Ref; *Description Here*
+
+- Maintenance_Cost:
+	Float; *Description Here*
+
+- Build_Initially_Locked:
+	Bool Y/N; *Description Here*
+
+- Build_Can_Be_Unlocked_By_Slicer:
+	Bool Y/N; *Description Here*
+
+- FormationPriority:
+	Int; *Description Here*
+
+- GUI_Distance:
+	Int; *Description Here*
+
+- GUI_Offset:
+	Ref; *Description Here*
+
+- GUI_Velocity:
+	Int; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- Build_Tab_Space_Units:
+	Bool Y/N; *Description Here*
+
+- SFXEvent_Stop:
+	Ref; *Description Here*
+
+- SFXEvent_Barrage:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Asteroid_Field:
+	Ref; *Description Here*
+
+- SFXEvent_Move_Into_Nebula:
+	Ref; *Description Here*
+
+- SFXEvent_Attack_Hardpoint:
+	Ref, Ref; *Description Here*
+
+- Defend_Mode_Weapon_Delay_Multiplier:
+	Float; *Description Here*
+
+- Defend_Mode_Shield_Regen_Multiplier:
+	Float; *Description Here*
+
+- Defend_Mode_Energy_Regen_Multiplier:
+	Float; *Description Here*
+
+- Defend_Mode_Speed_Multiplier:
+	Float; *Description Here*
+
+- Required_Ground_Base_Level:
+	Int; *Description Here*
+
+- Required_Star_Base_Level:
+	Int; *Description Here*
+
+- SFXEvent_Enemy_Damaged_Health_Low_Warning:
+	Ref; *Description Here*
+
+- SFXEvent_Enemy_Damaged_Health_Critical_Warning:
+	Ref; *Description Here*
+
+- Out_Of_Combat_Defense_Adjustment:
+	Float; *Description Here*
+
+- Minimum_Follow_Distance:
+	Float; *Description Here*
+
+- Collision_Box_Modifier:
+	Float; *Description Here*
+
+- Vehicle_Thief_Inside_Clone:
+	Ref; *Description Here*
+
+- Custom_Hard_XExtent_Offset:
+	Float; *Description Here*
+
+
+
+GroundVehicle
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Blob_Shadow_Below_Detail_Level:
+	Int; *Description Here*
+
+- Blob_Shadow_Scale:
+	Float, Float; *Description Here*
+
+- Blob_Shadow_Material_Name:
+	Ref; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- Encyclopedia_Good_Against:
+	Ref; *Description Here*
+
+- Encyclopedia_Vulnerable_To:
+	Ref; *Description Here*
+
+- Land_Model_Name:
+	File; *Description Here*
+
+- Mass:
+	Float; *Description Here*
+
+- Scale_Factor:
+	Float; *Description Here*
+
+- Type:
+	Ref; *Description Here*
+
+- Deploys:
+	Bool Y/N; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Max_Speed:
+	Float; *Description Here*
+
+- Max_Rate_Of_Turn:
+	Int; *Description Here*
+
+- Movement_Animation_Speed:
+	Float; *Description Here*
+
+- Space_Layer:
+	Ref; *Description Here*
+
+- UnitCollisionClass:
+	Ref; *Description Here*
+
+- OverrideAcceleration:
+	Float; *Description Here*
+
+- OverrideDeceleration:
+	Float; *Description Here*
+
+- FormationSpacing:
+	Float; *Description Here*
+
+- FormationOrder:
+	Ref; *Description Here*
+
+- FormationGrouping:
+	Ref; *Description Here*
+
+- MinimumPushReturnDistance:
+	Ref; *Description Here*
+
+- FormationRaggedness:
+	Float; *Description Here*
+
+- MaxJiggleDistance:
+	Ref; *Description Here*
+
+- UseSecondaryFacing:
+	Ref; *Description Here*
+
+- SecondaryTurnInPlaceROTCoefficient:
+	Float; *Description Here*
+
+- SecondaryTurnAngle:
+	Ref; *Description Here*
+
+- MinSecondaryTurnROTCoefficient:
+	Float; *Description Here*
+
+- MaxSecondaryTurnROTCoefficient:
+	Float; *Description Here*
+
+- SecondaryTurnLookaheadDistance:
+	Ref; *Description Here*
+
+- Land_Damage_Thresholds:
+	Int, Float, Float; *Description Here*
+
+- Land_Damage_Alternates:
+	Int, Int, Int; *Description Here*
+
+- Land_Damage_SFX:
+	Ref, Ref, Ref, Ref; *Description Here*
+
+- Remove_Upon_Death:
+	Bool t/f; *Description Here*
+
+- Ranged_Target_Z_Adjust:
+	Float; *Description Here*
+
+- Size_Value:
+	Int; *Description Here*
+
+- Sensor_Range:
+	Int; *Description Here*
+
+- Tactical_Health:
+	Int; *Description Here*
+
+- Energy_Capacity:
+	Int; *Description Here*
+
+- Energy_Refresh_Rate:
+	Int; *Description Here*
+
+- GUI_Bracket_Size:
+	Int; *Description Here*
+
+- Armor_Type:
+	Ref; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- LandBehavior:
+	Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref, Ref; *Description Here*
+
+- Is_Affected_By_Gravity_Control_Field:
+	Ref; *Description Here*
+
+- SurfaceFX_Name:
+	Ref; *Description Here*
+
+- Projectile_Types:
+	Ref; *Description Here*
+
+- Projectile_Fire_Pulse_Count:
+	Int; *Description Here*
+
+- Projectile_Fire_Pulse_Delay_Seconds:
+	Float; *Description Here*
+
+- Projectile_Fire_Recharge_Seconds:
+	Float; *Description Here*
+
+- Turret_Rotate_Extent_Degrees:
+	Float; *Description Here*
+
+- Turret_Elevate_Extent_Degrees:
+	Float; *Description Here*
+
+- Targeting_Fire_Inaccuracy:
+	Ref, Float; *Description Here*
+
+- Land_FOW_Reveal_Range:
+	Float; *Description Here*
+
+- Targeting_Max_Attack_Distance:
+	Float; *Description Here*
+
+- Loop_Idle_Anim_00:
+	Bool Y/N; *Description Here*
+
+- Death_Explosions:
+	Ref; *Description Here*
+
+- Collidable_By_Projectile_Living:
+	Bool Y/N; *Description Here*
+
+- Collidable_By_Projectile_Dead:
+	Bool Y/N; *Description Here*
+
+- Is_Squashable_By_Supercrusher:
+	Bool Y/N; *Description Here*
+
+- CategoryMask:
+	Ref | Ref; *Description Here*
+
+- Targeting_Priority_Set:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- MovementClass:
+	Ref; *Description Here*
+
+- OccupationStyle:
+	Ref; *Description Here*
+
+- Victory_Relevant:
+	Bool y/n; *Description Here*
+
+- No_Reflection_Below_Detail_Level:
+	Int; *Description Here*
+
+- No_Refraction_Below_Detail_Level:
+	Int; *Description Here*
+
+- Ground_Vehicle_Turret_Target:
+	Ref; *Description Here*
+
+- Occlusion_Silhouette_Enabled:
+	Int; *Description Here*
+
+- Wind_Disturbance_Radius:
+	Int; *Description Here*
+
+- Wind_Disturbance_Strength:
+	Int; *Description Here*
+
+- Wind_Disturbance_Sphere_Alpha:
+	Float; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Fire:
+	Ref; *Description Here*
+
+- SFXEvent_Select:
+	Ref; *Description Here*
+
+- SFXEvent_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Guard:
+	Ref; *Description Here*
+
+- Death_SFXEvent_Start_Die:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Move:
+	Ref; *Description Here*
+
+- SFXEvent_Assist_Attack:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Idle_Loop:
+	Ref; *Description Here*
+
+- SFXEvent_Engine_Moving_Loop:
+	Ref; *Description Here*
+
+- Select_Box_Scale:
+	Int; *Description Here*
+
+- Select_Box_Z_Adjust:
+	Floatf; *Description Here*
+
+- Is_Visible_On_Radar:
+	Bool Y/N; *Description Here*
+
+- Overall_Length:
+	Float; *Description Here*
+
+- Overall_Width:
+	Float; *Description Here*
+
+- Has_Land_Evaluator:
+	Bool Y/N; *Description Here*
+
+- AI_Combat_Power:
+	Int; *Description Here*
+
+- Weather_Category:
+	Ref; *Description Here*
+
+- Base_Shield_Penetration_Particle:
+	Ref; *Description Here*
+
+- Influences_Capture_Point:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Score_Cost_Credits:
+	Ref; *Description Here*
+
+- Damage:
+	Int; *Description Here*
+
+- Vehicle_Thief_Inside_Clone:
+	Ref; *Description Here*
+
+- Unit_Abilities_Data:
+	Ref; *Description Here*
+
+- Converted_To_Enemy_Die_Time_Seconds:
+	Int; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- Property_Flags:
+	Ref; *Description Here*
+
+- Autoresolve_Health:
+	Int; *Description Here*
+
+- Walk_Transition:
+	Bool Y/N; *Description Here*
+
+- Rotation_Animation_Speed:
+	Float; *Description Here*
+
+- Stopped_Rate_Of_Turn:
+	Float; *Description Here*
+
+- Has_Pre_Turn_Anim:
+	Ref; *Description Here*
+
+- Min_Speed_Fraction_For_Turn:
+	Float; *Description Here*
+
+- Custom_Hard_XExtent:
+	Float; *Description Here*
+
+- Custom_Hard_YExtent:
+	Float; *Description Here*
+
+- MovementPredictionInterval:
+	Ref; *Description Here*
+
+- Min_Speed:
+	Float; *Description Here*
+
+- GUI_Bounds_Scale:
+	Float; *Description Here*
+
+- Locomotor_Has_Animation_Priority:
+	Bool y/n; *Description Here*
+
+- Attack_Animation_Is_Overlay:
+	Bool y/n; *Description Here*
+
+- Shield_Points:
+	Int; *Description Here*
+
+- Shield_Refresh_Rate:
+	Int; *Description Here*
+
+- Death_Clone:
+	Ref, Ref; *Description Here*
+
+
+
+``UpgradeObjects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``UpgradeObject``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+UpgradeObjects
+--------------
+
+
+UpgradeObject
+^^^^^^^^^^^^^
+- AAA_Attribute: Name:
+	String; *Description Here*
+
+- Behavior:
+	Ref; *Description Here*
+
+- Affiliation:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Multiplayer:
+	Ref; *Description Here*
+
+- Tactical_Build_Cost_Campaign:
+	Int; *Description Here*
+
+- Tactical_Build_Time_Seconds:
+	Ref; *Description Here*
+
+- Tactical_Build_Prerequisites:
+	None; *Description Here*
+
+- Tactical_Production_Queue:
+	Ref; *Description Here*
+
+- Build_Limit_Current_For_All_Allies:
+	Int; *Description Here*
+
+- Previous_Upgrade_Level_Type:
+	None; *Description Here*
+
+- Next_Upgrade_Level_Type:
+	None; *Description Here*
+
+- Show_In_Sidebar_While_Building:
+	Ref; *Description Here*
+
+- Show_In_Sidebar_When_Complete:
+	Ref; *Description Here*
+
+- Icon_Name:
+	File; *Description Here*
+
+- Encyclopedia_Text:
+	Ref; *Description Here*
+
+- Text_ID:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Started:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Cancelled:
+	Ref; *Description Here*
+
+- SFXEvent_Build_Complete:
+	Ref; *Description Here*
+
+- CategoryMask:
+	Ref; *Description Here*
+
+- Encyclopedia_Unit_Class:
+	Ref; *Description Here*
+
+- Abilities:
+	Ref; *Description Here*
+
+- Build_Limit_Current_Per_Player:
+	Int; *Description Here*
+
+- Variant_Of_Existing_Type:
+	Ref; *Description Here*
+
+- Is_Skirmish_Tactical_Super_Weapon:
+	Bool t/f; *Description Here*
+
+- SFXEvent_Special_Weapon_Ready:
+	Ref; *Description Here*
+
+- Tactical_Build_Increments_Tech_Level:
+	Ref; *Description Here*
+
+- Tactical_Destruction_Decrements_Tech_Level:
+	Ref; *Description Here*
+
+- Destroy_Previous_Upgrade_Level:
+	Bool Y/N; *Description Here*
+
+
+
+WeatherAudio
+------------
+
+
+- Weather_SFXEvent_Loop:
+	Ref, Float, Ref; *Description Here*
+
+
+
+- Weather_SFXEvent_Intermittent:
+	Ref, Float, Ref, Float, Float; *Description Here*
+
+
+
+- Ambient_SFXEvent_Intermittent:
+	Ref, Ref, Float, Float; *Description Here*
+
+
+
+``Weather_Scenarios``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Weather_Scenario``                                              ``emitter_name``, ``name``                                       
+================================================================= =================================================================
+
+
+Weather_Scenarios
+-----------------
+
+
+Weather_Scenario
+^^^^^^^^^^^^^^^^
+- AAA_Attribute: name:
+	String; *Description Here*
+
+- Phase:
+	Ref; *Description Here*
+
+- AAA_Attribute: emitter_name:
+	File; *Description Here*
+
+
+

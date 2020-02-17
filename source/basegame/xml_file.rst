@@ -1,4 +1,4 @@
-.. _xml_file:
+.. _xml:
 .. Introduction/Readme for XML file section of the documentation
 
 ************************
@@ -69,6 +69,7 @@ XML Type Reference
 	:titlesonly:
 	:glob:
 
+	All XML File Structures <xml/xml_structure>
 	xml/megafiles.xml
 	xml/Dataminerxmlfiles.xml
 	xml/*

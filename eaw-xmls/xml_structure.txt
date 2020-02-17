@@ -1,0 +1,1257 @@
+Structure
+=========
+``Campaign_Files``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``File``                                                          None                                                             
+================================================================= =================================================================
+
+
+``CommandBar_Component_Files``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``File``                                                          None                                                             
+================================================================= =================================================================
+
+
+``Containers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Container``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``Difficulty_Adjustments``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Difficulty_Adjustment``                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+``DynamicTracks``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``DynamicTrack``                                                  ``name``                                                         
+================================================================= =================================================================
+
+
+``EmpireGroundCompanies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundCompany``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+``Faction_Files``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``File``                                                          None                                                             
+================================================================= =================================================================
+
+
+``FighterUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``GameConstants``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``AITechLevelProductionTimeWeight``                               None                                                             
+``AIUsesFogOfWarGalactic``                                        None                                                             
+``AIUsesFogOfWarLand``                                            None                                                             
+``AIUsesFogOfWarSpace``                                           None                                                             
+``AI_BuildTaskReservationSeconds``                                None                                                             
+``AI_FogCellsPerThreatCell``                                      None                                                             
+``AI_LandAreaThreatScaleFactor``                                  None                                                             
+``AI_LandEvaluatorRegionSize``                                    None                                                             
+``AI_LandThreatDistanceFactor``                                   None                                                             
+``AI_LandThreatLookAheadTime``                                    None                                                             
+``AI_LandThreatTurnRateFactor``                                   None                                                             
+``AI_SpaceAreaThreatScaleFactor``                                 None                                                             
+``AI_SpaceEvaluatorRegionSize``                                   None                                                             
+``AI_SpaceThreatDecayStep``                                       None                                                             
+``AI_SpaceThreatDistanceFactor``                                  None                                                             
+``AI_SpaceThreatLookAheadTime``                                   None                                                             
+``AI_SpaceThreatTurnRateFactor``                                  None                                                             
+``Activated_Black_Market_Ability_Names``                          None                                                             
+``Activated_Corrupt_Planet_Ability_Names``                        None                                                             
+``Activated_Destroy_Planet_Ability_Names``                        None                                                             
+``Activated_Hack_Super_Weapon_Ability_Names``                     None                                                             
+``Activated_Neutralize_Hero_Ability_Names``                       None                                                             
+``Activated_Remove_Corruption_Ability_Names``                     None                                                             
+``Activated_Sabotage_Ability_Names``                              None                                                             
+``Activated_Siphon_Credits_Ability_Names``                        None                                                             
+``Activated_Slice_Ability_Names``                                 None                                                             
+``Activated_System_Spy_Ability_Names``                            None                                                             
+``Advisor_Hint_Duration``                                         None                                                             
+``Advisor_Hint_Interval``                                         None                                                             
+``Allow_Reinforcement_Percentage_Normalized``                     None                                                             
+``AlwaysBypassAutoResolve``                                       None                                                             
+``Animate_During_Galactic_Mode_Pause``                            None                                                             
+``ApproximationForwardDistance``                                  None                                                             
+``ApproximationSmoothCosAngle``                                   None                                                             
+``Armor_Types``                                                   None                                                             
+``Asteroid_Field_Damage``                                         None                                                             
+``Asteroid_Field_Damage_Rate``                                    None                                                             
+``AutoResolveAttritionAllowanceFactor``                           None                                                             
+``AutoResolveDisplayTime``                                        None                                                             
+``AutoResolveLoserAttrition``                                     None                                                             
+``AutoResolveTransportLosses``                                    None                                                             
+``AutoResolveVoteDefaultTimeOut``                                 None                                                             
+``AutoResolveVoteDefaultToTactical``                              None                                                             
+``AutoResolveWinnerAttrition``                                    None                                                             
+``Auto_Resolve_Tactical_Multiplier``                              None                                                             
+``Auto_Rotate_For_Space_Targeting``                               None                                                             
+``AutomaticAutoResolve``                                          None                                                             
+``Base_Land_Targeting_Arc_Angle_Coefficient``                     None                                                             
+``Base_Shield_Delay_Time``                                        None                                                             
+``Base_Shield_Speed_Modifier``                                    None                                                             
+``Base_Shield_Vulnerability_Modifier``                            None                                                             
+``Battle_Load_Planet_Ambient``                                    None                                                             
+``Battle_Load_Planet_Direction``                                  None                                                             
+``Battle_Load_Planet_Viewport``                                   None                                                             
+``Battle_Pending_Message_Color``                                  None                                                             
+``Battle_Pending_Message_Font``                                   None                                                             
+``Battle_Pending_Message_Font_Size``                              None                                                             
+``Battle_Pending_Message_Pos_X``                                  None                                                             
+``Battle_Pending_Message_Pos_Y``                                  None                                                             
+``Battle_Pending_Timeout_Seconds``                                None                                                             
+``BeaconPlaceDelay``                                              None                                                             
+``BetweenFormationSpacing``                                       None                                                             
+``Bink_Player_Caption_Font_Name``                                 None                                                             
+``Bink_Player_Caption_Font_Size``                                 None                                                             
+``Black_Market_Income_Mult_Max``                                  None                                                             
+``Black_Market_Income_Mult_Min``                                  None                                                             
+``Blockade_Run_Attrition_Factor``                                 None                                                             
+``Bombardment_Distribution``                                      None                                                             
+``Bombardment_Offset``                                            None                                                             
+``Bombing_Run_Reduction_Per_Squadron_Percent``                    None                                                             
+``Bribery_Fleet_Reveal_Range``                                    None                                                             
+``CB_Flash_Count``                                                None                                                             
+``CB_Flash_Duration``                                             None                                                             
+``CB_Movie_Color``                                                None                                                             
+``CB_Movie_Offset``                                               None                                                             
+``Camera_FX_Manager_Letterbox_Height``                            None                                                             
+``Camera_Stop_Left``                                              None                                                             
+``Camera_Stop_Right``                                             None                                                             
+``Camera_Z_Position``                                             None                                                             
+``CloseEnoughAngleForMoveStart``                                  None                                                             
+``Command_Bar_Default_Font_Name``                                 None                                                             
+``Command_Bar_Default_Font_Size``                                 None                                                             
+``Control_Point_Domination_Victory_Time_In_Secs``                 None                                                             
+``Corrupt_Side_Leader_Name``                                      None                                                             
+``Corrupt_Side_Name``                                             None                                                             
+``Corruption_Choice_Benefit``                                     None                                                             
+``Corruption_Choice_Encyclopedia``                                None                                                             
+``Corruption_Choice_Icon_Name``                                   None                                                             
+``Corruption_Choice_Income_Percentage``                           None                                                             
+``Corruption_Choice_Name``                                        None                                                             
+``Corruption_Encyclopedia_Backdrop``                              None                                                             
+``Corruption_Encyclopedia_Complete``                              None                                                             
+``Corruption_Encyclopedia_Header``                                None                                                             
+``Corruption_Encyclopedia_Incomplete``                            None                                                             
+``Corruption_Encyclopedia_Left_Edge``                             None                                                             
+``Corruption_Encyclopedia_Money_Icon``                            None                                                             
+``Corruption_Encyclopedia_Spacing``                               None                                                             
+``Corruption_Hyperspace_Bonus``                                   None                                                             
+``Corruption_Line_Grow_Seconds``                                  None                                                             
+``Corruption_Line_Radius``                                        None                                                             
+``Corruption_Line_Start_End_Offset``                              None                                                             
+``Corruption_Mission_Requirement_Icon_Name``                      None                                                             
+``Corruption_Particle_Line_Name``                                 None                                                             
+``Corruption_Particle_Name``                                      None                                                             
+``Corruption_Path_Color``                                         None                                                             
+``Corruption_Path_Offset``                                        None                                                             
+``Corruption_Path_Width``                                         None                                                             
+``Corruption_Planet_Icon``                                        None                                                             
+``Corruption_Planet_Icon_Encyclopedia_Desc``                      None                                                             
+``Corruption_Planet_Icon_Encyclopedia_Name``                      None                                                             
+``Countdowns_Font_Name``                                          None                                                             
+``Countdowns_Font_Size``                                          None                                                             
+``Credit_Cap_Per_Planet``                                         None                                                             
+``Credits_Bottom_Color``                                          None                                                             
+``Credits_Display_Font_Name``                                     None                                                             
+``Credits_Display_Font_Size``                                     None                                                             
+``Credits_Font``                                                  None                                                             
+``Credits_Font_Size``                                             None                                                             
+``Credits_Header_Bottom_Color``                                   None                                                             
+``Credits_Header_Top_Color``                                      None                                                             
+``Credits_Logo_1_Height``                                         None                                                             
+``Credits_Logo_1_Name``                                           None                                                             
+``Credits_Logo_1_Width``                                          None                                                             
+``Credits_Logo_1_Y_Offset``                                       None                                                             
+``Credits_Logo_2_Height``                                         None                                                             
+``Credits_Logo_2_Name``                                           None                                                             
+``Credits_Logo_2_Width``                                          None                                                             
+``Credits_Logo_2_Y_Offset``                                       None                                                             
+``Credits_Logo_3_Height``                                         None                                                             
+``Credits_Logo_3_Name``                                           None                                                             
+``Credits_Logo_3_Width``                                          None                                                             
+``Credits_Logo_3_Y_Offset``                                       None                                                             
+``Credits_Margin``                                                None                                                             
+``Credits_Scroll_Rate``                                           None                                                             
+``Credits_Spacing``                                               None                                                             
+``Credits_Top_Color``                                             None                                                             
+``CrouchIdleWalkBlendTime``                                       None                                                             
+``CrouchMoveBlendTime``                                           None                                                             
+``Crouch_Move_Fire_Angle_Cutoff``                                 None                                                             
+``CurrentPathCostCoefficientSpace``                               None                                                             
+``Damage_To_Armor_Mod``                                           None                                                             
+``Damage_Types``                                                  None                                                             
+``Debug_Hot_Key_Load_Campaign``                                   None                                                             
+``Debug_Hot_Key_Load_Map``                                        None                                                             
+``Debug_Hot_Key_Load_Map_Script``                                 None                                                             
+``Default_Bounty_By_Category_MP``                                 None                                                             
+``Default_Bounty_By_Category_SP``                                 None                                                             
+``Default_Defense_Adjust``                                        None                                                             
+``Default_Hero_Respawn_Time``                                     None                                                             
+``Demo_Attract_Map_Cycle_Delay_Seconds``                          None                                                             
+``Demo_Attract_Maps``                                             None                                                             
+``Demo_Attract_Start_Timeout_Seconds``                            None                                                             
+``Depleted_Shield_Damage_Increment``                              None                                                             
+``Depleted_Shield_Disable_Time``                                  None                                                             
+``Depleted_Shield_Regen_Cap``                                     None                                                             
+``DesiredLandFOWCellSize``                                        None                                                             
+``DesiredSpaceFOWCellSize``                                       None                                                             
+``DestinationSearchRadiusIncrementSpace``                         None                                                             
+``Destination_Collision_Query_Extension``                         None                                                             
+``Diminishing_Firepower``                                         None                                                             
+``Display_Bink_Movie_Frames``                                     None                                                             
+``Distribute_Credit_Quantum``                                     None                                                             
+``DoubleClickMoveMaxSpeedRatio``                                  None                                                             
+``Droid_Date_Color``                                              None                                                             
+``Droid_Encyclopedia_Offset``                                     None                                                             
+``Droid_Seperator_Color``                                         None                                                             
+``Droid_Text_Color``                                              None                                                             
+``DynamicAvoidanceRectangleBound``                                None                                                             
+``DynamicLandComplexityQuota``                                    None                                                             
+``DynamicLandQuotaResetInterval``                                 None                                                             
+``DynamicObstacleOverlapPenalty``                                 None                                                             
+``Earthquake_Shake_Magnitude``                                    None                                                             
+``Earthquake_Shake_Speed``                                        None                                                             
+``Earthquake_Transition_Time``                                    None                                                             
+``Elevated_Vulnerability_Duration``                               None                                                             
+``Elevated_Vulnerability_Factor``                                 None                                                             
+``Encyclopedia_Class_Y_Offset``                                   None                                                             
+``Encyclopedia_Cost_Offset``                                      None                                                             
+``Encyclopedia_Delay``                                            None                                                             
+``Encyclopedia_Fade_Rate``                                        None                                                             
+``Encyclopedia_Icon_X_Offset``                                    None                                                             
+``Encyclopedia_Icon_Y_Offset``                                    None                                                             
+``Encyclopedia_Min_Display_Time``                                 None                                                             
+``Encyclopedia_Name_Offset``                                      None                                                             
+``Encyclopedia_Population_Offset``                                None                                                             
+``Enemy_Color``                                                   None                                                             
+``EnergyRechargeIntervalInSecs``                                  None                                                             
+``EnergyToShieldExchangeRate``                                    None                                                             
+``Energy_Beam_Color``                                             None                                                             
+``Energy_Beam_Frames``                                            None                                                             
+``Energy_Beam_Texture``                                           None                                                             
+``Energy_Beam_Width``                                             None                                                             
+``Engines_Disabled_Speed_Modifier``                               None                                                             
+``Event_Message_Default_Font_Name``                               None                                                             
+``Event_Message_Default_Font_Size``                               None                                                             
+``Evil_Side_Leader_Name``                                         None                                                             
+``Evil_Side_Name``                                                None                                                             
+``FinalFacing180Penalty``                                         None                                                             
+``FinalFormationFacingDeltaCoefficient``                          None                                                             
+``FinalFormationFacingMinimumAngle``                              None                                                             
+``First_Strike_Extra_Damage_Percent``                             None                                                             
+``First_Strike_Particle``                                         None                                                             
+``Fiscal_Cycle_Time_In_Secs``                                     None                                                             
+``Fleeing_Infantry_Speed_Bonus``                                  None                                                             
+``Fleet_Hyperspace_Band_Texture_Name``                            None                                                             
+``Fleet_Maintenance_Update_Delay_Seconds``                        None                                                             
+``Fleet_Movement_Line_Texture_Name``                              None                                                             
+``Force_Ability_Disable_Time``                                    None                                                             
+``FormationMaximumSideError``                                     None                                                             
+``FormationMinimumSideError``                                     None                                                             
+``FramesPerCollisionCheck``                                       None                                                             
+``FramesPerPositionApproximationRebuild``                         None                                                             
+``GMC_Battle_Fade_Time``                                          None                                                             
+``GMC_Battle_Zoom_Time``                                          None                                                             
+``GMC_InitialPitchAngleDegrees``                                  None                                                             
+``GMC_InitialPullbackDistance``                                   None                                                             
+``GMC_ZoomTime``                                                  None                                                             
+``GMC_ZoomedPitchAngleDegrees``                                   None                                                             
+``GMC_ZoomedPositionOffsetPlanetRadiusFractions``                 None                                                             
+``GMC_ZoomedPullbackPlanetRadiusFraction``                        None                                                             
+``GUI_Attack_Move_Command_Ack_Effect``                            None                                                             
+``GUI_Attack_Movement_Click_Radar_Event_Name``                    None                                                             
+``GUI_Cycle_Color``                                               None                                                             
+``GUI_Cycle_Speed``                                               None                                                             
+``GUI_Darken_Level``                                              None                                                             
+``GUI_Double_Click_Move_Command_Ack_Effect``                      None                                                             
+``GUI_Flash_Duration``                                            None                                                             
+``GUI_Flash_Level``                                               None                                                             
+``GUI_Guard_Move_Command_Ack_Effect``                             None                                                             
+``GUI_Hilite_Level``                                              None                                                             
+``GUI_Move_Acknowledge_Scale_Land``                               None                                                             
+``GUI_Move_Acknowledge_Scale_Space``                              None                                                             
+``GUI_Move_Command_Ack_Effect``                                   None                                                             
+``GUI_Movement_Click_Radar_Event_Name``                           None                                                             
+``GUI_Movement_Double_Click_Radar_Event_Name``                    None                                                             
+``GUI_Planet_Fade_Duration``                                      None                                                             
+``GUI_Planet_Flash_Level``                                        None                                                             
+``GUI_Rapid_Flash_Duration``                                      None                                                             
+``GUI_Strategic_Countdown_Timers_Screen_Spacing``                 None                                                             
+``GUI_Strategic_Countdown_Timers_Screen_X``                       None                                                             
+``GUI_Strategic_Countdown_Timers_Screen_Y``                       None                                                             
+``GUI_Tactical_Countdown_Timers_Screen_Spacing``                  None                                                             
+``GUI_Tactical_Countdown_Timers_Screen_X``                        None                                                             
+``GUI_Tactical_Countdown_Timers_Screen_Y``                        None                                                             
+``Galactic_Right_Button_Scroll_Speed_Factor``                     None                                                             
+``Galactic_Scroll_Plane``                                         None                                                             
+``Galactic_Zoom_Acceleration``                                    None                                                             
+``Galactic_Zoom_In_Light_Angle``                                  None                                                             
+``Galactic_Zoom_In_Station_Offset``                               None                                                             
+``Galactic_Zoom_In_Station_Rotation``                             None                                                             
+``Galactic_Zoom_Light_Level``                                     None                                                             
+``Galactic_Zoom_Out_Light_Angle``                                 None                                                             
+``Game_Object_Name_Font_Name``                                    None                                                             
+``Game_Object_Name_Font_Size``                                    None                                                             
+``Game_Scoring_Script_Name``                                      None                                                             
+``Garrisoned_Max_Attack_Distance_Multiplier``                     None                                                             
+``Good_Ground_Color_Tint``                                        None                                                             
+``Good_Side_Leader_Name``                                         None                                                             
+``Good_Side_Name``                                                None                                                             
+``GripperCombatGridSnapDistance``                                 None                                                             
+``Hack_Super_Weapon_Cost``                                        None                                                             
+``Hack_Super_Weapon_Particle_Effect``                             None                                                             
+``Hack_Super_Weapon_Required_Type``                               None                                                             
+``HardPoint_Target_Reticle_Enemy_Screen_Size``                    None                                                             
+``HardPoint_Target_Reticle_Enemy_Texture``                        None                                                             
+``HardPoint_Target_Reticle_Enemy_Tracked_Texture``                None                                                             
+``HardPoint_Target_Reticle_Friendly_Disabled_Texture``            None                                                             
+``HardPoint_Target_Reticle_Friendly_Disabled_Tracked_Texture``    None                                                             
+``HardPoint_Target_Reticle_Friendly_Repairing_Texture``           None                                                             
+``HardPoint_Target_Reticle_Friendly_Screen_Size``                 None                                                             
+``HardPoint_Target_Reticle_Friendly_Texture``                     None                                                             
+``HardPoint_Target_Reticle_Friendly_Tracked_Texture``             None                                                             
+``Hardpoint_Recharge_Cutoff_For_Opportunity_Fire``                None                                                             
+``Health_Bar_Scale``                                              None                                                             
+``Health_Bar_Spacing``                                            None                                                             
+``Health_Critical_Percent_Threshold``                             None                                                             
+``Health_Low_Percent_Threshold``                                  None                                                             
+``High_Ground_Color_Tint``                                        None                                                             
+``High_Threat_Reachability_Tolerance``                            None                                                             
+``Hint_Text_Color``                                               None                                                             
+``Hull_Vs_Hard_Points_Health_Constraint``                         None                                                             
+``Icons_Per_Column``                                              None                                                             
+``IdleMovementFrames``                                            None                                                             
+``IdleWalkBlendTime``                                             None                                                             
+``In_Game_Cinematics``                                            None                                                             
+``In_Game_Message_Default_Font_Name``                             None                                                             
+``In_Game_Message_Default_Font_Size``                             None                                                             
+``Income_Redistribution``                                         None                                                             
+``Indigenous_Spawn_Destruction_Reward``                           None                                                             
+``InfantryFormationRecruitmentDistance``                          None                                                             
+``InfantryTurnBlendTime``                                         None                                                             
+``Infantry_Ground_Color_Tint``                                    None                                                             
+``Ion_Storm_Shield_Disable_Time``                                 None                                                             
+``Japanese_Line_Percent``                                         None                                                             
+``Japanese_ST_Line_Percent``                                      None                                                             
+``LandDestinationProximity``                                      None                                                             
+``LandFOWColor``                                                  None                                                             
+``LandFOWRegrowTime``                                             None                                                             
+``LandObjectTrackingInterval``                                    None                                                             
+``LandObjectTrackingTreeCount``                                   None                                                             
+``LandPredictionTimeInterval``                                    None                                                             
+``LandTemporaryDestinationProximity``                             None                                                             
+``LandWaitOperatorSpeedCoefficient``                              None                                                             
+``Land_Auto_Resolve_Delay_Seconds``                               None                                                             
+``Land_Base_Destruction_Forces_Retreat``                          None                                                             
+``Land_Capture_Allowed_Countdown_Seconds``                        None                                                             
+``Land_Collidable_Grid_Cull_Size``                                None                                                             
+``Land_Guard_Range``                                              None                                                             
+``Land_Health_Bar_Scale``                                         None                                                             
+``Land_Retreat_Allowed_Countdown_Seconds``                        None                                                             
+``Land_Retreat_Attrition_Factor``                                 None                                                             
+``Land_Tactical_Camera_Locked``                                   None                                                             
+``Large_Coin_Stack_Size``                                         None                                                             
+``Laser_Beam_Z_Scale_Factor``                                     None                                                             
+``Laser_Kite_Z_Scale_Factor``                                     None                                                             
+``Lava_Ground_Color_Tint``                                        None                                                             
+``Left_Queue_Tint``                                               None                                                             
+``Localized_Menu_Overlay``                                        None                                                             
+``Localized_Splash_Screen``                                       None                                                             
+``Localized_UK_English_Splash_Screen``                            None                                                             
+``Long_Encyclopedia_Delay``                                       None                                                             
+``LoopWaypointLineTextureName``                                   None                                                             
+``Lose_Message_Color``                                            None                                                             
+``Low_Threat_Reachability_Tolerance``                             None                                                             
+``MP_Color_Blue``                                                 None                                                             
+``MP_Color_Cyan``                                                 None                                                             
+``MP_Color_Eight``                                                None                                                             
+``MP_Color_Gray``                                                 None                                                             
+``MP_Color_Green``                                                None                                                             
+``MP_Color_Orange``                                               None                                                             
+``MP_Color_Purple``                                               None                                                             
+``MP_Color_Red``                                                  None                                                             
+``MP_Color_Yellow``                                               None                                                             
+``MP_Default_Allow_Auto_Resolve``                                 None                                                             
+``MP_Default_Allow_Heroes``                                       None                                                             
+``MP_Default_Allow_Random_Events``                                None                                                             
+``MP_Default_Allow_SuperWeapons``                                 None                                                             
+``MP_Default_Credits``                                            None                                                             
+``MP_Default_Free_Starting_Units``                                None                                                             
+``MP_Default_Game_Timer``                                         None                                                             
+``MP_Default_Land_Tactical_Win_Condition``                        None                                                             
+``MP_Default_Max_Tech_Level``                                     None                                                             
+``MP_Default_Pre_Built_Base``                                     None                                                             
+``MP_Default_Space_Tactical_Win_Condition``                       None                                                             
+``MP_Default_Start_Tech_Level``                                   None                                                             
+``MP_Default_Win_Condition``                                      None                                                             
+``MP_Default_Win_Condition_Float_Param``                          None                                                             
+``MP_Default_Win_Condition_Int_Param``                            None                                                             
+``Main_Menu_Demo_Attract_Mode``                                   None                                                             
+``Map_Preview_Image_Size``                                        None                                                             
+``MatchFacingDeltaSpace``                                         None                                                             
+``MaxCombatAccuracyAlignmentBonus``                               None                                                             
+``MaxCombatDamageAlignmentBonus``                                 None                                                             
+``MaxCombatSensorRangeAlignmentBonus``                            None                                                             
+``MaxCreditIncomeAlignmentBonus``                                 None                                                             
+``MaxCreditIncomeAlignmentPenalty``                               None                                                             
+``MaxInfluenceTransitionAlignmentBonus``                          None                                                             
+``MaxInfluenceTransitionAlignmentPenalty``                        None                                                             
+``MaxLandFormationFormupFrames``                                  None                                                             
+``MaxObstacleCostLand``                                           None                                                             
+``MaxObstacleCostSpace``                                          None                                                             
+``MaxRotationsSpace``                                             None                                                             
+``MaxWaypointsPerPath``                                           None                                                             
+``Max_Bombard_Interval_Seconds``                                  None                                                             
+``Max_Bombing_Run_Interval_Seconds``                              None                                                             
+``Max_Formation_Area``                                            None                                                             
+``Max_Galactic_Zoom_Distance``                                    None                                                             
+``Max_Galactic_Zoom_Speed``                                       None                                                             
+``Max_Ground_Forces_On_Planet``                                   None                                                             
+``Max_Move_Frame_Delay``                                          None                                                             
+``Max_Remote_Bombs_Per_Player``                                   None                                                             
+``Max_Skirmish_Credits``                                          None                                                             
+``MaximumFleetMovementDistance``                                  None                                                             
+``MaximumGroundbaseLevel``                                        None                                                             
+``MaximumPoliticalControl``                                       None                                                             
+``MaximumSpecialStructures``                                      None                                                             
+``MaximumSpecialStructuresLand``                                  None                                                             
+``MaximumSpecialStructuresSpace``                                 None                                                             
+``MaximumStarbaseLevel``                                          None                                                             
+``Medium_Coin_Stack_Size``                                        None                                                             
+``Medium_Threat_Reachability_Tolerance``                          None                                                             
+``Melee_Cutoff_Range``                                            None                                                             
+``Message_Of_The_Day_URL``                                        None                                                             
+``MinLandPredictionDistance``                                     None                                                             
+``MinObstacleCostLand``                                           None                                                             
+``MinObstacleCostSpace``                                          None                                                             
+``Min_Accuracy_For_Icon``                                         None                                                             
+``Min_Bombard_Interval_Seconds``                                  None                                                             
+``Min_Bombing_Run_Interval_Seconds``                              None                                                             
+``Min_Galactic_Zoom_Speed``                                       None                                                             
+``Min_Health_Bar_Scale``                                          None                                                             
+``Min_Sight_Range_For_Icon``                                      None                                                             
+``Min_Skirmish_Credits``                                          None                                                             
+``MinimumDragDistance``                                           None                                                             
+``MinimumDragSelectDistance``                                     None                                                             
+``MinimumStoppedVsStoppedOverlapCoefficient``                     None                                                             
+``Minimum_Tactical_Overrun_Time_In_Secs``                         None                                                             
+``Mouse_Over_Highlight_Scale``                                    None                                                             
+``MoveBlendTime``                                                 None                                                             
+``MovementReevaluationFrameCount``                                None                                                             
+``MovingVsMovingLookAheadTime``                                   None                                                             
+``Multiplayer_Losing_Team_Bonus_Credit_Percentage``               None                                                             
+``Nebula_Ability_Disable_Time``                                   None                                                             
+``Nebula_Effect_Color``                                           None                                                             
+``Neutral_UI_Color``                                              None                                                             
+``Num_Structures_For_Large_Planet_Name``                          None                                                             
+``Num_Structures_For_Medium_Planet_Name``                         None                                                             
+``Object_Max_Health_Multiplier_Land``                             None                                                             
+``Object_Max_Health_Multiplier_Space``                            None                                                             
+``Object_Max_Speed_Multiplier_Galactic``                          None                                                             
+``Object_Max_Speed_Multiplier_Land``                              None                                                             
+``Object_Max_Speed_Multiplier_Space``                             None                                                             
+``Object_Visual_Status_Particle_Attach_Bone_Names``               None                                                             
+``ObstacleAreaOverlapForMaxSpace``                                None                                                             
+``Occlusion_Silhouettes_Enabled``                                 None                                                             
+``OccupationRadiusCoefficientSpace``                              None                                                             
+``OffMapCostPenalty``                                             None                                                             
+``Override_Death_Persistence_Duration``                           None                                                             
+``Particle_Brightness_Per_Corruption_Level``                      None                                                             
+``Particle_Energy_Per_Corruption_Level``                          None                                                             
+``Particle_Scale_Per_Corruption_Level``                           None                                                             
+``Pay_As_You_Go``                                                 None                                                             
+``Planet_Ability_Icon_Names``                                     None                                                             
+``Planet_Ability_RGBs``                                           None                                                             
+``Planet_Ability_Text_IDs``                                       None                                                             
+``Planet_Reveal_Delay_Time``                                      None                                                             
+``PlayModeSwitchMovies``                                          None                                                             
+``Player_Color``                                                  None                                                             
+``Political_Control_Change_Time_Seconds``                         None                                                             
+``Political_Income_Curve``                                        None                                                             
+``Preferred_Pathfinder_Types``                                    None                                                             
+``Production_Speed_Factor``                                       None                                                             
+``Production_Speed_Mod_Base_Vs_Tech_0``                           None                                                             
+``Production_Speed_Mod_Base_Vs_Tech_1``                           None                                                             
+``Production_Speed_Mod_Base_Vs_Tech_2``                           None                                                             
+``Production_Speed_Mod_Base_Vs_Tech_3``                           None                                                             
+``Production_Speed_Mod_Base_Vs_Tech_4``                           None                                                             
+``Progressive_Taxation``                                          None                                                             
+``Push_Scroll_Speed_Modifier``                                    None                                                             
+``Quickmatch_Map_Exclusion_List``                                 None                                                             
+``Radar_Colorize_Multiplayer_Enemy``                              None                                                             
+``Radar_Colorize_Selected_Units``                                 None                                                             
+``Radar_Multiplayer_Enemy_Color``                                 None                                                             
+``Radar_Selected_Units_Color``                                    None                                                             
+``Raid_Force_Free_Object_Category_Mask``                          None                                                             
+``Raid_Force_Limited_Object_Category_Mask``                       None                                                             
+``Raid_Force_Max_Heros``                                          None                                                             
+``Raid_Force_Max_Limited_Objects``                                None                                                             
+``Raid_Force_Required_Faction``                                   None                                                             
+``Random_Story_Empire_Construction``                              None                                                             
+``Random_Story_Empire_Destroy``                                   None                                                             
+``Random_Story_Max_Triggers``                                     None                                                             
+``Random_Story_Rebel_Construction``                               None                                                             
+``Random_Story_Rebel_Destroy``                                    None                                                             
+``Random_Story_Reward_Empire_Buildable``                          None                                                             
+``Random_Story_Reward_Empire_Unit``                               None                                                             
+``Random_Story_Reward_Rebel_Buildable``                           None                                                             
+``Random_Story_Reward_Rebel_Unit``                                None                                                             
+``Random_Story_Rewards``                                          None                                                             
+``Random_Story_Triggers``                                         None                                                             
+``ReinforcementOverlayBadColor``                                  None                                                             
+``ReinforcementOverlayGoodColor``                                 None                                                             
+``RepushDistance``                                                None                                                             
+``RetreatAutoResolveLoserAttrition``                              None                                                             
+``RetreatAutoResolveWinnerAttrition``                             None                                                             
+``Right_Queue_Tint``                                              None                                                             
+``Rotate_Formation_Facing_Moves``                                 None                                                             
+``Sabotage_Particle_Effect``                                      None                                                             
+``Saliency_Health``                                               None                                                             
+``Saliency_Power``                                                None                                                             
+``Saliency_Size``                                                 None                                                             
+``Saliency_Speed``                                                None                                                             
+``Saliency_Targets``                                              None                                                             
+``Saliency_X``                                                    None                                                             
+``Saliency_Y``                                                    None                                                             
+``Scroll_Acceleration_Factor``                                    None                                                             
+``Scroll_Deceleration_Factor``                                    None                                                             
+``Sensor_Jamming_Time``                                           None                                                             
+``SetupPhaseCountdownSeconds``                                    None                                                             
+``SetupPhaseEnabled``                                             None                                                             
+``SetupPhaseFOWColor``                                            None                                                             
+``SetupPhaseInvalidDragColor``                                    None                                                             
+``ShieldRechargeIntervalInSecs``                                  None                                                             
+``Shield_Flash_Duration``                                         None                                                             
+``Shield_Flash_Scale``                                            None                                                             
+``ShipNameTextFiles``                                             None                                                             
+``Ships_Per_Stack``                                               None                                                             
+``Short_Range_Attack_Formation_Coefficient``                      None                                                             
+``ShouldDisplayPotentialPath``                                    None                                                             
+``ShouldDisplayPredictionPaths``                                  None                                                             
+``ShouldDisplaySyncedPaths``                                      None                                                             
+``ShouldInfantryTeamsSplitAcrossFormations``                      None                                                             
+``ShouldSkipLandFormup``                                          None                                                             
+``ShouldUseSpaceIdleMovement``                                    None                                                             
+``ShowUnitAIPlanAttachment``                                      None                                                             
+``Skirmish_Buy_Credits``                                          None                                                             
+``Skirmish_Reinforcement_Delay_Frames``                           None                                                             
+``Slow_Ground_Color_Tint``                                        None                                                             
+``Solo_Attack_Range``                                             None                                                             
+``SpaceFOWColor``                                                 None                                                             
+``SpaceFOWHeight``                                                None                                                             
+``SpaceFOWRegrowTime``                                            None                                                             
+``SpaceIdleMovementSpeed``                                        None                                                             
+``SpaceIdlePathCullCoefficient``                                  None                                                             
+``SpaceLocomotorFacingLookaheadAcc``                              None                                                             
+``SpaceObjectTrackingInterval``                                   None                                                             
+``SpaceObjectTrackingTreeCount``                                  None                                                             
+``SpacePathFailureDistanceCutoffCoefficient``                     None                                                             
+``SpacePathFailureForwardExpansionIncrement``                     None                                                             
+``SpacePathFailureMaxExpansionsCoefficient``                      None                                                             
+``SpacePathFailureRotationExpansionIncrement``                    None                                                             
+``SpacePathfindFrameDelayDelta``                                  None                                                             
+``SpacePathfindMaxExpansions``                                    None                                                             
+``SpacePathingTries``                                             None                                                             
+``SpaceReinforceFOWColor``                                        None                                                             
+``SpaceReinforceFeedbackOnlyWhileDragging``                       None                                                             
+``SpaceStaticObstacleAvoidanceBonusDistance``                     None                                                             
+``Space_Auto_Resolve_Delay_Seconds``                              None                                                             
+``Space_Capture_Allowed_Countdown_Seconds``                       None                                                             
+``Space_Collidable_Grid_Cull_Size``                               None                                                             
+``Space_Elevated_Vulnerability_Duration``                         None                                                             
+``Space_Elevated_Vulnerability_Factor``                           None                                                             
+``Space_Guard_Range``                                             None                                                             
+``Space_Large_Ship_Grid_Cull_Size``                               None                                                             
+``Space_Reinforcement_Collision_Check_Distance``                  None                                                             
+``Space_Retreat_Allowed_Countdown_Seconds``                       None                                                             
+``Space_Retreat_Attrition_Factor``                                None                                                             
+``Space_Station_Destruction_Forces_Retreat``                      None                                                             
+``Space_Tactical_Camera_Locked``                                  None                                                             
+``SpecialAlignedOperatorBonus``                                   None                                                             
+``Speech_Text_Color``                                             None                                                             
+``Spread_Out_Spacing_Coefficient``                                None                                                             
+``Star_Wars_Crawl_Start_Fadeout_Frame``                           None                                                             
+``Starting_Galactic_Camera_Position``                             None                                                             
+``Strategic_Edge_Scroll_Region``                                  None                                                             
+``Strategic_Max_Scroll_Speed``                                    None                                                             
+``Strategic_Min_Scroll_Speed``                                    None                                                             
+``Strategic_Offscreen_Scroll_Region``                             None                                                             
+``Strategic_Queue_Tactical_Battles``                              None                                                             
+``SyncedFrameInterval``                                           None                                                             
+``System_Text_Color``                                             None                                                             
+``Tactical_Build_Time_Multiplier``                                None                                                             
+``Tactical_Edge_Scroll_Region``                                   None                                                             
+``Tactical_Max_Scroll_Speed``                                     None                                                             
+``Tactical_Min_Scroll_Speed``                                     None                                                             
+``Tactical_Offscreen_Scroll_Region``                              None                                                             
+``Tactical_Overrun_Multiple``                                     None                                                             
+``Task_Text_Color``                                               None                                                             
+``TeamCrouchMoveBlendTime``                                       None                                                             
+``TeamMoveBlendTime``                                             None                                                             
+``Team_Healthbar_Offset``                                         None                                                             
+``Telekinesis_Hover_Height``                                      None                                                             
+``Telekinesis_Max_Bob_Height``                                    None                                                             
+``Telekinesis_Max_Wobble_Angle``                                  None                                                             
+``Telekinesis_Transition_Time``                                   None                                                             
+``Telekinesis_Wobble_Cycle_Time``                                 None                                                             
+``Telekinesis_Wobble_Fade_Time``                                  None                                                             
+``Terrain_Resurface_Rand``                                        None                                                             
+``Terrain_Resurface_Tolerance``                                   None                                                             
+``Text_Button_Default_Font_Name``                                 None                                                             
+``Text_Button_Default_Font_Size``                                 None                                                             
+``Text_Reveal_Rate``                                              None                                                             
+``ThreatExpansionDistance``                                       None                                                             
+``Tool_Tip_Font_Name``                                            None                                                             
+``Tool_Tip_Font_Size``                                            None                                                             
+``Tool_Tip_Small_Font_Name``                                      None                                                             
+``Tool_Tip_Small_Font_Size``                                      None                                                             
+``Tooltip_Delay``                                                 None                                                             
+``Tractor_Beam_Color``                                            None                                                             
+``Tractor_Beam_Frames``                                           None                                                             
+``Tractor_Beam_Texture``                                          None                                                             
+``Tractor_Beam_Width``                                            None                                                             
+``TradeRouteMovementFactor``                                      None                                                             
+``TurnInPlaceSlowdownCapital``                                    None                                                             
+``TurnInPlaceSlowdownCorvette``                                   None                                                             
+``TurnInPlaceSlowdownFrigate``                                    None                                                             
+``Under_Construction_Damage_Multiplier``                          None                                                             
+``Unit_Command_Rankings_By_Category``                             None                                                             
+``UseLinearCollisionChecks``                                      None                                                             
+``Use_Neutral_UI_Color``                                          None                                                             
+``Use_Reinforcement_Points``                                      None                                                             
+``VehicleFormationRecruitmentDistance``                           None                                                             
+``WaitOperatorBaseFrameTime``                                     None                                                             
+``WaitOperatorCostCoefficient``                                   None                                                             
+``WaitOperatorSpeedCoefficient``                                  None                                                             
+``WalkAnimationCutoff``                                           None                                                             
+``Water_Clip_Plane_Offset``                                       None                                                             
+``Water_Render_Target_Resolution``                                None                                                             
+``WaypointFlagModelName``                                         None                                                             
+``WaypointLineLandDashLength``                                    None                                                             
+``WaypointLineLandDashVelocity``                                  None                                                             
+``WaypointLineLandGapLength``                                     None                                                             
+``WaypointLineTextureName``                                       None                                                             
+``Win_Lose_Message_Font``                                         None                                                             
+``Win_Lose_Message_Font_Size``                                    None                                                             
+``Win_Message_Color``                                             None                                                             
+``XYExpansionDistanceLand``                                       None                                                             
+``XYExpansionDistanceSpace``                                      None                                                             
+================================================================= =================================================================
+
+
+``Game_Object_Files``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``File``                                                          None                                                             
+================================================================= =================================================================
+
+
+``GenericHeroUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GenericHeroUnit``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+``GroundBases``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundBase``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+``GroundBuildables``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundBuildable``                                               ``Name``                                                         
+``SpecialStructure``                                              ``Name``                                                         
+================================================================= =================================================================
+
+
+``GroundInfantry_Units``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundInfantry``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+``GroundStructures``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundStructure``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+``GroundVehicles``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundVehicle``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+``HardPoints``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``HardPoint``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``HeroCompanies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``HeroCompany``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+``HeroUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``HeroUnit``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+``Hero_Clashes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Hero_Clash``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+``Indigenous_Companies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundCompany``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+``Indigenous_Units``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Indigenous_Unit``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+``LandBombingRunUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LandBombingUnit``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+``LandPrimarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LandPrimarySkydome``                                            ``Name``                                                         
+================================================================= =================================================================
+
+
+``LandSecondarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LandSecondarySkydome``                                          ``Name``                                                         
+================================================================= =================================================================
+
+
+``LightSources``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LightSource``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+``LightningEffects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``LightningEffect``                                               ``name``                                                         
+================================================================= =================================================================
+
+
+``Markers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Marker``                                                        ``Name``                                                         
+================================================================= =================================================================
+
+
+``MiscObjects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``MiscObject``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+``Movies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Movie``                                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+``MusicEvents``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``MusicEvent``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+``Particles``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Particle``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+``Planets``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Planet``                                                        ``Name``                                                         
+================================================================= =================================================================
+
+
+``Projectiles``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Projectile``                                                    ``Description``, ``Name``                                        
+================================================================= =================================================================
+
+
+``Prop_Forest``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Prop_Forest``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Desert``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Prop_Desert``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Generic``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Generic``                                                 ``Name``                                                         
+``SpaceProp``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Snow``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Snow``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Story``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundBuildable``                                               ``Name``                                                         
+``Props_Story``                                                   ``Name``                                                         
+``SpaceStructure``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Swamp``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Swamp``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Temperate``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Temperate``                                               ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Urban``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Urban``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+``Props_Volcanic``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Props_Volcanic``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+``RadarMap``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``RadarMapEvents``                                                None                                                             
+``RadarMapSettings``                                              None                                                             
+================================================================= =================================================================
+
+
+``RebelGroundCompanies``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundCompany``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+``SFXEvent_Files``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``File``                                                          None                                                             
+================================================================= =================================================================
+
+
+``ScriptMarkers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``ScriptMarker``                                                  ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpaceBuildables``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceBuildable``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpaceCorvettes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpacePrimarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpacePrimarySkydome``                                           ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpaceProps``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceProp``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpaceSecondarySkydomes``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceSecondarySkydome``                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpaceUnitsCapital``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpaceUnitsFrigates``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpaceUnitsSupers``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpaceUnit``                                                     ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpecialEffects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpecialEffect``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpecialStructures``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpecialStructure``                                              ``Name``                                                         
+================================================================= =================================================================
+
+
+``SpeechEvents``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``SpeechEvent``                                                   ``Name``                                                         
+================================================================= =================================================================
+
+
+``Squadrons``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Squadron``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+``StarBases``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``StarBase``                                                      ``Name``                                                         
+``Starbase``                                                      ``Name``                                                         
+================================================================= =================================================================
+
+
+``StarWars3DTextScroll``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TextScroll``                                                    ``name``                                                         
+================================================================= =================================================================
+
+
+``TacticalCameras``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TacticalCamera``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+``Targeting_Priority_Set_Files``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``File``                                                          None                                                             
+================================================================= =================================================================
+
+
+``TechBuildings``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TechBuilding``                                                  ``Name``                                                         
+================================================================= =================================================================
+
+
+``TerrainDecals``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Decal``                                                         ``Name``                                                         
+================================================================= =================================================================
+
+
+``TradeRouteLines``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TradeRouteLine``                                                ``Name``                                                         
+================================================================= =================================================================
+
+
+``Trade_Route_Files``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``File``                                                          None                                                             
+================================================================= =================================================================
+
+
+``TransportUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``TransportUnit``                                                 ``Name``                                                         
+``UniqueUnit``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+``UniqueUnits``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``GroundVehicle``                                                 ``Name``                                                         
+``UniqueUnit``                                                    ``Name``                                                         
+================================================================= =================================================================
+
+
+``UpgradeObjects``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``UpgradeObject``                                                 ``Name``                                                         
+================================================================= =================================================================
+
+
+``WeatherAudio``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Ambient_SFXEvent_Intermittent``                                 None                                                             
+``Weather_SFXEvent_Intermittent``                                 None                                                             
+``Weather_SFXEvent_Loop``                                         None                                                             
+================================================================= =================================================================
+
+
+``Weather_Scenarios``:
+
+================================================================= =================================================================
+Node Name                                                         Attributes                                                       
+================================================================= =================================================================
+``Weather_Scenario``                                              ``emitter_name``, ``name``                                       
+================================================================= =================================================================
+
+
