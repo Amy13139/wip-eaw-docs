@@ -9,4 +9,4 @@ jobs:
 
     steps:
     - name: Build Extra Documentation Files
-      run: python3 build.py
+      run: python3 "source/build.py"
