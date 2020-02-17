@@ -6,5 +6,4 @@ setup(
    description='Generates doc files',
    author='luke13139',
    packages=['build_docs'],
-   install_requires=['xml', 'os']
 )
