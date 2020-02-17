@@ -125,3 +125,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Generated Files
+source/basegame/*/*_structure.rst

@@ -1,4 +1,5 @@
 from build_docs import *
+from os import path, getcwd
 # Doc Generation Script
 # Variables
 eaw_data_dir = path.join(getcwd(), "data\\")
