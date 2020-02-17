@@ -14,7 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 from os import path, getcwd
-from build import build
+from build_docs import build
 
 
 # -- Project information -----------------------------------------------------
