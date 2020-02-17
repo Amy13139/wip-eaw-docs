@@ -9,5 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup_python@v1
+      with:
+        python-version: "3.8"
     - name: Build Extra Documentation Files
-      run: python3 "source/build.py"
+      run: python "source/build.py"
