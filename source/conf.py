@@ -14,7 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 from os import path, getcwd
-from . import build_docs
+from subprocess import run
 
 
 # -- Project information -----------------------------------------------------
@@ -55,3 +55,5 @@ exclude_patterns = []
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# Run build.py
+run("python3 build.py")
