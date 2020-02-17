@@ -1,4 +1,4 @@
-from . import xml as xml
+from . import xml_build
 from os import path, getcwd
 # Doc Generation Script
 # Variables
@@ -10,12 +10,12 @@ xml_data_dir = path.join(basegame_data_dir, "xml")
 
 # Build docs
 def build():
-	xml_build()
+	build_xml_structure()
 
 
-def xml_build():
+def build_xml_structure():
 	print("Building XML Structure...")
-	xml.build_xml_structure(
+	xml_build.build_xml_structure(
 		path.join(eaw_data_dir, "XML"),
 		path.join(foc_data_dir, "XML"),
 		path.join(xml_data_dir, "xml_structure.rst")
