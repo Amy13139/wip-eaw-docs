@@ -1,5 +1,8 @@
 .. File generated from EaW XML Files
 
+All XML Structures - All except title generated
+===============================================
+
 Campaign_Files
 --------------
 
