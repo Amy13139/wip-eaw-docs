@@ -202,7 +202,7 @@ def parse_xml(xml_path):
 			# Load file if subnode is "File"
 			if node.tag == "File" and node_type == "File":
 				# Add full path to file to sub_files list
-				sub_files.append(path.join(path.dirname(xml_path), node.text.strip().capitalize()))
+				sub_files.append(path.join(path.dirname(xml_path), node.text.strip().title()))
 
 	# Set top_level_node as main key
 	xml_tree = {top_level_node: xml_tree}
