@@ -13,61 +13,62 @@ About
 
 Structure
 =========
-``Top level node``:
+Difficulty_Adjustments
+----------------------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``Difficulty_Adjustment``                                         ``Name``
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
+Difficulty_Adjustment
+^^^^^^^^^^^^^^^^^^^^^
+- Attribute - Name
+	String; The name of the node, can be referenced by other nodes
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+- Bribe_Cost_Multiplier
+	Float; *Description Here*
 
+- Credit_Multiplier
+	Float; *Description Here*
 
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
+- Damage_Multiplier
+	Float; *Description Here*
 
+- Galactic_AI_Contrast_Multiplier
+	Float; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Galactic_AI_Goal_Cycle_Sleep_Duration
+	Float; *Description Here*
 
-- ``Subnode 2``:
-	Type; Description
+- Galactic_Build_Time_Multiplier
+	Float; *Description Here*
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- Health_Multiplier
+	Float; *Description Here*
 
-- ``Subnode 5``:
-	Type | Type | Type; Description
+- Land_AI_Contrast_Multiplier
+	Float; *Description Here*
 
+- Land_AI_Goal_Cycle_Sleep_Duration
+	Float; *Description Here*
 
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
+- Land_Build_Time_Multiplier
+	Float; *Description Here*
 
+- Shield_Multiplier
+	Float; *Description Here*
 
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
+- Space_AI_Contrast_Multiplier
+	Float; *Description Here*
 
+- Space_AI_Goal_Cycle_Sleep_Duration
+	Float; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- Space_Build_Time_Multiplier
+	Float; *Description Here*
 
 
 EaW-Godot Port Connection

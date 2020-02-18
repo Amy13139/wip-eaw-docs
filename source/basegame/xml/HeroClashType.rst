@@ -13,61 +13,92 @@ About
 
 Structure
 =========
-``Top level node``:
+Hero_Clashes
+------------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``Hero_Clash``                                                    ``Name``
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
-
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
-
-
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
-
-
-``Node 1``
+Hero_Clash
 ^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Attribute - Name
+	String; The name of the node, can be referenced by other nodes
 
-- ``Subnode 2``:
-	Type; Description
+- Clash_Actions
+	Ref; *Description Here*
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- Clash_Range
+	Float; *Description Here*
 
-- ``Subnode 5``:
-	Type | Type | Type; Description
+- Clash_Type
+	Ref; *Description Here*
 
+- Combat_Distance
+	Float; *Description Here*
 
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
+- Damage_Amount
+	Float; *Description Here*
 
+- Damage_Percentage
+	Float; *Description Here*
 
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
+- First_Hero_Conversation_Anim_Type
+	Ref; *Description Here*
 
+- First_Hero_Damage_Multiplier
+	Float; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- First_Hero_Draw_Anim_Type
+	Ref; *Description Here*
+
+- First_Hero_Lose_Anim_Type
+	Ref; *Description Here*
+
+- First_Hero_Type
+	Ref; *Description Here*
+
+- First_Hero_Win_Anim_Type
+	Ref; *Description Here*
+
+- First_Hero_Win_Exchange_Chance
+	Float; *Description Here*
+
+- First_Hero_Win_Speech
+	Ref; *Description Here*
+
+- Involved_Hero_Types
+	Ref, Ref, Ref; *Description Here*
+
+- Play_Conversation_Events
+	Bool Y/N; *Description Here*
+
+- Second_Hero_Conversation_Anim_Type
+	Ref; *Description Here*
+
+- Second_Hero_Damage_Multiplier
+	Float; *Description Here*
+
+- Second_Hero_Draw_Anim_Type
+	Ref; *Description Here*
+
+- Second_Hero_Lose_Anim_Type
+	Ref; *Description Here*
+
+- Second_Hero_Type
+	Ref; *Description Here*
+
+- Second_Hero_Win_Anim_Type
+	Ref; *Description Here*
+
+- Second_Hero_Win_Exchange_Chance
+	Float; *Description Here*
+
+- Second_Hero_Win_Speech
+	Ref; *Description Here*
 
 
 EaW-Godot Port Connection

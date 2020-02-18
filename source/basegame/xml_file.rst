@@ -68,7 +68,7 @@ XML Type Reference
 	:titlesonly:
 	:glob:
 
-	All XML File Structures <xml/xml_structure>
+	Auto-Generated XML File Structures <xml/xml_structure>
 	xml/megafiles.xml
 	xml/Dataminerxmlfiles.xml
 	xml/*

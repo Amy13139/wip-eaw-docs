@@ -13,61 +13,32 @@ About
 
 Structure
 =========
-``Top level node``:
+SpeechEvents
+------------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``SpeechEvent``                                                   ``Name``
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
+SpeechEvent
+^^^^^^^^^^^
+- Attribute - Name
+	String; The name of the node, can be referenced by other nodes
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+- Files
+	Ref; *Description Here*
 
+- Overlap_Test
+	Ref; *Description Here*
 
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
+- Text_ID
+	Ref; The in-game name of this unit, references a .DAT file to allow from translations
 
-
-``Node 1``
-^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
-
-- ``Subnode 2``:
-	Type; Description
-
-- ``Subnode 3``:
-	Type, Type, Type; Description
-
-- ``Subnode 5``:
-	Type | Type | Type; Description
-
-
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
-
-
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
-
-
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- Volume_Percent
+	Ref; *Description Here*
 
 
 EaW-Godot Port Connection

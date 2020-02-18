@@ -16,6 +16,13 @@ About
 
 The GameObjectType stores information related to anything the game considers and "object". This includes units, props, projectiles, particles, and heroes, to name a few.
 
+Structure
+=========
+Game_Object_Files
+-----------------
+- File
+	File; A file to load, has the same type as this file
+
 
 Categories
 ==========

@@ -13,61 +13,146 @@ Stores the individual parts of larger units. May or may not be targetable/destro
 
 Structure
 =========
-``Top level node``:
+HardPoints
+----------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``HardPoint``                                                     ``Name``
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
+HardPoint
+^^^^^^^^^
+- Attribute - Name
+	String; The name of the node, can be referenced by other nodes
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+- Allow_Opportunity_Fire_When_Idle
+	Bool T/F; *Description Here*
 
+- Allow_Opportunity_Fire_When_Targeting
+	Bool T/F; *Description Here*
 
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
+- Allows_Special_Weapon_Use
+	Ref; *Description Here*
 
+- Attachment_Bone
+	Ref; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Collision_Mesh
+	Ref; *Description Here*
 
-- ``Subnode 2``:
-	Type; Description
+- Damage_Decal
+	Ref; *Description Here*
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- Damage_Particles
+	Ref; *Description Here*
 
-- ``Subnode 5``:
-	Type | Type | Type; Description
+- Damage_Type
+	Ref; *Description Here*
 
+- Death_Breakoff_Prop
+	Ref; *Description Here*
 
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
+- Death_Explosion_Particles
+	Ref; *Description Here*
 
+- Death_Explosion_SFXEvent
+	Ref; *Description Here*
 
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
+- Engine_Particles
+	Ref; *Description Here*
 
+- Fighter_Bay_Flyout_Distance
+	Float; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- Fire_Bone_A
+	Ref; *Description Here*
+
+- Fire_Bone_B
+	Ref; *Description Here*
+
+- Fire_Bone_C
+	Ref; *Description Here*
+
+- Fire_Bone_D
+	Ref; *Description Here*
+
+- Fire_Category_Restrictions
+	Ref, Ref; *Description Here*
+
+- Fire_Cone_Height
+	Float; *Description Here*
+
+- Fire_Cone_Width
+	Float; *Description Here*
+
+- Fire_Inaccuracy_Distance
+	Ref, Float; *Description Here*
+
+- Fire_Max_Recharge_Seconds
+	Float; *Description Here*
+
+- Fire_Min_Recharge_Seconds
+	Float; *Description Here*
+
+- Fire_Projectile_Type
+	Ref; *Description Here*
+
+- Fire_Pulse_Count
+	Int; *Description Here*
+
+- Fire_Pulse_Delay_Seconds
+	Float; *Description Here*
+
+- Fire_Range_Distance
+	Float; *Description Here*
+
+- Fire_SFXEvent
+	Ref; *Description Here*
+
+- Fire_When_Deployed
+	Bool Y/N; *Description Here*
+
+- Fire_When_In_Normal_Attack_Mode
+	Bool Y/N; *Description Here*
+
+- Fire_When_In_Rocket_Attack_Mode
+	Bool Y/N; *Description Here*
+
+- Fire_When_Undeployed
+	Bool Y/N; *Description Here*
+
+- Health
+	Float; *Description Here*
+
+- Is_Destroyable
+	Bool Y/N; *Description Here*
+
+- Is_Targetable
+	Bool Y/N; *Description Here*
+
+- Model_To_Attach
+	File; *Description Here*
+
+- Projectile_Damage
+	Int; *Description Here*
+
+- Repair_Amount_Per_Frame
+	Float; *Description Here*
+
+- Repair_Cost_Per_Frame
+	Float; *Description Here*
+
+- Special_Ability_Name
+	Ref; *Description Here*
+
+- Tooltip_Text
+	Ref; *Description Here*
+
+- Type
+	Ref; *Description Here*
 
 
 EaW-Godot Port Connection

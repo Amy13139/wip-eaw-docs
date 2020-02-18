@@ -13,61 +13,44 @@ About
 
 Structure
 =========
-``Top level node``:
+MusicEvents
+-----------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``MusicEvent``                                                    ``Name``
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
-
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
-
-
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
-
-
-``Node 1``
+MusicEvent
 ^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Attribute - Name
+	String; The name of the node, can be referenced by other nodes
 
-- ``Subnode 2``:
-	Type; Description
+- Fade_In_Seconds
+	Float; *Description Here*
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- Fade_Out_Previous_Seconds
+	Float; *Description Here*
 
-- ``Subnode 5``:
-	Type | Type | Type; Description
+- Files
+	File, File, ...; *Description Here*
 
+- Loop
+	Ref; *Description Here*
 
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
+- MSS_Internal_Loop
+	Ref; *Description Here*
 
+- Play_Sequentially
+	Ref; *Description Here*
 
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
+- Play_Sequentialy
+	Ref; *Description Here*
 
-
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- Volume_Percent
+	Ref; *Description Here*
 
 
 EaW-Godot Port Connection

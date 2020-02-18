@@ -13,61 +13,161 @@ About
 
 Structure
 =========
-``Top level node``:
+TacticalCameras
+---------------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``TacticalCamera``                                                ``Name``
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
+TacticalCamera
+^^^^^^^^^^^^^^
+- Attribute - Name
+	String; The name of the node, can be referenced by other nodes
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+- Bottom_Bounds_Buffer
+	Floatf; *Description Here*
 
+- Distance_Default
+	Float; *Description Here*
 
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
+- Distance_Max
+	Float; *Description Here*
 
+- Distance_Min
+	Float; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Distance_Per_Mouse_Unit
+	Float; *Description Here*
 
-- ``Subnode 2``:
-	Type; Description
+- Distance_Smooth_Time
+	Float; *Description Here*
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- Distance_Spline
+	Ref, Float, Float, Float, Float; *Description Here*
 
-- ``Subnode 5``:
-	Type | Type | Type; Description
+- Far_Clip
+	Float; *Description Here*
 
+- Fov_Default
+	Float; *Description Here*
 
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
+- Fov_Max
+	Float; *Description Here*
 
+- Fov_Min
+	Float; *Description Here*
 
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
+- Fov_Per_Mouse_Unit
+	Float; *Description Here*
 
+- Fov_Smooth_Time
+	Float; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- Fov_Smooth_time
+	Float; *Description Here*
+
+- Location_Follows_Terrain
+	Int; *Description Here*
+
+- Location_Height_Down_Smooth_Time
+	Float; *Description Here*
+
+- Location_Height_Smooth_Time
+	Float; *Description Here*
+
+- Location_Height_Up_Smooth_Time
+	Float; *Description Here*
+
+- MinHeightAboveTerrain
+	Float; *Description Here*
+
+- Min_Height_Above_Terrain
+	Float; *Description Here*
+
+- Near_Clip
+	Float; *Description Here*
+
+- Object_Fade_Begin
+	Floatf; *Description Here*
+
+- Object_Fade_End
+	Floatf; *Description Here*
+
+- Pitch_Default
+	Float; *Description Here*
+
+- Pitch_Max
+	Float; *Description Here*
+
+- Pitch_Min
+	Float; *Description Here*
+
+- Pitch_Per_Mouse_Unit
+	Float; *Description Here*
+
+- Pitch_Per_Zoom_Unit
+	Float; *Description Here*
+
+- Pitch_Spline
+	Float, Float, Float, Float, Float, Float, Float, Int; *Description Here*
+
+- Pitch_When_Zoomed_In
+	Float; *Description Here*
+
+- Pitch_Zoom_Begin_Fraction
+	Float; *Description Here*
+
+- Side_Bounds_Buffer
+	Floatf; *Description Here*
+
+- Spline_Steps
+	Int; *Description Here*
+
+- Tactical_Overview_Click_Time
+	Float; *Description Here*
+
+- Tactical_Overview_Clicks
+	Int; *Description Here*
+
+- Tactical_Overview_Distance
+	Float; *Description Here*
+
+- Tactical_Overview_Distance2
+	Float; *Description Here*
+
+- Tactical_Overview_FOV
+	Float; *Description Here*
+
+- Tactical_Overview_FOV2
+	Float; *Description Here*
+
+- Tactical_Overview_Pitch
+	Float; *Description Here*
+
+- Tactical_Overview_Pitch2
+	Float; *Description Here*
+
+- Top_Bounds_Buffer
+	Floatf; *Description Here*
+
+- Use_Splines
+	Bool y/n; *Description Here*
+
+- Yaw_Default
+	Float; *Description Here*
+
+- Yaw_Max
+	Float; *Description Here*
+
+- Yaw_Min
+	Float; *Description Here*
+
+- Yaw_Per_Mouse_Unit
+	Float; *Description Here*
 
 
 EaW-Godot Port Connection

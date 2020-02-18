@@ -13,61 +13,53 @@ About
 
 Structure
 =========
-``Top level node``:
+TerrainDecals
+-------------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``Decal``                                                         ``Name``
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
+Decal
+^^^^^
+- Attribute - Name
+	String; The name of the node, can be referenced by other nodes
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+- Category
+	Ref; *Description Here*
 
+- Fadeout_Time
+	Int; *Description Here*
 
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
+- Intensity
+	Float; *Description Here*
 
+- Permanent
+	Bool t/f; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Random_Rotate
+	Bool Y/N; *Description Here*
 
-- ``Subnode 2``:
-	Type; Description
+- Random_Size_Offset
+	Float; *Description Here*
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- Render_Mode
+	Ref; *Description Here*
 
-- ``Subnode 5``:
-	Type | Type | Type; Description
+- Scale
+	Int, Int; *Description Here*
 
+- Slot_Scale
+	Int; *Description Here*
 
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
+- UV_Slot
+	Int, Int; *Description Here*
 
-
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
-
-
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- Z_Angle
+	Int; *Description Here*
 
 
 EaW-Godot Port Connection

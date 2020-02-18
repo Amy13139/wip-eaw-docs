@@ -28,14 +28,14 @@ DESCRIPTORS = {
 	"attribute - name": "The name of the node, can be referenced by other nodes",
 	"attribute - description": "An optional description for the node, only used to help anyone reading the XML.",
 	"text_id": "The in-game name of this unit, references a .DAT file to allow from translations",
-	"mass": "Always 0.99... 5, with an arbitrary number of 9s. Probably unused.",
-	"file": "A file to load, has the same type as this file",
+	"mass": "Varies between 0 and 1, usually very close to 1. Probably unused.",
+	"file": "A file to load, context of loading is based on the root node.",
 }
 
 # Default EaW and FoC XML Directories, used when the program is run
-DEFAULT_XML_DIR_EAW = path.join(getcwd(), "build_docs", "XML")
-DEFAULT_XML_DIR_FOC = path.join(getcwd(), "build_docs", "corruption", "XML")
-DEFAULT_OUTPUT_FILE = path.join(getcwd(), "basegame", "xml" "xml_structure.rst")
+DEFAULT_XML_DIR_EAW = path.join(getcwd(), "data", "XML")
+DEFAULT_XML_DIR_FOC = path.join(getcwd(), "data", "corruption", "XML")
+DEFAULT_OUTPUT_FILE = path.join(getcwd(), "basegame", "xml", "xml_structure.rst")
 
 # Tab character
 TAB = "\t"
@@ -113,8 +113,8 @@ def parse_xml_dir(xml_dir, use_dataminerxml=False):
 
 	# Parse Dataminerxmlfiles, then other XMLs
 	else:
-		# Setup Variables
-		xml_files = []
+		# Setup Variables, add megafiles.xml
+		xml_files = [path.join(xml_dir, "megafiles.xml")]
 		# Ensure file exists
 		data_xml_path = path.join(xml_dir, "Dataminerxmlfiles.Xml")
 		if not path.exists(data_xml_path):
@@ -145,6 +145,7 @@ def parse_xml(xml_path):
 
 	# Setup XML tree, get root element
 	xml_tree = {}
+	sub_files = []
 
 	# Protect against invalid XML files, as even the base game has invalid files
 	try:
@@ -186,6 +187,7 @@ def parse_xml(xml_path):
 
 				# Add type to tree
 				xml_tree[node.tag][subnode.tag] = subnode_type
+
 		else:
 			# Get subnode type
 			node_type = get_type(node.text)
@@ -197,8 +199,18 @@ def parse_xml(xml_path):
 			# Add type to tree
 			xml_tree[node.tag] = node_type
 
-	# Return tree, add top_level_node as main key
-	return {top_level_node: xml_tree}
+			# Load file if subnode is "File"
+			if node.tag == "File" and node_type == "File":
+				# Add full path to file to sub_files list
+				sub_files.append(path.join(path.dirname(xml_path), node.text.strip().capitalize()))
+
+	# Set top_level_node as main key
+	xml_tree = {top_level_node: xml_tree}
+	# Load sub files
+	for sub_file in sub_files:
+		xml_tree = add_tree_dict(xml_tree, parse_xml(sub_file))
+	# Return
+	return xml_tree
 
 
 def add_tree_dict(main_xml_tree, sub_xml_tree):
@@ -212,10 +224,10 @@ def add_tree_dict(main_xml_tree, sub_xml_tree):
 
 	def get_true_type(main_type_check, sub_type_check):
 		# Set main_type if None, Skip
-		if main_type_check is None:
+		if main_type_check == "None":
 			return sub_type_check
-		# Skip if sub_type is None
-		if sub_type_check is None:
+		# Skip if sub_type == None
+		if sub_type_check == "None":
 			return main_type_check
 		# Override to Ref if it exists
 		if sub_type_check == "Ref" or main_type_check == "Ref":
@@ -226,6 +238,9 @@ def add_tree_dict(main_xml_tree, sub_xml_tree):
 		# Skip if main type ends with ellipsis, see below
 		if main_type_check.endswith("..."):
 			return main_type_check
+		# Skip if sub type ends with ellipsis, see below
+		if sub_type_check.endswith("..."):
+			return sub_type_check
 		# Check if types are different length lists
 		if main_type_check.startswith(sub_type_check) or sub_type_check.startswith(main_type):
 			# If they are different lengths, add ellipse to type

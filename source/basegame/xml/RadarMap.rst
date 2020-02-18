@@ -13,61 +13,59 @@ About
 
 Structure
 =========
-``Top level node``:
+RadarMap
+--------
+================================================================= =================================================================
+Node Name                                                         Attributes
+================================================================= =================================================================
+``RadarMapEvents``                                                None
+``RadarMapSettings``                                              None
+================================================================= =================================================================
 
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``UniqueUnit``   ``Name``       No
-``Node Type 2``  ``Attributes`` Yes
-``Node Type 3``  ``Attributes`` No
-``Node Type 5``  ``Attributes`` Yes
-===============  ============== =========
+|
 
-``Top level node variation 1``:
-
-===============  ============== =========
-Node Name        Attributes     Optional
-===============  ============== =========
-``Node Type 4``  ``Attributes`` No
-===============  ============== =========
+RadarMapEvents
+^^^^^^^^^^^^^^
+- Radar_Map_Event
+	Ref; *Description Here*
 
 
-``Top level node``
-------------------
-*Optional Description*: Having this top level node means that it is a top level node. No reason to add this if there are no variant top-level node types
+|
 
+RadarMapSettings
+^^^^^^^^^^^^^^^^
+- Color
+	Int, Int, Int, Int; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode``:
-	Type; Description
+- Land_Backdrop_Texture_Name
+	File; *Description Here*
 
-- ``Subnode 2``:
-	Type; Description
+- Land_FOW_Color
+	Int, Int, Int, Int; *Description Here*
 
-- ``Subnode 3``:
-	Type, Type, Type; Description
+- Land_Is_Guide_Rectangle
+	Bool Y/N; *Description Here*
 
-- ``Subnode 5``:
-	Type | Type | Type; Description
+- Passability_Color_Settings
+	Ref; *Description Here*
 
+- Space_Asteroid_Field_Border_Color
+	Int, Int, Int, Int; *Description Here*
 
-``Node 2``
-^^^^^^^^^^
-- ``Subnode 6``:
-	Type; Description
+- Space_Asteroid_Field_Color
+	Int, Int, Int, Int; *Description Here*
 
+- Space_Backdrop_Texture_Name
+	File; *Description Here*
 
-``Top level node variation 1``
-------------------------------
-*Description*: Having this top level node means that it is a different level node
+- Space_FOW_Color
+	Int, Int, Int, Int; *Description Here*
 
+- Space_Is_Guide_Rectangle
+	Bool Y/N; *Description Here*
 
-``Node 1``
-^^^^^^^^^^
-- ``Subnode 4``:
-	Type; Description
+- Use_Event_System
+	Bool Y/N; *Description Here*
 
 
 EaW-Godot Port Connection
