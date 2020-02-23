@@ -1,7 +1,9 @@
 # This file contains the non-Auto-Generated text for the Auto-XML Generator in the form of Python variables.
 # All Imports for the XML Scripts
-from os.path import join
-from typing import List, Dict
+from os import getcwd, mkdir
+from os.path import join, basename, dirname, exists
+from typing import List, Union, Set, Dict, TextIO, Iterable, Iterator
+from xml.etree import ElementTree as ET
 
 # Template file paths, from "/source/" directory
 TEMPLATE_TYPE: str = join("_templates", "xml", "xml_type_auto.rst")
