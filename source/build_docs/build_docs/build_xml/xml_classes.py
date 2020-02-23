@@ -1,6 +1,6 @@
 # Classes to help manage the data of an EaW XML File
-from typing import List, Union, Dict, Set
 from os import path
+from typing import List, Union, Dict, Set
 from xml.etree import ElementTree as ET
 
 # Constants
@@ -457,6 +457,7 @@ class RootNode(_NodeSubNodeHolder):
 		Returns true if RootNode hold subfiles
 		:return: Boolean, true if RootNode holds subfiles
 		"""
+		self._update_subfiles()
 		return bool(len(self.subfiles))
 
 	def get_subfiles(self) -> Set[str]:
@@ -464,15 +465,9 @@ class RootNode(_NodeSubNodeHolder):
 		Returns the subfiles of this node as a list of filepaths
 		:return: Subfiles list
 		"""
-		# Iterate over Nodes
-		for node in self.nodes:
-			for file in node.get_subfiles():
-				self.subfiles.add(path.join(self.xml_dir, file))
-		# Iterate over SubNodes
-		for subnode in self.subnodes:
-			for file in subnode.filenames:
-				self.subfiles.add(path.join(self.xml_dir, file))
+
 		# Return
+		self._update_subfiles()
 		return self.subfiles
 
 	def get_filename(self) -> str:
@@ -483,6 +478,20 @@ class RootNode(_NodeSubNodeHolder):
 		"""
 		return self.xml_filename
 
+	def _update_subfiles(self) -> None:
+		"""
+		Updates the subfiles attribute, automatically called from get_subfiles and has_subfiles functions.
+		"""
+		# Clear list of subfiles
+		self.subfiles.clear()
+		# Iterate over Nodes
+		for node in self.nodes:
+			for file in node.get_subfiles():
+				self.subfiles.add(path.join(self.xml_dir, file))
+		# Iterate over SubNodes
+		for subnode in self.subnodes:
+			for file in subnode.filenames:
+				self.subfiles.add(path.join(self.xml_dir, file))
 
 # XMLType Class
 class XMLType(object):
@@ -493,8 +502,10 @@ class XMLType(object):
 	# Attributes
 	name: str
 	root_nodes: List[RootNode]
-	node_names: List[str]
-	subnode_names: Dict[str, List[str]]
+	root_names: Set[str]
+	node_names: Set[str]
+	subnode_names: Dict[str, Set[str]]
+	has_subfile: bool
 
 	# Methods
 	def __init__(self, name: str) -> None:
@@ -504,9 +515,11 @@ class XMLType(object):
 		"""
 		# Set variables to blank values
 		self.name = name
+		self.has_subfile = False
 		self.root_nodes: List[RootNode] = []
-		self.node_names: List[str] = []
-		self.subnode_names: Dict[str, List[str]] = {}
+		self.root_names: Set[str] = set()
+		self.node_names: Set[str] = set()
+		self.subnode_names: Dict[str, Set[str]] = {}
 
 	def add_rootnode(self, xml_filepath: str) -> None:
 		"""
@@ -517,16 +530,29 @@ class XMLType(object):
 		root: RootNode = RootNode()
 		# Setup from file.
 		root.from_file(xml_filepath)
-		# Add the RootNode
+		# Add name to list, update subfiles if not already done
+		self.root_names.add(root.name)
+		if (not self.has_subfile) and root.has_subfile():
+			self.has_subfile = True
+		# Add the RootNod
 		self.root_nodes.append(root)
+		# Update
+		self.update()
 
 	def parse_subfiles(self) -> None:
 		"""
 		Parses through all current subfiles that this RootNode has, given from current RootNodes.
 		"""
+		# Exit if type has no subfiles
+
+		if not self.has_subfile:
+			return
 		# Variables
 		file: str
 		subfiles: Set[str] = set()
+
+		# Set has_subfile to false, allows parsing subfiles only as needed
+		self.has_subfile = False
 
 		# Iterate over RootNode children
 		for rootnode in self.root_nodes:
@@ -543,33 +569,30 @@ class XMLType(object):
 		# Update
 		self.update()
 
+		# Rerun if new subfiles were added
+		if self.has_subfile:
+			self.parse_subfiles()
+
 	def update(self) -> None:
 		"""
 		Updates attributes from current RootNodes. Does not parse subfiles.
 		"""
 		# Clear attributes that will be updates
 		self.node_names: List[str] = []
-		self.subnode_names: Dict[str, List[str]] = {}
+		self.subnode_names: Dict[str, Set[str]] = {}
 		# Iterate over RootNodes
 		name: str
 		s_name: str
 		for rootnode in self.root_nodes:
 			# Iterate over Nodes
 			for node in rootnode.nodes:
-				# Get and test name
-				name = node.name
-				if name not in self.node_names:
-					# Add if not added
-					self.node_names.append(name)
-					self.subnode_names[name] = []
-
+				self._node_update_process(node)
+			if len(rootnode.subnodes):
+				# Create Set in subnode_names for the RootNode's Subnodes
+				self.subnode_names[rootnode.name] = set()
 				# Iterate over SubNodes
-				for subnode in node.subnodes:
-					# Set and test name
-					s_name = subnode.name
-					if s_name not in self.subnode_names:
-						# Add if not present
-						self.subnode_names[name].append(s_name)
+				for subnode in rootnode.subnodes:
+					self.subnode_names[rootnode.name].add(subnode.name)
 
 	def _valid_rootnode_filename(self, filename: str) -> bool:
 		"""
@@ -586,3 +609,31 @@ class XMLType(object):
 
 		# Return True if no match found.
 		return True
+
+	def _node_update_process(self, node: Node) -> None:
+		"""
+		Runs update process with a node, this can call itself to parse nested nodes
+		:param node: The node to updates from
+		:return:
+		"""
+		# Get and test name
+		name = node.name
+		if name not in self.node_names:
+			# Add if not added
+			self.node_names.append(name)
+			# Modify attributes to say "Attribute - " in the front
+			attrs: List[str] = []
+			for attr in node.attributes:
+				attrs.append("Attribute - " + attr.title())
+			# Create set, use Node attributes as base
+			self.subnode_names[name] = set(attrs)
+
+		# Iterate over SubNodes
+		for subnode in node.subnodes:
+			# Set and test name
+			s_name = subnode.name
+			self.subnode_names[name].add(s_name)
+
+		# Iterate over nodes
+		for nested_node in node.nodes:
+			self._node_update_process(nested_node)

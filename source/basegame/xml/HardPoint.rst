@@ -8,7 +8,7 @@ HardPoint
 
 About
 =====
-Stores the individual parts of larger units. May or may not be targetable/destroyable. Most weapons in space are fired from hardpoints, with the notable exception of fighters and other small craft.
+Stores the individual parts of larger units. May or may not be targetable and destroyable. Most weapons in space are fired from hardpoints, with the notable exception of fighters and other small craft.
 
 
 Structure
