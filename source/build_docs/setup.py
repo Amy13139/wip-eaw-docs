@@ -5,5 +5,5 @@ setup(
    version='1.0',
    description='Generates doc files',
    author='luke13139',
-   packages=['build_docs'],
+   packages=['build_docs', 'build_docs.build_xml'],
 )
