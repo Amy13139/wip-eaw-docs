@@ -1,47 +1,161 @@
 # This script gets all of the elements from the EaW and FoC XML files and organizes them for documentation
-from os import getcwd
 
+from typing import TextIO
+
+# Includes os.path.join, typing.Dict
+from .inserts import *
+# Includes os.path, typing.List, typing.Union, typing.Dict, typing.Set, xml.etree.ElementTree as ET
 from .xml_classes import *
 
-# Keys are values that are considered booleans, values are suffixes for the type. Capitalization must be lowercase.
-VALID_BOOL: dict = {
-		"yes": "y/n",
-		"no": "y/n",
-		"true": "t/f",
-		"false": "t/f",
-}
-
-# Descriptions for subnodes/attributes. Attribute prefix is "attribute - ". Capitalization must be lowercase for keys.
-DESCRIPTORS: dict = {
-		"attribute - name": "The name of the node, can be referenced by other nodes",
-		"attribute - description": "An optional description for the node, only used to help anyone reading the XML.",
-		"text_id": "The in-game name of this unit, references a .DAT file to allow from translations",
-		"mass": "Varies between 0 and 1, usually very close to 1. Probably unused.",
-		"file": "A file to load, context of loading is based on the root node.",
-}
-
-# Default EaW and FoC XML Directories, used when the program is run
-DEFAULT_XML_DIR_EAW: str = path.join(getcwd(), "data", "XML")
-DEFAULT_XML_DIR_FOC: str = path.join(getcwd(), "data", "corruption", "XML")
-DEFAULT_OUTPUT_FILE: str = path.join(getcwd(), "basegame", "xml", "xml_structure.rst")
-
+# Path constants
+XML_STRUCTURE_FILENAME: str = "xml_structure.rst"
 # Tab character
 TAB: str = "\t"
 # Used at the end of the line to indicate it has tabbed children, must have a newline at the end to function properly
 TAB_INDICATOR: str = "\n"
 # Number of "=" signs used for the rows on the Sphinx table.
 NUM_TABLE_INDICATORS: int = 65
+# Create string to use for tables
+TABLE_SEP_STR = ("=" * NUM_TABLE_INDICATORS) + " " + ("=" * NUM_TABLE_INDICATORS) + "\n"
 
 
-def build_xml_files() -> None:
-	pass
+def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
+	"""
+	Takes a list of XMLTypes and uses them to build the XML Documentation
+	:param xml_dir_out: The output directory, should also be the XML Docs directory
+	:param xml_types: The list of XML Types to use for building the documentation
+	"""
+
+	def codify(in_str: str) -> str:
+		"""
+		Cushions a string with four "`" character, used to indicated code in a Sphinx rst file.
+		:param in_str: The string to cushion
+		:return: The cushioned string
+		"""
+		return "``{}``".format(in_str)
+
+	def write_line_padding(out_file: TextIO, line_num: int) -> None:
+		"""
+		Writes line_num blank lines
+		:param out_file: The file to write to
+		:param line_num: The number of blank lines to write
+		"""
+		for i in range(line_num):
+			out_file.write("\n")
+
+	def write_table_str(out_file: TextIO, item1: str, item2: str) -> None:
+		"""
+		Writes a string as part of a Sphinx rst table.
+		:param out_file: The file to write to
+		:param item1: The first item in the table
+		:param item2: The second item in the table
+		"""
+		table_string = item1.ljust(NUM_TABLE_INDICATORS)
+		table_string += " " + item2.ljust(NUM_TABLE_INDICATORS)
+		out_file.write(table_string + "\n")
+
+	def write_table_start(out_file: TextIO, item1="Node Name", item2="Attributes") -> None:
+		"""
+		Starts a table in Sphinx rst format.
+		:param out_file: The file to write to
+		:param item1: The first header in the table
+		:param item2: The second header in the table
+		"""
+		out_file.write(TABLE_SEP_STR)
+		write_table_str(out_file, item1, item2)
+		out_file.write(TABLE_SEP_STR)
+
+	def write_table_end(out_file: TextIO, line_num: int) -> None:
+		"""
+		Ends a table in Sphinx rst format.
+		:param out_file: The file to write to
+		:param line_num: The number of blank lines to write, must be >=1
+		"""
+		structure_file.write(TABLE_SEP_STR)
+		write_line_padding(structure_file, line_num)
+
+	def write_header(out_file: TextIO, header: str, sep: str) -> None:
+		"""
+		Writes a header in Sphinx rst format.
+		:param out_file: The file to write to
+		:param header: The text of the header
+		:param sep: The separator to use for creating the header
+		"""
+		out_file.write(header + "\n")
+		out_file.write(str(sep * len(header)) + "\n")
+		write_line_padding(structure_file, 1)
+
+	def write_list_subnode(out_file: TextIO, subnode_name: str, subnode_type: str) -> None:
+		"""
+		Writes a subnode in the format for the xml_structure.rst file
+		:param out_file: The file to write to
+		:param subnode_name: The subnode name to write to the list
+		:param subnode_type: The subnode type to write to the list
+		"""
+		# Get description
+		description = get_subnode_description(subnode_name)
+
+		# Write
+		out_file.write("- {}{}".format(subnode_name, TAB_INDICATOR))
+		out_file.write(TAB + subnode_type + "; {}\n".format(description))
+		out_file.write("\n")
+
+	def do_node_iter(out_file: TextIO, curr_node: Node):
+		"""
+		Writes a node's information in the format for the xml_structure.rst file
+		:param out_file: The file to write to
+		:param curr_node: The node to use for the writting.
+		:return:
+		"""
+
+	# Create File
+	xml_strucuture_path = join(xml_dir_out, XML_STRUCTURE_FILENAME)
+	if not path.exists(xml_strucuture_path):
+		open(xml_strucuture_path, "x")
+
+	# Build Structure XML
+	with open(xml_strucuture_path, "wt", newline="\n") as structure_file:
+		# Write title
+		write_header(structure_file, "All XML Structures - Autogenerated File", "*")
+
+		# Iterate over XMLTypes
+		for xml_type in sorted(xml_types, key=lambda x: x.name):
+			# Write XMLType name as header
+			write_header(structure_file, xml_type.name, "=")
+			write_table_start(structure_file, "Root Node Name", "")
+			for rootnode in xml_type.get_rootnodes():
+				write_table_str(structure_file, rootnode.name, "")
+			write_table_end(structure_file, 1)
+
+			# Iterate over RootNodes
+			for rootnode in xml_type.get_rootnodes():
+				# Write RootNode name as header
+				write_header(structure_file, rootnode.name, "-")
+
+				# Write SubNodes table for RootNode's Direct Subnodes
+				if rootnode.has_subnodes():
+					write_table_start(structure_file, "SubNode Name", "Description")
+					# Iterate over direct subnodes
+					subnode: SubNode
+					for subnode in rootnode.get_subnodes():
+						write_table_str(structure_file, subnode.name, subnode.get_typestring())
+					# Close the table
+					write_table_end(structure_file, 1)
+
+				# Write Nodes table for RootNode's Nodes
+				if rootnode.has_nodes():
+					write_table_start(structure_file, "Node Name", "Description")
+					# Iterate over nodes
+					for node in rootnode.get_nodes():
+						write_table_str(structure_file, codify(node.name), "")
+					# Close the table
+					write_table_end(structure_file, 1)
+				write_line_padding(structure_file, 1)
+			write_line_padding(structure_file, 2)
 
 
-def build(
-		xml_dir_eaw: str = DEFAULT_XML_DIR_EAW,
-		xml_dir_foc: str = DEFAULT_XML_DIR_FOC,
-		xml_dir_out: str = DEFAULT_OUTPUT_FILE,
-) -> None:
+
+def build(xml_dir_eaw: str, xml_dir_foc: str, xml_dir_out: str) -> None:
 	"""
 	Function to iterate over EaW and FoC XML Files, given both of their XML directories.
 
@@ -51,109 +165,6 @@ def build(
 
 	:returns: None, writes to an output file.
 	"""
-
-	def build_table_output() -> None:
-		def get_table_str(node_name, attributes) -> str:
-			table_string = node_name.ljust(NUM_TABLE_INDICATORS)
-			table_string += " " + attributes.ljust(NUM_TABLE_INDICATORS)
-			return table_string + "\n"
-
-		def codify(string) -> str:
-			return "``{}``".format(string)
-
-		def start_table(out_file) -> None:
-			out_file.write(table_sep_str)
-			out_file.write(get_table_str("Node Name", "Attributes"))
-			out_file.write(table_sep_str)
-
-		def write_header(out_file, header, sep) -> None:
-			out_file.write(header + "\n")
-			out_file.write(str(sep * len(header)) + "\n")
-
-		def write_footer(out_file, lines) -> None:
-			out_file.write("\n")
-			for line in range(lines):
-				out_file.write("| \n")
-			out_file.write("\n")
-
-		def write_list_subnode(out_file, list_subnode, list_type) -> None:
-			# Copy subnode
-			print_subnode = list_subnode
-
-			# Setup Operations
-			description = "*Description Here*"
-			if print_subnode.startswith("AAA_"):
-				print_subnode = print_subnode.replace("AAA_", "")
-			if print_subnode.lower() in DESCRIPTORS:
-				description = DESCRIPTORS[print_subnode.lower()]
-
-			# Write
-			out_file.write("- {}{}".format(print_subnode, TAB_INDICATOR))
-			out_file.write(TAB + list_type + "; {}\n".format(description))
-			out_file.write("\n")
-
-		# Create string to use for tables
-		table_sep_str = ("=" * NUM_TABLE_INDICATORS) + " " + ("=" * NUM_TABLE_INDICATORS) + "\n"
-
-		# Create File
-		if not path.exists(output_file):
-			open(output_file, "x")
-
-		# Build Table Output XML
-		with open(output_file, "wt", newline="\n") as structure_file:
-			# Write title
-			write_header(structure_file, "All XML Structures - Autogenerated File", "=")
-
-			# Write top-level node table
-			for top_level_node in sorted(xml_tree):
-				subnode_only = False
-				# Write top level node as header
-				write_header(structure_file, top_level_node, "-")
-				# Check if only subnodes
-				for node in xml_tree[top_level_node]:
-					if type(xml_tree[top_level_node][node]) is not dict:
-						if not subnode_only:
-							subnode_only = True
-
-				# Write attribute table if not subnode only, as subnodes cannot have attributes
-				if not subnode_only:
-					# Start Table
-					start_table(structure_file)
-
-					# Write Nodes and attributes in alphabetical order
-					for node in sorted(xml_tree[top_level_node]):
-						attrib_string = ""
-						# Get Attributes
-						subnode: str
-						for subnode in sorted(xml_tree[top_level_node][node]):
-							# Attributes placed first with AAA_ Prefix
-							if subnode.startswith("AAA_"):
-								attrib_string += codify(subnode.replace("AAA_Attribute - ", "")) + ", "
-
-						# Write string to table, codify values
-						if attrib_string == "":
-							attrib_string = "None"
-						structure_file.write(get_table_str(codify(node), attrib_string.strip(", ")))
-
-					# End table, write blank line(s)
-					structure_file.write(table_sep_str)
-					write_footer(structure_file, 1)
-
-					# Write top node sections
-					# Iterate over nodes
-					for node in sorted(xml_tree[top_level_node]):
-						write_header(structure_file, node, "^")
-						# Begin subnodes
-						for subnode in sorted(xml_tree[top_level_node][node]):
-							write_list_subnode(structure_file, subnode, xml_tree[top_level_node][node][subnode])
-						write_footer(structure_file, 1)
-
-				# Write top node sections immediately if subnode only
-				else:
-					# Iterate over subnodes
-					for subnode in sorted(xml_tree[top_level_node]):
-						write_list_subnode(structure_file, subnode, xml_tree[top_level_node][subnode])
-				write_footer(structure_file, 2)
 
 	# Setup output file
 	output_file: str = path.join(xml_dir_out, "xml_structure.rst")
@@ -206,26 +217,10 @@ def build(
 	# Cleanup, delete some variables
 	del data_file, current_type, file
 
-	# Define attribute sorting function
-	def attrib_sort(x):
-		"""
-		Sorts attributes first, then eveything else. Uses as key for sorted() function
-		:param x: The attribute to input
-		:return: Either x or 0 + x
-		"""
-		if type(x) is str and x.startswith("Attribute - "):
-			return "0" + x
-		else:
-			return x
-
 	# Parse files
 	for xtype in xml_type_list:
 		xtype.parse_subfiles()
 
+	# Build XML Docs
+	build_docs(xml_dir_out, xml_type_list)
 
-	# Build output as table
-	# build_table_output()
-
-
-if __name__ == "__main__":
-	build()

@@ -27,6 +27,7 @@ VALID_FILE_EXT: list = [
 		".wav",  # Audio
 		".mp3",  # Audio
 ]
+# Keys are values that are considered booleans, values are suffixes for the type. Capitalization must be lowercase.
 VALID_BOOL: dict = {
 		"yes": "y/n",
 		"no": "y/n",
@@ -60,14 +61,14 @@ class SubNode(object):
 
 		# Set data as list
 		data: List[Union[bool, float, int, str, type(None)]]
-		data = self.split_data(xml_subnode.text)
+		data = self._split_data(xml_subnode.text)
 
 		# Set types in data_type list
 		self.data_type = []
 		for value in data:
 			# Get type string, then add type in data_type list.
 			self.data_type.append(
-				_TYPE_DICT[self.get_type(value)]
+				_TYPE_DICT[self._get_type(value)]
 			)
 
 	def compare(self, subnode) -> bool:
@@ -80,12 +81,107 @@ class SubNode(object):
 		if subnode.name != self.name:
 			return True
 		# Alter self if incorrect type
-		self.name = self.get_true_type(self.name, subnode.name)
+		self.name = self._get_true_type(self.name, subnode.name)
 		# Add filenames
 		if subnode.name == "File":
 			self.filenames.update(subnode.filenames)
 
-	def get_type(self, value: str) -> str:
+	def get_typestring(self) -> str:
+		"""
+		Gets the type of this subnode as a string
+		:return: A type string
+		"""
+		return_str: str = ""
+		item: type
+		for item in self.data_type:
+			return_str += item.__name__
+		return return_str
+
+	@staticmethod
+	def _split_data(value: str) -> List[str]:
+		"""
+		Returns the string split into a list of values, if applicable
+		:param value: String to split into a list
+		:return: A list of string, created from the value
+		"""
+		split_data: List[str]
+		separator: str
+		if value is None:
+			return []
+
+		# Get separator, or return a single-element list
+		if "," in value:
+			separator = ","
+		elif "|" in value:
+			separator = "|"
+		else:
+			return [value.strip()]
+
+		# Split, then strip whitespace
+		split_data = value.split(separator)
+		for i in range(len(split_data)):
+			split_data[i] = split_data[i].strip()
+
+		# Return
+		return split_data
+
+	@staticmethod
+	def _get_true_type(o_type, n_type) -> str:
+		"""
+		Compares two types, returns the correct type of the node
+		:param o_type: Original type
+		:param n_type: New type
+		:return: A Type string
+		"""
+		# Return original if both are equal
+		if o_type == n_type:
+			return o_type
+
+		# Return if None
+		if o_type == "None":
+			return n_type
+
+		# Return if None
+		if n_type == "None":
+			return o_type
+
+		# Override to Ref if it exists
+		if n_type == "Ref" or o_type == "Ref":
+			return "Ref"
+
+		# Interchangeable Float/Int check, use float
+		if "Int" in o_type or "Int" in n_type:
+			if "Float" in o_type or "Float" in n_type:
+				return o_type.replace("Int", "Float")
+
+		# Skip if main type ends with ellipsis, assume different length lists
+		if o_type.endswith("..."):
+			return o_type
+
+		# Skip if sub type ends with ellipsis, assume different length lists
+		if n_type.endswith("..."):
+			return n_type
+
+		# Check if types are different length lists
+		if o_type.startswith(n_type) or n_type.startswith(main_type):
+			# If they are different lengths, add ellipse to type
+			if "," in o_type or "," in n_type:
+				actual_type = o_type.split(",")[0] + ", "
+			if "|" in o_type or "|" in n_type:
+				actual_type = o_type.split("|")[0] + " | "
+			return str(actual_type * 2) + "..."
+
+		# Return main type and warn about type mismatch if no conditions met
+		print(
+			"Warning: Mismatched types '{}' and '{}' for '{}' Node".format(
+				main_type,
+				n_type,
+				node_key,
+			)
+		)
+		return o_type
+
+	def _get_type(self, value: str) -> str:
 		"""
 		Gets the type of an EaW/FoC XML Value, see Docs for XML Data Type Reference
 		Types: None, Bool, Dir, File, Float, Floatf, Int, Ref
@@ -143,90 +239,6 @@ class SubNode(object):
 
 		# Give up, assume reference
 		return "Ref"
-
-	@staticmethod
-	def split_data(value: str) -> List[str]:
-		"""
-		Returns the string split into a list of values, if applicable
-		:param value: String to split into a list
-		:return: A list of string, created from the value
-		"""
-		split_data: List[str]
-		separator: str
-		if value is None:
-			return []
-
-		# Get separator, or return a single-element list
-		if "," in value:
-			separator = ","
-		elif "|" in value:
-			separator = "|"
-		else:
-			return [value.strip()]
-
-		# Split, then strip whitespace
-		split_data = value.split(separator)
-		for i in range(len(split_data)):
-			split_data[i] = split_data[i].strip()
-
-		# Return
-		return split_data
-
-	@staticmethod
-	def get_true_type(o_type, n_type) -> str:
-		"""
-		Compares two types, returns the correct type of the node
-		:param o_type: Original type
-		:param n_type: New type
-		:return: A Type string
-		"""
-		# Return original if both are equal
-		if o_type == n_type:
-			return o_type
-
-		# Return if None
-		if o_type == "None":
-			return n_type
-
-		# Return if None
-		if n_type == "None":
-			return o_type
-
-		# Override to Ref if it exists
-		if n_type == "Ref" or o_type == "Ref":
-			return "Ref"
-
-		# Interchangeable Float/Int check, use float
-		if "Int" in o_type or "Int" in n_type:
-			if "Float" in o_type or "Float" in n_type:
-				return o_type.replace("Int", "Float")
-
-		# Skip if main type ends with ellipsis, assume different length lists
-		if o_type.endswith("..."):
-			return o_type
-
-		# Skip if sub type ends with ellipsis, assume different length lists
-		if n_type.endswith("..."):
-			return n_type
-
-		# Check if types are different length lists
-		if o_type.startswith(n_type) or n_type.startswith(main_type):
-			# If they are different lengths, add ellipse to type
-			if "," in o_type or "," in n_type:
-				actual_type = o_type.split(",")[0] + ", "
-			if "|" in o_type or "|" in n_type:
-				actual_type = o_type.split("|")[0] + " | "
-			return str(actual_type * 2) + "..."
-
-		# Return main type and warn about type mismatch if no conditions met
-		print(
-			"Warning: Mismatched types '{}' and '{}' for '{}' Node".format(
-				main_type,
-				n_type,
-				node_key,
-			)
-		)
-		return o_type
 
 
 # Private base class with a few shared functions
@@ -303,6 +315,35 @@ class _NodeSubNodeHolder(object):
 			names.append(subnode.name)
 		# Return Names
 		return names
+
+	def get_nodes(self) -> list:
+		"""
+		Returns the Nodes held by the parent
+		:rtype: List[Node]
+		:return: A List of Nodes
+		"""
+		return sorted(self.nodes, key=lambda x: x.name)
+
+	def get_subnodes(self) -> List[SubNode]:
+		"""
+		Returns the SunNodes held by the parent
+		:return: A List of SunNodes
+		"""
+		return sorted(self.subnodes, key=lambda x: x.name)
+
+	def has_nodes(self) -> bool:
+		"""
+		Checks for Nodes
+		:return: True if any Node is found, False otherwise
+		"""
+		return bool(len(self.nodes))
+
+	def has_subnodes(self) -> bool:
+		"""
+		Checks for SubNodes
+		:return: True if any SubNode is found, False otherwise
+		"""
+		return bool(len(self.subnodes))
 
 
 # Node Class
@@ -493,6 +534,7 @@ class RootNode(_NodeSubNodeHolder):
 			for file in subnode.filenames:
 				self.subfiles.add(path.join(self.xml_dir, file))
 
+
 # XMLType Class
 class XMLType(object):
 	"""
@@ -572,6 +614,13 @@ class XMLType(object):
 		# Rerun if new subfiles were added
 		if self.has_subfile:
 			self.parse_subfiles()
+
+	def get_rootnodes(self) -> List[RootNode]:
+		"""
+		Gets the list of child RootNodes
+		:return: A list of RootNodes
+		"""
+		return sorted(self.root_nodes, key=lambda x: x.name)
 
 	def update(self) -> None:
 		"""

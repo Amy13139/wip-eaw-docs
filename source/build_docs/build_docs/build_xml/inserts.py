@@ -3088,3 +3088,70 @@ DESCRIPTION_SUBNODE: Dict[str, str] = {
 #############################
 # End Descriptions
 #############################
+
+
+# Utility functions
+def attrib_key(x):
+	"""
+	Sorts attributes first, then eveything else. Used as key for sorted() function.
+	:param x: The attribute to input
+	:return: Either x or ("0000" + x)
+	"""
+	if type(x) is str and x.startswith("Attribute - "):
+		return "0000" + x
+	else:
+		return x
+
+
+def get_type_description(type_name: str) -> str:
+	"""
+	Gets the description for an XMLType.
+	:param type_name: The name of the XMLType to get the description of.
+	:return: A string to use as a description
+	"""
+	return DESCRIPTION_TYPE.get(type_name, DESCRIPTION_TYPE["default"])
+
+
+def get_root_description(root_name: str) -> str:
+	"""
+	Gets the description for a RootNode.
+	:param root_name: The name of the RootNode to get the description of.
+	:return: A string to use as a description
+	"""
+	return DESCRIPTION_ROOT.get(root_name, DESCRIPTION_ROOT["default"])
+
+
+def get_node_description(node_name: str) -> str:
+	"""
+	Gets the description for a Node.
+	:param node_name: The name of the Node to get the description of.
+	:return: A string to use as a description
+	"""
+	return DESCRIPTION_NODE.get(node_name, DESCRIPTION_NODE["default"])
+
+
+def get_subnode_description(subnode_name: str) -> str:
+	"""
+	Gets the description for a SubNode.
+	:param subnode_name: The name of the SubNode to get the description of.
+	:return: A string to use as a description
+	"""
+	return DESCRIPTION_SUBNODE.get(subnode_name, DESCRIPTION_SUBNODE["default"])
+
+
+def get_type_context(type_name: str) -> str:
+	"""
+	Gets the description for an XMLType.
+	:param type_name: The name of the Type to get the description of.
+	:return: A string to use as a description
+	"""
+	return CONTEXT_TYPE.get(type_name, CONTEXT_TYPE["default"])
+
+
+def get_root_context(root_name: str) -> str:
+	"""
+	Gets the description for a RootNode.
+	:param root_name: The name of the RootNode to get the description of.
+	:return: A string to use as a description
+	"""
+	return CONTEXT_ROOT.get(root_name, CONTEXT_ROOT["default"])
