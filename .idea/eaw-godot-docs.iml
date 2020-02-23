@@ -11,4 +11,10 @@
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="C:\Users\luket\Desktop\EaW Port\eaw-godot-docs\source\requirements.txt" />
   </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="pytest" />
+  </component>
 </module>

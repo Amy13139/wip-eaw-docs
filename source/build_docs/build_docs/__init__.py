@@ -1,23 +1,39 @@
-from . import xml_build
+from . import build_xml
 from os import path, getcwd
+
 # Doc Generation Script
 # Variables
-eaw_data_dir = path.join(getcwd(), "data")
-foc_data_dir = path.join(eaw_data_dir, "corruption")
-basegame_data_dir = path.join(getcwd(), "basegame")
-xml_data_dir = path.join(basegame_data_dir, "xml")
+# Basic Paths
+SOURCE_DIR: str = getcwd()
+EAW_DATA_DIR: str = path.join(SOURCE_DIR, "data")
+FOC_DATA_DIR: str = path.join(EAW_DATA_DIR, "corruption")
+BASEGAME_DIR: str = path.join(SOURCE_DIR, "basegame")
+# XML Paths
+EAW_XML_DIR: str = path.join(EAW_DATA_DIR, "XML")
+FOC_XML_DIR: str = path.join(FOC_DATA_DIR, "XML")
+BASEGAME_XML_DIR: str = path.join(BASEGAME_DIR, "xml")
 
 
 # Build docs
-def build():
-	build_xml_structure()
+def build() -> None:
+	"""
+	Build the documentation by running the build() functions of submodules
+	:return: None
+	"""
+	do_xml()
 
 
-def build_xml_structure():
+def do_xml() -> None:
+	"""
+	Runs the build() function of the XML Builder. Prints for start and end
+	:return:
+	"""
 	print("Building XML Structure...")
-	xml_build.build_xml_structure(
-			path.join(eaw_data_dir, "XML"),
-			path.join(foc_data_dir, "XML"),
-			path.join(xml_data_dir, "xml_structure.rst")
+
+	build_xml.xml_builder.build(
+			EAW_XML_DIR,
+			FOC_XML_DIR,
+			BASEGAME_XML_DIR,
 	)
+
 	print("Done Building XML Structure")
