@@ -4,6 +4,30 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/source" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/BinkMovie" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/Campaign" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/CommandBarComponent" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/DifficultyAdjustment" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/Draw3DTextCrawl" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/DynamicTrackFX" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/Faction" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/GameConstants" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/GameObjectType" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/HardPoint" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/HeroClashType" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/LightSource" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/LightningTypeManager" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/MusicEvent" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/RadarMap" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/SFXEvent" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/SpeechEvent" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/TacticalCameraConstants" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/TargetingPrioritySet" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/TerrainDecalFX" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/TradeRoute" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/TradeRouteLines" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/WeatherAudioManager" />
+      <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/WeatherPattern" />
       <excludeFolder url="file://$MODULE_DIR$/source/basegame_bakup" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
