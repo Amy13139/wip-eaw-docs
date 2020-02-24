@@ -1,11 +1,18 @@
-.. Contents master file
+.. Index master file
 
 
 .. include:: readme.rst
 
+.. toctree::
+	:titlesonly:
+	:caption: About
+	:hidden:
+
+	readme
 
 .. toctree::
 	:titlesonly:
+	:caption: EaW-Godot Port Documentation
 	:hidden:
 	:glob:
 
@@ -14,14 +21,9 @@
 
 .. toctree::
 	:titlesonly:
+	:caption: EaW/FoC Documentation
 	:hidden:
 	:glob:
 
 	basegame/main_*
 
-
-Indices and Tables
-==================
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
