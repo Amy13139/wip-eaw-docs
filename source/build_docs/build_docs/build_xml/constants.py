@@ -63,19 +63,20 @@ TAB_INDICATOR: str = "\n"
 # Structure (includes given Node and SubNode descriptions)
 # EaW-Godot Context (Non-Auto)
 
+# Default if field not in dictionary or is empty.
+FALLBACK_STR: str = "Not yet documented, but you help document it through GitHub!"
+
 #############################
 # Start About Sections
 #############################
 # Sections in the form of: RootNodeName/XmlTypeName: """*Insert About Text Here*""",
-# Default for all descriptions
-DEFAULT_DESCRIPTION: str = "No description currently; please feel free to give it one through GitHub!"
 
 DESCRIPTION_TYPE: Dict[str, str] = {
 	# XML Type Descriptions (About Section)
 
 	"GameObjectType":
 		"""
-	*If you want to find something that isn"t in the other XML types, it"s here... It"s all here... -luke13139*
+	*"If you want to find something that isn"t in the other XML types, it"s here... It"s all here..." -luke13139*
 
 The GameObjectType stores information related to anything the game considers and "object". This includes units, props, 
 projectiles, particles, and heroes, to name a few. This XML Type accounts for more than any other XML type, and holds
@@ -85,7 +86,7 @@ Nodes/SubNodes used in a RootNode will appear under its documentation.
 
 	"HeroClashType":
 		"""
-	*Probably just something about Vader HAND-ling Luke if they get into a duel. -luke13139*
+	*"Probably just something about Vader HAND-ling Luke if they get into a duel. -luke13139"*
 
 Unknown, but it may contain information related to hero-on-hero battles, such as what animations to use for
 lightsaber battles
@@ -96,21 +97,21 @@ lightsaber battles
 Contains events that play sound effects. These events contain the file to play and related audio settings.
 		""",
 
-	# "TerrainDecalFX":
-	# 	"""
-	# 	""",
+	"TerrainDecalFX":
+		"""
+		""",
 
 	"LightningTypeManager":
 		"""
-	*Palpatine may just go with plaid lightning to mix up his style, ya"know? -luke13139*
+	*"Palpatine may just go with plaid lightning to mix up his style, ya'know? -luke13139"*
 	
 Unknown, but it may contain information related to the different lightning effects in the game, which include those from
 abilities (such as Palpatine"s Force Lightning), weather, and ionized nebulae.
 		""",
 
-	# "DynamicTrackFX":
-	# 	"""
-	# 	""",
+	"DynamicTrackFX":
+		"""
+		""",
 
 	"MusicEvent":
 		"""
@@ -120,7 +121,7 @@ Contains events that play music/trigger music changes. They may loop, and only 1
 
 	"SpeechEvent":
 		"""
-	*Not sound effects, all sound effects are SFXEvents. These are SpeechEvents. Very different. -luke13139*
+	*"Not sound effects, all sound effects are SFXEvents. These are SpeechEvents. Very different." -luke13139*
 	
 Similar to SFXEvents, but only contains voice recordings.
 		""",
@@ -137,21 +138,21 @@ Stores data for the buttons on the command bar.
 
 	"TradeRoute":
 		"""
-	*Does not include lines. -luke13139*
+	*"Does not include lines. -luke13139"*
 	
 Unknown, but may contain information related to the planet-to-planet hyperlane connections on the Galactic Conquest Map
 		""",
 
 	"TradeRouteLines":
 		"""
-	*Probably doesn"t have trade routes, but it probably does have lines! -luke13139*
+	*"Probably doesn"t have trade routes, but it probably does have lines!" -luke13139*
 	
 Unknown, but may contain information related to the lines used to show hyperlanes on the Galactic Conquest Map.
 		""",
 
 	"RadarMap":
 		"""
-	*Why they needed a dedicated XML type for this is beyond mortal comprehension. -luke13139*
+	*"Why they needed a dedicated XML type for this is beyond mortal comprehension." -luke13139*
 
 Contains some colors and textures to use for displays on the minimap. This includes the visual indicators for unit 
 deaths, issued commands, and pings.
@@ -159,14 +160,16 @@ deaths, issued commands, and pings.
 
 	"Draw3DTextCrawl":
 		"""
-	*Text?!?! Crawling?!?! -luke13139*
+	*"Text?!?! Crawling?!?!" -luke13139*
 
 Unknown, but may contain information related to the in-game version of the iconic Star Wars text crawl introduction.
 		""",
 
 	"WeatherPattern":
 		"""
-	*Bringing out the inner meteorologist in imperial officers, rebel kamikazes, and wanted mercenaries. -luke13139*
+	*"Bringing out the inner meteorologist in imperial officers, rebel kamikazes, and wanted mercenaries." -luke13139*
+
+Unknown, but may contain information related to the weather on ground maps.
 		""",
 
 	"HardPoint":
@@ -202,7 +205,7 @@ Base FoC Factions (Excluding EaW Factions):
 
 	"TacticalCameraConstants":
 		"""
-	*Why? Shouldn"t this have been under GameConstants or just about anywhere else? Why?!?! -luke13139*
+	*"Why? Shouldn't this have been under GameConstants or just about anywhere else? Why?!?!" -luke13139*
 
 Unknown, but it may contain information related to the movements of the normal camera view, cinematic camera view, 
 and/or BattleCam view.
@@ -225,12 +228,16 @@ Targeting priorities for units, used for controlling auto-targeting.
 
 	"DifficultyAdjustment":
 		"""
-	*Answers the age-old question of how hard "Hard" is. -luke13139*
+	*"Answers the age-old question of how hard "Hard" is." -luke13139*
+	
+Contains the modifiers to apply to the game at different difficulty levels.
 		""",
 
 	"WeatherAudioManager":
 		"""
-	*Combine with LightningTypeManager for a realistic thunderstorm! A lightning storm... in... space? -luke13139*
+	*"Combine with LightningTypeManager for a realistic thunderstorm! A lightning storm... in... space?" -luke13139*
+	
+Contains the sound events that are specific to a type of weather, such as ambient and occasional noises.
 		""",
 }
 
@@ -440,8 +447,6 @@ DESCRIPTION_ROOT: Dict[str, str] = {
 # Start Contexts
 #############################
 # Sections in the form of: RootNodeName/XmlTypeName: "*Insert Context Here*",
-# Default for all contexts
-DEFAULT_CONTEXT: str = "No context currently; this may not be used by the EaW-Godot Port yet."
 
 # TODO: Add contexts
 CONTEXT_TYPE: Dict[str, str] = {
@@ -449,7 +454,7 @@ CONTEXT_TYPE: Dict[str, str] = {
 
 	"GameObjectType":
 		"""
-	*If you want to find something that isn"t in the other XML types, it"s here... It"s all here... -luke13139*
+	*"If you want to find something that isn"t in the other XML types, it"s here... It"s all here..." -luke13139*
 
 The GameObjectType stores information related to anything the game considers and "object". This includes units, props, 
 projectiles, particles, and heroes, to name a few. This XML Type accounts for more than any other XML type, and holds
@@ -459,7 +464,7 @@ Nodes/SubNodes used in a RootNode will appear under its documentation.
 
 	"HeroClashType":
 		"""
-	*Probably just something about Vader HAND-ling Luke if they get into a duel. -luke13139*
+	*"Probably just something about Vader HAND-ling Luke if they get into a duel." -luke13139*
 
 Unknown, but it may contain information related to hero-on-hero battles, such as what animations to use for
 lightsaber battles
@@ -470,9 +475,9 @@ lightsaber battles
 Contains events that play sound effects. These events contain the file to play and related audio settings.
 		""",
 
-	# "TerrainDecalFX":
-	# 	"""
-	# 	""",
+	"TerrainDecalFX":
+		"""
+		""",
 
 	"LightningTypeManager":
 		"""
@@ -1036,10 +1041,10 @@ DESCRIPTION_SUBNODE: Dict[str, str] = {
 	# SubNode Descriptions
 
 	# Identically Named Subnodes are in this section, all other usages deleted
-	"Attribute - Name": "",
-	"Alternate_Icon_Name": "",
-	"Damage_Amount": "",
-	"Damage_Multiplier": "",
+	"Attribute - Name": "The name used by a the element, can be used to reference this elements.",
+	"Alternate_Icon_Name": "Name for an alternative icon to use. It is unknown when it is used, currently.",
+	"Damage_Amount": "The quantity of damage to deal. Does not include multipliers and resistances.",
+	"Damage_Multiplier": "The quantity to multiply the Damage_Amount by,",
 	"Damage_Percentage": "",
 	"Damage_Type": "",
 	"File": "",
@@ -1900,9 +1905,10 @@ DESCRIPTION_SUBNODE: Dict[str, str] = {
 	# MusicEvent SubNodes
 	"Fade_In_Seconds": "",
 	"Fade_Out_Previous_Seconds": "",
-	"Loop": "",
+	"Loop": "If true, the music started by this event will play on a loop",
 
 	# SpeechEvent SubNodes
+	# N/A
 
 	# GameConstants SubNodes
 	"AITechLevelProductionTimeWeight": "",
@@ -2910,12 +2916,12 @@ def attrib_key(x):
 	"""
 	Sorts attributes first, then eveything else. Used as key for sorted() function when sorting SubNodes/Attributes.
 	:param x: The attribute to input
-	:return: Either x or ("0000" + x)
+	:return: Either x.lower() or ("0000" + x.lower())
 	"""
 	if type(x) is str and x.startswith("Attribute - "):
-		return "0000" + x
+		return "0000" + x.lower()
 	else:
-		return x
+		return x.lower()
 
 
 def get_type_template() -> List[str]:
@@ -2936,16 +2942,26 @@ def get_root_template() -> List[str]:
 		return template_file.readlines()
 
 
+def _get_from(const_dict, key) -> str:
+	"""
+	Private function to get a key from one of the dictionaries in the constants.py file.
+	:param const_dict: The dictionary to get the value from
+	:param key: The key to use to get the value
+	:return: The value of the dictionary, a string.
+	"""
+	description = const_dict.get(key, FALLBACK_STR).strip()
+	if not description:
+		description = FALLBACK_STR
+	return description
+
+
 def get_type_description(type_name: str) -> str:
 	"""
 	Gets the description for an XMLType.
 	:param type_name: The name of the XMLType to get the description of.
 	:return: A string to use as a description
 	"""
-	description = DESCRIPTION_TYPE.get(type_name, DEFAULT_DESCRIPTION)
-	if not description:
-		description = DEFAULT_DESCRIPTION
-	return description
+	return _get_from(DESCRIPTION_TYPE, type_name)
 
 
 def get_root_description(root_name: str) -> str:
@@ -2954,10 +2970,7 @@ def get_root_description(root_name: str) -> str:
 	:param root_name: The name of the RootNode to get the description of.
 	:return: A string to use as a description
 	"""
-	description = DESCRIPTION_ROOT.get(root_name, DEFAULT_DESCRIPTION)
-	if not description:
-		description = DEFAULT_DESCRIPTION
-	return description
+	return _get_from(DESCRIPTION_ROOT, root_name)
 
 
 def get_node_description(node_name: str) -> str:
@@ -2966,10 +2979,7 @@ def get_node_description(node_name: str) -> str:
 	:param node_name: The name of the Node to get the description of.
 	:return: A string to use as a description
 	"""
-	description = DESCRIPTION_NODE.get(node_name, DEFAULT_DESCRIPTION)
-	if not description:
-		description = DEFAULT_DESCRIPTION
-	return description
+	return _get_from(DESCRIPTION_NODE, node_name)
 
 
 def get_subnode_description(subnode_name: str) -> str:
@@ -2978,10 +2988,7 @@ def get_subnode_description(subnode_name: str) -> str:
 	:param subnode_name: The name of the SubNode to get the description of.
 	:return: A string to use as a description
 	"""
-	description = DESCRIPTION_SUBNODE.get(subnode_name, DEFAULT_DESCRIPTION)
-	if not description:
-		description = DEFAULT_DESCRIPTION
-	return description
+	return _get_from(DESCRIPTION_SUBNODE, subnode_name)
 
 
 # TODO: Change to use dictionary instead of default when completed
@@ -2990,13 +2997,9 @@ def get_type_context(type_name: str) -> str:
 	"""
 	Gets the description for an XMLType.
 	:param type_name: The name of the Type to get the description of.
-	:return: A string to use as a description
+	:return: A string to use as for the type's context section
 	"""
-	# description = CONTEXT_TYPE.get(type_name, DEFAULT_CONTEXT)
-	# if not description:
-	# 	description = DEFAULT_CONTEXT
-	# return description
-	return DEFAULT_CONTEXT
+	return FALLBACK_STR
 
 
 # TODO: Change to use dictionary instead of default when completed
@@ -3005,10 +3008,10 @@ def get_root_context(root_name: str) -> str:
 	"""
 	Gets the description for a RootNode.
 	:param root_name: The name of the RootNode to get the description of.
-	:return: A string to use as a description
+	:return: A string to use for the root's context section
 	"""
 	# description = CONTEXT_ROOT.get(root_name, DEFAULT_CONTEXT)
 	# if not description:
 	# 	description = DEFAULT_CONTEXT
 	# return description
-	return DEFAULT_CONTEXT
+	return FALLBACK_STR
