@@ -35,31 +35,20 @@ Data Type Reference
 -------------------
 Some subnodes contain multiple items for their data. If this is the case, it will be represented with either comma separation or | separation, identical to the data in the subnode. Type specifications are concluded by a semi-colon. All suffixes are separated by a space unless otherwise noted.
 
-=============== =================================================================================
-Data Type Name  Description
-=============== =================================================================================
-Int             A 32-bit integer
-File            A filename, may have an incorrect extension due to how the game was made
-Filepath        A path to a file. Same as filename, but with a full path before it. Root of "Data/".
-Dir             A path to a directory. Root of "Data/".
-String          Only for attributes, indicates no special type for the attribute.
-Bool            A boolean value. Can be yes/no or true/false, capitalization varies. See suffixes
-Ref ``node``    A Reference to a node by its name.
-Float           A floating point number. Must have a decimal and tenths digit
-Floatf          Same as a float, but the number has an "``f``" attached to the end of it.
-=============== =================================================================================
+.. csv-table::
+	:header:Data Type Name, Description
 
-.. note::
-	# characters indicate a number will be in their place when the suffix is used.
-
-====================== ======================== ================================================================================================
-Suffix                 Applicable To            Description
-====================== ======================== ================================================================================================
-[#,#]                  Int, Float, Floatf       Numerical value must within the range of the two numbers. Inclusive.
-<#, >#, <=#, >=#,      Int, Float, Floatf       Numerical value must satisfy the conditional operator.
-t/f                    Bool                     Boolean is ``true`` or ``false``. Capitalization may vary, and it carries from the suffix.
-Y/N                    Bool                     Boolean is ``Yes`` or ``No``. Capitalization may vary, and it carries from the suffix.
-====================== ======================== ================================================================================================
+	"Int", "A 32-bit integer. Limits and functional values of said integer should be in the description, if they exist."
+	"File", "A filename, may have an incorrect extension due to how EaW was compiled."
+	"Filepath", "A path to a file. Same as filename, but with a full path before it. Root of ``Data/``."
+	"Dir", "A path to a directory. Root of ``Data/``."
+	"String", "Only for attributes, indicates no special type for the attribute."
+	"Bool", "A boolean value. Can be yes/no or true/false, t/f or y/n suffixes indicate which is used. Capitalization
+	varies for the first letter of the boolean, and the suffix has the corresponding capitalization."
+	"Ref", "A Reference to another node by its name. Description should indicate type of node this can reference"
+	"Float", "A floating point number. Must have a decimal and tenths digit. Can be occasionally be substituted by an
+	``Int``"
+	"Floatf", "Same as a float, but the number has an ``f`` attached to the end of it."
 
 
 XML Type Reference
@@ -71,4 +60,3 @@ XML Type Reference
 	megafiles.xml
 	Dataminerxmlfiles.xml
 	xml/*
-	Auto-Generated XML File Structures <xml/xml_structure>

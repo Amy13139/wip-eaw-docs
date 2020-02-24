@@ -13,7 +13,6 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-from os import path, getcwd
 try:
 	from build_docs.build_docs import build
 except ModuleNotFoundError:
@@ -23,6 +22,7 @@ except ModuleNotFoundError:
 # -- Project information -----------------------------------------------------
 
 project = 'eaw-godot-docs'
+# noinspection PyShadowingBuiltins
 copyright = '2020, luke13139'
 author = 'luke13139'
 
@@ -35,16 +35,13 @@ author = 'luke13139'
 extensions = [
 ]
 
-# Use contents instead of index
-master_doc = 'contents'
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ["/data", "/build_docs"]
 
 
 # -- Options for HTML output -------------------------------------------------
