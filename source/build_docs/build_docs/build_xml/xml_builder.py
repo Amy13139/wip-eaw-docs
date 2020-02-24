@@ -94,9 +94,9 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		"""
 		# Get header
 		if is_nested:
-			line: str = get_header(curr_node.name, '^')
+			line: str = get_header(codify(curr_node.name), '^')
 		else:
-			line: str = get_header(curr_node.name, "-")
+			line: str = get_header(codify(curr_node.name), "-")
 		line += get_node_description(curr_node.name)
 		line += get_line_padding(2)
 		# Handle nested nodes
@@ -104,7 +104,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			# Get table
 			line += get_table_start(("Nested Nodes", "Description"))
 			for nested_node_name in curr_node.get_node_names():
-				line += get_table_line((nested_node_name, get_node_description(nested_node_name)))
+				line += get_table_line((codify(nested_node_name), get_node_description(nested_node_name)))
 			line += get_table_end(1)
 			# Recurse for nested nodes
 			for nested_node in curr_node.get_nodes():
@@ -131,7 +131,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		:return:
 		"""
 		# Get RootNode name as header
-		line: str = get_header(rootnode.name, "=")
+		line: str = get_header(codify(rootnode.name), "=")
 		line += get_root_description(rootnode.name)
 		line += get_line_padding(2)
 
@@ -140,7 +140,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			line += get_table_start(("Node Children", "Description"))
 			# Iterate over nodes
 			for node_name in rootnode.get_node_names():
-				line += get_table_line((node_name, get_node_description(node_name)))
+				line += get_table_line((codify(node_name), get_node_description(node_name)))
 			# Close the table
 			line += get_table_end(2)
 			for node in rootnode.get_nodes():
