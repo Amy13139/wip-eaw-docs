@@ -180,39 +180,6 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		return line
 
 	# Write Functions - Generic Sphinx Utilities
-	def write_line_padding(out_file: TextIO, line_num: int) -> None:
-		"""
-		Writes line_num blank lines
-		:param out_file: The file to write to
-		:param line_num: The number of blank lines to write
-		"""
-		out_file.write(get_line_padding(line_num))
-
-	def write_table_line(out_file: TextIO, items: Iterable[str]) -> None:
-		"""
-		Writes a string as part of a Sphinx rst table.
-		:param out_file: The file to write to
-		:param items: The items to add to the table line
-		"""
-		out_file.write(get_table_line(items))
-
-	def write_table_start(out_file: TextIO, headers: Iterable[str]) -> None:
-		"""
-		Starts a table in Sphinx rst format.
-		:param out_file: The file to write to
-		:param headers: The headers of the table
-		"""
-		# Write table start
-		out_file.write(get_table_start(headers))
-
-	def write_table_end(out_file: TextIO, line_num: int) -> None:
-		"""
-		Alias for write_line_padding with line_num += 1. May change if table format is changed.
-		:param out_file: The file to write to
-		:param line_num: The number of blank lines to write, must be >=1
-		"""
-		out_file.write(get_table_end(line_num))
-
 	def write_header(out_file: TextIO, header: str, sep: str) -> None:
 		"""
 		Writes a header in Sphinx rst format.
@@ -223,31 +190,6 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		out_file.write(get_header(header, sep))
 	
 	# Write Functions - xml_classes Input
-	def write_subnode(out_file: TextIO, list_subnode: SubNode) -> None:
-		"""
-		Writes a subnode in the format for the xml_structure.rst file
-		:param out_file: The file to write to
-		:param list_subnode: The subnode to get information from to the list
-		"""
-		out_file.write(get_subnode(list_subnode))
-
-	def write_node(out_file: TextIO, curr_node: Node, is_nested=False) -> None:
-		"""
-		Writes a node's information in the format for the xml_structure.rst file
-		:param out_file: The file to write to
-		:param curr_node: The node to use for the writing.
-		:param is_nested: If True, will treat the file as a nested file, and have a different header.
-		"""
-		out_file.write(get_node(curr_node))
-		
-	def write_rootnode(out_file: TextIO, rootnode: RootNode) -> None:
-		"""
-		Writes the information of a rootnode to a file
-		:param out_file: The file to write to
-		:param rootnode: The RootNode to get the information from
-		"""
-		out_file.write(get_rootnode(rootnode))
-		
 	def write_xml_type(out_file: TextIO, xml_type: XMLType) -> None:
 		"""
 		Writes the information of an XML Type to a file
@@ -319,7 +261,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		# Iterate over types
 		for xml_type in xml_types:
 			# Get path to main file
-			filepath = join(xml_dir_out, "{}.rst".format(xml_type.name))
+			file_path = join(xml_dir_out, "{}.rst".format(xml_type.name))
 			dir_path = join(xml_dir_out, xml_type.name)
 
 			# Create Subdirectory
@@ -333,11 +275,11 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 				# 1. Name
 				xml_type.name,
 				# 2. Description
-				get_root_description(xml_type.name),
+				get_type_description(xml_type.name),
 				# 3. Subdirectory
 				xml_type.name,
 				# 4. Context
-				get_root_context(xml_type.name),
+				get_type_context(xml_type.name),
 			]
 			# Continue inserts setup
 
@@ -368,7 +310,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			for i in range(len(type_file_lines)):
 				if "{}" in type_file_lines[i]:
 					type_file_lines[i] = type_file_lines[i].format(next(insert_iter))
-			with open(filepath, "wt") as main_file:
+			with open(file_path, "wt") as main_file:
 				main_file.writelines(type_file_lines)
 				main_file.close()
 			del main_file
