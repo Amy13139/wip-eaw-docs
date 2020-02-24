@@ -8,7 +8,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 	:param xml_dir_out: The output directory, should also be the XML Docs directory
 	:param xml_types: The list of XML Types to use for building the documentation
 	"""
-	# TODO: yes?
+
 	# Get Functions - Generic Sphinx Utilities
 	def get_line_padding(line_num: int) -> str:
 		"""
@@ -203,7 +203,11 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		"""
 		Build the XML structure file
 		"""
-		# Create File
+		# Create Directory if it does not exist
+		if not exists(xml_dir_out):
+			makedirs(xml_dir_out)
+
+		# Get file path
 		xml_structure_path = join(xml_dir_out, XML_STRUCTURE_FILENAME)
 
 		# Build Structure XML
@@ -266,7 +270,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 
 			# Create Subdirectory
 			if not exists(dir_path):
-				mkdir(dir_path)
+				makedirs(dir_path)
 
 			# Copy template. To Insert: Name, Description, SubDirectory, Context, Node Names, SubNode Names
 			type_file_lines: List[str] = template_type.copy()

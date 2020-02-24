@@ -24,7 +24,7 @@ Generic XML Files
 -----------------
 The type of an XML file determines what nodes it can contain and how it's content is used. The type is specified by ``Dataminerxmlfiles.xml``. Each XML file has a top-level node, which may indicate a subset of the type. The top-level node can contain any number of nodes beneath it, which can each have any number of subnodes (up to the maximum amount of subnodes definable for a node). Each subnode will have a data type specified, as they cannot contain any form of node, and will usually only take a single line. Each node will have a ``name`` attribute. ::
 
-    Example: ``SpaceUnitsCapital`` is a top-level node for a ``GameObjectType``, indicating the file contains capital ship space units.
+	Example: ``SpaceUnitsCapital`` is a top-level node for a ``GameObjectType``, indicating the file contains capital ship space units.
 
 Unless otherwise stated, XML files for EaW use PascalCase for their name. Each node will have all possible attributes and sub-nodes listed. The type of content for each node is listed, and the Type Reference is located below. Each type can contain a suffix, which indicates a specific condition that the data must meet. Suffixes can be separated by space, in some instances. Sometimes, items are given unique suffixes. Check the description if the suffix for a data type is not listed in the reference.
 
@@ -69,6 +69,6 @@ XML Type Reference
 	:glob:
 
 	Auto-Generated XML File Structures <xml/xml_structure>
-	xml/megafiles.xml
-	xml/Dataminerxmlfiles.xml
+	megafiles.xml
+	Dataminerxmlfiles.xml
 	xml/*
