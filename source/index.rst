@@ -1,29 +1,20 @@
 .. Contents master file
 
-About
-=====
+
+.. include:: readme.rst
+
+
 .. toctree::
 	:titlesonly:
-	:caption: About:
-
-	readme
-
-
-EaW-Godot Port Documentation
-============================
-.. toctree::
-	:titlesonly:
-	:caption: EaW-Godot Docs:
+	:hidden:
 	:glob:
 
 	port/*
 
 
-EaW/FoC Documentation
-=====================
 .. toctree::
 	:titlesonly:
-	:caption: EaW/FoC Docs:
+	:hidden:
 	:glob:
 
 	basegame/main_*
