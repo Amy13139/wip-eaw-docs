@@ -102,7 +102,11 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		# Handle nested nodes
 		if curr_node.has_nodes():
 			# Get table
-			line += get_table_start(("Nested Nodes", "Description"))
+			line += get_table_start((
+				"Nested Nodes",
+				"Description"
+			))
+			# Iterate over nested nodes
 			for nested_node_name in curr_node.get_node_names():
 				line += get_table_line((codify(nested_node_name), get_node_description(nested_node_name)))
 			line += get_table_end(1)
@@ -113,7 +117,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		if curr_node.has_subnodes():
 			# Get header
 			if is_nested:
-				line += get_header("Nested SubNodes", '"')
+				line += get_header("{}'s SubNodes".format(codify(curr_node.name)), '"')
 			else:
 				line += get_header("SubNodes", '^')
 			# Iterate over subnodes
@@ -167,15 +171,15 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		# Get XMLType name as header
 		line: str = get_header(xml_type.name, "*")
 		# Get table for RootNodes in XML Type in a table
-		line += get_table_start(("Root Node", "Description"))
+		line += get_table_start(("Node", "Description"))
 		# Iterate over names, ensure alphabetical sorting
-		for rootnode_name in sorted(xml_type.root_names):
-			line += get_table_line((rootnode_name, get_root_description(rootnode_name)))
+		for node_name in sorted(xml_type.node_names):
+			line += get_table_line((node_name, get_node_description(node_name)))
 		line += get_table_end(1)
 
-		# Iterate over RootNodes
-		for rootnode in xml_type.get_rootnodes():
-			line += get_rootnode(rootnode)
+		# Iterate over Nodes
+		for node in xml_type.get_nodes():
+			line += get_node(node)
 		# Return
 		return line
 
@@ -223,44 +227,45 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		"""
 		Build the main XML doc files.
 		"""
-		def write_rootnode_file(rootnode: RootNode) -> None:
+
+		def write_node_file(node: Node) -> None:
 			"""
-			Write a doc file for a RootNode
-			:param rootnode: The RootNode to get information from
+			Write a doc file for a Node
+			:param node: The Node to get information from
 			"""
-			# Get rootnode file name
-			rootnode_path = join(dir_path, "{}.rst".format(rootnode.name))
-			
+			# Get node file name
+			node_path = join(dir_path, "{}.rst".format(node.name))
+
 			# Copy template. To Insert: Name, About, Structure, Context
-			root_file_lines: List[str] = template_root.copy()
+			node_file_lines: List[str] = template_node.copy()
 			# Create inserts list
-			root_inserts: List[str] = [
+			node_file_inserts: List[str] = [
 				# 1. Name
-				rootnode.name,
+				node.name,
 				# 2. About
-				get_root_description(rootnode.name),
+				get_node_description(node.name),
 				# 3. Structure, to be filled in later
-				get_rootnode(rootnode),
+				get_node(node),
 				# 4. Context
-				get_root_context(rootnode.name),
+				get_node_context(node.name),
 			]
 
 			# Get iterator from inserts
-			root_insert_iter: Iterator[str] = iter(root_inserts)
+			node_file_insert_iter: Iterator[str] = iter(node_file_inserts)
 
 			# Iterate over lines
-			for index in range(len(root_file_lines)):
-				if "{}" in root_file_lines[index]:
-					root_file_lines[index] = root_file_lines[index].format(next(root_insert_iter))
+			for index in range(len(node_file_lines)):
+				if "{}" in node_file_lines[index]:
+					node_file_lines[index] = node_file_lines[index].format(next(node_file_insert_iter))
 			# Write to file
-			with open(rootnode_path, "wt") as root_file:
-				root_file.writelines(root_file_lines)
-				root_file.close()
-			del root_file
+			with open(node_path, "wt") as node_file:
+				node_file.writelines(node_file_lines)
+				node_file.close()
+			del node_file
 
 		# Get templates
 		template_type = get_type_template()
-		template_root = get_root_template()
+		template_node = get_node_template()
 
 		# Iterate over types
 		for xml_type in xml_types:
@@ -288,23 +293,22 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			# Continue inserts setup
 
 			# 5. Node Names
-			node_names_str = ""
+			node_names_str: str = ""
 			for node_name in xml_type.node_names:
-				node_names_str += "- {}\n".format(
-					node_name,
-				)
+				# Add the name to the name strings
+				node_names_str += "- {}\n".format(node_name)
 			inserts.append(node_names_str)
 			del node_names_str
 
 			# 6. SubNode Names
 			subnode_names_set: Set[str] = set()
-			subnode_names_str = ""
+			subnode_names_str: str = ""
 			for subnode_set in xml_type.subnode_names.values():
+				# Add the name to the subnode names set
 				subnode_names_set.update(subnode_set)
 			for subnode_name in sorted(subnode_names_set, key=attrib_key):
-				subnode_names_str += "- {}\n".format(
-					subnode_name,
-				)
+				# Add the name to the subnode name string
+				subnode_names_str += "- {}\n".format(subnode_name)
 			inserts.append(subnode_names_str)
 			del subnode_names_set, subnode_names_str
 
@@ -319,9 +323,10 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 				main_file.close()
 			del main_file
 
-			# Iterate over RootNodes
-			for curr_rootnode in xml_type.get_rootnodes():
-				write_rootnode_file(curr_rootnode)
+			# Iterate over Nodes in the XMLType
+			for curr_node in xml_type.get_nodes():
+				write_node_file(curr_node)
+
 
 	# Build file structure
 	build_structure_xml()

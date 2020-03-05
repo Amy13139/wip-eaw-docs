@@ -407,7 +407,7 @@ class _NodeSubNodeHolder(object):
 		:rtype: List[Node]
 		:return: A List of Nodes
 		"""
-		return sorted(self.nodes, key=lambda x: x.name)
+		return sorted(self.nodes, key=lambda x: x.name.lower())
 
 	def get_subnodes(self) -> List[SubNode]:
 		"""

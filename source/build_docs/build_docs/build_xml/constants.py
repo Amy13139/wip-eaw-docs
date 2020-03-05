@@ -7,7 +7,8 @@ from xml.etree import ElementTree as ET
 
 # Template file paths, from "/source/" directory
 TEMPLATE_TYPE: str = join("_templates", "xml", "xml_type_auto.rst")
-TEMPLATE_ROOT: str = join("_templates", "xml", "xml_root_auto.rst")
+TEMPLATE_ROOT: str = join("_templates", "xml", "xml_root_auto.rst")  # Deprecated
+TEMPLATE_NODE: str = join("_templates", "xml", "xml_node_auto.rst")
 # Filename for xml_structure file
 XML_STRUCTURE_FILENAME: str = "xml_structure.rst"
 
@@ -67,9 +68,9 @@ TAB_INDICATOR: str = "\n"
 FALLBACK_STR: str = "Not yet documented, but you help document it through GitHub!"
 
 #############################
-# Start About Sections
+# Start Descriptions
 #############################
-# Sections in the form of: RootNodeName/XmlTypeName: """*Insert About Text Here*""",
+# Sections in the form of: Name: """*Insert Description Here*""",
 
 DESCRIPTION_TYPE: Dict[str, str] = {
 	# XML Type Descriptions (About Section)
@@ -241,801 +242,741 @@ Contains the sound events that are specific to a type of weather, such as ambien
 		""",
 }
 
-DESCRIPTION_ROOT: Dict[str, str] = {
-	# RootNode Descriptions
+DESCRIPTION_NODE: Dict[str, str] = {
+	# Node Descriptions
 
 
-	# GameObjectType Roots
-	"BWing_Files": "A list of files that contain data for the Rebel's B-Wing Squadron",
-	"Bossk_Hero_Files": "A list of files that contain data for Bossk, A Major Bounty Hunter Hero for the Consortium",
-	"Buzz_Droids_Data": "Data for the Buzz Droids spawned from the StarViper Squadron's Special Ability",
-	"CIN_FighterUnits": "Cinematic Fighter Units",
-	"CIN_GroundInfantry_Units": "Cinematic Infantry Units",
-	"CIN_GroundVehicles": "Cinematic Vehicle Units",
-	"CIN_Projectiles": "Cinematic Projectiles",
-	"CIN_SpaceCorvettes": "Cinematic Corvette-Class Units",
-	"CIN_SpaceProps": "Cinematic Space Props",
-	"CIN_SpaceUnitsCapital": "Cinematic Capital-Class Units",
-	"CIN_SpaceUnitsFrigates": "Cinematic Frigate-Class Units",
-	"Canderous_Tank_Data": "Data for the Consortium's Canderous Tank Unit",
-	"Cin_GroundProps": "Cinematic Ground Props",
-	"Cin_GroundStructures": "Cinematic Ground Structures",
-	"Cin_TransportUnits": "Cinematic Transport Units",
-	"Cloaking_Transport_Data": "",
-	"Containers": "",
-	"Corruption_Special_Units": "",
-	"Crusader_Gunship_Data": "",
-	"Dark_Trooper_Data": "",
-	"Destroyer_Droids_Data": "",
-	"Eclipse_Files": "",
-	"EmpireGroundCompanies": "",
-	"Ewok_Bomber_Data": "Data for the Consortium's Ewok Slaver Unit, which attacks with explosive kamikaze Ewoks",
-	"Executor_Files": "",
-	"FighterUnits": "",
-	"Gallofree_HTT_Data": "",
-	"Game_Object_Files": "",
-	"Gargantuan_Battle_Platform_Data": "",
-	"GenericHeroUnits": "",
-	"Grand_Admiral_Thrawn_Data": "",
-	"GroundBases": "",
-	"GroundBuildables": "",
-	"GroundInfantry_Units": "",
-	"GroundStructures": "",
-	"GroundVehicles": "",
-	"HeroCompanies": "",
-	"HeroUnits": "",
-	"Hutt_Faction_Units": "",
-	"IG88_Hero_Files": "",
-	"Indigenous_Companies": "",
-	"Indigenous_Units": "",
-	"Interceptor_IV_Frigate": "",
-	"Juggernaut_Data": "",
-	"Kedalbe_Battleship_Data": "",
-	"Krayt_Destroyer_Data": "",
-	"Lancet_Air_Vehicle_Data": "",
-	"LandBombingRunUnits": "",
-	"LandPrimarySkydomes": "",
-	"LandSecondarySkydomes": "",
-	"Luke_Skywalker_Hero_Files": "",
-	"MAL_Vehicle_Data": "",
-	"MC30_Frigate_Data": "",
-	"MOV_Cinematics": "",
-	"Markers": "",
-	"MiscObjects": "",
-	"Mobile_Defense_Unit_Data": "",
-	"Multiplayer_Structure_Markers": "",
-	"Night_Sister_Data": "",
-	"Noghri_Assassin_Data": "",
-	"Particles": "",
-	"Pirate_Fighter_Data": "",
-	"Planets": "",
-	"Projectiles": "",
-	"Prop_Felucia": "",
-	"Prop_Forest": "",
-	"Props_Desert": "",
-	"Props_Generic": "",
-	"Props_Snow": "",
-	"Props_Story": "",
-	"Props_Swamp": "",
-	"Props_Temperate": "",
-	"Props_Urban": "",
-	"Props_Volcanic": "",
-	"Pulse_Cannon_Tank_Data": "",
-	"RebelGroundCompanies": "",
-	"Rogue_Squadron_Data": "",
-	"Scavenger_Droids_Data": "",
-	"ScriptMarkers": "",
-	"SecondaryStructures": "",
-	"Silri_Data": "",
-	"Skipray_Blastboat_Data": "",
-	"SpaceBuildables": "",
-	"SpaceCorvettes": "",
-	"SpacePrimarySkydomes": "",
-	"SpaceProps": "",
-	"SpaceProps_UW": "",
-	"SpaceSecondarySkydomes": "",
-	"SpaceUnitsCapital": "",
-	"SpaceUnitsFrigates": "",
-	"SpaceUnitsSupers": "",
-	"SpecialEffects": "",
-	"SpecialStructures": "",
-	"Squadrons": "",
-	"StarBases": "",
-	"TIE_Defender_Files": "",
-	"TIE_Interceptor_Files": "",
-	"TIE_Phantom_Files": "",
-	"TechBuildings": "",
-	"TransportUnits": "",
-	"Tyber_Zann_Data": "",
-	"Underworld_Disruptor_Infantry_Data": "",
-	"Underworld_Mercenary_Infantry_Data": "",
-	"Underworld_TransportUnits": "",
-	"UniqueUnits": "",
-	"UpgradeObjects": "",
-	"UpgradeObjects_Underworld": "",
-	"Urai_Fen_Data": "",
-	"Vengeance_Frigate_Data": "",
-	"Vornskr_Wolf_Data": "",
-	"Yoda_Hero_Files": "",
-
-	# HeroClashType Roots
-	"Hero_Clashes": "",
-
-	# SFXEvent Roots
-	"SFXEvent_Files": "",
-	"SFXEvents": "",
-
-	# TerrainDecalFX Roots
-	"TerrainDecals": "",
-
-	# LightningTypeManager Roots
-	"LightningEffects": "",
-
-	# DynamicTrackFX Roots
-	"DynamicTracks": "",
-
-	# MusicEvent Roots
-	"MusicEvents": "",
-
-	# SpeechEvent Roots
-	"SpeechEvents": "",
-
-	# GameConstants Roots
-	"GameConstants": "",
-
-	# CommandBarComponent Roots
-	"CommandBarComponents": "",
-	"CommandBar_Component_Files": "",
-
-	# TradeRoute Roots
-	"TradeRoutes": "",
-	"Trade_Route_Files": "",
-
-	# TradeRouteLines Roots
-	"TradeRouteLines": "",
-
-	# RadarMap Roots
-	"RadarMap": "",
-
-	# Draw3DTextCrawl Roots
-	"StarWars3DTextScroll": "",
-
-	# WeatherPattern Roots
-	"Weather_Scenarios": "",
-
-	# HardPoint Roots
-	"HardPoints": "",
-
-	# Campaign Roots
-	"Campaign_Files": "",
-	"Campaigns": "",
-	"Story": "",
-	"Story_Mode_Plots": "",
-
-	# Faction Roots
-	"Faction_Files": "",
-	"Factions": "",
-
-	# TacticalCameraConstants Roots
-	"TacticalCameras": "",
-
-	# LightSource Roots
-	"LightSources": "",
-
-	# BinkMovie Roots
-	"Movies": "",
-
-	# TargetingPrioritySet Roots
-	"Targeting_Priority_Set_Files": "",
-	"Targeting_Priority_Sets": "",
-
-	# DifficultyAdjustment Roots
-	"Difficulty_Adjustments": "",
-
-	# WeatherAudioManager Roots
-	"WeatherAudio": "",
-}
-
-
-#############################
-# End About Sections
-#############################
-
-"Separator to allow individual folding of the above comments, please ignore"
-
-#############################
-# Start Contexts
-#############################
-# Sections in the form of: RootNodeName/XmlTypeName: "*Insert Context Here*",
-
-# TODO: Add contexts
-CONTEXT_TYPE: Dict[str, str] = {
-	# XML Type Contexts
-
-	"GameObjectType":
+	# GameObjectType
+	"Abilities":
 		"""
-	*"If you want to find something that isn"t in the other XML types, it"s here... It"s all here..." -luke13139*
-
-The GameObjectType stores information related to anything the game considers and "object". This includes units, props, 
-projectiles, particles, and heroes, to name a few. This XML Type accounts for more than any other XML type, and holds
-more than every other XML type put together. Many RootNodes in this class contain duplicate information, but only  
-Nodes/SubNodes used in a RootNode will appear under its documentation.
+Nested Node for units, contains either an activated ability or some form of special behavior for a unit.
+See `Unit Abilities on Petrolution <modtools.petrolution.net/docs/Unit_Abilities_EaW>`_ for a list of EaW active ability
+types. FoC is currently not included, but a page may be added to this documentation
 		""",
 
-	"HeroClashType":
+	"Absorb_Blaster_Ability":
 		"""
-	*"Probably just something about Vader HAND-ling Luke if they get into a duel." -luke13139*
-
-Unknown, but it may contain information related to hero-on-hero battles, such as what animations to use for
-lightsaber battles
+Nested Node for Abilities in combat, reduces damage from certain units by a percent and/or a static amount.
 		""",
 
+	"Arc_Sweep_Attack_Ability":
+		"""
+Nested Node for Abilities on the ground, attacks all units within an arc.
+		""",
+
+	"Battlefield_Modifier_Ability":
+		"""
+
+		""",
+
+	"Berserker_Ability":
+		"""
+		
+		""",
+
+	"Black_Market_Ability":
+		"""
+Nested Node for Abilities in GC, allows a unit to access the black market, and dictates the behavior when accessed. Only
+used by the Consortium.
+		""",
+
+	"Buzz_Droids_Ability":
+		"""
+Nested Node for Abilities in space, which deploys an AoR to passively damage to enemy fighters. Only used by the 
+StarViper Squadron of the Consortium.
+		""",
+
+	"CIN_GroundInfantry":
+		"""
+Cinematic Ground Infantry Unit
+		""",
+
+	"CIN_SpaceProp":
+		"""
+Cinematic Space Prop
+		""",
+
+	"CIN_SpaceUnit":
+		"""
+Cinematic Space Unit
+		""",
+
+	"Cin_GroundProp":
+		"""
+Cinematic Ground Prop
+		""",
+
+	"Cin_GroundStructure":
+		"""
+Cinematic Ground Structure
+		""",
+
+	"Cin_GroundVehicle":
+		"""
+Cinematic Ground Vehicle
+		""",
+
+	"Cin_Projectile":
+		"""
+Cinematic Projectile
+		""",
+
+	"Cin_SpaceProp":
+		"""
+Cinematic Space Prop
+		""",
+
+	"Cin_SpaceUnit":
+		"""
+Cinematic Space Unit
+		""",
+
+	"Cin_TransportUnit":
+		"""
+Cinematic Transport Unit
+		""",
+
+	"Cluster_Bomb_Ability":
+		"""
+Nested Node for Abilities in space, launch cluster bombs from the caster.
+		""",
+
+	"Combat_Bonus_Ability":
+		"""
+		
+		""",
+
+	"Container":
+		"""
+		
+		""",
+
+	"Corrupt_Systems_Ability":
+		"""
+		
+		""",
+
+	"Drain_Life_Ability":
+		"""
+Nested Node for Abilities in a ground unit, damages other units while healing caster proportionally to the damage dealt.
+		""",
+
+	"Earthquake_Attack_Ability":
+		"""
+		
+		""",
+
+	"Energy_Weapon_Attack_Ability":
+		"""
+		
+		""",
+
+	"Enhance_Defense_Ability":
+		"""
+		
+		""",
+
+	"Find_Weakness_Ability":
+		"""
+		
+		""",
+
+	"Force_Cloak_Ability":
+		"""
+Nested Node for Abilities on the ground; puts the caster into stealth.
+		""",
+
+	"Force_Confuse_Ability":
+		"""
+Nested Node for Abilities on the ground; applies a debuff to nearby enemies 
+		""",
+
+	"Force_Healing_Ability":
+		"""
+Nested Node for Abilities on the ground; restores HP to units near the caster
+		""",
+
+	"Force_Sight_Ability":
+		"""
+Nested Node for Abilities on the ground; removes FoW, centered on the caster
+		""",
+
+	"Galactic_Stealth_Ability":
+		"""
+Nested Node for Abilities in GC; allows a unit to move into enemy-occupied space without starting combat, also dictates
+how much information the unit reveals with it's presence.
+		""",
+
+	"GenericHeroUnit":
+		"""
+A Hero unit that is not specific to any faction.
+		""",
+
+	"Generic_Attack_Ability":
+		"""
+		
+		""",
+
+	"GroundBase":
+		"""
+		
+		""",
+
+	"GroundBuildable":
+		"""
+		
+		""",
+
+	"GroundCompany":
+		"""
+		
+		""",
+
+	"GroundInfantry":
+		"""
+		
+		""",
+
+	"GroundStructure":
+		"""
+		
+		""",
+
+	"GroundVehicle":
+		"""
+		
+		""",
+
+	"Hack_Super_Weapon_Ability":
+		"""
+		
+		""",
+
+	"HeroCompany":
+		"""
+		
+		""",
+
+	"HeroUnit":
+		"""
+		
+		""",
+
+	"Hero_Protection_Ability":
+		"""
+		
+		""",
+
+	"Indigenous_Unit":
+		"""
+		
+		""",
+
+	"Infection_Ability":
+		"""
+		
+		""",
+
+	"Ion_Cannon_Shot_Attack_Ability":
+		"""
+		
+		""",
+
+	"LandBombingUnit":
+		"""
+		
+		""",
+
+	"LandPrimarySkydome":
+		"""
+		
+		""",
+
+	"LandSecondarySkydome":
+		"""
+		
+		""",
+
+	"Laser_Defense_Ability":
+		"""
+		
+		""",
+
+	"Leech_Shields_Ability":
+		"""
+		
+		""",
+
+	"Lucky_Shot_Attack_Ability":
+		"""
+		
+		""",
+
+	"MOV_Cinematic":
+		"""
+		
+		""",
+
+	"Marker":
+		"""
+		
+		""",
+
+	"MiscObject":
+		"""
+		
+		""",
+
+	"Mobile_Defense_Unit":
+		"""
+		
+		""",
+
+	"MultiplayerStructureMarker":
+		"""
+		
+		""",
+
+	"Neutralize_Hero_Ability":
+		"""
+		
+		""",
+
+	"Particle":
+		"""
+		
+		""",
+
+	"Permanent_Weapon_Swap_Ability":
+		"""
+		
+		""",
+
+	"Personal_Flame_Thrower_Ability":
+		"""
+		
+		""",
+
+	"Planet":
+		"""
+		
+		""",
+
+	"Planet_Destruction_Ability":
+		"""
+		
+		""",
+
+	"Projectile":
+		"""
+		
+		""",
+
+	"Prop_Desert":
+		"""
+		
+		""",
+
+	"Prop_Felucia":
+		"""
+		
+		""",
+
+	"Prop_Forest":
+		"""
+		
+		""",
+
+	"Props_Generic":
+		"""
+		
+		""",
+
+	"Props_Snow":
+		"""
+		
+		""",
+
+	"Props_Story":
+		"""
+		
+		""",
+
+	"Props_Swamp":
+		"""
+		
+		""",
+
+	"Props_Temperate":
+		"""
+		
+		""",
+
+	"Props_Urban":
+		"""
+		
+		""",
+
+	"Props_Volcanic":
+		"""
+		
+		""",
+
+	"Proximity_Mines_Ability":
+		"""
+		
+		""",
+
+	"Radioactive_Contaminate_Ability":
+		"""
+		
+		""",
+
+	"Redirect_Blaster_Ability":
+		"""
+		
+		""",
+
+	"Reduce_Production_Price_Ability":
+		"""
+		
+		""",
+
+	"Remove_Corruption_Ability":
+		"""
+		
+		""",
+
+	"Saber_Throw_Ability":
+		"""
+		
+		""",
+
+	"ScriptMarker":
+		"""
+		
+		""",
+
+	"SecondaryStructure":
+		"""
+		
+		""",
+
+	"Sensor_Jamming_Ability":
+		"""
+		
+		""",
+
+	"Shield_Flare_Ability":
+		"""
+		
+		""",
+
+	"SlaveCompany":
+		"""
+		
+		""",
+
+	"Slave_Unit":
+		"""
+		
+		""",
+
+	"SpaceBuildable":
+		"""
+		
+		""",
+
+	"SpacePrimarySkydome":
+		"""
+		
+		""",
+
+	"SpaceProp":
+		"""
+		
+		""",
+
+	"SpaceSecondarySkydome":
+		"""
+		
+		""",
+
+	"SpaceStructure":
+		"""
+		
+		""",
+
+	"SpaceUnit":
+		"""
+		
+		""",
+
+	"Spawn_Ability":
+		"""
+		
+		""",
+
+	"SpecialEffect":
+		"""
+		
+		""",
+
+	"SpecialStructure":
+		"""
+		
+		""",
+
+	"Squadron":
+		"""
+		
+		""",
+
+	"StarBase":
+		"""
+		
+		""",
+
+	"Starbase":
+		"""
+		
+		""",
+
+	"Stealth_Ability":
+		"""
+		
+		""",
+
+	"Stun_Ability":
+		"""
+		
+		""",
+
+	"Summon_Ability":
+		"""
+		
+		""",
+
+	"Super_Laser_Ability":
+		"""
+		
+		""",
+
+	"System_Spy_Ability":
+		"""
+		
+		""",
+
+	"Tactical_Bribe_Ability":
+		"""
+		
+		""",
+
+	"TechBuilding":
+		"""
+		
+		""",
+
+	"Tractor_Beam_Attack_Ability":
+		"""
+		
+		""",
+
+	"TransportUnit":
+		"""
+		
+		""",
+
+	"UniqueUnit":
+		"""
+		
+		""",
+
+	"Unit_Abilities_Data":
+		"""
+		
+		""",
+
+	"Unit_Ability":
+		"""
+		
+		""",
+
+	"UpgradeObject":
+		"""
+		
+		""",
+
+	# HeroClashType
+	"Hero_Clash":
+		"""
+		
+		""",
+
+	# SFXEvent
 	"SFXEvent":
 		"""
-Contains events that play sound effects. These events contain the file to play and related audio settings.
+		
 		""",
 
-	"TerrainDecalFX":
+	# TerrainDecalFX
+	"Decal":
 		"""
+		
 		""",
 
-	"LightningTypeManager":
+	# LightningTypeManager
+	"LightningEffect":
 		"""
-	*Palpatine may just go with plaid lightning to mix up his style, ya"know? -luke13139*
-
-Unknown, but it may contain information related to the different lightning effects in the game, which include those from
-abilities (such as Palpatine"s Force Lightning), weather, and ionized nebulae.
+		
 		""",
 
-	# "DynamicTrackFX":
-	# 	"""
-	# 	""",
+	# DynamicTrackFX
+	"DynamicTrack":
+		"""
+		
+		""",
 
+	# MusicEvent
 	"MusicEvent":
 		"""
-Contains events that play music/trigger music changes. They may loop, and only 1 music event may be active at a time 
-(except while switching tracks, where the previous event can fade out while the new music fades in)
+		
 		""",
 
+	# SpeechEvent
 	"SpeechEvent":
 		"""
-	*Not sound effects, all sound effects are SFXEvents. These are SpeechEvents. Very different. -luke13139*
-
-Similar to SFXEvents, but only contains voice recordings.
+		
 		""",
 
-	"GameConstants":
-		"""
-Stores a variety of miscellaneous values for the game. Many of these are visual information and default settings.
-		""",
+	# GameConstants
 
+	# CommandBarComponent
 	"CommandBarComponent":
 		"""
-Stores data for the buttons on the command bar.
+		
 		""",
 
+	# TradeRoute
 	"TradeRoute":
 		"""
-	*Does not include lines. -luke13139*
-
-Unknown, but may contain information related to the planet-to-planet hyperlane connections on the Galactic Conquest Map
+		
 		""",
 
-	"TradeRouteLines":
+	# TradeRouteLines
+	"Settings_For_Faction":
 		"""
-	*Probably doesn"t have trade routes, but it probably does have lines! -luke13139*
-
-Unknown, but may contain information related to the lines used to show hyperlanes on the Galactic Conquest Map.
+		
 		""",
 
-	"RadarMap":
+	"TradeRouteLine":
 		"""
-	*Why they needed a dedicated XML type for this is beyond mortal comprehension. -luke13139*
-
-Contains some colors and textures to use for displays on the minimap. This includes the visual indicators for unit 
-deaths, issued commands, and pings.
+		
 		""",
 
-	"Draw3DTextCrawl":
+	# RadarMap
+	"Color":
 		"""
-	*Text?!?! Crawling?!?! -luke13139*
-
-Unknown, but may contain information related to the in-game version of the iconic Star Wars text crawl introduction.
+		
 		""",
 
-	"WeatherPattern":
+	"Passability_Color_Settings":
 		"""
-	*Bringing out the inner meteorologist in imperial officers, rebel kamikazes, and wanted mercenaries. -luke13139*
+		
 		""",
 
+	"RadarMapEvents":
+		"""
+		
+		""",
+
+	"RadarMapSettings":
+		"""
+		
+		""",
+
+	"Radar_Map_Event":
+		"""
+		
+		""",
+
+	# Draw3DTextCrawl
+	"Data_Specifications":
+		"""
+		
+		""",
+
+	"TextScroll":
+		"""
+		
+		""",
+
+	# WeatherPattern
+	"Phase":
+		"""
+		
+		""",
+
+	"Weather_Scenario":
+		"""
+		
+		""",
+
+	# HardPoint
 	"HardPoint":
 		"""
-Stores the individual parts of larger units. May or may not be targetable and destroyable. Most weapons in space are 
-fired from hardpoints, with the notable exception of fighters and other small craft.
+		
 		""",
 
+	# Campaign
 	"Campaign":
 		"""
-Stores campaign information.
+		
 		""",
 
+	"Event":
+		"""
+		
+		""",
+
+	# Faction
 	"Faction":
 		"""
-Stores information specific to factions in the game.
-
-Base EaW Factions:
-
-- Rebel
-- Empire
-- Pirates
-- Neutral
-- Hostile
-- Sarlacc
-
-Base FoC Factions (Excluding EaW Factions):
-
-- Underworld
-- Hutts
-
+		
 		""",
 
-	"TacticalCameraConstants":
+	# TacticalCameraConstants
+	"TacticalCamera":
 		"""
-	*Why? Shouldn"t this have been under GameConstants or just about anywhere else? Why?!?! -luke13139*
-
-Unknown, but it may contain information related to the movements of the normal camera view, cinematic camera view, 
-and/or BattleCam view.
+		
 		""",
 
-	"LightSource":  # TODO: Remove LightSource Description joke, at some point
+	# LightSource
+	"LightSource":
 		"""
-Lights.
+		
 		""",
 
-	"BinkMovie":
+	# BinkMovie
+	"Movie":
 		"""
-References .BIK Movie files, giving them a name attribute which can be referenced.
+		
 		""",
 
-	"TargetingPrioritySet":
+	# TargetingPrioritySet
+	"Priority_Set":
 		"""
-Targeting priorities for units, used for controlling auto-targeting.
+		
 		""",
 
-	"DifficultyAdjustment":
+	# DifficultyAdjustment
+	"Difficulty_Adjustment":
 		"""
-	*Answers the age-old question of how hard "Hard" is. -luke13139*
+		
 		""",
 
-	"WeatherAudioManager":
-		"""
-	*Combine with LightningTypeManager for a realistic thunderstorm! A lightning storm... in... space? -luke13139*
-		""",
+	# WeatherAudioManager
 }
-
-
-CONTEXT_ROOT: Dict[str, str] = {
-	# RootNode Contexts
-
-
-	# GameObjectType Roots
-	"BWing_Files": "",
-	"Bossk_Hero_Files": "",
-	"Buzz_Droids_Data": "",
-	"CIN_FighterUnits": "",
-	"CIN_GroundInfantry_Units": "",
-	"CIN_GroundVehicles": "",
-	"CIN_Projectiles": "",
-	"CIN_SpaceCorvettes": "",
-	"CIN_SpaceProps": "",
-	"CIN_SpaceUnitsCapital": "",
-	"CIN_SpaceUnitsFrigates": "",
-	"Canderous_Tank_Data": "",
-	"Cin_GroundProps": "",
-	"Cin_GroundStructures": "",
-	"Cin_TransportUnits": "",
-	"Cloaking_Transport_Data": "",
-	"Containers": "",
-	"Corruption_Special_Units": "",
-	"Crusader_Gunship_Data": "",
-	"Dark_Trooper_Data": "",
-	"Destroyer_Droids_Data": "",
-	"Eclipse_Files": "",
-	"EmpireGroundCompanies": "",
-	"Ewok_Bomber_Data": "",
-	"Executor_Files": "",
-	"FighterUnits": "",
-	"Gallofree_HTT_Data": "",
-	"Game_Object_Files": "",
-	"Gargantuan_Battle_Platform_Data": "",
-	"GenericHeroUnits": "",
-	"Grand_Admiral_Thrawn_Data": "",
-	"GroundBases": "",
-	"GroundBuildables": "",
-	"GroundInfantry_Units": "",
-	"GroundStructures": "",
-	"GroundVehicles": "",
-	"HeroCompanies": "",
-	"HeroUnits": "",
-	"Hutt_Faction_Units": "",
-	"IG88_Hero_Files": "",
-	"Indigenous_Companies": "",
-	"Indigenous_Units": "",
-	"Interceptor_IV_Frigate": "",
-	"Juggernaut_Data": "",
-	"Kedalbe_Battleship_Data": "",
-	"Krayt_Destroyer_Data": "",
-	"Lancet_Air_Vehicle_Data": "",
-	"LandBombingRunUnits": "",
-	"LandPrimarySkydomes": "",
-	"LandSecondarySkydomes": "",
-	"Luke_Skywalker_Hero_Files": "",
-	"MAL_Vehicle_Data": "",
-	"MC30_Frigate_Data": "",
-	"MOV_Cinematics": "",
-	"Markers": "",
-	"MiscObjects": "",
-	"Mobile_Defense_Unit_Data": "",
-	"Multiplayer_Structure_Markers": "",
-	"Night_Sister_Data": "",
-	"Noghri_Assassin_Data": "",
-	"Particles": "",
-	"Pirate_Fighter_Data": "",
-	"Planets": "",
-	"Projectiles": "",
-	"Prop_Felucia": "",
-	"Prop_Forest": "",
-	"Props_Desert": "",
-	"Props_Generic": "",
-	"Props_Snow": "",
-	"Props_Story": "",
-	"Props_Swamp": "",
-	"Props_Temperate": "",
-	"Props_Urban": "",
-	"Props_Volcanic": "",
-	"Pulse_Cannon_Tank_Data": "",
-	"RebelGroundCompanies": "",
-	"Rogue_Squadron_Data": "",
-	"Scavenger_Droids_Data": "",
-	"ScriptMarkers": "",
-	"SecondaryStructures": "",
-	"Silri_Data": "",
-	"Skipray_Blastboat_Data": "",
-	"SpaceBuildables": "",
-	"SpaceCorvettes": "",
-	"SpacePrimarySkydomes": "",
-	"SpaceProps": "",
-	"SpaceProps_UW": "",
-	"SpaceSecondarySkydomes": "",
-	"SpaceUnitsCapital": "",
-	"SpaceUnitsFrigates": "",
-	"SpaceUnitsSupers": "",
-	"SpecialEffects": "",
-	"SpecialStructures": "",
-	"Squadrons": "",
-	"StarBases": "",
-	"TIE_Defender_Files": "",
-	"TIE_Interceptor_Files": "",
-	"TIE_Phantom_Files": "",
-	"TechBuildings": "",
-	"TransportUnits": "",
-	"Tyber_Zann_Data": "",
-	"Underworld_Disruptor_Infantry_Data": "",
-	"Underworld_Mercenary_Infantry_Data": "",
-	"Underworld_TransportUnits": "",
-	"UniqueUnits": "",
-	"UpgradeObjects": "",
-	"UpgradeObjects_Underworld": "",
-	"Urai_Fen_Data": "",
-	"Vengeance_Frigate_Data": "",
-	"Vornskr_Wolf_Data": "",
-	"Yoda_Hero_Files": "",
-
-	# HeroClashType Roots
-	"Hero_Clashes": "",
-
-	# SFXEvent Roots
-	"SFXEvent_Files": "",
-	"SFXEvents": "",
-
-	# TerrainDecalFX Roots
-	"TerrainDecals": "",
-
-	# LightningTypeManager Roots
-	"LightningEffects": "",
-
-	# DynamicTrackFX Roots
-	"DynamicTracks": "",
-
-	# MusicEvent Roots
-	"MusicEvents": "",
-
-	# SpeechEvent Roots
-	"SpeechEvents": "",
-
-	# GameConstants Roots
-	"GameConstants": "",
-
-	# CommandBarComponent Roots
-	"CommandBarComponents": "",
-	"CommandBar_Component_Files": "",
-
-	# TradeRoute Roots
-	"TradeRoutes": "",
-	"Trade_Route_Files": "",
-
-	# TradeRouteLines Roots
-	"TradeRouteLines": "",
-
-	# RadarMap Roots
-	"RadarMap": "",
-
-	# Draw3DTextCrawl Roots
-	"StarWars3DTextScroll": "",
-
-	# WeatherPattern Roots
-	"Weather_Scenarios": "",
-
-	# HardPoint Roots
-	"HardPoints": "",
-
-	# Campaign Roots
-	"Campaign_Files": "",
-	"Campaigns": "",
-	"Story": "",
-	"Story_Mode_Plots": "",
-
-	# Faction Roots
-	"Faction_Files": "",
-	"Factions": "",
-
-	# TacticalCameraConstants Roots
-	"TacticalCameras": "",
-
-	# LightSource Roots
-	"LightSources": "",
-
-	# BinkMovie Roots
-	"Movies": "",
-
-	# TargetingPrioritySet Roots
-	"Targeting_Priority_Set_Files": "",
-	"Targeting_Priority_Sets": "",
-
-	# DifficultyAdjustment Roots
-	"Difficulty_Adjustments": "",
-
-	# WeatherAudioManager Roots
-	"WeatherAudio": "",
-}
-
-
-#############################
-# End Contexts
-#############################
-
-"Separator to allow individual folding of the above comments, please ignore"
-
-#############################
-# Start Descriptions
-#############################
-# Sections in the form of: NodeType/SubNodeType: "*Insert Description Here*",
-
-DESCRIPTION_NODE: Dict[str, str] = {
-	# GameObjectType Nodes
-	"Abilities": "",
-	"Absorb_Blaster_Ability": "",
-	"Arc_Sweep_Attack_Ability": "",
-	"Battlefield_Modifier_Ability": "",
-	"Berserker_Ability": "",
-	"Black_Market_Ability": "",
-	"Buzz_Droids_Ability": "",
-	"CIN_GroundInfantry": "",
-	"CIN_SpaceProp": "",
-	"CIN_SpaceUnit": "",
-	"Cin_GroundProp": "",
-	"Cin_GroundStructure": "",
-	"Cin_GroundVehicle": "",
-	"Cin_Projectile": "",
-	"Cin_SpaceProp": "",
-	"Cin_SpaceUnit": "",
-	"Cin_TransportUnit": "",
-	"Cluster_Bomb_Ability": "",
-	"Combat_Bonus_Ability": "",
-	"Container": "",
-	"Corrupt_Systems_Ability": "",
-	"Drain_Life_Ability": "",
-	"Earthquake_Attack_Ability": "",
-	"Energy_Weapon_Attack_Ability": "",
-	"Enhance_Defense_Ability": "",
-	"Find_Weakness_Ability": "",
-	"Force_Cloak_Ability": "",
-	"Force_Confuse_Ability": "",
-	"Force_Healing_Ability": "",
-	"Force_Sight_Ability": "",
-	"Galactic_Stealth_Ability": "",
-	"GenericHeroUnit": "",
-	"Generic_Attack_Ability": "",
-	"GroundBase": "",
-	"GroundBuildable": "",
-	"GroundCompany": "",
-	"GroundInfantry": "",
-	"GroundStructure": "",
-	"GroundVehicle": "",
-	"Hack_Super_Weapon_Ability": "",
-	"HeroCompany": "",
-	"HeroUnit": "",
-	"Hero_Protection_Ability": "",
-	"Indigenous_Unit": "",
-	"Infection_Ability": "",
-	"Ion_Cannon_Shot_Attack_Ability": "",
-	"LandBombingUnit": "",
-	"LandPrimarySkydome": "",
-	"LandSecondarySkydome": "",
-	"Laser_Defense_Ability": "",
-	"Leech_Shields_Ability": "",
-	"Lucky_Shot_Attack_Ability": "",
-	"MOV_Cinematic": "",
-	"Marker": "",
-	"MiscObject": "",
-	"Mobile_Defense_Unit": "",
-	"MultiplayerStructureMarker": "",
-	"Neutralize_Hero_Ability": "",
-	"Particle": "",
-	"Permanent_Weapon_Swap_Ability": "",
-	"Personal_Flame_Thrower_Ability": "",
-	"Planet": "",
-	"Planet_Destruction_Ability": "",
-	"Projectile": "",
-	"Prop_Desert": "",
-	"Prop_Felucia": "",
-	"Prop_Forest": "",
-	"Props_Generic": "",
-	"Props_Snow": "",
-	"Props_Story": "",
-	"Props_Swamp": "",
-	"Props_Temperate": "",
-	"Props_Urban": "",
-	"Props_Volcanic": "",
-	"Proximity_Mines_Ability": "",
-	"Radioactive_Contaminate_Ability": "",
-	"Redirect_Blaster_Ability": "",
-	"Reduce_Production_Price_Ability": "",
-	"Remove_Corruption_Ability": "",
-	"Saber_Throw_Ability": "",
-	"ScriptMarker": "",
-	"SecondaryStructure": "",
-	"Sensor_Jamming_Ability": "",
-	"Shield_Flare_Ability": "",
-	"SlaveCompany": "",
-	"Slave_Unit": "",
-	"SpaceBuildable": "",
-	"SpacePrimarySkydome": "",
-	"SpaceProp": "",
-	"SpaceSecondarySkydome": "",
-	"SpaceStructure": "",
-	"SpaceUnit": "",
-	"Spawn_Ability": "",
-	"SpecialEffect": "",
-	"SpecialStructure": "",
-	"Squadron": "",
-	"StarBase": "",
-	"Starbase": "",
-	"Stealth_Ability": "",
-	"Stun_Ability": "",
-	"Summon_Ability": "",
-	"Super_Laser_Ability": "",
-	"System_Spy_Ability": "",
-	"Tactical_Bribe_Ability": "",
-	"TechBuilding": "",
-	"Tractor_Beam_Attack_Ability": "",
-	"TransportUnit": "",
-	"UniqueUnit": "",
-	"Unit_Abilities_Data": "",
-	"Unit_Ability": "",
-	"UpgradeObject": "",
-
-
-	# HeroClashType Nodes
-	"Hero_Clash": "",
-
-
-	# SFXEvent Nodes
-	"SFXEvent": "",
-
-
-	# TerrainDecalFX Nodes
-	"Decal": "",
-
-
-	# LightningTypeManager Nodes
-	"LightningEffect": "",
-
-
-	# DynamicTrackFX Nodes
-	"DynamicTrack": "",
-
-
-	# MusicEvent Nodes
-	"MusicEvent": "",
-
-
-	# SpeechEvent Nodes
-	"SpeechEvent": "",
-
-
-	# GameConstants Nodes
-	# N/A
-
-
-	# CommandBarComponent Nodes
-	"CommandBarComponent": "",
-
-
-	# TradeRoute Nodes
-	"TradeRoute": "",
-
-
-	# TradeRouteLines Nodes
-	"Settings_For_Faction": "",
-	"TradeRouteLine": "",
-
-
-	# RadarMap Nodes
-	"Color": "",
-	"Passability_Color_Settings": "",
-	"RadarMapEvents": "",
-	"RadarMapSettings": "",
-	"Radar_Map_Event": "",
-
-
-	# Draw3DTextCrawl Nodes
-	"Data_Specifications": "",
-	"TextScroll": "",
-
-
-	# WeatherPattern Nodes
-	"Phase": "",
-	"Weather_Scenario": "",
-
-
-	# HardPoint Nodes
-	"HardPoint": "",
-
-
-	# Campaign Nodes
-	"Campaign": "",
-	"Event": "",
-
-
-	# Faction Nodes
-	"Faction": "",
-
-
-	# TacticalCameraConstants Nodes
-	"TacticalCamera": "",
-
-
-	# LightSource Nodes
-	"LightSource": "",
-
-
-	# BinkMovie Nodes
-	"Movie": "",
-
-
-	# TargetingPrioritySet Nodes
-	"Priority_Set": "",
-
-
-	# DifficultyAdjustment Nodes
-	"Difficulty_Adjustment": "",
-
-
-	# WeatherAudioManager Nodes
-	# N/A
-}
-
 
 DESCRIPTION_SUBNODE: Dict[str, str] = {
 	# SubNode Descriptions
@@ -2905,6 +2846,911 @@ DESCRIPTION_SUBNODE: Dict[str, str] = {
 "Separator to allow individual folding of the above comments, please ignore"
 
 #############################
+# Start Contexts
+#############################
+# Sections in the form of: RootNodeName/XmlTypeName: "*Insert Context Here*",
+
+# TODO: Add contexts
+CONTEXT_TYPE: Dict[str, str] = {
+	# XML Type Contexts
+
+	"GameObjectType":
+		"""
+	*"If you want to find something that isn"t in the other XML types, it"s here... It"s all here..." -luke13139*
+
+The GameObjectType stores information related to anything the game considers and "object". This includes units, props, 
+projectiles, particles, and heroes, to name a few. This XML Type accounts for more than any other XML type, and holds
+more than every other XML type put together. Many RootNodes in this class contain duplicate information, but only  
+Nodes/SubNodes used in a RootNode will appear under its documentation.
+		""",
+
+	"HeroClashType":
+		"""
+	*"Probably just something about Vader HAND-ling Luke if they get into a duel." -luke13139*
+
+Unknown, but it may contain information related to hero-on-hero battles, such as what animations to use for
+lightsaber battles
+		""",
+
+	"SFXEvent":
+		"""
+Contains events that play sound effects. These events contain the file to play and related audio settings.
+		""",
+
+	"TerrainDecalFX":
+		"""
+		""",
+
+	"LightningTypeManager":
+		"""
+	*Palpatine may just go with plaid lightning to mix up his style, ya"know? -luke13139*
+
+Unknown, but it may contain information related to the different lightning effects in the game, which include those from
+abilities (such as Palpatine"s Force Lightning), weather, and ionized nebulae.
+		""",
+
+	# "DynamicTrackFX":
+	# 	"""
+	# 	""",
+
+	"MusicEvent":
+		"""
+Contains events that play music/trigger music changes. They may loop, and only 1 music event may be active at a time 
+(except while switching tracks, where the previous event can fade out while the new music fades in)
+		""",
+
+	"SpeechEvent":
+		"""
+	*Not sound effects, all sound effects are SFXEvents. These are SpeechEvents. Very different. -luke13139*
+
+Similar to SFXEvents, but only contains voice recordings.
+		""",
+
+	"GameConstants":
+		"""
+Stores a variety of miscellaneous values for the game. Many of these are visual information and default settings.
+		""",
+
+	"CommandBarComponent":
+		"""
+Stores data for the buttons on the command bar.
+		""",
+
+	"TradeRoute":
+		"""
+	*Does not include lines. -luke13139*
+
+Unknown, but may contain information related to the planet-to-planet hyperlane connections on the Galactic Conquest Map
+		""",
+
+	"TradeRouteLines":
+		"""
+	*Probably doesn"t have trade routes, but it probably does have lines! -luke13139*
+
+Unknown, but may contain information related to the lines used to show hyperlanes on the Galactic Conquest Map.
+		""",
+
+	"RadarMap":
+		"""
+	*Why they needed a dedicated XML type for this is beyond mortal comprehension. -luke13139*
+
+Contains some colors and textures to use for displays on the minimap. This includes the visual indicators for unit 
+deaths, issued commands, and pings.
+		""",
+
+	"Draw3DTextCrawl":
+		"""
+	*Text?!?! Crawling?!?! -luke13139*
+
+Unknown, but may contain information related to the in-game version of the iconic Star Wars text crawl introduction.
+		""",
+
+	"WeatherPattern":
+		"""
+	*Bringing out the inner meteorologist in imperial officers, rebel kamikazes, and wanted mercenaries. -luke13139*
+		""",
+
+	"HardPoint":
+		"""
+Stores the individual parts of larger units. May or may not be targetable and destroyable. Most weapons in space are 
+fired from hardpoints, with the notable exception of fighters and other small craft.
+		""",
+
+	"Campaign":
+		"""
+Stores campaign information.
+		""",
+
+	"Faction":
+		"""
+Stores information specific to factions in the game.
+
+Base EaW Factions:
+
+- Rebel
+- Empire
+- Pirates
+- Neutral
+- Hostile
+- Sarlacc
+
+Base FoC Factions (Excluding EaW Factions):
+
+- Underworld
+- Hutts
+
+		""",
+
+	"TacticalCameraConstants":
+		"""
+	*Why? Shouldn"t this have been under GameConstants or just about anywhere else? Why?!?! -luke13139*
+
+Unknown, but it may contain information related to the movements of the normal camera view, cinematic camera view, 
+and/or BattleCam view.
+		""",
+
+	"LightSource":  # TODO: Remove LightSource Description joke, at some point
+		"""
+Lights.
+		""",
+
+	"BinkMovie":
+		"""
+References .BIK Movie files, giving them a name attribute which can be referenced.
+		""",
+
+	"TargetingPrioritySet":
+		"""
+Targeting priorities for units, used for controlling auto-targeting.
+		""",
+
+	"DifficultyAdjustment":
+		"""
+	*Answers the age-old question of how hard "Hard" is. -luke13139*
+		""",
+
+	"WeatherAudioManager":
+		"""
+	*Combine with LightningTypeManager for a realistic thunderstorm! A lightning storm... in... space? -luke13139*
+		""",
+}
+
+CONTEXT_NODE: Dict[str, str] = {
+	# GameObjectType
+	"Abilities":
+		"""
+		
+		""",
+
+	"Absorb_Blaster_Ability":
+		"""
+		
+		""",
+
+	"Arc_Sweep_Attack_Ability":
+		"""
+		
+		""",
+
+	"Battlefield_Modifier_Ability":
+		"""
+		
+		""",
+
+	"Berserker_Ability":
+		"""
+		
+		""",
+
+	"Black_Market_Ability":
+		"""
+		
+		""",
+
+	"Buzz_Droids_Ability":
+		"""
+		
+		""",
+
+	"CIN_GroundInfantry":
+		"""
+		
+		""",
+
+	"CIN_SpaceProp":
+		"""
+		
+		""",
+
+	"CIN_SpaceUnit":
+		"""
+		
+		""",
+
+	"Cin_GroundProp":
+		"""
+		
+		""",
+
+	"Cin_GroundStructure":
+		"""
+		
+		""",
+
+	"Cin_GroundVehicle":
+		"""
+		
+		""",
+
+	"Cin_Projectile":
+		"""
+		
+		""",
+
+	"Cin_SpaceProp":
+		"""
+		
+		""",
+
+	"Cin_SpaceUnit":
+		"""
+		
+		""",
+
+	"Cin_TransportUnit":
+		"""
+		
+		""",
+
+	"Cluster_Bomb_Ability":
+		"""
+		
+		""",
+
+	"Combat_Bonus_Ability":
+		"""
+		
+		""",
+
+	"Container":
+		"""
+		
+		""",
+
+	"Corrupt_Systems_Ability":
+		"""
+		
+		""",
+
+	"Drain_Life_Ability":
+		"""
+		
+		""",
+
+	"Earthquake_Attack_Ability":
+		"""
+		
+		""",
+
+	"Energy_Weapon_Attack_Ability":
+		"""
+		
+		""",
+
+	"Enhance_Defense_Ability":
+		"""
+		
+		""",
+
+	"Find_Weakness_Ability":
+		"""
+		
+		""",
+
+	"Force_Cloak_Ability":
+		"""
+		
+		""",
+
+	"Force_Confuse_Ability":
+		"""
+		
+		""",
+
+	"Force_Healing_Ability":
+		"""
+		
+		""",
+
+	"Force_Sight_Ability":
+		"""
+		
+		""",
+
+	"Galactic_Stealth_Ability":
+		"""
+		
+		""",
+
+	"GenericHeroUnit":
+		"""
+		
+		""",
+
+	"Generic_Attack_Ability":
+		"""
+		
+		""",
+
+	"GroundBase":
+		"""
+		
+		""",
+
+	"GroundBuildable":
+		"""
+		
+		""",
+
+	"GroundCompany":
+		"""
+		
+		""",
+
+	"GroundInfantry":
+		"""
+		
+		""",
+
+	"GroundStructure":
+		"""
+		
+		""",
+
+	"GroundVehicle":
+		"""
+		
+		""",
+
+	"Hack_Super_Weapon_Ability":
+		"""
+		
+		""",
+
+	"HeroCompany":
+		"""
+		
+		""",
+
+	"HeroUnit":
+		"""
+		
+		""",
+
+	"Hero_Protection_Ability":
+		"""
+		
+		""",
+
+	"Indigenous_Unit":
+		"""
+		
+		""",
+
+	"Infection_Ability":
+		"""
+		
+		""",
+
+	"Ion_Cannon_Shot_Attack_Ability":
+		"""
+		
+		""",
+
+	"LandBombingUnit":
+		"""
+		
+		""",
+
+	"LandPrimarySkydome":
+		"""
+		
+		""",
+
+	"LandSecondarySkydome":
+		"""
+		
+		""",
+
+	"Laser_Defense_Ability":
+		"""
+		
+		""",
+
+	"Leech_Shields_Ability":
+		"""
+		
+		""",
+
+	"Lucky_Shot_Attack_Ability":
+		"""
+		
+		""",
+
+	"MOV_Cinematic":
+		"""
+		
+		""",
+
+	"Marker":
+		"""
+		
+		""",
+
+	"MiscObject":
+		"""
+		
+		""",
+
+	"Mobile_Defense_Unit":
+		"""
+		
+		""",
+
+	"MultiplayerStructureMarker":
+		"""
+		
+		""",
+
+	"Neutralize_Hero_Ability":
+		"""
+		
+		""",
+
+	"Particle":
+		"""
+		
+		""",
+
+	"Permanent_Weapon_Swap_Ability":
+		"""
+		
+		""",
+
+	"Personal_Flame_Thrower_Ability":
+		"""
+		
+		""",
+
+	"Planet":
+		"""
+		
+		""",
+
+	"Planet_Destruction_Ability":
+		"""
+		
+		""",
+
+	"Projectile":
+		"""
+		
+		""",
+
+	"Prop_Desert":
+		"""
+		
+		""",
+
+	"Prop_Felucia":
+		"""
+		
+		""",
+
+	"Prop_Forest":
+		"""
+		
+		""",
+
+	"Props_Generic":
+		"""
+		
+		""",
+
+	"Props_Snow":
+		"""
+		
+		""",
+
+	"Props_Story":
+		"""
+		
+		""",
+
+	"Props_Swamp":
+		"""
+		
+		""",
+
+	"Props_Temperate":
+		"""
+		
+		""",
+
+	"Props_Urban":
+		"""
+		
+		""",
+
+	"Props_Volcanic":
+		"""
+		
+		""",
+
+	"Proximity_Mines_Ability":
+		"""
+		
+		""",
+
+	"Radioactive_Contaminate_Ability":
+		"""
+		
+		""",
+
+	"Redirect_Blaster_Ability":
+		"""
+		
+		""",
+
+	"Reduce_Production_Price_Ability":
+		"""
+		
+		""",
+
+	"Remove_Corruption_Ability":
+		"""
+		
+		""",
+
+	"Saber_Throw_Ability":
+		"""
+		
+		""",
+
+	"ScriptMarker":
+		"""
+		
+		""",
+
+	"SecondaryStructure":
+		"""
+		
+		""",
+
+	"Sensor_Jamming_Ability":
+		"""
+		
+		""",
+
+	"Shield_Flare_Ability":
+		"""
+		
+		""",
+
+	"SlaveCompany":
+		"""
+		
+		""",
+
+	"Slave_Unit":
+		"""
+		
+		""",
+
+	"SpaceBuildable":
+		"""
+		
+		""",
+
+	"SpacePrimarySkydome":
+		"""
+		
+		""",
+
+	"SpaceProp":
+		"""
+		
+		""",
+
+	"SpaceSecondarySkydome":
+		"""
+		
+		""",
+
+	"SpaceStructure":
+		"""
+		
+		""",
+
+	"SpaceUnit":
+		"""
+		
+		""",
+
+	"Spawn_Ability":
+		"""
+		
+		""",
+
+	"SpecialEffect":
+		"""
+		
+		""",
+
+	"SpecialStructure":
+		"""
+		
+		""",
+
+	"Squadron":
+		"""
+		
+		""",
+
+	"StarBase":
+		"""
+		
+		""",
+
+	"Starbase":
+		"""
+		
+		""",
+
+	"Stealth_Ability":
+		"""
+		
+		""",
+
+	"Stun_Ability":
+		"""
+		
+		""",
+
+	"Summon_Ability":
+		"""
+		
+		""",
+
+	"Super_Laser_Ability":
+		"""
+		
+		""",
+
+	"System_Spy_Ability":
+		"""
+		
+		""",
+
+	"Tactical_Bribe_Ability":
+		"""
+		
+		""",
+
+	"TechBuilding":
+		"""
+		
+		""",
+
+	"Tractor_Beam_Attack_Ability":
+		"""
+		
+		""",
+
+	"TransportUnit":
+		"""
+		
+		""",
+
+	"UniqueUnit":
+		"""
+		
+		""",
+
+	"Unit_Abilities_Data":
+		"""
+		
+		""",
+
+	"Unit_Ability":
+		"""
+		
+		""",
+
+	"UpgradeObject":
+		"""
+		
+		""",
+
+	# HeroClashType
+	"Hero_Clash":
+		"""
+		
+		""",
+
+	# SFXEvent
+	"SFXEvent":
+		"""
+		
+		""",
+
+	# TerrainDecalFX
+	"Decal":
+		"""
+		
+		""",
+
+	# LightningTypeManager
+	"LightningEffect":
+		"""
+		
+		""",
+
+	# DynamicTrackFX
+	"DynamicTrack":
+		"""
+		
+		""",
+
+	# MusicEvent
+	"MusicEvent":
+		"""
+		
+		""",
+
+	# SpeechEvent
+	"SpeechEvent":
+		"""
+		
+		""",
+
+	# GameConstants
+
+	# CommandBarComponent
+	"CommandBarComponent":
+		"""
+		
+		""",
+
+	# TradeRoute
+	"TradeRoute":
+		"""
+		
+		""",
+
+	# TradeRouteLines
+	"Settings_For_Faction":
+		"""
+		
+		""",
+
+	"TradeRouteLine":
+		"""
+		
+		""",
+
+	# RadarMap
+	"Color":
+		"""
+		
+		""",
+
+	"Passability_Color_Settings":
+		"""
+		
+		""",
+
+	"RadarMapEvents":
+		"""
+		
+		""",
+
+	"RadarMapSettings":
+		"""
+		
+		""",
+
+	"Radar_Map_Event":
+		"""
+		
+		""",
+
+	# Draw3DTextCrawl
+	"Data_Specifications":
+		"""
+		
+		""",
+
+	"TextScroll":
+		"""
+		
+		""",
+
+	# WeatherPattern
+	"Phase":
+		"""
+		
+		""",
+
+	"Weather_Scenario":
+		"""
+		
+		""",
+
+	# HardPoint
+	"HardPoint":
+		"""
+		
+		""",
+
+	# Campaign
+	"Campaign":
+		"""
+		
+		""",
+
+	"Event":
+		"""
+		
+		""",
+
+	# Faction
+	"Faction":
+		"""
+		
+		""",
+
+	# TacticalCameraConstants
+	"TacticalCamera":
+		"""
+		
+		""",
+
+	# LightSource
+	"LightSource":
+		"""
+		
+		""",
+
+	# BinkMovie
+	"Movie":
+		"""
+		
+		""",
+
+	# TargetingPrioritySet
+	"Priority_Set":
+		"""
+		
+		""",
+
+	# DifficultyAdjustment
+	"Difficulty_Adjustment":
+		"""
+		
+		""",
+
+	# WeatherAudioManager
+}
+
+
+#############################
+# End Contexts
+#############################
+
+"Separator to allow individual folding of the above comments, please ignore"
+
+#############################
 # Start Utility Functions
 #############################
 
@@ -2939,12 +3785,12 @@ def get_type_template() -> List[str]:
 		return template_file.readlines()
 
 
-def get_root_template() -> List[str]:
+def get_node_template() -> List[str]:
 	"""
 	Gets the root template as a list of lines
 	:return: The lines from the template
 	"""
-	with open(TEMPLATE_ROOT, 'rt') as template_file:
+	with open(TEMPLATE_NODE, 'rt') as template_file:
 		return template_file.readlines()
 
 
@@ -2970,15 +3816,6 @@ def get_type_description(type_name: str) -> str:
 	return _get_from(DESCRIPTION_TYPE, type_name)
 
 
-def get_root_description(root_name: str) -> str:
-	"""
-	Gets the description for a RootNode.
-	:param root_name: The name of the RootNode to get the description of.
-	:return: A string to use as a description
-	"""
-	return _get_from(DESCRIPTION_ROOT, root_name)
-
-
 def get_node_description(node_name: str) -> str:
 	"""
 	Gets the description for a Node.
@@ -2997,27 +3834,19 @@ def get_subnode_description(subnode_name: str) -> str:
 	return _get_from(DESCRIPTION_SUBNODE, subnode_name)
 
 
-# TODO: Change to use dictionary instead of default when completed
-# noinspection PyUnusedLocal
 def get_type_context(type_name: str) -> str:
 	"""
 	Gets the description for an XMLType.
 	:param type_name: The name of the Type to get the description of.
 	:return: A string to use as for the type's context section
 	"""
-	return FALLBACK_STR
+	return _get_from(CONTEXT_TYPE, type_name)
 
 
-# TODO: Change to use dictionary instead of default when completed
-# noinspection PyUnusedLocal
-def get_root_context(root_name: str) -> str:
+def get_node_context(node_name: str) -> str:
 	"""
-	Gets the description for a RootNode.
-	:param root_name: The name of the RootNode to get the description of.
-	:return: A string to use for the root's context section
+	Gets the description for a Node.
+	:param node_name: The name of the RootNode to get the description of.
+	:return: A string to use for the node's context section
 	"""
-	# description = CONTEXT_ROOT.get(root_name, DEFAULT_CONTEXT)
-	# if not description:
-	# 	description = DEFAULT_CONTEXT
-	# return description
-	return FALLBACK_STR
+	return _get_from(CONTEXT_NODE, node_name)
