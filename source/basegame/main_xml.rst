@@ -1,5 +1,5 @@
-.. _xml:
-.. Introduction/Readme for XML file section of the documentation
+
+.. _basegame-filetype-xml:
 
 ************************
 XML Files - EaW/FoC Data
@@ -57,6 +57,6 @@ XML Type Reference
 	:titlesonly:
 	:glob:
 
-	megafiles.xml
-	Dataminerxmlfiles.xml
-	xml/*
+	xml/megafiles.xml
+	xml/Dataminerxmlfiles.xml
+	xml/auto/*

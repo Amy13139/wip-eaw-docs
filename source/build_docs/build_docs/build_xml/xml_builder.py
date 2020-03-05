@@ -397,14 +397,5 @@ def build(xml_dir_eaw: str, xml_dir_foc: str, xml_dir_out: str) -> None:
 	# Parse files
 	for xtype in xml_type_list:
 		xtype.parse_subfiles()
-		# print("\n{}# {} SubNodes".format(TAB, xtype.name))
-		# # Make subnode list
-		# subnode_set: Set[str] = set()
-		# for single_set in xtype.subnode_names.values():
-		# 	subnode_set.update(single_set)
-		# subnode_set -= set(DESCRIPTION_SUBNODE)
-		# for name in sorted(subnode_set, key=attrib_key):
-		# 	print(TAB + '"{}": "",'.format(name))
-		# print()
 	# Build XML Docs
 	build_docs(xml_dir_out, xml_type_list)

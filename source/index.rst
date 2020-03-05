@@ -25,5 +25,6 @@
 	:hidden:
 	:glob:
 
-	basegame/main_*
+	basegame/*
+
 

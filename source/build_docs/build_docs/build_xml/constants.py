@@ -1047,21 +1047,27 @@ DESCRIPTION_SUBNODE: Dict[str, str] = {
 	"Damage_Multiplier": "The quantity to multiply the Damage_Amount by,",
 	"Damage_Percentage": "",
 	"Damage_Type": "",
-	"File": "",
-	"Files": "",
-	"Fire_Cone_Height": "",
-	"Fire_Cone_Width": "",
-	"Fire_Inaccuracy_Distance": "",
-	"Icon_Name": "",
+	"File": "The filename of an XML file to load as the same type of XML as the loading node",
+	"Files": "A list of filenames for the to use as resources; Type of resource depends on the type of node.",
+	"Fire_Cone_Height": "The height of a weapon's firing cone, it can fire at any ship within the cone.",
+	"Fire_Cone_Width": "The width of a weapon's firing cone, it can fire at any ship within the cone.",
+	"Fire_Inaccuracy_Distance":
+		"The reference is to a type of unit, the number is the distance at which shots become inaccurate against the "
+		"given unit type.",
+	"Icon_Name":
+		"The name of the icon displayed during gameplay, may reference a file stored in an "
+		":ref:`MTD File <basegame-filetype-mtd>`.",
 	"Intensity": "",
 	"Lua_Script": "",
 	"Maintenance_Cost": "",
-	"Model_Name": "",
+	"Model_Name": "The name of the file to load as the model. Must be an :ref:`ALO File <basegame-filetype-alo>`.",
 	"No_Colorization_Color": "",
 	"Render_Mode": "",
-	"Text_ID": "",
+	"Text_ID":
+		"The ID of the text to insert for the name of this object in-game. Text is stored in a "
+		"`DAT File <basegame-filetype-dat>`.",
 	"Type": "",
-	"Volume_Percent": "",
+	"Volume_Percent": "The scaling for the sound's files volume in percent form.",
 
 	# GameObjectType SubNodes
 	"Attribute - Description": "",

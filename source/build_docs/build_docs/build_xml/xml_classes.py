@@ -737,9 +737,27 @@ class XMLType(object):
 	def get_rootnodes(self) -> List[RootNode]:
 		"""
 		Gets the list of child RootNodes
-		:return: A list of RootNodes
+		:return: A list of all RootNodes present in this type
 		"""
 		return sorted(self.root_nodes, key=lambda x: x.name)
+
+	def get_nodes(self) -> List[Node]:
+		"""
+		Gathers a set of all nodes present this XML Type, merges nodes with identical names
+		:return: A set of all nodes present in this type.
+		"""
+		# Setup a node holder
+		node_holder: _NodeSubNodeHolder = _NodeSubNodeHolder()
+
+		# Iterate over RootNodes
+		for rootnode in self.root_nodes:
+			# Iterate over node in each RootNode
+			for node in rootnode.get_nodes():
+				# Add the Nodes to the node_holder
+				node_holder.add_node(node)
+
+		# Return the list of nodes from node_holder
+		return node_holder.get_nodes()
 
 	def update(self) -> None:
 		"""

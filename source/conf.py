@@ -33,7 +33,18 @@ author = 'luke13139'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+	'sphinx.ext.intersphinx'
 ]
+# Link Latest Godot Docs
+intersphinx_mapping = {
+	'godot': ('https://docs.godotengine.org/en/latest/', None)
+}
+
+# Set default role to ref
+default_role = 'ref'
+
+# Try settings the homepage URL to readme
+# html_baseurl = ""
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -41,7 +52,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["/data", "/build_docs"]
+exclude_patterns = ["/basegame_data", "/build_docs"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -50,6 +61,24 @@ exclude_patterns = ["/data", "/build_docs"]
 # a list of builtin themes.
 #
 html_theme = "sphinx_rtd_theme"
+
+# Sphinx RTD Theme Options
+html_theme_options = {
+	# 'canonical_url': '',
+	# 'analytics_id': 'UA-XXXXXXX-1',
+	# 'logo_only': False,
+	'display_version': True,
+	'prev_next_buttons_location': 'bottom',
+	'style_external_links': True,
+	# 'vcs_pageview_mode': '',
+	# 'style_nav_header_background': 'white',
+	# Toc options
+	'collapse_navigation': False,
+	'sticky_navigation': True,
+	'navigation_depth': 4,
+	'includehidden': True,
+	'titles_only': True,
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

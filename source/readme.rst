@@ -56,23 +56,27 @@ This section contains links to all created documentation on every file type used
 The documentation for these files are unofficial, and they are separated by file type. Please report any errors or
 proposed additions to the eaw-godot-docs GitHub.
 
-- ALA; Animation; Attaches to an ALO model file
-- ALO; Models and Particles
-- BIK; Movie
-- DAT; In-Game Text, allows for translations
-- DDS; Texture
-- FXO; Compiled Direct3D 9 Shader
-- H; C++ Header
-- LUA; Script
-- MEG; Uncompressed File Archive
-- MP3; Audio
-- MTD; Packed Texture Index for a TGA
-- RC; C++ Resource Script
-- TEC; In-Game Cinematic
-- TED; Game Map
-- TEE; Environment Set
-- TEM; Material Set
-- TGA; Texture
+- `ALA <basegame-filetype-ala>`; Animation; Attaches to an ALO model file
+- `ALO <basegame-filetype-alo>`; Models and Particles
+- `BIK <basegame-filetype-bik>`; Movie
+- `DAT <basegame-filetype-dat>`; In-Game Text, allows for internationalization
+- DDS (`Microsoft DDS Documentation <docs.microsoft.com/windows/win32/direct3ddds/dx-graphics-dds>`_); Texture
+- FXO (`Microsoft ASM Reference <docs.microsoft.com/windows/win32/direct3dhlsl/dx9-graphics-reference-asm>`_);
+  Compiled Direct3D 9 Shader
+- H (`Microsoft C++ Header Documentation <docs.microsoft.com/cpp/cpp/header-files-cpp>`_); C++ Header File
+- LUA (`Lua Documentation <www.lua.org/docs.html>`_); Petroglyph-Lua Script
+- :ref:`MEG <basegame-filetype-meg>`; Uncompressed File Archive
+- MP3 (`MP3 on Wikipedia <wikipedia.org/wiki/MP3>`_); Audio
+- :ref:`MTD <basegame-filetype-mtd>`; Packed Texture Index for a TGA
+- RC (`Microsoft Resource File Reference <docs.microsoft.com/cpp/windows/resource-files-visual-studio>`_);
+  C++ Resource Script
+- TEC; In-Game Cinematic, Unknown format. They appear to be Chunked files.
+- TED; Game Map, Unknown format. They appear to be Chunked files.
+- TEE; Environment Set, Unknown format. They appear to be Chunked files.
+- TEM; Material Set, Unknown format. They appear to be Chunked files.
+- TGA (`TGA Verison 2.0 Specification <www.dca.fee.unicamp.br/~martino/disciplinas/ea978/tgaffs.pdf>`_);
+  Uncompressed Texture
 - TXT; Text List and Script
-- WAV; Audio
-- :doc:`XML <basegame/main_xml>`; Generic Data Storage
+- WAV (`Microsoft Waveform Audio Reference <docs.microsoft.com/windows/win32/multimedia/waveform-audio-reference>`_);
+  Audio
+- `XML <basegame-filetype-xml>`; Generic Data Storage

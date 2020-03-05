@@ -1,4 +1,4 @@
-.. _xml_megafiles:
+.. _basegame-xml-megafiles:
 .. Template to use for XML type documentation
 
 *************
@@ -8,7 +8,8 @@ megafiles.xml
 
 About
 =====
-Contains names of all .meg archives for the game to load. One of 2 XML files loaded by filename
+Contains names of all :ref:`MEG File <basegame-filetype-meg>` archives for the game to load. One of 2 XML files loaded
+by filename
 
 
 Structure
