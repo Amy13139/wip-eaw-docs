@@ -80,11 +80,13 @@ class SubNode(object):
 		if subnode.name == "File":
 			self.filenames.update(subnode.filenames)
 
-	def _get_data(self, raw_data: str) -> None:
+	def _get_data(self, input_data: str) -> None:
 		"""
 		Sets data from the raw_data string
-		:param raw_data: String to split into a list
+		:param input_data: String to split into a list
 		"""
+		# Strip input data to prevent leading/trailing space interfering with type determination
+		raw_data: str = input_data.strip()
 		data: List[str]
 		# Set data to a single-element list of ["None"]
 		if raw_data is None:
@@ -100,14 +102,13 @@ class SubNode(object):
 			# Set separator values
 			self.sep_char = "|"
 			self.sep_str = " | "
-		# Strip data here, prevents misfires with " " separator
-		elif " " in raw_data.strip():
+		elif " " in raw_data:
 			# Set separator values
 			self.sep_char = " "
 			self.sep_str = " "
 		else:
 			# If not a list, set to a single-element list, then exit.
-			self._data = [raw_data.strip()]
+			self._data = [raw_data]
 			return
 
 		# Split, then strip whitespace
