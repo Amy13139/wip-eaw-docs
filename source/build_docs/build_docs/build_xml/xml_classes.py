@@ -100,6 +100,11 @@ class SubNode(object):
 			# Set separator values
 			self.sep_char = "|"
 			self.sep_str = " | "
+		# Strip data here, prevents misfires with " " separator
+		elif " " in raw_data.strip():
+			# Set separator values
+			self.sep_char = " "
+			self.sep_str = " "
 		else:
 			# If not a list, set to a single-element list, then exit.
 			self._data = [raw_data.strip()]
