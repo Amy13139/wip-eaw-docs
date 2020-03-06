@@ -287,7 +287,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			if not exists(dir_path):
 				makedirs(dir_path)
 
-			# Copy template. To Insert: Name, Description, SubDirectory, Context, Node Names, SubNode Names
+			# Copy template. To Insert: Name, Description, SubDirectory, Context, Node ToC, SubNodes
 			type_file_lines: List[str] = template_type.copy()
 			# Create inserts list
 			inserts: List[str] = [
@@ -307,6 +307,9 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			for node_name in xml_type.node_names:
 				# Add the name to the name strings
 				node_names_str += "- {}\n".format(node_name)
+			# Change if no Nodes are present
+			if not len(xml_type.node_names):
+				node_names_str = "No Nodes are present under this XML type"
 			inserts.append(node_names_str)
 			del node_names_str
 

@@ -27,6 +27,6 @@ All Nodes:
 {}
 
 
-All SubNodes:
-*************
+Direct SubNodes:
+****************
 {}
