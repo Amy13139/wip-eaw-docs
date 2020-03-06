@@ -85,13 +85,13 @@ class SubNode(object):
 		Sets data from the raw_data string
 		:param input_data: String to split into a list
 		"""
-		# Strip input data to prevent leading/trailing space interfering with type determination
-		raw_data: str = input_data.strip()
 		data: List[str]
 		# Set data to a single-element list of ["None"]
-		if raw_data is None:
+		if input_data is None:
 			self._data = ["None"]
 			return
+		# Strip input data to prevent leading/trailing space interfering with type determination
+		raw_data: str = input_data.strip()
 
 		# Get separator, or set data to a single-element list before exiting
 		if "," in raw_data:
