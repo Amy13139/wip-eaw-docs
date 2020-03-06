@@ -385,7 +385,7 @@ class NodeSubNodeHolder(object):
 		for node in self.nodes:
 			names.append(node.name)
 		# Return Names
-		return sorted(names)
+		return sorted(names, key=lambda x: x.lower())
 
 	def get_subnode_names(self) -> List[str]:
 		"""
@@ -399,7 +399,7 @@ class NodeSubNodeHolder(object):
 		for subnode in self.subnodes:
 			names.append(subnode.name)
 		# Return Names
-		return sorted(names)
+		return sorted(names, key=lambda x: x.lower())
 
 	def get_nodes(self) -> list:
 		"""
@@ -739,7 +739,7 @@ class XMLType(object):
 		Gets the list of child RootNodes
 		:return: A list of all RootNodes present in this type
 		"""
-		return sorted(self.root_nodes, key=lambda x: x.name)
+		return sorted(self.root_nodes, key=lambda x: x.name.lower())
 
 	def get_nodes(self) -> List[Node]:
 		"""
