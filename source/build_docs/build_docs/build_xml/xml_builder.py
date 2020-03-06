@@ -174,7 +174,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		if len(xml_type.node_names):
 			line += get_table_start(("Node", "Description"))
 			# Iterate over names, ensure alphabetical sorting
-			for node_name in sorted(xml_type.node_names, key=lambda x: x.lower()):
+			for node_name in sorted(xml_type.node_names, key=str.lower):
 				line += get_table_line((node_name, get_node_description(node_name)))
 			line += get_table_end(1)
 
@@ -244,7 +244,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			:param node: The Node to get information from
 			"""
 			# Get node file name
-			node_path = join(dir_path, "{}.rst".format(node.name))
+			node_path = join(dir_path, "{}.rst".format(node.name.lower()))
 
 			# Copy template. To Insert: Name, About, Structure, Context
 			node_file_lines: List[str] = template_node.copy()
@@ -280,7 +280,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		# Iterate over types
 		for xml_type in xml_types:
 			# Get path to main file
-			file_path = join(xml_dir_out, "{}.rst".format(xml_type.name))
+			file_path = join(xml_dir_out, "{}.rst".format(xml_type.name.lower()))
 			dir_path = join(xml_dir_out, xml_type.name)
 
 			# Create Subdirectory

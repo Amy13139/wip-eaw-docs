@@ -385,7 +385,7 @@ class NodeSubNodeHolder(object):
 		for node in self.nodes:
 			names.append(node.name)
 		# Return Names
-		return sorted(names, key=lambda x: x.lower())
+		return sorted(names, key=str.lower)
 
 	def get_subnode_names(self) -> List[str]:
 		"""
@@ -399,7 +399,7 @@ class NodeSubNodeHolder(object):
 		for subnode in self.subnodes:
 			names.append(subnode.name)
 		# Return Names
-		return sorted(names, key=lambda x: x.lower())
+		return sorted(names, key=str.lower)
 
 	def get_nodes(self) -> list:
 		"""
