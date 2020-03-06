@@ -170,12 +170,13 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		"""
 		# Get XMLType name as header
 		line: str = get_header(xml_type.name, "*")
-		# Get table for RootNodes in XML Type in a table
-		line += get_table_start(("Node", "Description"))
-		# Iterate over names, ensure alphabetical sorting
-		for node_name in sorted(xml_type.node_names):
-			line += get_table_line((node_name, get_node_description(node_name)))
-		line += get_table_end(1)
+		# Get table for Nodes in XML Type in a table, only if present
+		if len(xml_type.node_names):
+			line += get_table_start(("Node", "Description"))
+			# Iterate over names, ensure alphabetical sorting
+			for node_name in sorted(xml_type.node_names):
+				line += get_table_line((node_name, get_node_description(node_name)))
+			line += get_table_end(1)
 
 		# Iterate over Nodes
 		for node in xml_type.get_nodes():

@@ -30,12 +30,14 @@ def do_xml() -> None:
 	"""
 	Runs the build() function of the XML Builder. Also clears old build files.
 	"""
-	print("Clearing Old XML Docs...")
 
-	clear_dir(BASEGAME_AUTO_XML_DIR)
-	rmtree(BASEGAME_AUTO_XML_DIR)
-
-	print("Done Clearing Old XML Docs\n")
+	if path.exists(BASEGAME_AUTO_XML_DIR):
+		print("Clearing Old XML Docs...")
+		clear_dir(BASEGAME_AUTO_XML_DIR)
+		rmtree(BASEGAME_AUTO_XML_DIR)
+		print("Done Clearing Old XML Docs\n")
+	else:
+		print("No Old XML Docs Found")
 
 	print("Building XML Structure...")
 

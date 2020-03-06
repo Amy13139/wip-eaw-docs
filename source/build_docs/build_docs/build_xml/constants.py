@@ -248,21 +248,15 @@ DESCRIPTION_NODE: Dict[str, str] = {
 
 	# GameObjectType
 	"Abilities":
-		"""
-Nested Node for units, contains either an activated ability or some form of special behavior for a unit.
-See `Unit Abilities on Petrolution <modtools.petrolution.net/docs/Unit_Abilities_EaW>`_ for a list of EaW active ability
-types. FoC is currently not included, but a page may be added to this documentation
-		""",
+	"Nested Node for units, contains either an activated ability or some form of special behavior for a unit. See"
+	" `Unit Abilities on Petrolution <modtools.petrolution.net/docs/Unit_Abilities_EaW>`_ for a list of EaW active "
+	"abilities. FoC is currently not included, but a page may be added to this documentation",
 
 	"Absorb_Blaster_Ability":
-		"""
-Nested Node for Abilities in combat, reduces damage from certain units by a percent and/or a static amount.
-		""",
+	"Nested Node for Abilities in combat, reduces damage from certain units by a percent and/or a static amount.",
 
 	"Arc_Sweep_Attack_Ability":
-		"""
-Nested Node for Abilities on the ground, attacks all units within an arc.
-		""",
+	"Nested Node for Abilities on the ground, attacks all units within an arc.",
 
 	"Battlefield_Modifier_Ability":
 		"""
@@ -275,16 +269,12 @@ Nested Node for Abilities on the ground, attacks all units within an arc.
 		""",
 
 	"Black_Market_Ability":
-		"""
-Nested Node for Abilities in GC, allows a unit to access the black market, and dictates the behavior when accessed. Only
-used by the Consortium.
-		""",
+	"Nested Node for Abilities in GC, allows caster to access the black market, and dictates market modifiers."
+	" Only used by the Consortium.",
 
 	"Buzz_Droids_Ability":
-		"""
-Nested Node for Abilities in space, which deploys an AoR to passively damage to enemy fighters. Only used by the 
-StarViper Squadron of the Consortium.
-		""",
+	"Nested Node for Abilities in space, which deploys an AoR to passively damage to enemy fighters. Only used by the"
+	" StarViper Squadron of the Consortium.",
 
 	"CIN_GroundInfantry":
 		"""
@@ -402,10 +392,8 @@ Nested Node for Abilities on the ground; removes FoW, centered on the caster
 		""",
 
 	"Galactic_Stealth_Ability":
-		"""
-Nested Node for Abilities in GC; allows a unit to move into enemy-occupied space without starting combat, also dictates
-how much information the unit reveals with it's presence.
-		""",
+	"Nested Node for Abilities in GC; allows a unit to move into enemy-occupied space without starting combat, also"
+	" dictates how much information the unit reveals with it's presence.",
 
 	"GenericHeroUnit":
 		"""
