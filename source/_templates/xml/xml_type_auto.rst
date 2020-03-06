@@ -8,7 +8,7 @@ About
 {}
 
 
-Root Node Docs
+Node Documents
 **************
 .. toctree::
 	:glob:

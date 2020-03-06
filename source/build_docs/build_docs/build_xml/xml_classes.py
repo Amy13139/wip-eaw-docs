@@ -332,7 +332,7 @@ class SubNode(object):
 
 
 # Private base class with a few shared functions
-class _NodeSubNodeHolder(object):
+class NodeSubNodeHolder(object):
 	"""
 	Base class to hold methods and attributes for Node and SubNode storage
 	"""
@@ -342,7 +342,7 @@ class _NodeSubNodeHolder(object):
 
 	# Methods
 	def __init__(self) -> None:
-		self.nodes: List[_NodeSubNodeHolder] = []
+		self.nodes: List[NodeSubNodeHolder] = []
 		self.subnodes = []
 
 	def add_node(self, node) -> None:
@@ -432,7 +432,7 @@ class _NodeSubNodeHolder(object):
 
 
 # Node Class
-class Node(_NodeSubNodeHolder):
+class Node(NodeSubNodeHolder):
 	"""
 	Class to hold information related to a node, should be nested inside of a RootNode or another Node
 	Can hold nodes, subnodes, and XML attributes
@@ -484,7 +484,7 @@ class Node(_NodeSubNodeHolder):
 			else:
 				self.add_subnode(SubNode(child))
 
-	def compare(self, node: _NodeSubNodeHolder) -> bool:
+	def compare(self, node: NodeSubNodeHolder) -> bool:
 		"""
 		Compares two nodes, alters this Node is needed
 		:param node: The node to compare.
@@ -529,7 +529,7 @@ class Node(_NodeSubNodeHolder):
 
 
 # RootNode Class
-class RootNode(_NodeSubNodeHolder):
+class RootNode(NodeSubNodeHolder):
 	"""
 	Class to hold information related to a top-level node, including nodes and/or subnodes
 	Holds Nodes or SubNodes
@@ -747,7 +747,7 @@ class XMLType(object):
 		:return: A set of all nodes present in this type.
 		"""
 		# Setup a node holder
-		node_holder: _NodeSubNodeHolder = _NodeSubNodeHolder()
+		node_holder: NodeSubNodeHolder = NodeSubNodeHolder()
 
 		# Iterate over RootNodes
 		for rootnode in self.root_nodes:
@@ -758,6 +758,20 @@ class XMLType(object):
 
 		# Return the list of nodes from node_holder
 		return node_holder.get_nodes()
+
+	def get_subnodes(self) -> List[SubNode]:
+		"""
+		Gathers a set of all SubNodes present this XML Type, merges SubNodes if needed
+		:return: A set of all SubNodes present in this type.
+		"""
+		# Get all SubNodes
+		subnode_holder = NodeSubNodeHolder()
+		for rootnode in self.root_nodes:
+			for subnode in rootnode.get_subnodes():
+				subnode_holder.add_subnode(subnode)
+
+		# Return
+		return subnode_holder.get_subnodes()
 
 	def update(self) -> None:
 		"""

@@ -178,9 +178,18 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 				line += get_table_line((node_name, get_node_description(node_name)))
 			line += get_table_end(1)
 
-		# Iterate over Nodes
-		for node in xml_type.get_nodes():
-			line += get_node(node)
+			# Iterate over Nodes
+			for node in xml_type.get_nodes():
+				line += get_node(node)
+
+		# Get all SubNodes if no nodes are present
+		else:
+			# Get all SubNodes
+			# Add Subnode Table
+			line += get_header("Direct SubNodes", "-")
+			for subnode in xml_type.get_subnodes():
+				line += get_subnode(subnode)
+
 		# Return
 		return line
 
@@ -301,17 +310,11 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			inserts.append(node_names_str)
 			del node_names_str
 
-			# 6. SubNode Names
-			subnode_names_set: Set[str] = set()
-			subnode_names_str: str = ""
-			for subnode_set in xml_type.subnode_names.values():
-				# Add the name to the subnode names set
-				subnode_names_set.update(subnode_set)
-			for subnode_name in sorted(subnode_names_set, key=attrib_key):
-				# Add the name to the subnode name string
-				subnode_names_str += "- {}\n".format(subnode_name)
-			inserts.append(subnode_names_str)
-			del subnode_names_set, subnode_names_str
+			# 6. SubNodes
+			subnode_line: str = ""
+			for subnode in xml_type.get_subnodes():
+				subnode_line += get_subnode(subnode)
+			inserts.append(subnode_line)
 
 			# Get iterator from inserts
 			insert_iter: Iterator[str] = iter(inserts)
