@@ -60,23 +60,25 @@ proposed additions to the eaw-godot-docs GitHub.
 - `ALO <basegame-filetype-alo>`; Models and Particles
 - `BIK <basegame-filetype-bik>`; Movie
 - `DAT <basegame-filetype-dat>`; In-Game Text, allows for internationalization
-- DDS (`Microsoft DDS Documentation <docs.microsoft.com/windows/win32/direct3ddds/dx-graphics-dds>`_); Texture
-- FXO (`Microsoft ASM Reference <docs.microsoft.com/windows/win32/direct3dhlsl/dx9-graphics-reference-asm>`_);
-  Compiled Direct3D 9 Shader
-- H (`Microsoft C++ Header Documentation <docs.microsoft.com/cpp/cpp/header-files-cpp>`_); C++ Header File
-- LUA (`Lua Documentation <www.lua.org/docs.html>`_); Petroglyph-Lua Script
-- :ref:`MEG <basegame-filetype-meg>`; Uncompressed File Archive
-- MP3 (`MP3 on Wikipedia <wikipedia.org/wiki/MP3>`_); Audio
-- :ref:`MTD <basegame-filetype-mtd>`; Packed Texture Index for a TGA
-- RC (`Microsoft Resource File Reference <docs.microsoft.com/cpp/windows/resource-files-visual-studio>`_);
+- DDS (`Microsoft DDS Documentation <https://docs.microsoft.com/windows/win32/direct3ddds/dx-graphics-dds>`_); Texture
+- FXO (`Microsoft ASM Reference <https://docs.microsoft.com/windows/win32/direct3dhlsl/dx9-graphics-reference-asm>`_);
+  Compiled Direct3D 9 Shader. Petroglyph released the `Source Code <http://www.petroglyphgames.com/eawmodtool/>`_ for
+  all FoC shaders.
+- H (`Microsoft C++ Header Documentation <https://docs.microsoft.com/cpp/cpp/header-files-cpp>`_); C++ Header File
+- LUA (`Lua Documentation <https://www.lua.org/docs.html>`_); Petroglyph-Lua Script, may be compiled. Full documentation
+  may be added at some point.
+- `MEG <basegame-filetype-meg>`; Uncompressed File Archive
+- MP3 (`MP3 on Wikipedia <https://wikipedia.org/wiki/MP3>`_); Audio
+- `MTD <basegame-filetype-mtd>`; Packed Texture Index for a TGA
+- RC (`Microsoft Resource File Reference <https://docs.microsoft.com/cpp/windows/resource-files-visual-studio>`_);
   C++ Resource Script
 - TEC; In-Game Cinematic, Unknown format. They appear to be Chunked files.
 - TED; Game Map, Unknown format. They appear to be Chunked files.
 - TEE; Environment Set, Unknown format. They appear to be Chunked files.
 - TEM; Material Set, Unknown format. They appear to be Chunked files.
-- TGA (`TGA Verison 2.0 Specification <www.dca.fee.unicamp.br/~martino/disciplinas/ea978/tgaffs.pdf>`_);
+- TGA (`TGA Verison 2.0 Specification <https://www.dca.fee.unicamp.br/~martino/disciplinas/ea978/tgaffs.pdf>`_);
   Uncompressed Texture
 - TXT; Text List and Script
-- WAV (`Microsoft Waveform Audio Reference <docs.microsoft.com/windows/win32/multimedia/waveform-audio-reference>`_);
-  Audio
+- WAV (`Microsoft Waveform Audio
+  Reference <https://docs.microsoft.com/windows/win32/multimedia/waveform-audio-reference>`_); Audio
 - `XML <basegame-filetype-xml>`; Generic Data Storage
