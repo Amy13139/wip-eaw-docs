@@ -1,5 +1,5 @@
 """Main script for build_docs module; contains high-level functions to build EaW/FoC Documentation"""
-from . import build_xml
+from .build_xml.xml_builder import build as xml_build
 from os import path, getcwd, listdir, remove
 from shutil import rmtree
 
@@ -42,7 +42,7 @@ def do_xml() -> None:
 
 	print("Building XML Structure...")
 
-	build_xml.xml_builder.build(
+	xml_build(
 			EAW_XML_DIR,
 			FOC_XML_DIR,
 			BASEGAME_AUTO_XML_DIR,

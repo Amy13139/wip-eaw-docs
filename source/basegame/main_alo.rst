@@ -15,7 +15,7 @@ Destroyer, to allow for sections to be removed dynamically.
 
 ALO Structures
 ==============
-All file format information can be found at `Petrolution Mod Tools <modtools.petrolution.net/docs/Formats>`_, developed
+All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_, developed
 by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files, including some to both
 view and edit ALO files.
 
@@ -46,4 +46,4 @@ Currently, a particle importer has been theorized, but many features needed are 
 development, so it may be improved with the Godot 4 update, but a custom particle implementation may be necessary.
 
 
-.. _Gaulker's Alamo Tools for Blender: focumentation.fandom.com/wiki/Alamo_Tools_for_Blender
+.. _Gaulker's Alamo Tools for Blender: https://focumentation.fandom.com/wiki/Alamo_Tools_for_Blender

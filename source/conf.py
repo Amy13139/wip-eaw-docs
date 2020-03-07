@@ -11,13 +11,18 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-try:
-	from build_docs.build_docs import build
-except ModuleNotFoundError:
-	from build_docs import build
+
+# Set this statement to False for Debug/Dev mode
+DEBUG_MODE: bool = False
+
+if not DEBUG_MODE:
+	from eaw_godot_doc_module.builder import build
+else:
+	from os import system
+	system("python cython/eaw_godot_doc_module/setup.py build_ext -b .")
+	from eaw_godot_doc_module.builder import build
 
 
 # -- Project information -----------------------------------------------------

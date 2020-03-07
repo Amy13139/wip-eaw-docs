@@ -20,6 +20,6 @@ build:
 python:
   version: 3.8
   install:
-    - requirements: requirements.txt
     - method: pip
-      path: source/build_docs
+      path: source/cython/eaw_godot_doc_module
+    - requirements: requirements.txt

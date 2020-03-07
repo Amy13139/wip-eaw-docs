@@ -3784,7 +3784,7 @@ def get_node_template() -> List[str]:
 
 def _get_from(const_dict, key) -> str:
 	"""
-	Private function to get a key from one of the dictionaries in the constants.py file.
+	Private function to get a key from one of the dictionaries in the xml_constants.py file.
 	:param const_dict: The dictionary to get the value from
 	:param key: The key to use to get the value
 	:return: The value of the dictionary, a string.

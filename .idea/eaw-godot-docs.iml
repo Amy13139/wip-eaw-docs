@@ -5,7 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/source" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/source/basegame/xml/auto" />
+      <excludeFolder url="file://$MODULE_DIR$/source/build" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludePattern pattern="*.c" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (eaw-godot-docs)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

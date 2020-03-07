@@ -1,5 +1,5 @@
 """Classes to help manage the data of an EaW/FoC XML File"""
-from .constants import *
+from .xml_constants import *
 
 
 # SubNode Class
