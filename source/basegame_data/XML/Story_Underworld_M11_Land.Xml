@@ -1489,7 +1489,7 @@
 				</Event>
 
 	<!--
-		Tyber Zann: I’m not going to lie to anyone.  Breaking into the Emperor’s Personal museum isn’t going to be easy, but we need those codes.
+		Tyber Zann: Iï¿½m not going to lie to anyone.  Breaking into the Emperorï¿½s Personal museum isnï¿½t going to be easy, but we need those codes.
 	-->
 	<Event Name="Mission_Chatter_41">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1513,8 +1513,8 @@
 				</Event>
 	
 	<!--
-		Tyber Zann: So let’s review the plan.  I’ll infiltrate the security section and disable the 
-		monitoring controls, so the cameras won’t be watching us when we’re breaking into the vault.  After that…
+		Tyber Zann: So letï¿½s review the plan.  Iï¿½ll infiltrate the security section and disable the 
+		monitoring controls, so the cameras wonï¿½t be watching us when weï¿½re breaking into the vault.  After thatï¿½
 	-->
 	<Event Name="Mission_Chatter_42">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1562,7 +1562,7 @@
 				</Event>
 	
 	<!--
-		Tyber Zann: …Silri?  Are you paying attention?
+		Tyber Zann: ï¿½Silri?  Are you paying attention?
 	-->
 	<Event Name="Mission_Chatter_44">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1610,8 +1610,8 @@
 				</Event>
 	
 	<!--
-		Tyber Zann: You’re guarding the getaway vehicle, don’t forget that.  Once we have the codes, 
-		we’ll need a transport to get past the exit defenses.
+		Tyber Zann: Youï¿½re guarding the getaway vehicle, donï¿½t forget that.  Once we have the codes, 
+		weï¿½ll need a transport to get past the exit defenses.
 	-->
 	<Event Name="Mission_Chatter_46">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1683,7 +1683,7 @@
 				</Event>
 	
 	<!--
-		Tyber Zann: She’s proving to be more helpful than troublesome, although I fear she’s going to be the death of me.
+		Tyber Zann: Sheï¿½s proving to be more helpful than troublesome, although I fear sheï¿½s going to be the death of me.
 	-->
 	<Event Name="Mission_Chatter_49">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1707,7 +1707,7 @@
 				</Event>
 	
 	<!--
-		Silri: I’ve got a bad feeling about this.
+		Silri: Iï¿½ve got a bad feeling about this.
 	-->
 	<Event Name="Mission_Chatter_50">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1731,7 +1731,7 @@
 				</Event>
 	
 	<!--
-		Tyber Zann: The vault is open.  Let’s see what’s inside.
+		Tyber Zann: The vault is open.  Letï¿½s see whatï¿½s inside.
 	-->
 	<Event Name="Mission_Chatter_51">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1755,7 +1755,7 @@
 				</Event>
 	
 	<!--
-		Tyber Zann: Why aren’t those Ysalamiri cages being deployed?  We’re in trouble here!
+		Tyber Zann: Why arenï¿½t those Ysalamiri cages being deployed?  Weï¿½re in trouble here!
 	-->
 	<Event Name="Mission_Chatter_52">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -1803,7 +1803,7 @@
 				</Event>
 	
 	<!--
-		Tyber Zann: Put your foot on it and let’s get out of here!
+		Tyber Zann: Put your foot on it and letï¿½s get out of here!
 	-->
 	<Event Name="Mission_Chatter_54">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
