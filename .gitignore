@@ -124,7 +124,7 @@ dmypy.json
 .pyre/
 
 # Generated Files
-/docs/basegame/xml/_auto/
+docs/basegame/xml/_auto/
 
 # Cython Compiled Files
 *.pyd
