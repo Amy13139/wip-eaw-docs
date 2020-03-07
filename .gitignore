@@ -128,5 +128,5 @@ dmypy.json
 source/basegame/xml/auto/
 
 # Cython Compiled Files
-.pyd
+*.pyd
 *.c
