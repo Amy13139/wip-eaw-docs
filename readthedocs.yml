@@ -7,7 +7,7 @@ version: 2
 
 # Build documentation in this directory with Sphinx
 sphinx:
-  configuration: source/conf.py
+  configuration: docs/conf.py
 
 # Build Image Version
 build:
@@ -22,4 +22,4 @@ python:
   install:
     - requirements: requirements.txt
     - method: pip
-      path: source/cython/eaw_godot_doc_module
+      path: eaw_godot_doc_module_source
