@@ -70,7 +70,6 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-build/*
 
 # PyBuilder
 target/
@@ -126,29 +125,4 @@ dmypy.json
 .pyre/
 
 # Generated Files
-source/basegame/*/*_structure.rst
-/source/basegame/xml/BinkMovie.rst
-/source/basegame/xml/Campaign.rst
-/source/basegame/xml/CommandBarComponent.rst
-/source/basegame/xml/DifficultyAdjustment.rst
-/source/basegame/xml/Draw3DTextCrawl.rst
-/source/basegame/xml/DynamicTrackFX.rst
-/source/basegame/xml/Faction.rst
-/source/basegame/xml/GameConstants.rst
-/source/basegame/xml/GameObjectType.rst
-/source/basegame/xml/HardPoint.rst
-/source/basegame/xml/HeroClashType.rst
-/source/basegame/xml/LightningTypeManager.rst
-/source/basegame/xml/LightSource.rst
-/source/basegame/xml/MusicEvent.rst
-/source/basegame/xml/WeatherPattern.rst
-/source/basegame/xml/xml_structure.rst
-/source/basegame/xml/WeatherAudioManager.rst
-/source/basegame/xml/TradeRouteLines.rst
-/source/basegame/xml/TradeRoute.rst
-/source/basegame/xml/TerrainDecalFX.rst
-/source/basegame/xml/TargetingPrioritySet.rst
-/source/basegame/xml/SpeechEvent.rst
-/source/basegame/xml/TacticalCameraConstants.rst
-/source/basegame/xml/SFXEvent.rst
-/source/basegame/xml/RadarMap.rst
+source/basegame/xml/auto/
