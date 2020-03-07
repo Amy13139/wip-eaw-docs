@@ -1,3 +1,4 @@
+"""Main script for build_docs module; contains high-level functions to build EaW/FoC Documentation"""
 from . import build_xml
 from os import path, getcwd, listdir, remove
 from shutil import rmtree

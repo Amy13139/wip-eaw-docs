@@ -1,4 +1,4 @@
-# Classes to help manage the data of an EaW XML File
+"""Classes to help manage the data of an EaW/FoC XML File"""
 from .constants import *
 
 

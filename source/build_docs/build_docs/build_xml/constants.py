@@ -1,5 +1,5 @@
-# This file contains the non-Auto-Generated text for the Auto-XML Generator in the form of Python variables.
-# All Imports for the XML Scripts
+"""This file contains the non-Auto-Generated text for the Auto-XML Generator in the form of Python variables.
+All imports used in upper-level files imported here."""
 from os import getcwd, makedirs
 from os.path import join, basename, dirname, exists
 from typing import List, Union, Set, Dict, TextIO, Iterable, Iterator

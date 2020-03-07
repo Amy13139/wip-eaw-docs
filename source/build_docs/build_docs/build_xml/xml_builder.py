@@ -1,4 +1,4 @@
-# This script gets all of the elements from the EaW and FoC XML files and organizes them for documentation
+"""Contains functions to parse all elements from the EaW and FoC XML files and organize them for documentation"""
 from .xml_classes import *
 
 
@@ -125,40 +125,6 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 				line += get_subnode(curr_subnode)
 			line += get_line_padding(1)
 		line += get_line_padding(1)
-		# Return
-		return line
-
-	def get_rootnode(rootnode: RootNode) -> str:
-		"""
-		Gets the information of a rootnode to a file
-		:param rootnode: The RootNode to get the information from
-		:return:
-		"""
-		# Get RootNode name as header
-		line: str = get_header(codify(rootnode.name), "=")
-		line += get_root_description(rootnode.name)
-		line += get_line_padding(2)
-
-		# Get Nodes table for RootNode's Nodes
-		if rootnode.has_nodes():
-			line += get_table_start(("Node Children", "Description"))
-			# Iterate over nodes
-			for node_name in rootnode.get_node_names():
-				line += get_table_line((codify(node_name), get_node_description(node_name)))
-			# Close the table
-			line += get_table_end(2)
-			for node in rootnode.get_nodes():
-				line += get_node(node)
-
-		# Get SubNodes list for RootNode's Direct Subnodes
-		if rootnode.has_subnodes():
-			line += get_header("SubNode Children", "-")
-			# Iterate over direct subnodes
-			subnode: SubNode
-			for subnode in rootnode.get_subnodes():
-				line += get_subnode(subnode)
-			# Close the table
-			line += get_line_padding(1)
 		# Return
 		return line
 
