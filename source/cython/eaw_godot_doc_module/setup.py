@@ -6,8 +6,8 @@ from Cython.Build import cythonize
 
 
 print(getcwd())
-# Base path for the module, relative to the source dir
-b_path: str = "cython/eaw_godot_doc_module/"
+# Base path for the module, relative to the current working directory
+b_path: str = ""
 
 extensions = [
 	# XML Builder
