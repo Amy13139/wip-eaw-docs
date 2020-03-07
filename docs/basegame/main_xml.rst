@@ -53,4 +53,4 @@ XML Type Reference
 
 	xml/megafiles.xml
 	xml/Dataminerxmlfiles.xml
-	xml/auto/*
+	xml/_auto/*

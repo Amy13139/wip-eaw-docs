@@ -545,8 +545,8 @@ class RootNode(NodeSubNodeHolder):
 	"""
 	# Attributes
 	name: str
-	xml_filename: str
 	xml_dir: str
+	xml_name: str
 	nodes: List[Node]
 	subfiles: Set[str]
 
@@ -566,17 +566,11 @@ class RootNode(NodeSubNodeHolder):
 		Sets the attributes of the RootNode from an XML file
 		:param xml_filepath: The path to the XML file
 		"""
-		# Ensure file exists
-		if not exists(xml_filepath):
-			raise Exception("File '{}' does not exist\nAt: '{}'".format(
-				basename(xml_filepath),
-				xml_filepath,
-			))
-
 		# Set filename and get root element of the tree
-		self.xml_filename = basename(xml_filepath)
-		self.xml_dir = dirname(xml_filepath)
-		root: ET.Element = ET.parse(xml_filepath).getroot()
+		xml_filelist = xml_filepath.split("/")
+		self.xml_dir = xml_filelist[0]
+		self.xml_name = xml_filelist[1]
+		root: ET.Element = get_xml_file(xml_filepath)
 		# Set name
 		self.name = root.tag
 
@@ -596,15 +590,8 @@ class RootNode(NodeSubNodeHolder):
 		Adds to the attributes of the RootNode from an XML file
 		:param xml_filepath: The path to an XML file with an identical rootnode name
 		"""
-		# Ensure file exists
-		if not exists(xml_filepath):
-			raise Exception("File '{}' does not exist\nAt: '{}'".format(
-				basename(xml_filepath),
-				xml_filepath,
-			))
-
 		# Set filename and get root element of the tree
-		root: ET.Element = ET.parse(xml_filepath).getroot()
+		root: ET.Element = get_xml_file(xml_filepath)
 		# Check name
 		if self.name != root.tag:
 			raise Exception("Tag '{}' is not equal to current name '{}'".format(root.tag, self.name))
@@ -644,7 +631,7 @@ class RootNode(NodeSubNodeHolder):
 		:rtype: str
 		:return: Filename
 		"""
-		return self.xml_filename
+		return self.xml_name
 
 	def _update_subfiles(self) -> None:
 		"""
@@ -655,11 +642,11 @@ class RootNode(NodeSubNodeHolder):
 		# Iterate over Nodes
 		for node in self.nodes:
 			for file in node.get_subfiles():
-				self.subfiles.add(join(self.xml_dir, file))
+				self.subfiles.add("{}/{}".format(self.xml_dir, file))
 		# Iterate over SubNodes
 		for subnode in self.subnodes:
 			for file in subnode.filenames:
-				self.subfiles.add(join(self.xml_dir, file))
+				self.subfiles.add("{}/{}".format(self.xml_dir, file))
 
 
 # XMLType Class
@@ -797,7 +784,7 @@ class XMLType(object):
 			for node in rootnode.nodes:
 				self._node_update_process(node)
 			if len(rootnode.subnodes):
-				# Create Set in subnode_names for the RootNode's Subnodes
+				# Create Set in subnode_names for the RootNode's SubNodes
 				self.subnode_names[rootnode.name] = set()
 				# Iterate over SubNodes
 				for subnode in rootnode.subnodes:
@@ -809,7 +796,7 @@ class XMLType(object):
 		:param xml_filepath: The path of the file to check validity for
 		:return: True if file is valid, False if filename is in use.
 		"""
-		root_name: str = ET.parse(xml_filepath).getroot().tag
+		root_name: str = get_xml_file(xml_filepath).tag
 		# Iterate over RootNodes
 		for rootnode in self.root_nodes:
 			# Check is filenames are identical
@@ -825,7 +812,6 @@ class XMLType(object):
 		"""
 		Runs update process with a node, this can call itself to parse nested nodes
 		:param node: The node to updates from
-		:return:
 		"""
 		# Get and test name
 		name = node.name

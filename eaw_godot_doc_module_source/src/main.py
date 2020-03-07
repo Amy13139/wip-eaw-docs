@@ -44,8 +44,6 @@ def do_xml() -> None:
 	print("Building XML Docs...")
 
 	xml_build(
-		EAW_XML_DIR,
-		FOC_XML_DIR,
 		BASEGAME_AUTO_XML_DIR,
 		get_type_template(),
 		get_node_template(),

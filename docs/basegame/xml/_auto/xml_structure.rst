@@ -13377,24 +13377,16 @@ Not yet documented, but you help document it through GitHub!
 
 SubNodes
 ^^^^^^^^
-- Localize
-	Bool; Not yet documented, but you help document it through GitHub!
+- Max_Volume
+	Int; Not yet documented, but you help document it through GitHub!
 
 
-- Overlap_Test
-	Ref; Not yet documented, but you help document it through GitHub!
-
-
-- Play_Sequentially
-	Bool; Not yet documented, but you help document it through GitHub!
+- Min_Volume
+	Int; Not yet documented, but you help document it through GitHub!
 
 
 - Samples
-	File File ...; Not yet documented, but you help document it through GitHub!
-
-
-- Text_ID
-	Ref, Ref, ...; The ID of the text to insert for the name of this object in-game. Text is stored in a `DAT File <basegame-filetype-dat>`.
+	File; Not yet documented, but you help document it through GitHub!
 
 
 - Use_Preset
@@ -13638,11 +13630,11 @@ Not yet documented, but you help document it through GitHub!
 SubNodes
 ^^^^^^^^
 - Attack_Priorities
-	Ref, Float, Ref, Float, Ref, Float, Ref, Float, None; Not yet documented, but you help document it through GitHub!
+	Ref, Float, Ref, Float, None; Not yet documented, but you help document it through GitHub!
 
 
 - Category_Exclusions
-	Ref, Ref, Ref; Not yet documented, but you help document it through GitHub!
+	Ref; Not yet documented, but you help document it through GitHub!
 
 
 

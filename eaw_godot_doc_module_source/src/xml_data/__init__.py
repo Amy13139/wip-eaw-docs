@@ -3,16 +3,45 @@ Gets absolute paths for XML Data directories and template files
 """
 from typing import List
 from os.path import join, dirname, realpath
+from xml.etree import ElementTree
+import tarfile
 
 # Path variables
 _SELF_DIR = dirname(realpath(__file__))
-_DATA_DIR = join(_SELF_DIR, "data")
-EAW_XML_DIR = join(_DATA_DIR, "EAW")
-FOC_XML_DIR = join(_DATA_DIR, "FOC")
+_DATA_TAR_PATH = join(_SELF_DIR, "data.tar.gz")
+EAW_XML_DIR = "EAW/"
+FOC_XML_DIR = "FOC/"
 # Template file paths
-TEMPLATE_XML_DIR: str = join(_DATA_DIR, "xml_doc_templates")
-TEMPLATE_TYPE: str = join(TEMPLATE_XML_DIR, "xml_type_auto.rst")
-TEMPLATE_NODE: str = join(TEMPLATE_XML_DIR, "xml_node_auto.rst")
+TEMPLATE_XML_DIR: str = "xml_doc_templates/"
+TEMPLATE_TYPE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto.rst"
+TEMPLATE_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_node_auto.rst"
+
+
+DATA_TARFILE = tarfile.open(
+	name=_DATA_TAR_PATH,
+	mode="r:gz",
+)
+
+
+def get_file(str_file: str) -> List[str]:
+	"""
+	Gets a file as text from the data.tar.gz file
+	:param str_file: The name of the file to get
+	:return: A list of strings, each string being a line of the file
+	"""
+	data = DATA_TARFILE.extractfile(str_file).read().decode().split("\n")
+	for i in range(len(data)):
+		data[i] += "\n"
+	return data
+
+
+def get_xml_file(xml_file: str) -> ElementTree.Element:
+	"""
+	Gets an XML File from the data.tar.gz file
+	:param xml_file: The name of the XML File to parse
+	:return: The Element Tree of the XML File
+	"""
+	return ElementTree.fromstringlist(get_file(xml_file))
 
 
 def get_type_template() -> List[str]:
@@ -20,8 +49,7 @@ def get_type_template() -> List[str]:
 	Gets the type template as a list of lines
 	:return: The lines from the template
 	"""
-	with open(TEMPLATE_TYPE, 'rt') as template_file:
-		return template_file.readlines()
+	return get_file(TEMPLATE_TYPE_PATH)
 
 
 def get_node_template() -> List[str]:
@@ -29,5 +57,4 @@ def get_node_template() -> List[str]:
 	Gets the root template as a list of lines
 	:return: The lines from the template
 	"""
-	with open(TEMPLATE_NODE, 'rt') as template_file:
-		return template_file.readlines()
+	return get_file(TEMPLATE_NODE_PATH)

@@ -91,60 +91,60 @@ All Nodes:
 - Props_Generic
 - Props_Story
 - SpaceStructure
-- Proximity_Mines_Ability
-- Stealth_Ability
+- Laser_Defense_Ability
+- Cin_TransportUnit
+- Cin_GroundVehicle
+- Cin_GroundStructure
 - Black_Market_Ability
 - Stun_Ability
-- Cin_GroundStructure
-- Cin_GroundProp
+- Stealth_Ability
+- Permanent_Weapon_Swap_Ability
+- Reduce_Production_Price_Ability
+- Find_Weakness_Ability
+- Remove_Corruption_Ability
+- Slave_Unit
+- SlaveCompany
+- Cin_Projectile
+- Super_Laser_Ability
+- Cin_SpaceUnit
+- Ion_Cannon_Shot_Attack_Ability
+- Enhance_Defense_Ability
+- Battlefield_Modifier_Ability
+- Hero_Protection_Ability
+- Tactical_Bribe_Ability
 - Drain_Life_Ability
-- Cin_TransportUnit
+- Sensor_Jamming_Ability
+- Absorb_Blaster_Ability
+- Earthquake_Attack_Ability
+- Berserker_Ability
+- Force_Sight_Ability
+- Cluster_Bomb_Ability
+- Summon_Ability
+- Force_Confuse_Ability
 - Mobile_Defense_Unit
-- Cin_GroundVehicle
+- Cin_GroundProp
+- MultiplayerStructureMarker
+- SecondaryStructure
+- CIN_SpaceUnit
+- MOV_Cinematic
+- Spawn_Ability
+- Saber_Throw_Ability
+- Force_Cloak_Ability
+- Lucky_Shot_Attack_Ability
+- Leech_Shields_Ability
+- CIN_SpaceProp
+- Cin_SpaceProp
 - Prop_Felucia
 - Generic_Attack_Ability
 - Arc_Sweep_Attack_Ability
-- Spawn_Ability
-- Cin_SpaceUnit
-- Tactical_Bribe_Ability
-- MOV_Cinematic
+- CIN_GroundInfantry
+- Proximity_Mines_Ability
 - Buzz_Droids_Ability
-- Ion_Cannon_Shot_Attack_Ability
-- Cin_Projectile
-- Laser_Defense_Ability
-- Earthquake_Attack_Ability
-- Absorb_Blaster_Ability
-- Saber_Throw_Ability
-- Force_Cloak_Ability
-- Remove_Corruption_Ability
-- Lucky_Shot_Attack_Ability
-- Cluster_Bomb_Ability
-- Berserker_Ability
-- Force_Sight_Ability
-- Leech_Shields_Ability
 - Shield_Flare_Ability
-- Sensor_Jamming_Ability
-- SecondaryStructure
-- MultiplayerStructureMarker
-- Permanent_Weapon_Swap_Ability
 - Hack_Super_Weapon_Ability
 - Infection_Ability
 - Radioactive_Contaminate_Ability
 - Corrupt_Systems_Ability
-- Slave_Unit
-- SlaveCompany
-- CIN_GroundInfantry
-- Super_Laser_Ability
-- Summon_Ability
-- Force_Confuse_Ability
-- CIN_SpaceUnit
-- Enhance_Defense_Ability
-- Battlefield_Modifier_Ability
-- Hero_Protection_Ability
-- CIN_SpaceProp
-- Cin_SpaceProp
-- Reduce_Production_Price_Ability
-- Find_Weakness_Ability
 
 
 
@@ -152,6 +152,7 @@ Direct SubNodes:
 ****************
 - File
 	File; The filename of an XML file to load as the same type of XML as the loading node
+
 
 
 

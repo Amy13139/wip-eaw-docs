@@ -310,8 +310,6 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType], template_type: List[s
 
 
 def build(
-		xml_dir_eaw: str,
-		xml_dir_foc: str,
 		xml_dir_out: str,
 		template_type: List[str],
 		template_node: List[str],
@@ -319,8 +317,6 @@ def build(
 	"""
 	Function to iterate over EaW and FoC XML Files, given both of their XML directories.
 
-	:param xml_dir_eaw: The absolute path to the EaW XML Directory.
-	:param xml_dir_foc: The absolute path to the FoC XML Directory.
 	:param xml_dir_out: The absolute path to the Documentation directory for XML Files.
 	:param template_type: The string version of the .RST template file for XML Types
 	:param template_node: The string version of the .RST template file for Nodes
@@ -329,31 +325,21 @@ def build(
 	# Setup type list
 	xml_type_list: List[XMLType] = []
 
-	# Dataminerxmlfiles.Xml Path
-	eaw_data_xml_path: str = join(xml_dir_eaw, "Dataminerxmlfiles.Xml")
-	# Ensure Dataminerxmlfiles.Xml file exists
-	if not exists(eaw_data_xml_path):
-		raise Exception("'{}' does not exist".format(eaw_data_xml_path))
-
-	foc_data_xml_path: str = join(xml_dir_foc, "Dataminerxmlfiles.Xml")
-	# Ensure Dataminerxmlfiles.Xml file exists
-	if not exists(foc_data_xml_path):
-		raise Exception("'{}' does not exist".format(eaw_data_xml_path))
-
 	# Parse data files
-	eaw_data_xml: xml.etree.ElementTree.Element = ET.parse(eaw_data_xml_path).getroot()
-	foc_data_xml: xml.etree.ElementTree.Element = ET.parse(foc_data_xml_path).getroot()
+	eaw_data_xml: xml.etree.ElementTree.Element = get_xml_file(EAW_XML_DIR + "Dataminerxmlfiles.Xml")
+	foc_data_xml: xml.etree.ElementTree.Element = get_xml_file(FOC_XML_DIR + "Dataminerxmlfiles.Xml")
 	item: xml.etree.ElementTree.Element
 
 	# Iterate over the data files
 	for data_file in (eaw_data_xml, foc_data_xml):
 		for item in data_file:
 			if item.tag == "File":
+				filename: str = item.get("filename").strip().title()
 				# Get filename
 				if data_file == eaw_data_xml:
-					file: str = join(xml_dir_eaw, item.get("filename").strip().title())
+					file = EAW_XML_DIR + filename
 				else:
-					file: str = join(xml_dir_foc, item.get("filename").strip().title())
+					file = FOC_XML_DIR + filename
 
 				# Get type
 				xml_type_str: str = item.get("type").strip()

@@ -47,7 +47,6 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
 .hypothesis/
 .pytest_cache/
 
@@ -125,7 +124,7 @@ dmypy.json
 .pyre/
 
 # Generated Files
-source/basegame/xml/auto/
+/docs/basegame/xml/_auto/
 
 # Cython Compiled Files
 *.pyd
