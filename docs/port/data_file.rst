@@ -1,4 +1,4 @@
-.. _data_structures:
+.. _data-structures:
 .. Data structure documentation
 
 ***************

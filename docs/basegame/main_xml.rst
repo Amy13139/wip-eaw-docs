@@ -51,6 +51,5 @@ XML Type Reference
 	:titlesonly:
 	:glob:
 
-	xml/megafiles.xml
-	xml/Dataminerxmlfiles.xml
+	xml/*
 	xml/_auto/*
