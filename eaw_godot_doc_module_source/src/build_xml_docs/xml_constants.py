@@ -7,8 +7,8 @@ from os import getcwd, makedirs
 from os.path import join, basename, dirname, exists
 from typing import List, Union, Set, Dict, TextIO, Iterable, Iterator
 from xml.etree import ElementTree as ET
-
-# Filename for xml_structure file
+# OPTIONS
+MAKE_XML_STRUCTURE_FILE = False
 XML_STRUCTURE_FILENAME: str = "xml_structure.rst"
 
 # Data Type Helper Constants

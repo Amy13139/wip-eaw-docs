@@ -303,7 +303,8 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType], template_type: List[s
 
 
 	# Build file structure
-	build_structure_xml()
+	if MAKE_XML_STRUCTURE_FILE:
+		build_structure_xml()
 
 	# Build main docs
 	build_xml_docs()
