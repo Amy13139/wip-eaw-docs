@@ -31,4 +31,4 @@ SubNode
 EaW-Godot Port Connection
 =========================
 This will be loaded first, alongside :doc:`DataMinerXmlFiles.xml`. All file listed will be pushed through the import
-process described in the `MEG File P <basegame-filetype-meg>`
+process described in the `MEG File Documentation Page <basegame-filetype-meg>`
