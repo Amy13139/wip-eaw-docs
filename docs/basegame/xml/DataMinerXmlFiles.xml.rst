@@ -1,5 +1,4 @@
 .. _basegame-xml-dataminerxmlfiles:
-.. Template to use for XML type documentation
 
 *********************
 Dataminerxmlfiles.xml
@@ -7,12 +6,14 @@ Dataminerxmlfiles.xml
 
 
 .. _basegame-xml-dataminerxmlfiles-about:
+
 About
 =====
 This XML file is one of the 2 XML files loaded by filename, the other being ``megafiles.xml``. Unlike ``megafiles.xml``, this file is located in the Data/XML directory. This file contains the names of the other XML files for the program to load, and it contains their type.
 
 
 .. _basegame-xml-dataminerxmlfiles-struct:
+
 Structure
 =========
 ``GameXMLFiles``:
@@ -43,6 +44,7 @@ The only node type within Dataminerxmlfiles.xml, it specifes a file and it's typ
 
 
 .. _basegame-xml-dataminerxmlfiles-import:
+
 EaW-Godot Port Connection
 =========================
 This file is parsed first when loading XML files, and only the XML files listed here will be converted.

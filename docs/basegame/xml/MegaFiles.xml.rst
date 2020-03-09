@@ -1,5 +1,4 @@
 .. _basegame-xml-megafiles:
-.. Template to use for XML type documentation
 
 *************
 megafiles.xml
@@ -7,6 +6,7 @@ megafiles.xml
 
 
 .. _basegame-xml-megafiles-about:
+
 About
 =====
 Contains names of all `MEG File <basegame-filetype-meg>` archives for the game to load. One of 2 XML files loaded
@@ -18,6 +18,7 @@ by filename.
 
 
 .. _basegame-xml-struct:
+
 SubNode
 =======
 - File
@@ -26,6 +27,7 @@ SubNode
 
 
 .. _basegame-xml-import:
+
 EaW-Godot Port Connection
 =========================
 This will be loaded first, alongside :doc:`DataMinerXmlFiles.xml`. All file listed will be pushed through the import
