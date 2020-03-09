@@ -46,6 +46,7 @@ def do_xml() -> None:
 	xml_build(
 		BASEGAME_AUTO_XML_DIR,
 		get_type_template(),
+		get_type_template(has_nodes=False),
 		get_node_template(),
 	)
 

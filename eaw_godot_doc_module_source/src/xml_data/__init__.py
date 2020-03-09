@@ -14,6 +14,7 @@ FOC_XML_DIR = "FOC/"
 # Template file paths
 TEMPLATE_XML_DIR: str = "xml_doc_templates/"
 TEMPLATE_TYPE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto.rst"
+TEMPLATE_TYPE_NO_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto_no_node.rst"
 TEMPLATE_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_node_auto.rst"
 
 
@@ -44,12 +45,16 @@ def get_xml_file(xml_file: str) -> ElementTree.Element:
 	return ElementTree.fromstringlist(get_file(xml_file))
 
 
-def get_type_template() -> List[str]:
+def get_type_template(has_nodes=True) -> List[str]:
 	"""
 	Gets the type template as a list of lines
+	:param has_nodes: If true, grabs the no_nodes template variant
+	:type has_nodes: bool
 	:return: The lines from the template
 	"""
-	return get_file(TEMPLATE_TYPE_PATH)
+	if has_nodes:
+		return get_file(TEMPLATE_TYPE_PATH)
+	return get_file(TEMPLATE_TYPE_NO_NODE_PATH)
 
 
 def get_node_template() -> List[str]:

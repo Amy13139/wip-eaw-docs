@@ -5,12 +5,19 @@ This should be compiled with Cython.
 from .xml_classes import *
 
 
-def build_docs(xml_dir_out: str, xml_types: List[XMLType], template_type: List[str], template_node: List[str]) -> None:
+def build_docs(
+		xml_dir_out: str,
+		xml_types: List[XMLType],
+		template_type: List[str],
+		template_type_no_node: List[str],
+		template_node: List[str],
+) -> None:
 	"""
 	Takes a list of XMLTypes and uses them to build the XML Documentation
 	:param xml_dir_out: The output directory, should also be the XML Docs directory
 	:param xml_types: The list of XML Types to use for building the documentation
 	:param template_type: The string version of the .RST template file for XML Types
+	:param template_type_no_node: The string version of the .RST template file for XML Types with no nodes
 	:param template_node: The string version of the .RST template file for Nodes
 	"""
 
@@ -217,27 +224,26 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType], template_type: List[s
 			# Get node file name
 			node_path = join(dir_path, "{}.rst".format(node.name.lower()))
 
-			# Copy template. To Insert: Name, About, Structure, Context
+			# Copy template
 			node_file_lines: List[str] = template_node.copy()
-			# Create inserts list
-			node_file_inserts: List[str] = [
-				# 1. Name
-				node.name,
-				# 2. About
-				get_node_description(node.name),
-				# 3. Structure, to be filled in later
-				get_node(node),
-				# 4. Context
-				get_node_context(node.name),
-			]
-
-			# Get iterator from inserts
-			node_file_insert_iter: Iterator[str] = iter(node_file_inserts)
+			# Create inserts dict
+			node_file_inserts: Dict[str, str] = {
+				# Name
+				"name": node.name,
+				# Typename
+				"typename": xml_type.name,
+				# About/Description
+				"about": get_node_description(node.name),
+				# Structure, to be filled in later
+				"struct": get_node(node),
+				# Context
+				"import": get_node_context(node.name),
+			}
 
 			# Iterate over lines
 			for index in range(len(node_file_lines)):
-				if "{}" in node_file_lines[index]:
-					node_file_lines[index] = node_file_lines[index].format(next(node_file_insert_iter))
+				if "{" in node_file_lines[index] and "}" in node_file_lines[index]:
+					node_file_lines[index] = node_file_lines[index].format(**node_file_inserts)
 			# Write to file
 			with open(node_path, "wt") as node_file:
 				node_file.writelines(node_file_lines)
@@ -250,48 +256,48 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType], template_type: List[s
 			file_path = join(xml_dir_out, "{}.rst".format(xml_type.name.lower()))
 			dir_path = join(xml_dir_out, xml_type.name)
 
-			# Create Subdirectory
-			if not exists(dir_path):
-				makedirs(dir_path)
+			# Create inserts dict
+			inserts: Dict[str, str] = {
+				# Name
+				"name": xml_type.name,
+				# Description/About
+				"about": get_type_description(xml_type.name),
+				# Context/Import Info
+				"import": get_type_context(xml_type.name),
+			}
 
-			# Copy template. To Insert: Name, Description, SubDirectory, Context, Node ToC, SubNodes
-			type_file_lines: List[str] = template_type.copy()
-			# Create inserts list
-			inserts: List[str] = [
-				# 1. Name
-				xml_type.name,
-				# 2. Description
-				get_type_description(xml_type.name),
-				# 3. Subdirectory
-				xml_type.name,
-				# 4. Context
-				get_type_context(xml_type.name),
-			]
-			# Continue inserts setup
+			# Check if type has nodes
+			if len(xml_type.node_names):
+				# Create Subdirectory
+				if not exists(dir_path):
+					makedirs(dir_path)
 
-			# 5. Node Names
-			node_names_str: str = ""
-			for node_name in xml_type.node_names:
-				# Add the name to the name strings
-				node_names_str += "- {}\n".format(node_name)
-			# Change if no Nodes are present
-			if not len(xml_type.node_names):
-				node_names_str = "No Nodes are present under this XML type"
-			inserts.append(node_names_str)
-			del node_names_str
+				# Copy template
+				type_file_lines: List[str] = template_type.copy()
 
-			# 6. SubNodes
+				# Node Names
+				node_names_str: str = ""
+				for node_name in xml_type.node_names:
+					# Add the name to the name strings
+					node_names_str += "- {}\n".format(node_name)
+				inserts["node_list"] = node_names_str
+
+			# No nodes are present
+			else:
+				type_file_lines: List[str] = template_type_no_node.copy()
+
+			# SubNodes
 			subnode_line: str = ""
 			for subnode in xml_type.get_subnodes():
 				subnode_line += get_subnode(subnode)
-			inserts.append(subnode_line)
+			if subnode_line == "":
+				subnode_line = "No Direct SubNodes in this XML type"
+			inserts["subnode_list"] = subnode_line
 
-			# Get iterator from inserts
-			insert_iter: Iterator[str] = iter(inserts)
-			# Iterate over lines
+			# Iterate over lines, format as needed
 			for i in range(len(type_file_lines)):
-				if "{}" in type_file_lines[i]:
-					type_file_lines[i] = type_file_lines[i].format(next(insert_iter))
+				if "{" in type_file_lines[i] and "}" in type_file_lines[i]:
+					type_file_lines[i] = type_file_lines[i].format(**inserts)
 			with open(file_path, "wt") as main_file:
 				main_file.writelines(type_file_lines)
 				main_file.close()
@@ -313,6 +319,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType], template_type: List[s
 def build(
 		xml_dir_out: str,
 		template_type: List[str],
+		template_type_no_node: List[str],
 		template_node: List[str],
 ) -> None:
 	"""
@@ -320,6 +327,7 @@ def build(
 
 	:param xml_dir_out: The absolute path to the Documentation directory for XML Files.
 	:param template_type: The string version of the .RST template file for XML Types
+	:param template_type_no_node: The string version of the .RST template file for XML Types without nodes
 	:param template_node: The string version of the .RST template file for Nodes
 	"""
 
@@ -370,4 +378,4 @@ def build(
 	for xtype in xml_type_list:
 		xtype.parse_subfiles()
 	# Build XML Docs
-	build_docs(xml_dir_out, xml_type_list, template_type, template_node)
+	build_docs(xml_dir_out, xml_type_list, template_type, template_type_no_node, template_node)

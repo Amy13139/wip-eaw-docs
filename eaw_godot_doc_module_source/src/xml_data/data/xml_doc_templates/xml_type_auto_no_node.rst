@@ -1,4 +1,4 @@
-.. Format keys: [name, about, import, node_list, subnode_list]
+.. Format keys: [name, about, import, subnode_list]
 
 .. _basegame-xml-{name}:
 
@@ -14,29 +14,11 @@ About
 {about}
 
 
-.. _basegame-xml-{name}-toc:
-
-Node Documents
-**************
-.. toctree::
-	:glob:
-	:titlesonly:
-
-	{name}/*
-
-
 .. _basegame-xml-{name}-import:
 
 EaW-Godot Port Connection
 *************************
 {import}
-
-
-.. _basegame-xml-{name}-nodes:
-
-All Nodes:
-**********
-{node_list}
 
 
 .. _basegame-xml-{name}-subnodes:
