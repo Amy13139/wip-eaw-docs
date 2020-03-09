@@ -4,6 +4,9 @@
 MTD Files
 *********
 
+
+.. _basegame-filetype-mtd-about:
+
 About
 =====
 MTD Files (Mega-Texture Directory) are used to store multiple textures in a single texture file. MTD files must be
@@ -13,12 +16,16 @@ contain the texture name and box-boundary coordinates for it's pair image, with 
 of the file within the box.
 
 
+.. _basegame-filetype-mtd-struct:
+
 MTD Structure
 =============
 All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_, developed
 by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files and a tool for extracting
 and browsing MTD textures.
 
+
+.. _basegame-filetype-mtd-import:
 
 EaW-Godot Port Connection
 =========================

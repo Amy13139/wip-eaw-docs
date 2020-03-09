@@ -5,6 +5,8 @@ DAT Files
 *********
 
 
+.. _basegame-filetype-dat-about:
+
 About
 =====
 DAT Files are used to store strings to display for in-game text. They are stored in *key, value* pairs, where the keys
@@ -12,12 +14,16 @@ are referenced by `XML Files <basegame-filetype-xml>`, and the value is the stri
 allows for most localization to be done through changing the used DAT file, as long as they contain the same keys.
 
 
+.. _basegame-filetype-dat-struct:
+
 EaW DAT Structure
 =================
 All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_, developed
 by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files, including a utility to
 edit the text in an EaW .DAT file.
 
+
+.. _basegame-filetype-dat-import:
 
 EaW-Godot Port Connection
 =========================

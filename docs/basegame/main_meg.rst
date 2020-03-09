@@ -5,6 +5,8 @@ MEG Files
 *********
 
 
+.. _basegame-filetype-meg-about:
+
 About
 =====
 MEG files (Mega-Files) are a uncompressed file archives. They store files by name. Most assets of the basegame are stored
@@ -12,12 +14,16 @@ in MEG files. The game loads MEG files based off of the :ref:`megafiles.xml <bas
 located in the game's data folder at it's root, **not** in the game's XML directory.
 
 
+.. _basegame-filetype-meg-stuct:
+
 MEG Structure
 =============
 All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_, developed
 by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files and a tool for extracting
 MEG archives.
 
+
+.. _basegame-filetype-meg-import:
 
 EaW-Godot Port Connection
 =========================

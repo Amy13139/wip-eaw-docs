@@ -5,12 +5,16 @@ ALA Files
 *********
 
 
+.. _basegame-filetype-ala-about:
+
 About
 =====
 ALA Files (May stand for Alamo Animation) are responsible for storing all animations for models in the game. They must
 be coupled with an existing ALO. Animation names and triggers can be assigned from an
 `XML File <basegame-filetype-ala>`, usually alongside the model.
 
+
+.. _basegame-filetype-ala-struct:
 
 ALA Structure
 =============
@@ -20,6 +24,8 @@ between ALA V1 files to ALA V2 files, which can be valuable if handling only one
 
 `Gaulker's Alamo Tools for Blender`_ is a utility to export ALO models and ALA files to and from Blender.
 
+
+.. _basegame-filetype-ala-import:
 
 EaW-Godot Port Connection
 =========================

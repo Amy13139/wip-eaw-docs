@@ -5,6 +5,8 @@ ALO Files
 *********
 
 
+.. _basegame-filetype-alo-about:
+
 About
 =====
 ALO Files (May stand for Alamo Object) are files that contain either a model or a particle object. These files are
@@ -12,6 +14,8 @@ mostly self-contained, with textures being the only external component needed fo
 external textures and particles. However, many models will be split into multiple files, such as the Imperial Star
 Destroyer, to allow for sections to be removed dynamically.
 
+
+.. _basegame-filetype-alo-struct:
 
 ALO Structures
 ==============
@@ -25,6 +29,8 @@ view and edit ALO files.
 
 `Gaulker's Alamo Tools for Blender`_ is a utility to export ALO models and ALA files to and from Blender.
 
+
+.. _basegame-filetype-alo-import:
 
 EaW-Godot Port Connection
 =========================
