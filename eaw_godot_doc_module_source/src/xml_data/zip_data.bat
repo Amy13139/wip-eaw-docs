@@ -6,3 +6,5 @@ cd data
 7z a -tgzip ../data.tar.gz data.tar
 
 del data.tar
+
+exit

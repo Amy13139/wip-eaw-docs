@@ -5,17 +5,17 @@ BIK Files
 *********
 
 
-.. _basegame-filetype-dat-about:
+.. _basegame-filetype-bik-about:
 
 About
 =====
 All .BIK files in EaW and FoC are movie files of the proprietary `Bink Video Format <https://wikipedia.org/wiki/Bink_Video>`_.
 The format was reverse-engineered and added to the `FFmpeg Utility`_ under the libavcodec. All .BIK files
-are given an internal ID through an :ref:`XML File <basegame-filetype-xml>` of the
-:doc:`BinkMovies XML Type <xml/auto/binkmovie>`.
+are given an internal ID through an `XML File <basegame-filetype-xml>` of the
+`BinkMovies XML Type <basegame-xml-binkmovie>`.
 
 
-.. _basegame-filetype-dat-struct:
+.. _basegame-filetype-bik-struct:
 
 Usage
 =====
@@ -36,7 +36,7 @@ both encode and decode most video and audio formats.
 .. _FFmpeg Utility: ffmpeg.org
 
 
-.. _basegame-filetype-dat-import:
+.. _basegame-filetype-bik-import:
 
 EaW-Godot Port Connection
 =========================
