@@ -1,7 +1,7 @@
 .. _basegame-xml-megafiles:
 
 *************
-megafiles.xml
+MegaFiles.xml
 *************
 
 

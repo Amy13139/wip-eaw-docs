@@ -1,7 +1,7 @@
 .. _basegame-xml-dataminerxmlfiles:
 
 *********************
-Dataminerxmlfiles.xml
+DataMinerXmlFiles.xml
 *********************
 
 
