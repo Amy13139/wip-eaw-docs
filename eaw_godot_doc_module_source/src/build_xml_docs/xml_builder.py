@@ -240,6 +240,9 @@ def build_docs(
 				"import": get_node_context(node.name),
 			}
 
+			# Add insert variants
+			node_file_inserts.update(get_insert_variants(node_file_inserts))
+
 			# Iterate over lines
 			for index in range(len(node_file_lines)):
 				if "{" in node_file_lines[index] and "}" in node_file_lines[index]:
@@ -249,6 +252,28 @@ def build_docs(
 				node_file.writelines(node_file_lines)
 				node_file.close()
 			del node_file
+
+		def get_insert_variants(insert_dict: Dict[str, str]) -> Dict[str, str]:
+			"""
+			Creates variants from the given string dictionary, each stored in an <base_key>_<suffix_name> key
+			Currently supported suffixes are _lower, _upper, _title, _capital
+			:param insert_dict: The dictionary to create variants from
+			:return: A dictionary of variants, should be added to the original input dictionary
+			"""
+			variant_dict: Dict[str, str] = {}
+			# Add variants for each key
+			for key in insert_dict.keys():
+				# lowercase
+				variant_dict[key + "_lower"] = insert_dict[key].lower()
+				# UPPERCASE
+				variant_dict[key + "_upper"] = insert_dict[key].upper()
+				# Title
+				variant_dict[key + "_tabbed"] = insert_dict[key].title()
+				# Capital
+				variant_dict[key + "_capital"] = insert_dict[key].capitalize()
+
+			# Return
+			return variant_dict
 
 		# Iterate over types
 		for xml_type in xml_types:
@@ -293,6 +318,9 @@ def build_docs(
 			if subnode_line == "":
 				subnode_line = "No Direct SubNodes in this XML type"
 			inserts["subnode_list"] = subnode_line
+
+			# Add insert variants
+			inserts.update(get_insert_variants(inserts))
 
 			# Iterate over lines, format as needed
 			for i in range(len(type_file_lines)):

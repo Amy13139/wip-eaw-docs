@@ -1,27 +1,27 @@
 .. Format keys: [name, about, import, subnode_list]
 
-.. _basegame-xml-{name}:
+.. _basegame-xml-{name_lower}:
 
 ##########################################
 {name}
 ##########################################
 
 
-.. _basegame-xml-{name}-about:
+.. _basegame-xml-{name_lower}-about:
 
 About
 *****
 {about}
 
 
-.. _basegame-xml-{name}-import:
+.. _basegame-xml-{name_lower}-import:
 
 EaW-Godot Port Connection
 *************************
 {import}
 
 
-.. _basegame-xml-{name}-subnodes:
+.. _basegame-xml-{name_lower}-subnodes:
 
 Direct SubNodes:
 ****************
