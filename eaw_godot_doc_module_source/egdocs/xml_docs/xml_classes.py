@@ -2,25 +2,48 @@
 Classes to help manage the data of an EaW/FoC XML File
 This should be compiled with Cython.
 """
-from .xml_constants import *
+from typing import ClassVar, Dict, List, Set, Union
+import os.path
+from xml.etree import ElementTree as ET
+from .xml_data import *
+from .xml_inserts import *
 from .rst_utils import *
 
 
 # SubNode Class
-class SubNode(object):
+class SubNode:
 	"""
 	Class to hold information related to a subnode, should be nested inside of a RootNode or Node
 	Holds text data, but not XML attributes
 	"""
+	# Class-Standard Variables
+	_VALID_FILE_EXT: ClassVar[List[str]] = [
+		".alo",  # Model/Particle
+		".ala",  # Animation
+		".meg",  # Archive, only megafiles.xml
+		".tga",  # Texture, May refer to DDS
+		".dds",  # Texture, Modded
+		".xml",  # Data
+		".bik",  # Movie
+		".wav",  # Audio
+		".mp3",  # Audio
+	]
+	_VALID_BOOL: Dict[str, str] = {
+		"yes": "y/n",
+		"no": "y/n",
+		"true": "t/f",
+		"false": "t/f",
+	}
+
 	# Attributes
-	_element: ET.Element
-	name: str
-	_data: List[Union[bool, float, int, str, type(None)]]
-	sep_char: str
-	sep_str: str
-	_data_types: List[str]
-	typestring: str
-	filenames: Set[str]
+	_element: ET.Element  # XML Element the subnode is made from
+	name: str  # The name of the subnode, identical to XML Element Tag
+	_data: List[Union[bool, float, int, str, type(None)]]  # The data contained by the XML Element, used to check type
+	sep_char: str  # Separator character, if subnode uses a list
+	sep_str: str  # Separator string, same as character, but with needed whitespace included for writing
+	_data_types: List[str]  # The types of data contained within the subnode, length will be 1 if data is not a list
+	typestring: str  # The descriptive string specifying the type of data the subnode contains
+	filenames: Set[str]  # The paths to all files listed under the subnode
 
 	# Methods
 	def __init__(self, xml_subnode: ET.Element) -> None:
@@ -47,27 +70,6 @@ class SubNode(object):
 
 		# Verify
 		self._verify_data_types()
-
-	def get_typestring(self, force_regen=False) -> str:
-		"""
-		Gets the type of this subnode as a string
-		:return: A type string
-		"""
-		# Create if it does not exist
-		if force_regen or not self.typestring:
-			self.typestring = ""
-			data_length = len(self._data_types)
-			last_index = data_length - 1
-			# Iterate over data types
-			for index in range(data_length):
-				# Add string name of the current type
-				self.typestring += self._data_types[index]
-				# Add separator if not the last item
-				if index != last_index:
-					self.typestring += self.sep_str
-
-		# Return the typestring
-		return self.typestring
 
 	def compare(self, subnode) -> bool:
 		"""
@@ -256,10 +258,10 @@ class SubNode(object):
 		ext: str = value[-4:].lower()
 
 		# Check if value is File/Filepath
-		if ext in VALID_FILE_EXT:
+		if ext in self._VALID_FILE_EXT:
 			if ext == ".xml":
 				# Add to filenames list
-				filename = basename(value.title())
+				filename = os.path.basename(value.title())
 				self.filenames.add(filename)
 			# Check if file is directory
 			if "\\" in value or "/" in value:
@@ -297,7 +299,7 @@ class SubNode(object):
 				pass
 
 		# Check if value is Bool
-		elif value.lower() in VALID_BOOL:
+		elif value.lower() in self._VALID_BOOL:
 			# Check if True/False or Yes/No instead of true/false or yes/no
 			return "Bool"
 
@@ -341,16 +343,39 @@ class SubNode(object):
 					self._data_types.append("...")
 
 	# RST/Documentation Methods
+	def get_typestring(self, force_regen=False) -> str:
+		"""
+		Gets the type of this subnode as a string
+
+		:param bool force_regen: If True, recreates the typestring instead of returning an already created string
+		:return: A descriptive type string
+		"""
+		# Create if it does not exist, or recreate if force_regen is on
+		if force_regen or not self.typestring:
+			self.typestring = ""
+			data_length = len(self._data_types)
+			last_index = data_length - 1
+			# Iterate over data types
+			for index in range(data_length):
+				# Add string name of the current type
+				self.typestring += self._data_types[index]
+				# Add separator if not the last item
+				if index != last_index:
+					self.typestring += self.sep_str
+
+		# Return the typestring
+		return self.typestring
+
 	def get_description(self) -> str:
 		"""
 		Gets the description of this SubNode
-		:return: The description of this SubNode, as stored in xml_constants.py
+		:return: The description of this SubNode, as stored in xml_inserts.py
 		"""
 		return get_subnode_description(self.name)
 
 	def __str__(self) -> str:
 		"""
-		Gets the description and type of this subnode, as stored in the xml_constants.py file
+		Gets the description and type of this subnode, as stored in the xml_inserts.py file
 		:return: A descriptor string
 		"""
 		return "{}{}; {}".format(TAB, self.get_typestring(force_regen=True), self.get_description())
@@ -360,27 +385,119 @@ class SubNode(object):
 		Gets the RST list element of the subnode; used for building Sphinx Documentation
 		:return: An RST list element string
 		"""
-		rep_str = "- {}{}".format(self.name, TAB_INDICATOR)
-		rep_str += self.__str__() + "\n"
-		rep_str += get_line_padding(2)
-		return rep_str
+		return "- {}\n{}\n".format(self.name, self.__str__())
 
 
-# Base class with a few shared functions
-class NodeSubNodeHolder(object):
+# Dummy Node class to allow earlier typing of the self-containing Node class; Ignore
+# noinspection PyUnusedLocal,PyMethodMayBeStatic
+class Node:
+	"""A Dummy version of Node to allow using the Node in typing before it's definition"""
+	# Attributes
+	_element: ET.Element
+	name: str
+	attributes: List[str]
+	subfiles: Set[str]
+	nested: bool
+
+	# Methods
+	def __init__(self, xml_node: ET.Element) -> None:
+		"""
+		Creates a new Node object
+		:param xml_node: The xml.etree.ElementTree.Element object to create the Node from
+		"""
+		return
+
+
+	def _setup(self) -> None:
+		"""
+		Sets the attributes of the node from it's XML Element.
+		Should only be called on creation through __init__()
+		"""
+		return
+
+
+	def add_node(self, node) -> None:
+		"""
+		Adds a Nested Node, if not already present
+		:param node: The node to be added to the holder
+		"""
+		node.nested = True
+		super(Node, self).add_node(node)
+
+
+	def compare(self, node) -> bool:
+		"""
+		Compares two nodes, alters this Node is needed
+		:param node: The node to compare.
+		:return: A boolean, True if no conflicts
+		"""
+		# No conflicts, Return True
+		return True
+
+
+	def get_subfiles(self) -> Set[str]:
+		"""
+		Gets the subfiles of this node
+		:return: A list of filenames
+		"""
+		self.subfiles.clear()
+		# Iterate over Nodes
+		for node in self.nodes:
+			self.subfiles.update(node.get_subfiles())
+		# Iterate over SubNodes
+		for subnode in self.subnodes:
+			self.subfiles.update(subnode.filenames)
+		# Return
+		return set("")
+
+
+	def get_description(self) -> str:
+		"""
+		Alias for __str__
+
+		:return: The description of this node, as stored in xml_inserts.py
+		"""
+		return ""
+
+
+	def get_context(self) -> str:
+		"""
+		Gets the context of this node, as stored in xml_constant.py
+		:return: Context string
+		"""
+		return ""
+
+
+	def __str__(self) -> str:
+		"""
+		Gets the description of this Node, as stored in the xml_inserts.py file
+		:return: A descriptor string
+		"""
+		return ""
+
+
+	def __repr__(self) -> str:
+		"""
+		Gets a node's information in the format for the xml_structure.rst file
+		"""
+		return ""
+
+
+# Base class for managing Node and SubNode objects. Node is not yet defined because it inherits this class
+class NodeSubNodeHolder:
 	"""
 	Base class to hold methods and attributes for Node and SubNode storage
 	"""
 	# Attributes
-	nodes: list
+	nodes: List[Node]
 	subnodes: List[SubNode]
 
 	# Methods
 	def __init__(self) -> None:
-		self.nodes: List[NodeSubNodeHolder] = []
+		self.nodes = []
 		self.subnodes = []
 
-	def add_node(self, node) -> None:
+	def add_node(self, node: Node) -> None:
 		"""
 		Adds a Node, if not already present
 		:param node: The node to be added to the holder
@@ -436,7 +553,7 @@ class NodeSubNodeHolder(object):
 		# Return Names
 		return sorted(names, key=str.lower)
 
-	def get_nodes(self) -> list:
+	def get_nodes(self) -> List[Node]:
 		"""
 		Returns the Nodes held by the parent
 		:rtype: List[Node]
@@ -466,6 +583,9 @@ class NodeSubNodeHolder(object):
 		return bool(self.subnodes)
 
 
+del Node  # Remove the dummy Node class, then define the real Node class
+
+
 # Node Class
 class Node(NodeSubNodeHolder):
 	"""
@@ -486,7 +606,7 @@ class Node(NodeSubNodeHolder):
 		:param xml_node: The xml.etree.ElementTree.Element object to create the Node from
 		"""
 		# Call super
-		super(Node, self).__init__()
+		super(__class__, self).__init__()
 		# Set blank variables
 		self.nodes: List[Node] = []
 		self.attributes = []
@@ -526,7 +646,7 @@ class Node(NodeSubNodeHolder):
 		:param node: The node to be added to the holder
 		"""
 		node.nested = True
-		super(Node, self).add_node(node)
+		super(__class__, self).add_node(node)
 
 	def compare(self, node: NodeSubNodeHolder) -> bool:
 		"""
@@ -575,7 +695,7 @@ class Node(NodeSubNodeHolder):
 	def get_description(self) -> str:
 		"""
 		Alias for __str__
-		:return: The description of this node, as stored in xml_constants.py
+		:return: The description of this node, as stored in xml_inserts.py
 		"""
 		return self.__str__()
 
@@ -588,7 +708,7 @@ class Node(NodeSubNodeHolder):
 
 	def __str__(self) -> str:
 		"""
-		Gets the description of this Node, as stored in the xml_constants.py file
+		Gets the description of this Node, as stored in the xml_inserts.py file
 		:return: A descriptor string
 		"""
 		return get_node_description(self.name)
@@ -638,8 +758,6 @@ class Node(NodeSubNodeHolder):
 
 			# Add stored sections
 			rep_str += nested_reps
-
-			return rep_str
 
 		# Handle SubNodes, should be present
 		if self.has_subnodes():
@@ -775,7 +893,7 @@ class RootNode(NodeSubNodeHolder):
 
 
 # XMLType Class
-class XMLType(object):
+class XMLType:
 	"""
 	Class to hold information for the structures of an XML Data type
 	Holds RootNodes and names. Operates in a single directory.
@@ -964,7 +1082,7 @@ class XMLType(object):
 	def get_description(self) -> str:
 		"""
 		Alias for __str__
-		:return: The description of this XMLType, as stored in xml_constants.py
+		:return: The description of this XMLType, as stored in xml_inserts.py
 		"""
 		return self.__str__()
 
@@ -1008,4 +1126,4 @@ class XMLType(object):
 				rep_str += repr(subnode)
 
 		# Return
-		return rep_str
+		return rep_str + "\n"

@@ -1,78 +1,26 @@
 """
 This file contains the non-Auto-Generated text for the Auto-XML Generator in the form of Python variables.
-All imports used in upper-level files are imported here.
 """
-from .xml_data import *
-from os import getcwd, makedirs
-from os.path import join, basename, dirname, exists
-from typing import List, Union, Set, Dict, TextIO, Iterable, Iterator
-from xml.etree import ElementTree as ET
+from typing import Dict
 
-# OPTIONS
-MAKE_XML_STRUCTURE_FILE = False
-XML_STRUCTURE_FILENAME: str = "xml_structure.rst"
-
-# Data Type Helper Constants
-# Dictionary to values of the type to cast a piece of data to, keys are strings from xml_classes.SubNode methods
-SUBNODE_DATA_TYPE_DICT: Dict[str, type] = {
-	"None": type(None),
-	"Bool": bool,
-	"Dir": str,
-	"File": str,
-	"Filepath": str,
-	"Float": float,
-	"Floatf": float,
-	"Int": int,
-	"Ref": str,
-}
-# Valid extensions for files that can be referenced by an XML. Capitalization must be lowercase.
-VALID_FILE_EXT: list = [
-		".alo",  # Model/Particle
-		".ala",  # Animation
-		".meg",  # Archive, only megafiles.xml
-		".tga",  # Texture, May refer to DDS
-		".dds",  # Texture, Modded
-		".xml",  # Data
-		".bik",  # Movie
-		".wav",  # Audio
-		".mp3",  # Audio
+__all__ = [
+	"attrib_key",
+	"get_type_description",
+	"get_node_description",
+	"get_subnode_description",
+	"get_type_context",
+	"get_node_context",
 ]
-# Keys are values that are considered booleans, values are suffixes for the type. Capitalization must be lowercase.
-VALID_BOOL: dict = {
-		"yes": "y/n",
-		"no": "y/n",
-		"true": "t/f",
-		"false": "t/f",
-}
-
-# Tab character
-TAB: str = "\t"
-# Used at the end of the line to indicate it has tabbed children, must have a newline at the end to function properly
-TAB_INDICATOR: str = "\n"
-
-# Each type template file"s "{}"s will be replaced with the following, in order from the top of the file:
-# XML Type Name
-# About Section (Non-Auto)
-# Root Docs Directory Name/* (Used for table of contents)
-# EaW-Godot Context (Non-Auto)
-# Node Name List
-# SubNode Name List
-
-# Each root template file"s "{}"s will be replaced with the following, in order from the top of the file:
-# RootNode Name
-# About Section (Non-Auto)
-# Structure (includes given Node and SubNode descriptions)
-# EaW-Godot Context (Non-Auto)
 
 # Default if field not in dictionary or is empty.
-FALLBACK_STR: str = "Not yet documented, but you help document it through GitHub!"
+_FALLBACK_STR: str = "Not yet documented, but you help document it through GitHub!"
 
 #############################
 # Start Descriptions
 #############################
-# Sections in the form of: Name: """*Insert Description Here*""",
+# Sections in the form of <Name>: <Description>,
 
-DESCRIPTION_TYPE: Dict[str, str] = {
+_DESCRIPTION_TYPE: Dict[str, str] = {
 	# XML Type Descriptions (About Section)
 
 	"GameObjectType":
@@ -242,7 +190,7 @@ Contains the sound events that are specific to a type of weather, such as ambien
 		""",
 }
 
-DESCRIPTION_NODE: Dict[str, str] = {
+_DESCRIPTION_NODE: Dict[str, str] = {
 	# Node Descriptions
 
 
@@ -966,7 +914,7 @@ A Hero unit that is not specific to any faction.
 	# WeatherAudioManager
 }
 
-DESCRIPTION_SUBNODE: Dict[str, str] = {
+_DESCRIPTION_SUBNODE: Dict[str, str] = {
 	# SubNode Descriptions
 
 	# Identically Named Subnodes are in this section, all other usages deleted
@@ -2831,15 +2779,13 @@ DESCRIPTION_SUBNODE: Dict[str, str] = {
 # End Descriptions
 #############################
 
-"Separator to allow individual folding of the above comments, please ignore"
-
 #############################
 # Start Contexts
 #############################
-# Sections in the form of: RootNodeName/XmlTypeName: "*Insert Context Here*",
+# Sections in the form of: <Name>: <Context/Import Description>,
 
 # TODO: Add contexts
-CONTEXT_TYPE: Dict[str, str] = {
+_CONTEXT_TYPE: Dict[str, str] = {
 	# XML Type Contexts
 
 	"GameObjectType":
@@ -3003,7 +2949,7 @@ Targeting priorities for units, used for controlling auto-targeting.
 		""",
 }
 
-CONTEXT_NODE: Dict[str, str] = {
+_CONTEXT_NODE: Dict[str, str] = {
 	# GameObjectType
 	"Abilities":
 		"""
@@ -3736,44 +3682,34 @@ CONTEXT_NODE: Dict[str, str] = {
 # End Contexts
 #############################
 
-"Separator to allow individual folding of the above comments, please ignore"
-
 #############################
 # Start Utility Functions
 #############################
-
-
-def codify(in_str: str) -> str:
+def attrib_key(x: str) -> str:
 	"""
-	Cushions a string with four "`" character, used to indicated code in a Sphinx rst file.
-	:param in_str: The string to cushion
-	:return: The cushioned string
-	"""
-	return "``{}``".format(in_str)
+	Sorts attributes first, then everything else.
 
+	Useful as key for sorted() function when sorting SubNodes/Attributes.
 
-def attrib_key(x):
-	"""
-	Sorts attributes first, then eveything else. Used as key for sorted() function when sorting SubNodes/Attributes.
-	:param x: The attribute to input
+	:param str x: The attribute to input
 	:return: Either x.lower() or ("0000" + x.lower())
 	"""
-	if type(x) is str and x.startswith("Attribute - "):
-		return "0000" + x.lower()
+	if x.startswith("Attribute - "):
+		return "0000".join(x.lower())
 	else:
 		return x.lower()
 
 
 def _get_from(const_dict, key) -> str:
 	"""
-	Private function to get a key from one of the dictionaries in the xml_constants.py file.
+	Private function to get a key from one of the dictionaries in the xml_inserts.py file.
 	:param const_dict: The dictionary to get the value from
 	:param key: The key to use to get the value
 	:return: The value of the dictionary, a string.
 	"""
-	description = const_dict.get(key, FALLBACK_STR).strip()
+	description = const_dict.get(key, _FALLBACK_STR).strip()
 	if not description:
-		description = FALLBACK_STR
+		description = _FALLBACK_STR
 	return description
 
 
@@ -3783,7 +3719,7 @@ def get_type_description(type_name: str) -> str:
 	:param type_name: The name of the XMLType to get the description of.
 	:return: A string to use as a description
 	"""
-	return _get_from(DESCRIPTION_TYPE, type_name)
+	return _get_from(_DESCRIPTION_TYPE, type_name)
 
 
 def get_node_description(node_name: str) -> str:
@@ -3792,7 +3728,7 @@ def get_node_description(node_name: str) -> str:
 	:param node_name: The name of the Node to get the description of.
 	:return: A string to use as a description
 	"""
-	return _get_from(DESCRIPTION_NODE, node_name)
+	return _get_from(_DESCRIPTION_NODE, node_name)
 
 
 def get_subnode_description(subnode_name: str) -> str:
@@ -3801,7 +3737,7 @@ def get_subnode_description(subnode_name: str) -> str:
 	:param subnode_name: The name of the SubNode to get the description of.
 	:return: A string to use as a description
 	"""
-	return _get_from(DESCRIPTION_SUBNODE, subnode_name)
+	return _get_from(_DESCRIPTION_SUBNODE, subnode_name)
 
 
 def get_type_context(type_name: str) -> str:
@@ -3810,7 +3746,7 @@ def get_type_context(type_name: str) -> str:
 	:param type_name: The name of the Type to get the description of.
 	:return: A string to use as for the type's context section
 	"""
-	return _get_from(CONTEXT_TYPE, type_name)
+	return _get_from(_CONTEXT_TYPE, type_name)
 
 
 def get_node_context(node_name: str) -> str:
@@ -3819,4 +3755,4 @@ def get_node_context(node_name: str) -> str:
 	:param node_name: The name of the RootNode to get the description of.
 	:return: A string to use for the node's context section
 	"""
-	return _get_from(CONTEXT_NODE, node_name)
+	return _get_from(_CONTEXT_NODE, node_name)

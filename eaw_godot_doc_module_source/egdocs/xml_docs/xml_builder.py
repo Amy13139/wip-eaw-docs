@@ -1,9 +1,13 @@
 """
 Contains functions to parse all elements from the EaW and FoC XML files and organize them for documentation
-This should be compiled with Cython.
 """
+from typing import Dict, List
+import os
+import os.path
 from .rst_utils import *
-from .xml_classes import *
+from .xml_data import *
+from .xml_inserts import *
+from .xml_classes import XMLType, Node
 
 
 def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
@@ -20,7 +24,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		:param node: The Node to get information from
 		"""
 		# Get node file name
-		node_path = join(dir_path, "{}.rst".format(node.name.lower()))
+		node_path = os.path.join(dir_path, "{}.rst".format(node.name.lower()))
 
 		# Copy template
 		node_file_lines: List[str] = TEMPLATES["node"].copy()
@@ -66,7 +70,7 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 			# UPPERCASE
 			variant_dict[key + "_upper"] = insert_dict[key].upper()
 			# Title
-			variant_dict[key + "_tabbed"] = insert_dict[key].title()
+			variant_dict[key + "_title"] = insert_dict[key].title()
 			# Capital
 			variant_dict[key + "_capital"] = insert_dict[key].capitalize()
 
@@ -77,8 +81,8 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 	# Iterate over XML Types; Writing XML Files and Node Files
 	for xml_type in xml_types:
 		# Get path to main file
-		file_path = join(xml_dir_out, "{}.rst".format(xml_type.name.lower()))
-		dir_path = join(xml_dir_out, xml_type.name)
+		file_path = os.path.join(xml_dir_out, "{}.rst".format(xml_type.name.lower()))
+		dir_path = os.path.join(xml_dir_out, xml_type.name)
 
 		# Create inserts dict
 		inserts: Dict[str, str] = {
@@ -93,8 +97,8 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		# Check if type has nodes
 		if len(xml_type.node_names):
 			# Create Subdirectory
-			if not exists(dir_path):
-				makedirs(dir_path)
+			if not os.path.exists(dir_path):
+				os.makedirs(dir_path)
 
 			# Copy template
 			type_file_lines: List[str] = TEMPLATES["type"].copy()
@@ -125,12 +129,12 @@ def build_docs(xml_dir_out: str, xml_types: List[XMLType]) -> None:
 		for i in range(len(type_file_lines)):
 			if "{" in type_file_lines[i] and "}" in type_file_lines[i]:
 				type_file_lines[i] = type_file_lines[i].format(**inserts)
+		# Write the formatted template to file
 		with open(file_path, "wt") as main_file:
 			main_file.writelines(type_file_lines)
 			main_file.close()
-		del main_file
 
-		# Iterate over Nodes in the XMLType
+		# Iterate over Nodes in the XMLType, write a file for each
 		for curr_node in xml_type.get_nodes():
 			write_node_file(curr_node)
 
