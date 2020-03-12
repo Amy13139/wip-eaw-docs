@@ -14,17 +14,6 @@ About
 {about}
 
 
-.. _basegame-xml-{name_lower}-toc:
-
-Node Documents
-**************
-.. toctree::
-	:glob:
-	:titlesonly:
-
-	{name}/*
-
-
 .. _basegame-xml-{name_lower}-import:
 
 EaW-Godot Port Connection
@@ -32,11 +21,15 @@ EaW-Godot Port Connection
 {import}
 
 
-.. _basegame-xml-{name_lower}-nodes:
+.. _basegame-xml-{name_lower}-toc:
 
 All Nodes:
 **********
-{node_list}
+.. toctree::
+	:glob:
+	:titlesonly:
+
+	{name}/*
 
 
 .. _basegame-xml-{name_lower}-subnodes:
