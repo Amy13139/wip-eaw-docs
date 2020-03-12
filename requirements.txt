@@ -1,2 +1,2 @@
+# Note: the eaw_godot_doc_module must be installed from ./eaw_godot_doc_module_source
 sphinx>=2.4.4
-Cython

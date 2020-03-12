@@ -1,9 +1,7 @@
 """
 Main script for build_docs module; contains high-level functions to build EaW/FoC Documentation
-This should be compiled with Cython.
 """
-from .build_xml_docs.xml_builder import build as xml_build
-from xml_data import *
+from .xml_builder import build as xml_build
 from os import path, getcwd, listdir, remove, rmdir
 from time import thread_time as t_time
 
@@ -17,17 +15,8 @@ BASEGAME_XML_DIR: str = path.join(BASEGAME_DIR, "xml")
 BASEGAME_AUTO_XML_DIR: str = path.join(BASEGAME_XML_DIR, "_auto")
 
 
-# Build docs
-def build() -> None:
-	"""
-	Build the documentation by running the build functions of submodules
-	:return: None
-	"""
-	do_xml()
-
-
 # Build XML Function
-def do_xml() -> None:
+def build() -> None:
 	"""
 	Runs the build() function of the XML Builder. Also clears old build files.
 	"""
@@ -45,9 +34,6 @@ def do_xml() -> None:
 
 	xml_build(
 		BASEGAME_AUTO_XML_DIR,
-		get_type_template(),
-		get_type_template(has_nodes=False),
-		get_node_template(),
 	)
 
 	# Get the time elapsed

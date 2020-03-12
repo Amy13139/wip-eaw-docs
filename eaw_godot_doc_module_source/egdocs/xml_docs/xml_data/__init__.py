@@ -1,7 +1,7 @@
 """
 Gets absolute paths for XML Data directories and template files
 """
-from typing import List
+from typing import List, Dict
 from os.path import join, dirname, realpath
 from xml.etree import ElementTree
 import tarfile
@@ -13,9 +13,9 @@ EAW_XML_DIR = "EAW/"
 FOC_XML_DIR = "FOC/"
 # Template file paths
 TEMPLATE_XML_DIR: str = "xml_doc_templates/"
-TEMPLATE_TYPE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto.rst"
-TEMPLATE_TYPE_NO_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto_no_node.rst"
-TEMPLATE_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_node_auto.rst"
+_TEMPLATE_TYPE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto.rst"
+_TEMPLATE_TYPE_NO_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto_no_node.rst"
+_TEMPLATE_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_node_auto.rst"
 
 
 DATA_TARFILE = tarfile.open(
@@ -36,6 +36,14 @@ def get_file(str_file: str) -> List[str]:
 	return data
 
 
+# Templates
+TEMPLATES: Dict[str, List[str]] = {
+	"type": get_file(_TEMPLATE_TYPE_PATH),
+	"type_no_node": get_file(_TEMPLATE_TYPE_NO_NODE_PATH),
+	"node": get_file(_TEMPLATE_NODE_PATH),
+}
+
+
 def get_xml_file(xml_file: str) -> ElementTree.Element:
 	"""
 	Gets an XML File from the data.tar.gz file
@@ -43,23 +51,3 @@ def get_xml_file(xml_file: str) -> ElementTree.Element:
 	:return: The Element Tree of the XML File
 	"""
 	return ElementTree.fromstringlist(get_file(xml_file))
-
-
-def get_type_template(has_nodes=True) -> List[str]:
-	"""
-	Gets the type template as a list of lines
-	:param has_nodes: If true, grabs the no_nodes template variant
-	:type has_nodes: bool
-	:return: The lines from the template
-	"""
-	if has_nodes:
-		return get_file(TEMPLATE_TYPE_PATH)
-	return get_file(TEMPLATE_TYPE_NO_NODE_PATH)
-
-
-def get_node_template() -> List[str]:
-	"""
-	Gets the root template as a list of lines
-	:return: The lines from the template
-	"""
-	return get_file(TEMPLATE_NODE_PATH)

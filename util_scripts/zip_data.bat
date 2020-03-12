@@ -1,3 +1,5 @@
+cd ./eaw_godot_doc_module_source/egdocs/xml_docs/xml_data
+
 del data.tar.gz
 
 cd data
@@ -7,4 +9,5 @@ cd data
 
 del data.tar
 
+pause
 exit

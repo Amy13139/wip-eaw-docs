@@ -14,7 +14,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 # import sys
 # import os
 # sys.path.insert(0, os.path.abspath('.'))
-from eaw_godot_doc_module.builder import build
+from egdocs.xml_docs import build
 
 
 # -- Project information -----------------------------------------------------

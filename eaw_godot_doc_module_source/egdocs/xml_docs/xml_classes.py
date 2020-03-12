@@ -3,6 +3,7 @@ Classes to help manage the data of an EaW/FoC XML File
 This should be compiled with Cython.
 """
 from .xml_constants import *
+from .rst_utils import *
 
 
 # SubNode Class
@@ -339,8 +340,33 @@ class SubNode(object):
 					# Add an ellipsis to the end
 					self._data_types.append("...")
 
+	# RST/Documentation Methods
+	def get_description(self) -> str:
+		"""
+		Gets the description of this SubNode
+		:return: The description of this SubNode, as stored in xml_constants.py
+		"""
+		return get_subnode_description(self.name)
 
-# Private base class with a few shared functions
+	def __str__(self) -> str:
+		"""
+		Gets the description and type of this subnode, as stored in the xml_constants.py file
+		:return: A descriptor string
+		"""
+		return "{}{}; {}".format(TAB, self.get_typestring(force_regen=True), self.get_description())
+
+	def __repr__(self) -> str:
+		"""
+		Gets the RST list element of the subnode; used for building Sphinx Documentation
+		:return: An RST list element string
+		"""
+		rep_str = "- {}{}".format(self.name, TAB_INDICATOR)
+		rep_str += self.__str__() + "\n"
+		rep_str += get_line_padding(2)
+		return rep_str
+
+
+# Base class with a few shared functions
 class NodeSubNodeHolder(object):
 	"""
 	Base class to hold methods and attributes for Node and SubNode storage
@@ -357,7 +383,7 @@ class NodeSubNodeHolder(object):
 	def add_node(self, node) -> None:
 		"""
 		Adds a Node, if not already present
-		:param node: The node to be added to the RootNode
+		:param node: The node to be added to the holder
 		"""
 		# Check for conflicts with current nodes; iterate over nodes
 		for index in range(len(self.nodes)):
@@ -449,9 +475,9 @@ class Node(NodeSubNodeHolder):
 	# Attributes
 	_element: ET.Element
 	name: str
-	nodes: list
 	attributes: List[str]
 	subfiles: Set[str]
+	nested: bool
 
 	# Methods
 	def __init__(self, xml_node: ET.Element) -> None:
@@ -465,6 +491,7 @@ class Node(NodeSubNodeHolder):
 		self.nodes: List[Node] = []
 		self.attributes = []
 		self.subfiles = set()
+		self.nested = False
 		# Set _element
 		self._element = xml_node
 		# Call _setup() to setup node, uses _element
@@ -492,6 +519,14 @@ class Node(NodeSubNodeHolder):
 				self.add_node(Node(child))
 			else:
 				self.add_subnode(SubNode(child))
+
+	def add_node(self, node) -> None:
+		"""
+		Adds a Nested Node, if not already present
+		:param node: The node to be added to the holder
+		"""
+		node.nested = True
+		super(Node, self).add_node(node)
 
 	def compare(self, node: NodeSubNodeHolder) -> bool:
 		"""
@@ -535,6 +570,96 @@ class Node(NodeSubNodeHolder):
 			self.subfiles.update(subnode.filenames)
 		# Return
 		return self.subfiles
+
+	# RST/Documentation Methods
+	def get_description(self) -> str:
+		"""
+		Alias for __str__
+		:return: The description of this node, as stored in xml_constants.py
+		"""
+		return self.__str__()
+
+	def get_context(self) -> str:
+		"""
+		Gets the context of this node, as stored in xml_constant.py
+		:return: Context string
+		"""
+		return get_node_context(self.name)
+
+	def __str__(self) -> str:
+		"""
+		Gets the description of this Node, as stored in the xml_constants.py file
+		:return: A descriptor string
+		"""
+		return get_node_description(self.name)
+
+	def __repr__(self) -> str:
+		"""
+		Gets a node's information in the format for the xml_structure.rst file
+		"""
+		rep_str: str
+		header_char: str
+		code_name = codify(self.name)
+
+		# Get header character, with nested nodes under their parent
+		if self.nested:
+			header_char = "^"
+		else:
+			header_char = "-"
+
+		# Get the header, set as start of string
+		rep_str = get_header(code_name, header_char)
+		# Add description
+		rep_str += self.__str__()
+		# Add newlines
+		rep_str += get_line_padding(2)
+
+		# Handle nested nodes
+		if self.has_nodes():
+			# Setup
+			nested_nodes = self.get_nodes()
+			nested_reps = ""
+
+			# Start Nested Nodes table
+			rep_str += get_table_start((
+				"Nested Nodes",
+				"Description",
+			))
+
+			# Iterate over nested node names
+			for nested_node in nested_nodes:
+				# Add to table
+				rep_str += get_table_line((codify(nested_node.name), str(nested_node)))
+				# Store full node sections, will be added after table
+				nested_reps += repr(nested_node)
+
+			# End Nested Nodes Table
+			rep_str += get_table_end(1)
+
+			# Add stored sections
+			rep_str += nested_reps
+
+			return rep_str
+
+		# Handle SubNodes, should be present
+		if self.has_subnodes():
+			# Get header, different if nested
+			if self.nested:
+				rep_str += get_header("{}'s SubNodes".format(code_name), '"')
+			else:
+				rep_str += get_header("SubNodes", "^")
+
+			# Iterate over SubNodes
+			for curr_subnode in self.get_subnodes():
+				rep_str += repr(curr_subnode)
+
+			# Add extra newline
+			rep_str += get_line_padding(1)
+
+		# Add final newline
+		rep_str += get_line_padding(1)
+		# Return
+		return rep_str
 
 
 # RootNode Class
@@ -782,7 +907,7 @@ class XMLType(object):
 		for rootnode in self.root_nodes:
 			# Iterate over Nodes
 			for node in rootnode.nodes:
-				self._node_update_process(node)
+				self._update_with_node(node)
 			if len(rootnode.subnodes):
 				# Create Set in subnode_names for the RootNode's SubNodes
 				self.subnode_names[rootnode.name] = set()
@@ -808,7 +933,7 @@ class XMLType(object):
 		# Return True if no match found.
 		return True
 
-	def _node_update_process(self, node: Node) -> None:
+	def _update_with_node(self, node: Node) -> None:
 		"""
 		Runs update process with a node, this can call itself to parse nested nodes
 		:param node: The node to updates from
@@ -833,4 +958,54 @@ class XMLType(object):
 
 		# Iterate over nodes
 		for nested_node in node.nodes:
-			self._node_update_process(nested_node)
+			self._update_with_node(nested_node)
+
+	# RST/Documentation Methods
+	def get_description(self) -> str:
+		"""
+		Alias for __str__
+		:return: The description of this XMLType, as stored in xml_constants.py
+		"""
+		return self.__str__()
+
+	def get_context(self) -> str:
+		"""
+		Gets the context of this Type, as stored in xml_constant.py
+		:return: Context string
+		"""
+		return get_type_context(self.name)
+
+	def __str__(self) -> str:
+		return get_type_description(self.name)
+
+	def __repr__(self) -> str:
+		"""
+		Gets the documentation of the XML Type as a string
+		"""
+		# Get Header
+		rep_str: str = get_header(self.name, "*")
+
+		# Get table for Nodes in XML Type in a table, only if present
+		if len(self.node_names):
+			node_info = ""
+
+			# Start Nodes Table
+			rep_str += get_table_start(("Node", "Description"))
+			# Iterate over Nodes
+			for node in self.get_nodes():
+				rep_str += get_table_line((codify(node.name), str(node)))
+				node_info += repr(node)
+			rep_str += get_table_end(1)
+
+			# Add node docs
+			rep_str += node_info
+
+		# Get all SubNodes if no nodes are present
+		else:
+			# Get all SubNode Descriptions
+			rep_str += get_header("Direct SubNodes", "-")
+			for subnode in self.get_subnodes():
+				rep_str += repr(subnode)
+
+		# Return
+		return rep_str

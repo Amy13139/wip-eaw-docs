@@ -1,12 +1,13 @@
 """
 This file contains the non-Auto-Generated text for the Auto-XML Generator in the form of Python variables.
-All imports used in upper-level files imported here. This should be compiled with Cython.
+All imports used in upper-level files are imported here.
 """
-from xml_data import *
+from .xml_data import *
 from os import getcwd, makedirs
 from os.path import join, basename, dirname, exists
 from typing import List, Union, Set, Dict, TextIO, Iterable, Iterator
 from xml.etree import ElementTree as ET
+
 # OPTIONS
 MAKE_XML_STRUCTURE_FILE = False
 XML_STRUCTURE_FILENAME: str = "xml_structure.rst"
