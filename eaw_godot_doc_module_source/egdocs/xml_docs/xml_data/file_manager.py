@@ -6,8 +6,10 @@ from os.path import join, dirname, realpath
 from xml.etree import ElementTree
 import tarfile
 
+
 # Path variables
 _SELF_DIR = dirname(realpath(__file__))
+_DATA_UNPACKAGED_PATH = join(_SELF_DIR, "data")
 _DATA_TAR_PATH = join(_SELF_DIR, "data.tar.gz")
 EAW_XML_DIR = "EAW/"
 FOC_XML_DIR = "FOC/"
@@ -16,7 +18,6 @@ TEMPLATE_XML_DIR: str = "xml_doc_templates/"
 _TEMPLATE_TYPE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto.rst"
 _TEMPLATE_TYPE_NO_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_type_auto_no_node.rst"
 _TEMPLATE_NODE_PATH: str = TEMPLATE_XML_DIR + "xml_node_auto.rst"
-
 
 DATA_TARFILE = tarfile.open(
 	name=_DATA_TAR_PATH,
