@@ -34,6 +34,7 @@ author = 'luke13139'
 extensions = [
 	'sphinx.ext.intersphinx',
 	'sphinx.ext.graphviz',
+	'sphinx.ext.mathjax',
 ]
 
 # Link Latest Godot Docs
