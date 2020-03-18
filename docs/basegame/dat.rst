@@ -1,20 +1,20 @@
-.. _basegame-filetype-dat:
+.. _basegame-dat:
 
 *********
 DAT Files
 *********
 
 
-.. _basegame-filetype-dat-about:
+.. _basegame-dat-about:
 
 About
 =====
 DAT Files are used to store strings to display for in-game text. They are stored in *key, value* pairs, where the keys
-are referenced by `XML Files <basegame-filetype-xml>`, and the value is the string to display in-game. This system
+are referenced by `XML Files <basegame-xml>`, and the value is the string to display in-game. This system
 allows for most localization to be done through changing the used DAT file, as long as they contain the same keys.
 
 
-.. _basegame-filetype-dat-struct:
+.. _basegame-dat-struct:
 
 EaW DAT Structure
 =================
@@ -23,7 +23,7 @@ by Mike Lancamp. The website also contains several utilities for handling Alamo 
 edit the text in an EaW .DAT file.
 
 
-.. _basegame-filetype-dat-import:
+.. _basegame-dat-import:
 
 EaW-Godot Port Connection
 =========================

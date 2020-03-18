@@ -933,16 +933,16 @@ _DESCRIPTION_SUBNODE: Dict[str, str] = {
 		"given unit type.",
 	"Icon_Name":
 		"The name of the icon displayed during gameplay, may reference a file stored in an "
-		":ref:`MTD File <basegame-filetype-mtd>`.",
+		":ref:`MTD File <basegame-mtd>`.",
 	"Intensity": "",
 	"Lua_Script": "",
 	"Maintenance_Cost": "",
-	"Model_Name": "The name of the file to load as the model. Must be an :ref:`ALO File <basegame-filetype-alo>`.",
+	"Model_Name": "The name of the file to load as the model. Must be an :ref:`ALO File <basegame-chunked-alo>`.",
 	"No_Colorization_Color": "",
 	"Render_Mode": "",
 	"Text_ID":
 		"The ID of the text to insert for the name of this object in-game. Text is stored in a "
-		"`DAT File <basegame-filetype-dat>`.",
+		"`DAT File <basegame-dat>`.",
 	"Type": "",
 	"Volume_Percent": "The scaling for the sound's files volume in percent form.",
 

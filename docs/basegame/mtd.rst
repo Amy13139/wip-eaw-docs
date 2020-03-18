@@ -1,11 +1,11 @@
-.. _basegame-filetype-mtd:
+.. _basegame-mtd:
 
 *********
 MTD Files
 *********
 
 
-.. _basegame-filetype-mtd-about:
+.. _basegame-mtd-about:
 
 About
 =====
@@ -16,7 +16,7 @@ contain the texture name and box-boundary coordinates for it's pair image, with 
 of the file within the box.
 
 
-.. _basegame-filetype-mtd-struct:
+.. _basegame-mtd-struct:
 
 MTD Structure
 =============
@@ -25,7 +25,7 @@ by Mike Lancamp. The website also contains several utilities for handling Alamo 
 and browsing MTD textures.
 
 
-.. _basegame-filetype-mtd-import:
+.. _basegame-mtd-import:
 
 EaW-Godot Port Connection
 =========================

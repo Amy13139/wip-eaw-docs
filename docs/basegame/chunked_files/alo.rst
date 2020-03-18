@@ -1,11 +1,11 @@
-.. _basegame-filetype-alo:
+.. _basegame-chunked-alo:
 
 *********
 ALO Files
 *********
 
 
-.. _basegame-filetype-alo-about:
+.. _basegame-chunked-alo-about:
 
 About
 =====
@@ -15,7 +15,7 @@ external textures and particles. However, many models will be split into multipl
 Destroyer, to allow for sections to be removed dynamically.
 
 
-.. _basegame-filetype-alo-struct:
+.. _basegame-chunked-alo-struct:
 
 ALO Structures
 ==============
@@ -30,7 +30,7 @@ view and edit ALO files.
 `Gaulker's Alamo Tools for Blender`_ is a utility to export ALO models and ALA files to and from Blender.
 
 
-.. _basegame-filetype-alo-import:
+.. _basegame-chunked-alo-import:
 
 EaW-Godot Port Connection
 =========================

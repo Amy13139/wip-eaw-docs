@@ -1,11 +1,11 @@
-.. _basegame-filetype-meg:
+.. _basegame-meg:
 
 *********
 MEG Files
 *********
 
 
-.. _basegame-filetype-meg-about:
+.. _basegame-meg-about:
 
 About
 =====
@@ -14,7 +14,7 @@ in MEG files. The game loads MEG files based off of the :ref:`megafiles.xml <bas
 located in the game's data folder at it's root, **not** in the game's XML directory.
 
 
-.. _basegame-filetype-meg-stuct:
+.. _basegame-meg-stuct:
 
 MEG Structure
 =============
@@ -23,7 +23,7 @@ by Mike Lancamp. The website also contains several utilities for handling Alamo 
 MEG archives.
 
 
-.. _basegame-filetype-meg-import:
+.. _basegame-meg-import:
 
 EaW-Godot Port Connection
 =========================

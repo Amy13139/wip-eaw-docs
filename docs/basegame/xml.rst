@@ -1,18 +1,18 @@
- .. _basegame-filetype-xml:
+ .. _basegame-xml:
 
-************************
-XML Files - EaW/FoC Data
-************************
+*********
+XML Files
+*********
 
 
-.. _basegame-filetype-xml-about:
+.. _basegame-xml-about:
 
 About
 =====
 XML files store large amounts of data for EaW. They contain most attributes of the game that are easily modded, such as unit information. The structure of XML is standardized, so please refer to the XML 1.0 Documentation for details about the format.
 
 
-.. _basegame-filetype-xml-struct:
+.. _basegame-xml-struct:
 
 EaW XML Structure
 =================
@@ -50,7 +50,7 @@ Some subnodes contain multiple items for their data. If this is the case, it wil
 	"Floatf", "Same as a float, but the number has an ``f`` attached to the end of it."
 
 
-.. _basegame-filetype-xml-toc:
+.. _basegame-xml-toc:
 
 XML Type Reference
 ==================

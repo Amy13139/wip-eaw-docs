@@ -9,7 +9,7 @@ MegaFiles.xml
 
 About
 =====
-Contains names of all `MEG File <basegame-filetype-meg>` archives for the game to load. One of 2 XML files loaded
+Contains names of all `MEG File <basegame-meg>` archives for the game to load. One of 2 XML files loaded
 by filename.
 
 .. note::
@@ -17,7 +17,7 @@ by filename.
 	folder.
 
 
-.. _basegame-xml-struct:
+.. _basegame-xml-megafiles-struct:
 
 SubNode
 =======
@@ -26,9 +26,9 @@ SubNode
 	their location before they were archived.
 
 
-.. _basegame-xml-import:
+.. _basegame-xml-megafiles-import:
 
 EaW-Godot Port Connection
 =========================
 This will be loaded first, alongside :doc:`DataMinerXmlFiles.xml`. All file listed will be pushed through the import
-process described in the `MEG File Documentation Page <basegame-filetype-meg>`
+process described in the `MEG File Documentation Page <basegame-meg>`

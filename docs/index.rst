@@ -55,38 +55,46 @@ This section contains links to all created documentation on every file type used
 The documentation for these files are unofficial, and they are separated by file type. Please report any errors or
 proposed additions to the eaw-godot-docs GitHub.
 
-- `ALA <basegame-filetype-ala>`; Animation; Attaches to an ALO model file
-- `ALO <basegame-filetype-alo>`; Models and Particles
-- `BIK <basegame-filetype-bik>`; Movie
-- `DAT <basegame-filetype-dat>`; In-Game Text, allows for internationalization
+.. note::
+	Information on ALA, ALO, DAT, LUA, MEG, MTD, and chunked files was obtained from
+	`Petrolution Mod Tools <https://modtools.petrolution.net>`_, a website developed by Mike Lancamp. The
+	website contains several utilities for working with EaW/FoC file types, and it contains documentation on the binary
+	format of each file. The source code for the utility programs was release on
+	GitHub in 2017. (`GlyphXTools On GitHub <https://github.com/GlyphXTools>`_)
+
+- `ALA <basegame-chunked-ala>`; Animation; Attaches to an ALO model file
+- `ALO <basegame-chunked-alo>`; Models and Particles
+- `BIK <basegame-bik>`; Movie
+- `DAT <basegame-dat>`; In-Game Text, allows for internationalization
 - DDS (`Microsoft DDS Documentation <https://docs.microsoft.com/windows/win32/direct3ddds/dx-graphics-dds>`_); Texture
 - FXO (`Microsoft ASM Reference <https://docs.microsoft.com/windows/win32/direct3dhlsl/dx9-graphics-reference-asm>`_);
-  Compiled Direct3D 9 Shader. Petroglyph released the `Source Code <http://www.petroglyphgames.com/eawmodtool/>`_ for
-  all FoC shaders.
+  Compiled Direct3D 9 Shader. Petroglyph released the source code for FoC shaders in 2017.
+  (`HLSL Shader Source Code <http://www.petroglyphgames.com/eawmodtool/>`_)
 - H (`Microsoft C++ Header Documentation <https://docs.microsoft.com/cpp/cpp/header-files-cpp>`_); C++ Header File
 - LUA (`Lua Documentation <https://www.lua.org/docs.html>`_); Petroglyph-Lua Script, may be compiled. Full documentation
   may be added at some point.
-- `MEG <basegame-filetype-meg>`; Uncompressed File Archive
+- `MEG <basegame-meg>`; Uncompressed File Archive
 - MP3 (`MP3 on Wikipedia <https://wikipedia.org/wiki/MP3>`_); Audio
-- `MTD <basegame-filetype-mtd>`; Packed Texture Index for a TGA
+- `MTD <basegame-mtd>`; Packed Texture Index for a TGA
 - RC (`Microsoft Resource File Reference <https://docs.microsoft.com/cpp/windows/resource-files-visual-studio>`_);
   C++ Resource Script
-- TEC; In-Game Cinematic, Unknown format. They appear to be Chunked files.
-- TED; Game Map, Unknown format. They appear to be Chunked files.
-- TEE; Environment Set, Unknown format. They appear to be Chunked files.
-- TEM; Material Set, Unknown format. They appear to be Chunked files.
+- TEC; In-Game Cinematic, Unknown format. They appear to be `Chunked Files`_.
+- TED; Game Map, Unknown format. They appear to be `Chunked Files`_.
+- TEE; Environment Set, Unknown format. They appear to be `Chunked Files`_.
+- TEM; Material Set, Unknown format. They appear to be `Chunked Files`_.
 - TGA (`TGA Verison 2.0 Specification <https://www.dca.fee.unicamp.br/~martino/disciplinas/ea978/tgaffs.pdf>`_);
   Uncompressed Texture
 - TXT; Text List and Script
 - WAV (`Microsoft Waveform Audio
   Reference <https://docs.microsoft.com/windows/win32/multimedia/waveform-audio-reference>`_); Audio
-- `XML <basegame-filetype-xml>`; Generic Data Storage
+- `XML <basegame-xml>`; Generic Data Storage
 
+.. _Chunked Files: `Chunked Files <basegame-chunked>`
 
 .. toctree::
 	:titlesonly:
 	:caption: About
-	:name: about_toc
+	:name: about-toc
 	:hidden:
 
 	self
@@ -94,7 +102,7 @@ proposed additions to the eaw-godot-docs GitHub.
 .. toctree::
 	:titlesonly:
 	:caption: EaW-Godot Port Documentation
-	:name: port_toc
+	:name: port-toc
 	:hidden:
 	:glob:
 
@@ -104,7 +112,7 @@ proposed additions to the eaw-godot-docs GitHub.
 .. toctree::
 	:titlesonly:
 	:caption: EaW/FoC Filetype Documentation
-	:name: basegame_toc
+	:name: basegame-toc
 	:hidden:
 	:glob:
 
