@@ -21,7 +21,7 @@ of the file within the box.
 MTD Structure
 =============
 All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_, developed
-by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files and a tool for extracting
+by Mike Lankamp. The website also contains several utilities for handling Alamo Engine files and a tool for extracting
 and browsing MTD textures.
 
 

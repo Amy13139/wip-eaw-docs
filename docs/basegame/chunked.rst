@@ -20,7 +20,7 @@ Chunked File Structure
 ======================
 .. note::
 	All information on chunked files can be found at
-	`Petrolution Mod Tools <https://modtools.petrolution.net/docs/ChunkFileFormat>`_, developed by Mike Lancamp.
+	`Petrolution Mod Tools <https://modtools.petrolution.net/docs/ChunkFileFormat>`_, developed by Mike Lankamp.
 
 .. warning::
 	This section focuses on technical details for a binary format, and it assumes that the reader has at least a basic

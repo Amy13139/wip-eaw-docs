@@ -19,7 +19,7 @@ be coupled with an existing ALO. Animation names and triggers can be assigned fr
 ALA Structure
 =============
 All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_,
-developed by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files and a tool for
+developed by Mike Lankamp. The website also contains several utilities for handling Alamo Engine files and a tool for
 converting between ALA V1 files to ALA V2 files, which can be valuable if handling only one format is needed.
 
 `Gaulker's Alamo Tools for Blender`_ is a utility to export ALO models and ALA files to and from Blender.

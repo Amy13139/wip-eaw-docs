@@ -19,7 +19,7 @@ located in the game's data folder at it's root, **not** in the game's XML direct
 MEG Structure
 =============
 All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_, developed
-by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files and a tool for extracting
+by Mike Lankamp. The website also contains several utilities for handling Alamo Engine files and a tool for extracting
 MEG archives.
 
 

@@ -57,7 +57,7 @@ proposed additions to the eaw-godot-docs GitHub.
 
 .. note::
 	Information on ALA, ALO, DAT, LUA, MEG, MTD, and chunked files was obtained from
-	`Petrolution Mod Tools <https://modtools.petrolution.net>`_, a website developed by Mike Lancamp. The
+	`Petrolution Mod Tools <https://modtools.petrolution.net>`_, a website developed by Mike Lankamp. The
 	website contains several utilities for working with EaW/FoC file types, and it contains documentation on the binary
 	format of each file. The source code for the utility programs was release on
 	GitHub in 2017. (`GlyphXTools On GitHub <https://github.com/GlyphXTools>`_)

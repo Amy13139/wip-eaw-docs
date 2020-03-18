@@ -19,7 +19,7 @@ allows for most localization to be done through changing the used DAT file, as l
 EaW DAT Structure
 =================
 All file format information can be found at `Petrolution Mod Tools <https://modtools.petrolution.net/docs/Formats>`_, developed
-by Mike Lancamp. The website also contains several utilities for handling Alamo Engine files, including a utility to
+by Mike Lankamp. The website also contains several utilities for handling Alamo Engine files, including a utility to
 edit the text in an EaW .DAT file.
 
 
