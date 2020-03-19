@@ -1,8 +1,8 @@
 .. _basegame-chunked-ala:
 
-*********
-ALA Files
-*********
+**********************
+Animation (.ALA) Files
+**********************
 
 
 .. _basegame-chunked-ala-about:

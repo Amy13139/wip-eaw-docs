@@ -1,8 +1,8 @@
 .. _basegame-bik:
 
-*********
-BIK Files
-*********
+***********************
+Bink Movie (.BIK) Files
+***********************
 
 
 .. _basegame-bik-about:

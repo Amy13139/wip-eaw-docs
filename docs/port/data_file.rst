@@ -1,9 +1,15 @@
-.. _data-structures:
-.. Data structure documentation
+.. _port-data:
 
 ***************
 Data Structures
 ***************
+
+.. warning::::
+	This documentation needs a rewrite, as some information is outdated. Due to the current focus and documenting the
+	`EaW/FoC XML Files <basegame-xml>` before the data structures here are fully developed, all information here is
+	subject to change.
+
+.. _port-data-about:
 
 About
 =====
@@ -14,15 +20,21 @@ The data structures of the EaW-Godot Port were designed with a few major design 
 - Have the end result be easily human-readable
 - Have the data be optimized for gameplay
 
-To this end, all data structures are sub-classes off Godot's ``Resource`` class. This allows easy edits with the engine through use of the ``export`` keyword, which puts a variable into the inspector GUI for the resource. It also keeps all data contained to Godot, allowing edits to any aspect of the game and removing the potential issues of supporting an editor alongside the port.
+To this end, all data structures are sub-classes off Godot's ``Resource`` class. This allows easy edits with the engine
+through use of the ``export`` keyword, which puts a variable into the inspector GUI for the resource. It also keeps all
+data contained to Godot, allowing edits to any aspect of the game and removing the potential issues of supporting an
+editor alongside the port.
 
 
 ``export``'s Limitations
 ------------------------
 .. note::
-	This section was written during development of Godot 4.0, they may have improved the export system by the release of the 4.0 update.
+	This section was written during development of Godot 4.0, they should have improved the export system by the release
+	of the 4.0 update.
 
-Currently, the ``export`` keyword has limited functionality in specifying custom resource sub-classes and adding tooltips. This means that it lacks support for a hierarchical structure and documentation on all values cannot be easily viewed in-editor. This is a requested feature, so it may be completed by the release of the Eaw-Godot Port.
+Currently, the ``export`` keyword has limited functionality in specifying custom resource sub-classes and adding
+tooltips. This means that it lacks support for a hierarchical structure and documentation on all values cannot be easily
+viewed in-editor. This is a requested feature, so it may be completed by the release of the Eaw-Godot Port.
 
 
 Data Hierarchy Information
@@ -31,11 +43,19 @@ Data Hierarchy Information
 
 EaW's Flaws
 ^^^^^^^^^^^
-The hierarchical data structures used were implemented to solve the many problems with EaW's XML files. Each individual unit is bloated with massive amounts of data that should have been implemented as an override to a default, or moved to a separate file altogether. Even with the variant system EaW has in place, huge chunks of XML files need to be copy-pasted over to the variants.
+The hierarchical data structures used were implemented to solve the many problems with EaW's XML files. Each individual
+unit is bloated with massive amounts of data that should have been implemented as an override to a default, or moved to
+a separate file altogether. Even with the variant system EaW has in place, huge chunks of XML files need to be
+copy-pasted over to the variants. This can create several problems with concept implementation, organization, and even
+adding units.
 
-The best example of copy-paste bloat is Chewbacca. Chewbacca has no issues on his own, but his ability to capture enemy vehicles created several. The solution was to create a clone of every single unit Chewbacca could capture, and change the unit when it was captured. This lead to every single imperial vehicle having a Chewbacca clone, which would need to have edits copy-pasted over to it from the original vehicle.
+The best example of copy-paste bloat is Chewbacca. Chewbacca has no issues on his own, but his ability to capture enemy
+vehicles created several problems, most prominently due to units not having an easy way to add a dynamic death effect
+(Chewbacca hopping out of the captured vehicles when they are destroyed). The solution was to create a clone of every
+single unit Chewbacca could capture, and change the unit into the Chewbacca clone when it was captured. This lead to
+every single imperial vehicle having a Chewbacca clone, which would need to have edits copy-pasted over to it from the
+original vehicle.
 
-.. Todo, move some of this to UnitData when done
 
 EaW-Godot's Solution
 ^^^^^^^^^^^^^^^^^^^^

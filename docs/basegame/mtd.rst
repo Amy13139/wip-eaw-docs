@@ -1,8 +1,8 @@
 .. _basegame-mtd:
 
-*********
-MTD Files
-*********
+***********************************
+Mega-Texture Directory (.MTD) Files
+***********************************
 
 
 .. _basegame-mtd-about:

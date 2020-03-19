@@ -16,7 +16,14 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 # sys.path.insert(0, os.path.abspath('.'))
 import os
 from egdocs.xml_docs import build
-
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if not on_rtd:
+	import sphinx_rtd_theme
+	from time import sleep
+	html_theme = 'sphinx_rtd_theme'
+	html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+	# Sleep to allow time to clear _build, since PyCharm doesn't support sequential configurations
+	sleep(10)
 
 # -- Project information -----------------------------------------------------
 
@@ -35,12 +42,18 @@ extensions = [
 	'sphinx.ext.intersphinx',
 	'sphinx.ext.graphviz',
 	'sphinx.ext.mathjax',
+	'sphinx.ext.todo',
 ]
 
+# sphinx.ext.intersphinx Configuration
 # Link Latest Godot Docs
 intersphinx_mapping = {
 	'godot': ('https://docs.godotengine.org/en/latest/', None)
 }
+
+# sphinx.ext.todo Configuration
+# Include TODOs in final output, should be disabled on documentation release
+todo_include_todos = True
 
 # Set default role to ref
 default_role = 'ref'
@@ -61,11 +74,6 @@ include_patterns = ["/basegame", "/port", "index.rst"]
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-if not on_rtd:
-	import sphinx_rtd_theme
-	html_theme = 'sphinx_rtd_theme'
-	html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # Sphinx RTD Theme Options
 html_theme_options = {

@@ -1,8 +1,8 @@
 .. _basegame-meg:
 
-*********
-MEG Files
-*********
+***********************
+Mega-Files (.MEG) Files
+***********************
 
 
 .. _basegame-meg-about:
@@ -10,8 +10,8 @@ MEG Files
 About
 =====
 MEG files (Mega-Files) are a uncompressed file archives. They store files by name. Most assets of the basegame are stored
-in MEG files. The game loads MEG files based off of the :ref:`megafiles.xml <basegame-xml-megafiles>` file, which is
-located in the game's data folder at it's root, **not** in the game's XML directory.
+in MEG files. The game loads MEG files based off of the `megafiles.xml <basegame-xml-megafiles>` file, which is located
+in the game's data folder at it's root, **not** in the game's XML directory.
 
 
 .. _basegame-meg-stuct:

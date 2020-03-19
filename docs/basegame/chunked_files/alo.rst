@@ -1,8 +1,8 @@
 .. _basegame-chunked-alo:
 
-*********
-ALO Files
-*********
+*******************************
+Model and Particle (.ALO) Files
+*******************************
 
 
 .. _basegame-chunked-alo-about:
@@ -39,11 +39,19 @@ EaW-Godot Port Connection
 Models
 ------
 A model importer has been written for the Godot Engine (based off of `Gaulker's Alamo Tools for Blender`_). It is
-currently able to import all features from ALO models (more testing needed), except collision, which is created from
-the mesh triangles instead of the collision-specific section of each mesh.
+currently able to import almost all features from ALO models (more testing needed).
 
+Differences
+^^^^^^^^^^^
+Collision shapes are created from the mesh triangles of collision-enabled submeshes, instead of the collision-specific
+data of each submesh. The ``root`` bone from the ALO model is intentionally deleted on import, since it causes problems
+with most modern skeleton systems. The deletion of the root bone moves all bone indices down by 1 from the original ALO.
+
+Godot Format
+^^^^^^^^^^^^
 The importer saves a `PackedScene <godot:class_PackedScene>` (.scn) file. It has a `class_Skeleton` RootNode, with
-`MeshInstances <class_MeshInstance>` as child nodes.
+`MeshInstances <class_MeshInstance>` and `CollisionShapes <class_Collision> as child nodes. The bone indices of the root skeleton are all moved down by 1, due
+to the deletion of the root bone.
 
 
 Particles
