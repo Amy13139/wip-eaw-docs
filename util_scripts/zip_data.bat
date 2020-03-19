@@ -9,5 +9,4 @@ cd data
 
 del data.tar
 
-pause
 exit
