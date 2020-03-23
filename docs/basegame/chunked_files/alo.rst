@@ -49,9 +49,9 @@ with most modern skeleton systems. The deletion of the root bone moves all bone 
 
 Godot Format
 ^^^^^^^^^^^^
-The importer saves a `PackedScene <godot:class_PackedScene>` (.scn) file. It has a `class_Skeleton` RootNode, with
-`MeshInstances <class_MeshInstance>` and `CollisionShapes <class_Collision> as child nodes. The bone indices of the root skeleton are all moved down by 1, due
-to the deletion of the root bone.
+The importer saves a `class_PackedScene` (.scn) file for each ALO model. The file has a `class_Skeleton` RootNode, with
+`class_MeshInstance` children, who can have `class_CollisionShape` children. The bone indices of the root skeleton are
+all moved down by 1, due to the deletion of the unused root bone.
 
 
 Particles
